@@ -71,10 +71,10 @@ module myRiscv (
     assign rvfi_rd_wdata = rf_dst_data;
     
     // Program Counter
-    assign rvfi_pc_rdata = pc_last;
-    // assign rvfi_pc_rdata = pc;
-    // assign rvfi_pc_wdata = pc_next;
-    assign rvfi_pc_wdata = pc;
+    // assign rvfi_pc_rdata = pc_last;
+    assign rvfi_pc_rdata = pc;
+    assign rvfi_pc_wdata = pc_next;
+    // assign rvfi_pc_wdata = pc;
 
     // Memory Access
     assign rvfi_mem_addr = addr;
@@ -132,12 +132,13 @@ module myRiscv (
         end
     end
 
-    // 3-to-1 MUX instance for selecting pc_next source
+    // 4-to-1 MUX instance for selecting pc_next source
     always_comb begin
         case (pc_sel)
             2'b00:      pc_next = pc_plus_4;
             2'b01:      pc_next = target;
             2'b10:      pc_next = addr;
+            2'b11:      pc_next = {addr[31:1], 1'b0};
             default:    pc_next = 'X;
         endcase
     end
@@ -163,7 +164,8 @@ module myRiscv (
     always_comb begin
         case (rd_data_sel)
             // 2'b00:      dst_data = addr;
-            2'b00:      dst_data = (o_flag == 1'b1) ? 32'b0 : addr;
+            // 2'b00:      dst_data = (o_flag == 1'b1 || rf_dst_addr == 32'b0) ? 32'b0 : addr;
+            2'b00:      dst_data = (rf_dst_addr == 32'b0) ? 32'b0 : addr;
             2'b01:      dst_data = rd_data_ext;
             2'b10:      dst_data = pc_plus_4;
             2'b11:      dst_data = imm_ext;
@@ -222,7 +224,8 @@ module myRiscv (
                             // {carry, addr} = signed'(alu_in_1) + signed'(alu_in_2);
                             {carry, addr} = alu_in_1 + alu_in_2;
                             // addr = alu_in_1 + alu_in_2;
-                            o_flag = ((alu_in_1[31] ^ alu_in_2[31]) || carry == 1'b1) ? 1'b0 : (addr[31] ^ alu_in_1[31]);
+                            // o_flag = ((alu_in_1[31] ^ alu_in_2[31]) || carry == 1'b1) ? 1'b0 : (addr[31] ^ alu_in_1[31]);
+                            o_flag = ((alu_in_1[31] ^ alu_in_2[31])) ? 1'b0 : (addr[31] ^ alu_in_1[31]);
                             b_flag = 1'bX;
                         end
                         
@@ -629,18 +632,19 @@ module myRiscv (
                             else begin
                                 wr_en = 4'b0000;
                                 // rf_wr_en = 1'b1;
-                                rf_wr_en = (addr[1:0] != 2'b00 || o_flag == 1'b1) ? 1'b0 : 1'b1;
+                                rf_wr_en = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b0 : 1'b1;
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b1;
                                 // pc_sel = 2'b10;
-                                pc_sel = (addr[1:0] != 2'b00 || o_flag == 1'b1) ? 2'b00 : 2'b10;
+                                // pc_sel = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 2'b00 : 2'b10;
+                                pc_sel = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 2'b00 : 2'b11;
                                 rd_data_sel = 2'b10;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'b000;
                                 ld_ctrl = 3'bX;
                                 alu_ctrl = 4'b0000;
                                 // ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
-                                ctrl_instr_trap = (addr[1:0] != 2'b00 || o_flag == 1'b1) ? 1'b1 : 1'b0;
+                                ctrl_instr_trap = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b1 : 1'b0;
                             end
 
                         end

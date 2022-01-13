@@ -31,4 +31,4 @@
 ##   0:00:03  Skipping step 29..
 ##   0:00:03  Checking assumptions in step 30..
 ##   0:00:03  Checking assertions in step 30..
-##   0:00:04  Status: passed
+##   0:00:03  Status: passed
