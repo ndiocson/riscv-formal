@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="12">
+<testsuite disabled="0" errors="0" failures="0" name="complete" skipped="0" tests="1" time="12">
+<properties>
+<property name="os" value="posix"/>
+</properties>
+<testcase classname="complete" name="default" status="PASS" time="12">
+<system-out>SBY 10:32:05 [complete] Removing directory '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/complete.sv'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/myRiscv.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/myRiscv.sv'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_macros.vh' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/rvfi_macros.vh'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/isa_rv32ic.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/isa_rv32ic.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_add.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_add.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_addi.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_addi.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_and.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_and.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_andi.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_andi.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_auipc.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_auipc.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_beq.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_beq.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_bge.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_bge.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_bgeu.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_bgeu.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_blt.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_blt.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_bltu.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_bltu.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_bne.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_bne.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_add.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_add.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_addi.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_addi.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_addi16sp.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_addi16sp.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_addi4spn.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_addi4spn.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_and.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_and.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_andi.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_andi.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_beqz.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_beqz.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_bnez.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_bnez.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_j.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_j.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_jal.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_jal.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_jalr.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_jalr.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_jr.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_jr.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_li.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_li.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_lui.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_lui.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_lw.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_lw.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_lwsp.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_lwsp.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_mv.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_mv.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_or.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_or.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_slli.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_slli.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_srai.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_srai.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_srli.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_srli.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_sub.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_sub.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_sw.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_sw.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_swsp.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_swsp.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_c_xor.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_c_xor.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_jal.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_jal.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_jalr.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_jalr.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_lb.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_lb.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_lbu.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_lbu.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_lh.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_lh.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_lhu.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_lhu.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_lui.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_lui.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_lw.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_lw.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_or.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_or.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_ori.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_ori.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sb.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sb.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sh.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sh.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sll.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sll.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_slli.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_slli.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_slt.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_slt.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_slti.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_slti.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sltiu.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sltiu.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sltu.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sltu.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sra.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sra.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_srai.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_srai.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_srl.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_srl.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_srli.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_srli.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sub.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sub.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_sw.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_sw.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_xor.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_xor.v'.
+SBY 10:32:05 [complete] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_xori.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/complete/src/insn_xori.v'.
+SBY 10:32:05 [complete] engine_0: abc bmc3
+SBY 10:32:05 [complete] nomem: starting process &quot;cd complete/src; yosys -ql ../model/design_nomem.log ../model/design_nomem.ys&quot;
+SBY 10:32:05 [complete] nomem: Warning: wire '\rvfi_mem_rmask' is assigned in a block at myRiscv.sv:355.25-355.49.
+SBY 10:32:05 [complete] nomem: Warning: wire '\rvfi_mem_rmask' is assigned in a block at myRiscv.sv:356.25-356.49.
+SBY 10:32:05 [complete] nomem: Warning: wire '\rvfi_mem_rmask' is assigned in a block at myRiscv.sv:357.25-357.49.
+SBY 10:32:05 [complete] nomem: Warning: wire '\rvfi_mem_rmask' is assigned in a block at myRiscv.sv:358.25-358.49.
+SBY 10:32:05 [complete] nomem: Warning: wire '\rvfi_mem_rmask' is assigned in a block at myRiscv.sv:359.25-359.49.
+SBY 10:32:05 [complete] nomem: Warning: wire '\rvfi_mem_rmask' is assigned in a block at myRiscv.sv:360.25-360.49.
+SBY 10:32:11 [complete] nomem: finished (returncode=0)
+SBY 10:32:11 [complete] aig: starting process &quot;cd complete/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 10:32:18 [complete] aig: finished (returncode=0)
+SBY 10:32:18 [complete] engine_0: starting process &quot;cd complete; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 20 -v; write_cex -a engine_0/trace.aiw'&quot;
+SBY 10:32:18 [complete] engine_0: ABC command line: &quot;read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 20 -v; write_cex -a engine_0/trace.aiw&quot;.
+SBY 10:32:18 [complete] engine_0: Warning: The network has no constraints.
+SBY 10:32:18 [complete] engine_0: Running &quot;bmc3&quot;. PI/PO/Reg = 2482/1/1059. And =  27349. Lev =   101. ObjNums = 13846.
+SBY 10:32:18 [complete] engine_0: Params: FramesMax = 20. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY 10:32:18 [complete] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.05 sec
+SBY 10:32:18 [complete] engine_0: 1 + : Var =   13652. Cla =    41455. Conf =     53. Learn =     52.    0 MB   6 MB     0.06 sec
+SBY 10:32:18 [complete] engine_0: 2 + : Var =   24099. Cla =    75686. Conf =    118. Learn =    116.    0 MB   6 MB     0.07 sec
+SBY 10:32:18 [complete] engine_0: 3 + : Var =   34683. Cla =   110542. Conf =    243. Learn =    239.    0 MB   8 MB     0.08 sec
+SBY 10:32:18 [complete] engine_0: 4 + : Var =   45267. Cla =   145398. Conf =    350. Learn =    344.    0 MB  10 MB     0.09 sec
+SBY 10:32:18 [complete] engine_0: 5 + : Var =   55851. Cla =   180254. Conf =    414. Learn =    406.    0 MB  14 MB     0.11 sec
+SBY 10:32:18 [complete] engine_0: 6 + : Var =   66435. Cla =   215110. Conf =    499. Learn =    488.    0 MB  15 MB     0.12 sec
+SBY 10:32:18 [complete] engine_0: 7 + : Var =   77019. Cla =   249966. Conf =    569. Learn =    556.    0 MB  17 MB     0.13 sec
+SBY 10:32:18 [complete] engine_0: 8 + : Var =   87603. Cla =   284822. Conf =    703. Learn =    688.    0 MB  19 MB     0.15 sec
+SBY 10:32:18 [complete] engine_0: 9 + : Var =   98187. Cla =   319678. Conf =    770. Learn =    753.    1 MB  20 MB     0.16 sec
+SBY 10:32:19 [complete] engine_0: 10 + : Var =  108771. Cla =   354534. Conf =    848. Learn =    829.    1 MB  27 MB     0.20 sec
+SBY 10:32:19 [complete] engine_0: 11 + : Var =  119355. Cla =   389390. Conf =    929. Learn =    909.    1 MB  29 MB     0.21 sec
+SBY 10:32:19 [complete] engine_0: 12 + : Var =  129939. Cla =   424246. Conf =    990. Learn =    969.    1 MB  30 MB     0.23 sec
+SBY 10:32:19 [complete] engine_0: 13 + : Var =  140523. Cla =   459102. Conf =   1063. Learn =   1039.    1 MB  32 MB     0.24 sec
+SBY 10:32:19 [complete] engine_0: 14 + : Var =  151107. Cla =   493958. Conf =   1143. Learn =   1117.    1 MB  33 MB     0.27 sec
+SBY 10:32:19 [complete] engine_0: 15 + : Var =  161691. Cla =   528814. Conf =   1270. Learn =   1242.    1 MB  35 MB     0.29 sec
+SBY 10:32:19 [complete] engine_0: 16 + : Var =  172275. Cla =   563670. Conf =   1351. Learn =   1322.    1 MB  36 MB     0.33 sec
+SBY 10:32:19 [complete] engine_0: 17 + : Var =  182859. Cla =   598526. Conf =   1416. Learn =   1386.    1 MB  38 MB     0.34 sec
+SBY 10:32:19 [complete] engine_0: 18 + : Var =  193443. Cla =   633382. Conf =   1524. Learn =   1492.    1 MB  39 MB     0.38 sec
+SBY 10:32:19 [complete] engine_0: 19 + : Var =  204027. Cla =   668238. Conf =   1625. Learn =   1591.    1 MB  51 MB     0.40 sec
+SBY 10:32:19 [complete] engine_0: Runtime:  CNF = 0.2 sec (56.0 %)  UNSAT = 0.1 sec (28.6 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY 10:32:19 [complete] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 0  Vars = 204027  Used = 139931 (68.58 %)
+SBY 10:32:19 [complete] engine_0: Buffs = 22124. Dups = 0.   Hash hits = 115.  Hash misses = 156473.  UniProps = 0.
+SBY 10:32:19 [complete] engine_0: No output asserted in 20 frames. Resource limit reached (conf limit 0). Time =     0.43 sec
+SBY 10:32:19 [complete] engine_0: Counter-example is not available.
+SBY 10:32:19 [complete] engine_0: finished (returncode=0)
+SBY 10:32:19 [complete] engine_0: Status returned by engine: PASS
+SBY 10:32:19 [complete] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:13 (13)
+SBY 10:32:19 [complete] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:12 (12)
+SBY 10:32:19 [complete] summary: engine_0 (abc bmc3) returned PASS
+SBY 10:32:19 [complete] DONE (PASS, rc=0)
+</system-out></testcase></testsuite></testsuites>
