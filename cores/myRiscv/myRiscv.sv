@@ -13,7 +13,6 @@ module myRiscv (
 );
     
     // Internal signals to connect between datapath and control unit
-    logic o_flag;
     logic b_flag;
     logic rf_wr_en;
     logic src_1_sel;
@@ -69,7 +68,6 @@ module myRiscv (
     // -------------------------------------------------------- DATAPATH --------------------------------------------------------
     
     logic [31:0] pc_last;                                       // 
-    logic target_o_flag;                                        // 
     logic [63:0] instr_index;                                   // 
     logic [4:0] rf_dst_addr, rf_src_addr_1, rf_src_addr_2;      // 
     logic [31:0] dst_data, rf_dst_data;                         // 32-bit intermediate and final nets connecting to register file
@@ -88,7 +86,6 @@ module myRiscv (
     logic target_carry;
     // assign {target_carry, target} = signed'(pc) + signed'(imm_ext);
     assign {target_carry, target} = pc + imm_ext;
-    assign target_o_flag = ((pc[31] ^ imm_ext[31]) || target_carry == 1'b1) ? 1'b0 : (target[31] ^ pc[31]);
 
     // 
     // assign rf_dst_addr = instr[11:7];
@@ -153,13 +150,11 @@ module myRiscv (
     // 4-to-1 MUX instance for selecting data source for destination register writes
     always_comb begin
         case (rd_data_sel)
-            // 2'b00:      dst_data = addr;
-            // 2'b00:      dst_data = (o_flag == 1'b1 || rf_dst_addr == 32'b0) ? 32'b0 : addr;
-            3'b000:      dst_data = (rf_dst_addr == 32'b0) ? 32'b0 : addr;
-            3'b001:      dst_data = rd_data_ext;
-            3'b010:      dst_data = pc_plus_4;
-            3'b011:      dst_data = imm_ext;
-            3'b100:      dst_data = 32'b0;
+            3'b000:     dst_data = addr;
+            3'b001:     dst_data = rd_data_ext;
+            3'b010:     dst_data = pc_plus_4;
+            3'b011:     dst_data = imm_ext;
+            3'b100:     dst_data = 32'b0;
             default:    dst_data = 'X;
         endcase
     end
@@ -208,15 +203,10 @@ module myRiscv (
     // 
     always_comb begin
         carry = 1'b0;
-        o_flag = 1'b0;
         case (alu_ctrl)
             // Add
             ALU_ADD:    begin
                             {carry, addr} = signed'(alu_in_1) + signed'(alu_in_2);
-                            // {carry, addr} = alu_in_1 + alu_in_2;
-                            // addr = alu_in_1 + alu_in_2;
-                            // o_flag = ((alu_in_1[31] ^ alu_in_2[31]) || carry == 1'b1) ? 1'b0 : (addr[31] ^ alu_in_1[31]);
-                            o_flag = ((alu_in_1[31] ^ alu_in_2[31])) ? 1'b0 : (addr[31] ^ alu_in_1[31]);
                             b_flag = 1'bX;
                         end
                         
@@ -576,9 +566,6 @@ module myRiscv (
                                 rf_wr_en = 1'b0;
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b0;
-                                // pc_sel = {1'b0, (funct3[0] ^ b_flag)};
-                                // pc_sel = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 2'b00 : {1'b0, (funct3[0] ^ b_flag)};
-                                // pc_sel = (b_flag == 1'b1 && target[1:0] != 2'b00) ? 2'b00 : {1'b0, (funct3[0] ^ b_flag)};
                                 pc_sel = {1'b0, (funct3[0] ^ b_flag)};
                                 rd_addr_sel = 1'b1;
                                 rd_data_sel = 3'b100;
@@ -586,28 +573,23 @@ module myRiscv (
                                 imm_sel = 3'b011;
                                 ld_ctrl = 3'bX;
                                 alu_ctrl = {~funct3[2], 1'b0, funct3[2:1]};
-                                // ctrl_instr_trap = ((b_flag == 1'b1 && target[1:0] != 2'b00) || target_o_flag == 1'b1) ? 1'b1 : 1'b0;
-                                // ctrl_instr_trap = (b_flag == 1'b1 && target[1:0] != 2'b00) ? 1'b1 : 1'b0;
-                                ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
+                                ctrl_instr_trap = |pc_next[1:0];
                             end
                         end
             
             // Jump and link
             JUMP:       begin
                             wr_en = 4'b0000;
-                            rf_wr_en = 1'b1;
-                            // rf_wr_en = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 1'b0 : 1'b1;
+                            rf_wr_en = |target[1:0];
                             src_1_sel = 1'bX;
                             src_2_sel = 1'bX;
-                            pc_sel = 2'b01;
-                            // pc_sel = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 2'b00 : 2'b01;
+                            pc_sel = {1'b0, &~target[1:0]};
                             rd_data_sel = 3'b010;
                             wr_data_sel = 2'bX;
                             imm_sel = 3'b100;
                             ld_ctrl = 3'bX;
                             alu_ctrl = 4'bX;
-                            ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
-                            // ctrl_instr_trap = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 1'b1 : 1'b0;
+                            ctrl_instr_trap = |target[1:0];
                         end
             
             // Jump and link register
@@ -628,21 +610,16 @@ module myRiscv (
                             end
                             else begin
                                 wr_en = 4'b0000;
-                                rf_wr_en = 1'b1;
-                                // rf_wr_en = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b0 : 1'b1;
+                                rf_wr_en = ~addr[1];
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b1;
-                                // pc_sel = 2'b10;
-                                pc_sel = 2'b11;
-                                // pc_sel = (addr[1:0] != 2'b00) ? 2'b00 : 2'b11;
-                                // pc_sel = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 2'b00 : 2'b10;
+                                pc_sel = {2{~addr[1]}};
                                 rd_data_sel = 3'b010;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'b000;
                                 ld_ctrl = 3'bX;
                                 alu_ctrl = 4'b0000;
-                                ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
-                                // ctrl_instr_trap = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b1 : 1'b0;
+                                ctrl_instr_trap = addr[1];
                             end
 
                         end
