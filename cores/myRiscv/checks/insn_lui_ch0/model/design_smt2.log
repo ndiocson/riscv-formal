@@ -33,43 +33,43 @@ Input filename: design.il
 
 === rvfi_testbench ===
 
-   Number of wires:                560
-   Number of wire bits:           4910
-   Number of public wires:         199
-   Number of public wire bits:    3325
+   Number of wires:                524
+   Number of wire bits:           4777
+   Number of public wires:         198
+   Number of public wire bits:    3287
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                421
-     $add                            7
+   Number of cells:                384
+     $add                            6
      $and                            5
-     $anyseq                       103
-     $assert                        17
+     $anyseq                        86
+     $assert                        15
      $assume                         2
      $dff                            3
      $eq                            51
      $initstate                      1
-     $logic_and                     11
-     $logic_not                     14
-     $logic_or                       8
+     $logic_and                     10
+     $logic_not                     13
+     $logic_or                      12
      $lt                             3
      $mem_v2                         1
-     $mux                          149
+     $mux                          127
      $ne                             4
-     $not                            6
+     $not                            7
      $or                             2
      $pmux                          18
-     $reduce_bool                    7
-     $reduce_or                      3
+     $reduce_bool                    6
+     $reduce_or                      2
      $shl                            1
      $shr                            1
      $sshr                           1
      $sub                            1
-     $xor                            2
+     $xor                            6
 
 4. Executing SMT2 backend.
 Creating SMT-LIBv2 representation of module rvfi_testbench.
 
-End of script. Logfile hash: f3dac4e17b, CPU: user 0.05s system 0.01s, MEM: 12.84 MB peak
+End of script. Logfile hash: 298b0aa5cd, CPU: user 0.07s system 0.01s, MEM: 12.96 MB peak
 Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 66% 2x read_ilang (0 sec), 31% 2x write_smt2 (0 sec), ...
+Time spent: 49% 2x write_smt2 (0 sec), 49% 2x read_ilang (0 sec), ...

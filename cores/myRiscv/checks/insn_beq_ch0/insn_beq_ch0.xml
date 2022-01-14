@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites disabled="0" errors="0" failures="0" tests="1" time="5">
-<testsuite disabled="0" errors="0" failures="0" name="insn_beq_ch0" skipped="0" tests="1" time="5">
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="3">
+<testsuite disabled="0" errors="0" failures="0" name="insn_beq_ch0" skipped="0" tests="1" time="3">
 <properties>
 <property name="os" value="posix"/>
 </properties>
-<testcase classname="insn_beq_ch0" name="default" status="PASS" time="5">
-<system-out>SBY 20:00:23 [checks/insn_beq_ch0] Removing directory '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0'.
-SBY 20:00:23 [checks/insn_beq_ch0] Writing 'checks/insn_beq_ch0/src/defines.sv'.
-SBY 20:00:23 [checks/insn_beq_ch0] Writing 'checks/insn_beq_ch0/src/insn_beq_ch0.sv'.
-SBY 20:00:23 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_macros.vh' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_macros.vh'.
-SBY 20:00:23 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_channel.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_channel.sv'.
-SBY 20:00:23 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_testbench.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_testbench.sv'.
-SBY 20:00:23 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_insn_check.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_insn_check.sv'.
-SBY 20:00:23 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_beq.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/insn_beq.v'.
-SBY 20:00:23 [checks/insn_beq_ch0] engine_0: smtbmc boolector
-SBY 20:00:23 [checks/insn_beq_ch0] base: starting process &quot;cd checks/insn_beq_ch0/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 20:00:23 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:349.25-349.49.
-SBY 20:00:23 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:350.25-350.49.
-SBY 20:00:23 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:351.25-351.49.
-SBY 20:00:23 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:352.25-352.49.
-SBY 20:00:23 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:353.25-353.49.
-SBY 20:00:23 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:354.25-354.49.
-SBY 20:00:24 [checks/insn_beq_ch0] base: finished (returncode=0)
-SBY 20:00:24 [checks/insn_beq_ch0] smt2: starting process &quot;cd checks/insn_beq_ch0/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 20:00:24 [checks/insn_beq_ch0] smt2: finished (returncode=0)
-SBY 20:00:24 [checks/insn_beq_ch0] engine_0: starting process &quot;cd checks/insn_beq_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20:21  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 20:00:25 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Solver: boolector
-SBY 20:00:25 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 0..
-SBY 20:00:25 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 1..
-SBY 20:00:25 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 2..
-SBY 20:00:25 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 3..
-SBY 20:00:25 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 4..
-SBY 20:00:25 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 5..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 6..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 7..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 8..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 9..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 10..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 11..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 12..
-SBY 20:00:26 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 13..
-SBY 20:00:27 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 14..
-SBY 20:00:27 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 15..
-SBY 20:00:27 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 16..
-SBY 20:00:27 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 17..
-SBY 20:00:27 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 18..
-SBY 20:00:27 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 19..
-SBY 20:00:27 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Checking assumptions in step 20..
-SBY 20:00:28 [checks/insn_beq_ch0] engine_0: ##   0:00:03  Checking assertions in step 20..
-SBY 20:00:30 [checks/insn_beq_ch0] engine_0: ##   0:00:05  Status: passed
-SBY 20:00:30 [checks/insn_beq_ch0] engine_0: finished (returncode=0)
-SBY 20:00:30 [checks/insn_beq_ch0] engine_0: Status returned by engine: pass
-SBY 20:00:30 [checks/insn_beq_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:07 (7)
-SBY 20:00:30 [checks/insn_beq_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:05 (5)
-SBY 20:00:30 [checks/insn_beq_ch0] summary: engine_0 (smtbmc boolector) returned pass
-SBY 20:00:30 [checks/insn_beq_ch0] DONE (PASS, rc=0)
+<testcase classname="insn_beq_ch0" name="default" status="PASS" time="3">
+<system-out>SBY  9:51:25 [checks/insn_beq_ch0] Removing directory '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0'.
+SBY  9:51:25 [checks/insn_beq_ch0] Writing 'checks/insn_beq_ch0/src/defines.sv'.
+SBY  9:51:25 [checks/insn_beq_ch0] Writing 'checks/insn_beq_ch0/src/insn_beq_ch0.sv'.
+SBY  9:51:25 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_macros.vh' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_macros.vh'.
+SBY  9:51:25 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_channel.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_channel.sv'.
+SBY  9:51:25 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_testbench.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_testbench.sv'.
+SBY  9:51:25 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_insn_check.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/rvfi_insn_check.sv'.
+SBY  9:51:25 [checks/insn_beq_ch0] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_beq.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_beq_ch0/src/insn_beq.v'.
+SBY  9:51:25 [checks/insn_beq_ch0] engine_0: smtbmc boolector
+SBY  9:51:25 [checks/insn_beq_ch0] base: starting process &quot;cd checks/insn_beq_ch0/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  9:51:25 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:349.25-349.49.
+SBY  9:51:25 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:350.25-350.49.
+SBY  9:51:25 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:351.25-351.49.
+SBY  9:51:25 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:352.25-352.49.
+SBY  9:51:25 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:353.25-353.49.
+SBY  9:51:25 [checks/insn_beq_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:354.25-354.49.
+SBY  9:51:26 [checks/insn_beq_ch0] base: finished (returncode=0)
+SBY  9:51:26 [checks/insn_beq_ch0] smt2: starting process &quot;cd checks/insn_beq_ch0/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  9:51:26 [checks/insn_beq_ch0] smt2: finished (returncode=0)
+SBY  9:51:26 [checks/insn_beq_ch0] engine_0: starting process &quot;cd checks/insn_beq_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20:21  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  9:51:26 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Solver: boolector
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 0..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 1..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 2..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 3..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 4..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 5..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 6..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 7..
+SBY  9:51:27 [checks/insn_beq_ch0] engine_0: ##   0:00:00  Skipping step 8..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 9..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 10..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 11..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 12..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 13..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 14..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 15..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 16..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:01  Skipping step 17..
+SBY  9:51:28 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 18..
+SBY  9:51:29 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Skipping step 19..
+SBY  9:51:29 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Checking assumptions in step 20..
+SBY  9:51:29 [checks/insn_beq_ch0] engine_0: ##   0:00:02  Checking assertions in step 20..
+SBY  9:51:30 [checks/insn_beq_ch0] engine_0: ##   0:00:03  Status: passed
+SBY  9:51:30 [checks/insn_beq_ch0] engine_0: finished (returncode=0)
+SBY  9:51:30 [checks/insn_beq_ch0] engine_0: Status returned by engine: pass
+SBY  9:51:30 [checks/insn_beq_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:04 (4)
+SBY  9:51:30 [checks/insn_beq_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:03 (3)
+SBY  9:51:30 [checks/insn_beq_ch0] summary: engine_0 (smtbmc boolector) returned pass
+SBY  9:51:30 [checks/insn_beq_ch0] DONE (PASS, rc=0)
 </system-out></testcase></testsuite></testsuites>

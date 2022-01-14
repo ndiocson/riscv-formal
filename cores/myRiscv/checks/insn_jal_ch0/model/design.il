@@ -5,15 +5,9 @@ attribute \top 1
 attribute \src "rvfi_testbench.sv:15.1-68.10"
 module \rvfi_testbench
   wire width 8 $add$rvfi_testbench.sv:36$9_Y
-  wire $auto$opt_reduce.cc:134:opt_mux$2856
-  wire $auto$opt_reduce.cc:134:opt_mux$2860
-  wire $auto$opt_reduce.cc:134:opt_mux$2862
-  wire $auto$rtlil.cc:3097:Anyseq$2873
-  wire $auto$rtlil.cc:3097:Anyseq$2875
-  wire $auto$rtlil.cc:3097:Anyseq$2877
-  wire $auto$rtlil.cc:3097:Anyseq$2879
-  wire $auto$rtlil.cc:3097:Anyseq$2881
-  wire $auto$rtlil.cc:3097:Anyseq$2883
+  wire $auto$opt_reduce.cc:134:opt_mux$2870
+  wire $auto$opt_reduce.cc:134:opt_mux$2874
+  wire $auto$opt_reduce.cc:134:opt_mux$2876
   wire $auto$rtlil.cc:3097:Anyseq$2885
   wire $auto$rtlil.cc:3097:Anyseq$2887
   wire $auto$rtlil.cc:3097:Anyseq$2889
@@ -110,22 +104,17 @@ module \rvfi_testbench
   wire width 5 $auto$rtlil.cc:3097:Anyseq$3071
   wire width 3 $auto$rtlil.cc:3097:Anyseq$3073
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 2 $auto$wreduce.cc:454:run$2864
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215.45-215.82|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  attribute \unused_bits "32"
-  wire width 33 signed $auto$wreduce.cc:454:run$2865
+  wire width 2 $auto$wreduce.cc:454:run$2878
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:239.37-239.74|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $auto$wreduce.cc:454:run$2866
+  wire width 32 $auto$wreduce.cc:454:run$2879
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:246.37-246.78|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $auto$wreduce.cc:454:run$2867
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184.57-184.60|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $auto$wreduce.cc:454:run$2868
+  wire width 32 $auto$wreduce.cc:454:run$2880
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:232.36-232.79|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 signed $auto$wreduce.cc:454:run$2869
+  wire width 32 signed $auto$wreduce.cc:454:run$2881
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:225.36-225.73|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 signed $auto$wreduce.cc:454:run$2870
+  wire width 32 signed $auto$wreduce.cc:454:run$2882
   attribute \src "rvfi_testbench.sv:36.41-36.57"
-  wire width 32 $auto$wreduce.cc:454:run$2871
+  wire width 32 $auto$wreduce.cc:454:run$2883
   attribute \src "rvfi_testbench.sv:29.19-29.38"
   wire $eq$rvfi_testbench.sv:29$3_Y
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
@@ -140,14 +129,6 @@ module \rvfi_testbench
   wire $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_CHECK[0:0]$113
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
   wire $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_EN[0:0]$114
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
-  wire $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_CHECK[0:0]$115
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
-  wire $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_EN[0:0]$116
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
-  wire $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:153$40_CHECK[0:0]$117
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
-  wire $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:153$40_EN[0:0]$118
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
   wire $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:154$41_CHECK[0:0]$119
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:123.3-181.6"
@@ -210,72 +191,56 @@ module \rvfi_testbench
   wire $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.8-130.14"
   wire $flatten\checker_inst.$logic_not$rvfi_insn_check.sv:130$176_Y
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:150.11-150.29"
-  wire $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189_Y
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:153.11-153.29"
-  wire $flatten\checker_inst.$ne$rvfi_insn_check.sv:153$191_Y
-  wire $flatten\checker_inst.$procmux$1073_Y
-  wire $flatten\checker_inst.$procmux$1078_Y
+  wire $flatten\checker_inst.$procmux$1003_Y
+  wire $flatten\checker_inst.$procmux$1008_Y
   wire $flatten\checker_inst.$procmux$1087_Y
   wire $flatten\checker_inst.$procmux$1092_Y
-  wire $flatten\checker_inst.$procmux$1115_Y
-  wire $flatten\checker_inst.$procmux$1120_Y
-  wire $flatten\checker_inst.$procmux$494_Y
-  wire $flatten\checker_inst.$procmux$502_Y
-  wire $flatten\checker_inst.$procmux$510_Y
-  wire $flatten\checker_inst.$procmux$518_Y
-  wire $flatten\checker_inst.$procmux$527_Y
-  wire $flatten\checker_inst.$procmux$529_Y
-  wire $flatten\checker_inst.$procmux$538_Y
-  wire $flatten\checker_inst.$procmux$540_Y
-  wire $flatten\checker_inst.$procmux$549_Y
-  wire $flatten\checker_inst.$procmux$551_Y
-  wire $flatten\checker_inst.$procmux$560_Y
-  wire $flatten\checker_inst.$procmux$562_Y
-  wire $flatten\checker_inst.$procmux$571_Y
-  wire $flatten\checker_inst.$procmux$580_Y
-  wire $flatten\checker_inst.$procmux$598_Y
-  wire $flatten\checker_inst.$procmux$616_Y
-  wire $flatten\checker_inst.$procmux$695_Y
-  wire $flatten\checker_inst.$procmux$700_Y
+  wire $flatten\checker_inst.$procmux$1101_Y
+  wire $flatten\checker_inst.$procmux$1106_Y
+  wire $flatten\checker_inst.$procmux$1129_Y
+  wire $flatten\checker_inst.$procmux$1134_Y
+  wire $flatten\checker_inst.$procmux$508_Y
+  wire $flatten\checker_inst.$procmux$516_Y
+  wire $flatten\checker_inst.$procmux$524_Y
+  wire $flatten\checker_inst.$procmux$532_Y
+  wire $flatten\checker_inst.$procmux$585_Y
+  wire $flatten\checker_inst.$procmux$594_Y
+  wire $flatten\checker_inst.$procmux$612_Y
+  wire $flatten\checker_inst.$procmux$630_Y
   wire $flatten\checker_inst.$procmux$709_Y
   wire $flatten\checker_inst.$procmux$714_Y
-  wire $flatten\checker_inst.$procmux$737_Y
-  wire $flatten\checker_inst.$procmux$742_Y
-  wire $flatten\checker_inst.$procmux$821_Y
-  wire $flatten\checker_inst.$procmux$826_Y
+  wire $flatten\checker_inst.$procmux$723_Y
+  wire $flatten\checker_inst.$procmux$728_Y
+  wire $flatten\checker_inst.$procmux$751_Y
+  wire $flatten\checker_inst.$procmux$756_Y
   wire $flatten\checker_inst.$procmux$835_Y
   wire $flatten\checker_inst.$procmux$840_Y
-  wire $flatten\checker_inst.$procmux$863_Y
-  wire $flatten\checker_inst.$procmux$868_Y
-  wire $flatten\checker_inst.$procmux$947_Y
-  wire $flatten\checker_inst.$procmux$952_Y
+  wire $flatten\checker_inst.$procmux$849_Y
+  wire $flatten\checker_inst.$procmux$854_Y
+  wire $flatten\checker_inst.$procmux$877_Y
+  wire $flatten\checker_inst.$procmux$882_Y
   wire $flatten\checker_inst.$procmux$961_Y
   wire $flatten\checker_inst.$procmux$966_Y
-  wire $flatten\checker_inst.$procmux$989_Y
-  wire $flatten\checker_inst.$procmux$994_Y
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:51.34-51.58|rvfi_insn_check.sv:66.17-90.4"
-  wire width 32 $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$251_Y
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:51.61-51.78|rvfi_insn_check.sv:66.17-90.4"
-  wire width 32 $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$252_Y
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:52.54-52.76|rvfi_insn_check.sv:66.17-90.4"
-  wire $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$256_Y
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:52.80-52.106|rvfi_insn_check.sv:66.17-90.4"
-  wire $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$258_Y
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:52.23-52.76|rvfi_insn_check.sv:66.17-90.4"
-  wire $flatten\checker_inst.\insn_spec.$logic_and$insn_beq.v:52$257_Y
+  wire $flatten\checker_inst.$procmux$975_Y
+  wire $flatten\checker_inst.$procmux$980_Y
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:51.41-51.58|rvfi_insn_check.sv:66.17-90.4"
+  wire width 32 $flatten\checker_inst.\insn_spec.$add$insn_jal.v:51$255_Y
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:49.54-49.80|rvfi_insn_check.sv:66.17-90.4"
+  wire $flatten\checker_inst.\insn_spec.$eq$insn_jal.v:49$253_Y
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:51.26-51.62|rvfi_insn_check.sv:66.17-90.4"
+  wire $flatten\checker_inst.\insn_spec.$reduce_bool$insn_jal.v:51$256_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:174.5-179.8|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 5 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_ADDR[4:0]$294
+  wire width 5 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_ADDR[4:0]$292
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:174.5-179.8|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_DATA[31:0]$295
+  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_DATA[31:0]$293
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:174.5-179.8|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296
+  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:174.5-179.8|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 5 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_ADDR[4:0]$297
+  wire width 5 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_ADDR[4:0]$295
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:174.5-179.8|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_DATA[31:0]$298
+  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_DATA[31:0]$296
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:174.5-179.8|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299
+  wire width 32 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   wire width 4 $flatten\wrapper.\uut.$10\alu_ctrl[3:0]
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
@@ -391,147 +356,171 @@ module \rvfi_testbench
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   wire $flatten\wrapper.\uut.$9\src_1_sel[0:0]
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119.51-119.70|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 64 $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$285_Y
+  wire width 64 $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$283_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215.45-215.82|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire width 33 signed $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215$316_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281.36-281.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$331_Y
+  wire width 32 $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$329_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462.51-462.73|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$354_Y
+  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$352_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464.46-464.68|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356_Y
+  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$354_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464.46-464.80|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$357_Y
+  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$355_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464.46-464.92|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$358_Y
+  wire $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:158.38-158.58|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:158$289_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227.39-227.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$323_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$321_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$334_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.53-394.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$335_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.73-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$339_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$343_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.54|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$346_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$368_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.59-529.75|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$381_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$379_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.99-529.115|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$385_Y
+  wire $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$383_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.59-440.97|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$351_Y
+  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$349_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
+  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
+  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.93|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374_Y
+  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.38-529.174|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392_Y
+  wire $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.75|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$382_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$380_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.95|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$384_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$382_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.115|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$386_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$384_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.135|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$388_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$386_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.155|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$388_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633.45-633.81|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$403_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633.45-633.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$405_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178.33-178.36|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$309_DATA
+  wire width 32 $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$307_DATA
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183.57-183.60|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$312_DATA
+  wire width 32 $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$310_DATA
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184.57-184.60|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire width 32 $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184$313_DATA
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411.45-411.62|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$341_Y
+  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$339_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.53-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$346_Y
+  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$344_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.77-440.97|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
+  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.53-470.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$360_Y
+  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$358_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.73-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$362_Y
+  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$360_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591.52-591.73|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$398_Y
+  wire $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$396_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462.51-462.61|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$353_Y
+  wire $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$351_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588.45-588.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$397_Y
+  wire $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$395_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274.36-274.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$330_Y
+  wire width 32 $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$328_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485.94-485.115|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365_Y
-  wire $flatten\wrapper.\uut.$procmux$1168_CMP
-  wire $flatten\wrapper.\uut.$procmux$1273_CMP
-  wire $flatten\wrapper.\uut.$procmux$1412_CMP
-  wire $flatten\wrapper.\uut.$procmux$1906_CMP
-  wire $flatten\wrapper.\uut.$procmux$2052_CMP
-  wire $flatten\wrapper.\uut.$procmux$2392_CMP
-  wire $flatten\wrapper.\uut.$procmux$2545_CMP
-  wire $flatten\wrapper.\uut.$procmux$2546_CMP
-  wire $flatten\wrapper.\uut.$procmux$2548_CMP
-  wire $flatten\wrapper.\uut.$procmux$2675_CMP
-  wire $flatten\wrapper.\uut.$procmux$2676_CMP
-  wire $flatten\wrapper.\uut.$procmux$2677_CMP
-  wire $flatten\wrapper.\uut.$procmux$2678_CMP
-  wire $flatten\wrapper.\uut.$procmux$2681_CMP
-  wire $flatten\wrapper.\uut.$procmux$2688_CMP
+  wire $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$363_Y
+  wire $flatten\wrapper.\uut.$procmux$1182_CMP
+  wire $flatten\wrapper.\uut.$procmux$1287_CMP
+  wire $flatten\wrapper.\uut.$procmux$1426_CMP
+  wire $flatten\wrapper.\uut.$procmux$1920_CMP
+  wire $flatten\wrapper.\uut.$procmux$2066_CMP
+  wire $flatten\wrapper.\uut.$procmux$2406_CMP
+  wire $flatten\wrapper.\uut.$procmux$2559_CMP
+  wire $flatten\wrapper.\uut.$procmux$2560_CMP
+  wire $flatten\wrapper.\uut.$procmux$2562_CMP
   wire $flatten\wrapper.\uut.$procmux$2689_CMP
   wire $flatten\wrapper.\uut.$procmux$2690_CMP
   wire $flatten\wrapper.\uut.$procmux$2691_CMP
   wire $flatten\wrapper.\uut.$procmux$2692_CMP
-  wire $flatten\wrapper.\uut.$procmux$2693_CMP
-  wire $flatten\wrapper.\uut.$procmux$2708_CMP
-  wire $flatten\wrapper.\uut.$procmux$2709_CMP
-  wire $flatten\wrapper.\uut.$procmux$2710_CMP
-  wire $flatten\wrapper.\uut.$procmux$2711_CMP
-  wire $flatten\wrapper.\uut.$procmux$2712_CMP
-  wire $flatten\wrapper.\uut.$procmux$2713_CMP
-  wire $flatten\wrapper.\uut.$procmux$2714_CMP
-  wire $flatten\wrapper.\uut.$procmux$2715_CMP
-  wire $flatten\wrapper.\uut.$procmux$2716_CMP
-  wire $flatten\wrapper.\uut.$procmux$2717_CMP
-  wire $flatten\wrapper.\uut.$procmux$2760_CMP
-  wire $flatten\wrapper.\uut.$procmux$2761_CMP
-  wire $flatten\wrapper.\uut.$procmux$2762_CMP
-  wire $flatten\wrapper.\uut.$procmux$2763_CMP
-  wire $flatten\wrapper.\uut.$procmux$2764_CMP
-  wire $flatten\wrapper.\uut.$procmux$2767_CMP
-  wire $flatten\wrapper.\uut.$procmux$2770_CMP
-  wire $flatten\wrapper.\uut.$procmux$2772_CMP
-  wire $flatten\wrapper.\uut.$procmux$2773_CMP
+  wire $flatten\wrapper.\uut.$procmux$2695_CMP
+  wire $flatten\wrapper.\uut.$procmux$2702_CMP
+  wire $flatten\wrapper.\uut.$procmux$2703_CMP
+  wire $flatten\wrapper.\uut.$procmux$2704_CMP
+  wire $flatten\wrapper.\uut.$procmux$2705_CMP
+  wire $flatten\wrapper.\uut.$procmux$2706_CMP
+  wire $flatten\wrapper.\uut.$procmux$2707_CMP
+  wire $flatten\wrapper.\uut.$procmux$2719_CMP
+  wire $flatten\wrapper.\uut.$procmux$2722_CMP
+  wire $flatten\wrapper.\uut.$procmux$2723_CMP
+  wire $flatten\wrapper.\uut.$procmux$2724_CMP
+  wire $flatten\wrapper.\uut.$procmux$2725_CMP
+  wire $flatten\wrapper.\uut.$procmux$2726_CMP
+  wire $flatten\wrapper.\uut.$procmux$2727_CMP
+  wire $flatten\wrapper.\uut.$procmux$2728_CMP
+  wire $flatten\wrapper.\uut.$procmux$2729_CMP
+  wire $flatten\wrapper.\uut.$procmux$2730_CMP
   wire $flatten\wrapper.\uut.$procmux$2774_CMP
   wire $flatten\wrapper.\uut.$procmux$2775_CMP
+  wire $flatten\wrapper.\uut.$procmux$2776_CMP
+  wire $flatten\wrapper.\uut.$procmux$2777_CMP
+  wire $flatten\wrapper.\uut.$procmux$2778_CMP
+  wire $flatten\wrapper.\uut.$procmux$2781_CMP
+  wire $flatten\wrapper.\uut.$procmux$2784_CMP
+  wire $flatten\wrapper.\uut.$procmux$2786_CMP
   wire $flatten\wrapper.\uut.$procmux$2787_CMP
+  wire $flatten\wrapper.\uut.$procmux$2788_CMP
+  wire $flatten\wrapper.\uut.$procmux$2789_CMP
+  wire $flatten\wrapper.\uut.$procmux$2801_CMP
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259.36-259.79|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 signed $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$328_Y
+  wire width 32 signed $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$326_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266.36-266.80|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 signed $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$329_Y
+  wire width 32 signed $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$327_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219.38-219.104|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$319_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411.44-411.77|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$342_Y
+  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$340_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420.51-420.84|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$344_Y
+  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$342_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485.41-485.123|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 4 $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$367_Y
+  wire width 4 $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591.51-591.88|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$399_Y
+  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$397_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633.44-633.113|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$406_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:638.42-638.113|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire width 2 $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:638$412_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:645.51-645.120|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:645$418_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219.40-219.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$317_Y
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219.80-219.103|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$318_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253.36-253.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire width 32 $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$327_Y
+  wire width 32 $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$325_Y
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582.50-582.68|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  wire $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$396_Y
+  wire $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$394_Y
   attribute \src "rvfi_testbench.sv:0.0-0.0"
   wire $initstate$2_wire
   attribute \hdlname "checker_inst check"
@@ -551,86 +540,77 @@ module \rvfi_testbench
   attribute \hdlname "checker_inst insn_pma_x"
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:92.8-92.18"
   wire \checker_inst.insn_pma_x
-  attribute \hdlname "checker_inst insn_spec cond"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:50.8-50.12|rvfi_insn_check.sv:66.17-90.4"
-  wire \checker_inst.insn_spec.cond
   attribute \hdlname "checker_inst insn_spec ialign16"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:45.8-45.16|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:43.8-43.16|rvfi_insn_check.sv:66.17-90.4"
   wire \checker_inst.insn_spec.ialign16
-  attribute \hdlname "checker_inst insn_spec insn_funct3"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:33.14-33.25|rvfi_insn_check.sv:66.17-90.4"
-  wire width 3 \checker_inst.insn_spec.insn_funct3
   attribute \hdlname "checker_inst insn_spec insn_imm"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:30.17-30.25|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:30.17-30.25|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.insn_imm
   attribute \hdlname "checker_inst insn_spec insn_opcode"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:34.14-34.25|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:32.14-32.25|rvfi_insn_check.sv:66.17-90.4"
   wire width 7 \checker_inst.insn_spec.insn_opcode
   attribute \hdlname "checker_inst insn_spec insn_padding"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:29.17-29.29|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:29.17-29.29|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.insn_padding
-  attribute \hdlname "checker_inst insn_spec insn_rs1"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:32.14-32.22|rvfi_insn_check.sv:66.17-90.4"
-  wire width 5 \checker_inst.insn_spec.insn_rs1
-  attribute \hdlname "checker_inst insn_spec insn_rs2"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:31.14-31.22|rvfi_insn_check.sv:66.17-90.4"
-  wire width 5 \checker_inst.insn_spec.insn_rs2
+  attribute \hdlname "checker_inst insn_spec insn_rd"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:31.14-31.21|rvfi_insn_check.sv:66.17-90.4"
+  wire width 5 \checker_inst.insn_spec.insn_rd
   attribute \hdlname "checker_inst insn_spec misa_ok"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:41.8-41.15|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:39.8-39.15|rvfi_insn_check.sv:66.17-90.4"
   wire \checker_inst.insn_spec.misa_ok
   attribute \hdlname "checker_inst insn_spec next_pc"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:51.17-51.24|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:48.17-48.24|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.next_pc
   attribute \hdlname "checker_inst insn_spec rvfi_insn"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:5.25-5.34|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:5.25-5.34|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.rvfi_insn
   attribute \hdlname "checker_inst insn_spec rvfi_mem_rdata"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:9.25-9.39|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:9.25-9.39|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.rvfi_mem_rdata
   attribute \hdlname "checker_inst insn_spec rvfi_pc_rdata"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:6.25-6.38|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:6.25-6.38|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.rvfi_pc_rdata
   attribute \hdlname "checker_inst insn_spec rvfi_rs1_rdata"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:7.25-7.39|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:7.25-7.39|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.rvfi_rs1_rdata
   attribute \hdlname "checker_inst insn_spec rvfi_rs2_rdata"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:8.25-8.39|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:8.25-8.39|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.rvfi_rs2_rdata
   attribute \hdlname "checker_inst insn_spec rvfi_valid"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:4.41-4.51|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:4.41-4.51|rvfi_insn_check.sv:66.17-90.4"
   wire \checker_inst.insn_spec.rvfi_valid
   attribute \hdlname "checker_inst insn_spec spec_mem_addr"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:22.25-22.38|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:22.25-22.38|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.spec_mem_addr
   attribute \hdlname "checker_inst insn_spec spec_mem_rmask"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:23.25-23.39|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:23.25-23.39|rvfi_insn_check.sv:66.17-90.4"
   wire width 4 \checker_inst.insn_spec.spec_mem_rmask
   attribute \hdlname "checker_inst insn_spec spec_mem_wdata"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:25.25-25.39|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:25.25-25.39|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.spec_mem_wdata
   attribute \hdlname "checker_inst insn_spec spec_mem_wmask"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:24.25-24.39|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:24.25-24.39|rvfi_insn_check.sv:66.17-90.4"
   wire width 4 \checker_inst.insn_spec.spec_mem_wmask
   attribute \hdlname "checker_inst insn_spec spec_pc_wdata"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:21.25-21.38|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:21.25-21.38|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.spec_pc_wdata
   attribute \hdlname "checker_inst insn_spec spec_rd_addr"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:19.41-19.53|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:19.41-19.53|rvfi_insn_check.sv:66.17-90.4"
   wire width 5 \checker_inst.insn_spec.spec_rd_addr
   attribute \hdlname "checker_inst insn_spec spec_rd_wdata"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:20.25-20.38|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:20.25-20.38|rvfi_insn_check.sv:66.17-90.4"
   wire width 32 \checker_inst.insn_spec.spec_rd_wdata
   attribute \hdlname "checker_inst insn_spec spec_rs1_addr"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:17.41-17.54|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:17.41-17.54|rvfi_insn_check.sv:66.17-90.4"
   wire width 5 \checker_inst.insn_spec.spec_rs1_addr
   attribute \hdlname "checker_inst insn_spec spec_rs2_addr"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:18.41-18.54|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:18.41-18.54|rvfi_insn_check.sv:66.17-90.4"
   wire width 5 \checker_inst.insn_spec.spec_rs2_addr
   attribute \hdlname "checker_inst insn_spec spec_trap"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:16.41-16.50|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:16.41-16.50|rvfi_insn_check.sv:66.17-90.4"
   wire \checker_inst.insn_spec.spec_trap
   attribute \hdlname "checker_inst insn_spec spec_valid"
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:15.41-15.51|rvfi_insn_check.sv:66.17-90.4"
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:15.41-15.51|rvfi_insn_check.sv:66.17-90.4"
   wire \checker_inst.insn_spec.spec_valid
   attribute \hdlname "checker_inst intr"
   attribute \keep 1
@@ -998,6 +978,9 @@ module \rvfi_testbench
   attribute \hdlname "wrapper uut b_flag"
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:17.11-17.17|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   wire \wrapper.uut.b_flag
+  attribute \hdlname "wrapper uut carry"
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:206.11-206.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire \wrapper.uut.carry
   attribute \hdlname "wrapper uut clk"
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:3.25-3.28|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   wire \wrapper.uut.clk
@@ -1028,6 +1011,9 @@ module \rvfi_testbench
   attribute \hdlname "wrapper uut ld_ctrl"
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:25.17-25.24|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   wire width 3 \wrapper.uut.ld_ctrl
+  attribute \hdlname "wrapper uut o_flag"
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:16.11-16.17|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  wire \wrapper.uut.o_flag
   attribute \hdlname "wrapper uut opcode"
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:28.17-28.23|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   wire width 7 \wrapper.uut.opcode
@@ -1173,7 +1159,7 @@ module \rvfi_testbench
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 8
     connect \A \cycle_reg
-    connect \B $auto$wreduce.cc:454:run$2871 [0]
+    connect \B $auto$wreduce.cc:454:run$2883 [0]
     connect \Y $add$rvfi_testbench.sv:36$9_Y
   end
   attribute \src "rvfi_testbench.sv:26.1273-29.39"
@@ -1200,7 +1186,7 @@ module \rvfi_testbench
     parameter \SRST_VALUE 64'0000000000000000000000000000000000000000000000000000000000000000
     parameter \WIDTH 64
     connect \CLK \clock
-    connect \D $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$285_Y
+    connect \D $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$283_Y
     connect \Q \wrapper.uut.instr_index
     connect \SRST \reset
   end
@@ -1216,50 +1202,26 @@ module \rvfi_testbench
     connect \Q \wrapper.uut.pc
     connect \SRST \reset
   end
-  cell $reduce_or $auto$opt_reduce.cc:128:opt_mux$2857
+  cell $reduce_or $auto$opt_reduce.cc:128:opt_mux$2871
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \Y_WIDTH 1
-    connect \A { $flatten\wrapper.\uut.$procmux$2546_CMP $flatten\wrapper.\uut.$procmux$2545_CMP }
-    connect \Y $auto$opt_reduce.cc:134:opt_mux$2856
+    connect \A { $flatten\wrapper.\uut.$procmux$2560_CMP $flatten\wrapper.\uut.$procmux$2559_CMP }
+    connect \Y $auto$opt_reduce.cc:134:opt_mux$2870
   end
-  cell $reduce_or $auto$opt_reduce.cc:128:opt_mux$2859
+  cell $reduce_or $auto$opt_reduce.cc:128:opt_mux$2873
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \Y_WIDTH 1
-    connect \A { $flatten\wrapper.\uut.$procmux$2548_CMP $flatten\wrapper.\uut.$procmux$2546_CMP $flatten\wrapper.\uut.$procmux$2545_CMP }
-    connect \Y $auto$opt_reduce.cc:134:opt_mux$2860
+    connect \A { $flatten\wrapper.\uut.$procmux$2562_CMP $flatten\wrapper.\uut.$procmux$2560_CMP $flatten\wrapper.\uut.$procmux$2559_CMP }
+    connect \Y $auto$opt_reduce.cc:134:opt_mux$2874
   end
-  cell $reduce_or $auto$opt_reduce.cc:128:opt_mux$2861
+  cell $reduce_or $auto$opt_reduce.cc:128:opt_mux$2875
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \Y_WIDTH 1
-    connect \A { $flatten\wrapper.\uut.$procmux$2678_CMP $flatten\wrapper.\uut.$procmux$2675_CMP }
-    connect \Y $auto$opt_reduce.cc:134:opt_mux$2862
-  end
-  cell $anyseq $auto$setundef.cc:501:execute$2872
-    parameter \WIDTH 1
-    connect \Y $auto$rtlil.cc:3097:Anyseq$2873
-  end
-  cell $anyseq $auto$setundef.cc:501:execute$2874
-    parameter \WIDTH 1
-    connect \Y $auto$rtlil.cc:3097:Anyseq$2875
-  end
-  cell $anyseq $auto$setundef.cc:501:execute$2876
-    parameter \WIDTH 1
-    connect \Y $auto$rtlil.cc:3097:Anyseq$2877
-  end
-  cell $anyseq $auto$setundef.cc:501:execute$2878
-    parameter \WIDTH 1
-    connect \Y $auto$rtlil.cc:3097:Anyseq$2879
-  end
-  cell $anyseq $auto$setundef.cc:501:execute$2880
-    parameter \WIDTH 1
-    connect \Y $auto$rtlil.cc:3097:Anyseq$2881
-  end
-  cell $anyseq $auto$setundef.cc:501:execute$2882
-    parameter \WIDTH 1
-    connect \Y $auto$rtlil.cc:3097:Anyseq$2883
+    connect \A { $flatten\wrapper.\uut.$procmux$2692_CMP $flatten\wrapper.\uut.$procmux$2689_CMP }
+    connect \Y $auto$opt_reduce.cc:134:opt_mux$2876
   end
   cell $anyseq $auto$setundef.cc:501:execute$2884
     parameter \WIDTH 1
@@ -1665,7 +1627,7 @@ module \rvfi_testbench
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:133.57-134.18"
   cell $assert $flatten\checker_inst.$assert$rvfi_insn_check.sv:133$216
-    connect \A $auto$rtlil.cc:3097:Anyseq$2873
+    connect \A $auto$rtlil.cc:3097:Anyseq$2885
     connect \EN 1'0
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:143.24-144.29"
@@ -1677,16 +1639,6 @@ module \rvfi_testbench
   cell $assert $flatten\checker_inst.$assert$rvfi_insn_check.sv:146$221
     connect \A $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_CHECK[0:0]$113
     connect \EN $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_EN[0:0]$114
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:150.30-151.41"
-  cell $assert $flatten\checker_inst.$assert$rvfi_insn_check.sv:150$222
-    connect \A $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_CHECK[0:0]$115
-    connect \EN $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_EN[0:0]$116
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:153.30-154.41"
-  cell $assert $flatten\checker_inst.$assert$rvfi_insn_check.sv:153$223
-    connect \A $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:153$40_CHECK[0:0]$117
-    connect \EN $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:153$40_EN[0:0]$118
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:154.42-156.38"
   cell $assert $flatten\checker_inst.$assert$rvfi_insn_check.sv:154$224
@@ -1786,19 +1738,25 @@ module \rvfi_testbench
     connect \Y $flatten\checker_inst.$eq$rvfi_insn_check.sv:147$187_Y
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:156.14-156.37"
-  cell $logic_not $flatten\checker_inst.$eq$rvfi_insn_check.sv:156$193
+  cell $eq $flatten\checker_inst.$eq$rvfi_insn_check.sv:156$193
     parameter \A_SIGNED 0
     parameter \A_WIDTH 5
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 5
     parameter \Y_WIDTH 1
-    connect \A \checker_inst.rd_addr
+    connect \A \wrapper.uut.instr [11:7]
+    connect \B \checker_inst.rd_addr
     connect \Y $flatten\checker_inst.$eq$rvfi_insn_check.sv:156$193_Y
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:157.14-157.39"
-  cell $logic_not $flatten\checker_inst.$eq$rvfi_insn_check.sv:157$194
+  cell $eq $flatten\checker_inst.$eq$rvfi_insn_check.sv:157$194
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 32
     parameter \Y_WIDTH 1
-    connect \A \checker_inst.rd_wdata
+    connect \A \checker_inst.spec_rd_wdata
+    connect \B \checker_inst.rd_wdata
     connect \Y $flatten\checker_inst.$eq$rvfi_insn_check.sv:157$194_Y
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:158.47-158.72"
@@ -1897,103 +1855,113 @@ module \rvfi_testbench
     connect \A \checker_inst.reset
     connect \Y $flatten\checker_inst.$logic_not$rvfi_insn_check.sv:130$176_Y
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:150.11-150.29"
-  cell $reduce_bool $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 5
-    parameter \Y_WIDTH 1
-    connect \A \wrapper.uut.instr [19:15]
-    connect \Y $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189_Y
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:153.11-153.29"
-  cell $reduce_bool $flatten\checker_inst.$ne$rvfi_insn_check.sv:153$191
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 5
-    parameter \Y_WIDTH 1
-    connect \A \wrapper.uut.instr [24:20]
-    connect \Y $flatten\checker_inst.$ne$rvfi_insn_check.sv:153$191_Y
-  end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$1073
+  cell $mux $flatten\checker_inst.$procmux$1003
     parameter \WIDTH 1
-    connect \A 1'0
-    connect \B 1'1
-    connect \S \checker_inst.mem_wmask [3]
-    connect \Y $flatten\checker_inst.$procmux$1073_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2887
+    connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$207_Y
+    connect \S \checker_inst.mem_wmask [2]
+    connect \Y $flatten\checker_inst.$procmux$1003_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$1078
+  cell $mux $flatten\checker_inst.$procmux$1008
     parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$1073_Y
-    connect \B 1'0
+    connect \A $flatten\checker_inst.$procmux$1003_Y
+    connect \B $auto$rtlil.cc:3097:Anyseq$2889
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$1078_Y
+    connect \Y $flatten\checker_inst.$procmux$1008_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$1083
+  cell $mux $flatten\checker_inst.$procmux$1013
     parameter \WIDTH 1
-    connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$1078_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2891
+    connect \B $flatten\checker_inst.$procmux$1008_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$62_EN[0:0]$162
+    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$58_CHECK[0:0]$153
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$1087
+  cell $mux $flatten\checker_inst.$procmux$1101
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2875
+    connect \A $auto$rtlil.cc:3097:Anyseq$2893
     connect \B \checker_inst.rvfi_mem_rmask [3]
     connect \S \checker_inst.mem_wmask [3]
-    connect \Y $flatten\checker_inst.$procmux$1087_Y
+    connect \Y $flatten\checker_inst.$procmux$1101_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$1092
+  cell $mux $flatten\checker_inst.$procmux$1106
     parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$1087_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2877
+    connect \A $flatten\checker_inst.$procmux$1101_Y
+    connect \B $auto$rtlil.cc:3097:Anyseq$2895
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$1092_Y
+    connect \Y $flatten\checker_inst.$procmux$1106_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$1097
+  cell $mux $flatten\checker_inst.$procmux$1111
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2879
-    connect \B $flatten\checker_inst.$procmux$1092_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2897
+    connect \B $flatten\checker_inst.$procmux$1106_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$62_CHECK[0:0]$161
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
   cell $mux $flatten\checker_inst.$procmux$1115
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2881
-    connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$209_Y
+    connect \A 1'0
+    connect \B 1'1
     connect \S \checker_inst.mem_wmask [3]
-    connect \Y $flatten\checker_inst.$procmux$1115_Y
+    connect \Y $flatten\checker_inst.$procmux$1087_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
   cell $mux $flatten\checker_inst.$procmux$1120
     parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$1115_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2883
+    connect \A $flatten\checker_inst.$procmux$1087_Y
+    connect \B 1'0
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$1120_Y
+    connect \Y $flatten\checker_inst.$procmux$1092_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
   cell $mux $flatten\checker_inst.$procmux$1125
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2885
-    connect \B $flatten\checker_inst.$procmux$1120_Y
+    connect \A 1'0
+    connect \B $flatten\checker_inst.$procmux$1092_Y
+    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
+    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$62_EN[0:0]$162
+  end
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
+  cell $mux $flatten\checker_inst.$procmux$1129
+    parameter \WIDTH 1
+    connect \A $auto$rtlil.cc:3097:Anyseq$2899
+    connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$209_Y
+    connect \S \checker_inst.mem_wmask [3]
+    connect \Y $flatten\checker_inst.$procmux$1129_Y
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
+  cell $mux $flatten\checker_inst.$procmux$1134
+    parameter \WIDTH 1
+    connect \A $flatten\checker_inst.$procmux$1129_Y
+    connect \B $auto$rtlil.cc:3097:Anyseq$2901
+    connect \S \checker_inst.spec_trap
+    connect \Y $flatten\checker_inst.$procmux$1134_Y
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
+  cell $mux $flatten\checker_inst.$procmux$1139
+    parameter \WIDTH 1
+    connect \A $auto$rtlil.cc:3097:Anyseq$2903
+    connect \B $flatten\checker_inst.$procmux$1134_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$63_CHECK[0:0]$163
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$1153
+  cell $mux $flatten\checker_inst.$procmux$1167
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
@@ -2002,297 +1970,167 @@ module \rvfi_testbench
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$1159
+  cell $mux $flatten\checker_inst.$procmux$1173
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2887
+    connect \A $auto$rtlil.cc:3097:Anyseq$2905
     connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:178$210_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:176$65_CHECK[0:0]$167
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$443
+  cell $mux $flatten\checker_inst.$procmux$457
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2889
+    connect \A $auto$rtlil.cc:3097:Anyseq$2907
     connect \B \checker_inst.spec_valid
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:130$32_CHECK[0:0]$101
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:143.6-144.30|rvfi_insn_check.sv:143.10-143.23"
-  cell $mux $flatten\checker_inst.$procmux$494
+  cell $mux $flatten\checker_inst.$procmux$508
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
     connect \S $flatten\checker_inst.$eq$rvfi_insn_check.sv:143$184_Y
-    connect \Y $flatten\checker_inst.$procmux$494_Y
+    connect \Y $flatten\checker_inst.$procmux$508_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$499
+  cell $mux $flatten\checker_inst.$procmux$513
     parameter \WIDTH 1
     connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$494_Y
+    connect \B $flatten\checker_inst.$procmux$508_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:143$37_EN[0:0]$112
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:143.6-144.30|rvfi_insn_check.sv:143.10-143.23"
-  cell $mux $flatten\checker_inst.$procmux$502
+  cell $mux $flatten\checker_inst.$procmux$516
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2891
+    connect \A $auto$rtlil.cc:3097:Anyseq$2909
     connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:144$185_Y
     connect \S $flatten\checker_inst.$eq$rvfi_insn_check.sv:143$184_Y
-    connect \Y $flatten\checker_inst.$procmux$502_Y
+    connect \Y $flatten\checker_inst.$procmux$516_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$507
+  cell $mux $flatten\checker_inst.$procmux$521
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2893
-    connect \B $flatten\checker_inst.$procmux$502_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2911
+    connect \B $flatten\checker_inst.$procmux$516_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:143$37_CHECK[0:0]$111
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:146.6-147.30|rvfi_insn_check.sv:146.10-146.23"
-  cell $mux $flatten\checker_inst.$procmux$510
+  cell $mux $flatten\checker_inst.$procmux$524
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
     connect \S $flatten\checker_inst.$eq$rvfi_insn_check.sv:146$186_Y
-    connect \Y $flatten\checker_inst.$procmux$510_Y
+    connect \Y $flatten\checker_inst.$procmux$524_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$515
+  cell $mux $flatten\checker_inst.$procmux$529
     parameter \WIDTH 1
     connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$510_Y
+    connect \B $flatten\checker_inst.$procmux$524_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_EN[0:0]$114
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:146.6-147.30|rvfi_insn_check.sv:146.10-146.23"
-  cell $mux $flatten\checker_inst.$procmux$518
+  cell $mux $flatten\checker_inst.$procmux$532
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2895
+    connect \A $auto$rtlil.cc:3097:Anyseq$2913
     connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:147$187_Y
     connect \S $flatten\checker_inst.$eq$rvfi_insn_check.sv:146$186_Y
-    connect \Y $flatten\checker_inst.$procmux$518_Y
+    connect \Y $flatten\checker_inst.$procmux$532_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$523
+  cell $mux $flatten\checker_inst.$procmux$537
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2897
-    connect \B $flatten\checker_inst.$procmux$518_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2915
+    connect \B $flatten\checker_inst.$procmux$532_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_CHECK[0:0]$113
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:150.7-151.42|rvfi_insn_check.sv:150.11-150.29"
-  cell $mux $flatten\checker_inst.$procmux$527
-    parameter \WIDTH 1
-    connect \A 1'0
-    connect \B 1'1
-    connect \S $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189_Y
-    connect \Y $flatten\checker_inst.$procmux$527_Y
-  end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$529
-    parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$527_Y
-    connect \B 1'0
-    connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$529_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$534
-    parameter \WIDTH 1
-    connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$529_Y
-    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_EN[0:0]$116
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:150.7-151.42|rvfi_insn_check.sv:150.11-150.29"
-  cell $mux $flatten\checker_inst.$procmux$538
-    parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2899
-    connect \B 1'1
-    connect \S $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189_Y
-    connect \Y $flatten\checker_inst.$procmux$538_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$540
-    parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$538_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2901
-    connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$540_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$545
-    parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2903
-    connect \B $flatten\checker_inst.$procmux$540_Y
-    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_CHECK[0:0]$115
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:153.7-154.42|rvfi_insn_check.sv:153.11-153.29"
-  cell $mux $flatten\checker_inst.$procmux$549
-    parameter \WIDTH 1
-    connect \A 1'0
-    connect \B 1'1
-    connect \S $flatten\checker_inst.$ne$rvfi_insn_check.sv:153$191_Y
-    connect \Y $flatten\checker_inst.$procmux$549_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$551
-    parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$549_Y
-    connect \B 1'0
-    connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$551_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$556
-    parameter \WIDTH 1
-    connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$551_Y
-    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:153$40_EN[0:0]$118
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:153.7-154.42|rvfi_insn_check.sv:153.11-153.29"
-  cell $mux $flatten\checker_inst.$procmux$560
-    parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2905
-    connect \B 1'1
-    connect \S $flatten\checker_inst.$ne$rvfi_insn_check.sv:153$191_Y
-    connect \Y $flatten\checker_inst.$procmux$560_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$562
-    parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$560_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2907
-    connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$562_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$567
-    parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2909
-    connect \B $flatten\checker_inst.$procmux$562_Y
-    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:153$40_CHECK[0:0]$117
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$571
+  cell $mux $flatten\checker_inst.$procmux$585
     parameter \WIDTH 1
     connect \A 1'1
     connect \B 1'0
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$571_Y
+    connect \Y $flatten\checker_inst.$procmux$585_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$576
+  cell $mux $flatten\checker_inst.$procmux$590
     parameter \WIDTH 1
     connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$571_Y
+    connect \B $flatten\checker_inst.$procmux$585_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:154$41_EN[0:0]$120
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$580
+  cell $mux $flatten\checker_inst.$procmux$594
     parameter \WIDTH 1
     connect \A $flatten\checker_inst.$eq$rvfi_insn_check.sv:156$193_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2911
+    connect \B $auto$rtlil.cc:3097:Anyseq$2917
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$580_Y
+    connect \Y $flatten\checker_inst.$procmux$594_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$585
+  cell $mux $flatten\checker_inst.$procmux$599
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2913
-    connect \B $flatten\checker_inst.$procmux$580_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2919
+    connect \B $flatten\checker_inst.$procmux$594_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:154$41_CHECK[0:0]$119
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$598
+  cell $mux $flatten\checker_inst.$procmux$612
     parameter \WIDTH 1
     connect \A $flatten\checker_inst.$eq$rvfi_insn_check.sv:157$194_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2915
+    connect \B $auto$rtlil.cc:3097:Anyseq$2921
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$598_Y
+    connect \Y $flatten\checker_inst.$procmux$612_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$603
+  cell $mux $flatten\checker_inst.$procmux$617
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2917
-    connect \B $flatten\checker_inst.$procmux$598_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2923
+    connect \B $flatten\checker_inst.$procmux$612_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:156$42_CHECK[0:0]$121
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$616
+  cell $mux $flatten\checker_inst.$procmux$630
     parameter \WIDTH 1
     connect \A $flatten\checker_inst.$eq$rvfi_insn_check.sv:158$195_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2919
+    connect \B $auto$rtlil.cc:3097:Anyseq$2925
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$616_Y
+    connect \Y $flatten\checker_inst.$procmux$630_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$621
+  cell $mux $flatten\checker_inst.$procmux$635
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2921
-    connect \B $flatten\checker_inst.$procmux$616_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2927
+    connect \B $flatten\checker_inst.$procmux$630_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:157$43_CHECK[0:0]$123
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$695
+  cell $mux $flatten\checker_inst.$procmux$709
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
-    connect \S \checker_inst.mem_wmask [0]
-    connect \Y $flatten\checker_inst.$procmux$695_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$700
-    parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$695_Y
-    connect \B 1'0
-    connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$700_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$705
-    parameter \WIDTH 1
-    connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$700_Y
-    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$47_EN[0:0]$132
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$709
-    parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2923
-    connect \B \checker_inst.rvfi_mem_rmask [0]
     connect \S \checker_inst.mem_wmask [0]
     connect \Y $flatten\checker_inst.$procmux$709_Y
   end
@@ -2301,7 +2139,7 @@ module \rvfi_testbench
   cell $mux $flatten\checker_inst.$procmux$714
     parameter \WIDTH 1
     connect \A $flatten\checker_inst.$procmux$709_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2925
+    connect \B 1'0
     connect \S \checker_inst.spec_trap
     connect \Y $flatten\checker_inst.$procmux$714_Y
   end
@@ -2309,68 +2147,68 @@ module \rvfi_testbench
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
   cell $mux $flatten\checker_inst.$procmux$719
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2927
+    connect \A 1'0
     connect \B $flatten\checker_inst.$procmux$714_Y
+    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
+    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$47_EN[0:0]$132
+  end
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
+  cell $mux $flatten\checker_inst.$procmux$723
+    parameter \WIDTH 1
+    connect \A $auto$rtlil.cc:3097:Anyseq$2929
+    connect \B \checker_inst.rvfi_mem_rmask [0]
+    connect \S \checker_inst.mem_wmask [0]
+    connect \Y $flatten\checker_inst.$procmux$723_Y
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
+  cell $mux $flatten\checker_inst.$procmux$728
+    parameter \WIDTH 1
+    connect \A $flatten\checker_inst.$procmux$723_Y
+    connect \B $auto$rtlil.cc:3097:Anyseq$2931
+    connect \S \checker_inst.spec_trap
+    connect \Y $flatten\checker_inst.$procmux$728_Y
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
+  cell $mux $flatten\checker_inst.$procmux$733
+    parameter \WIDTH 1
+    connect \A $auto$rtlil.cc:3097:Anyseq$2933
+    connect \B $flatten\checker_inst.$procmux$728_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$47_CHECK[0:0]$131
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$737
+  cell $mux $flatten\checker_inst.$procmux$751
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2929
+    connect \A $auto$rtlil.cc:3097:Anyseq$2935
     connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$203_Y
     connect \S \checker_inst.mem_wmask [0]
-    connect \Y $flatten\checker_inst.$procmux$737_Y
+    connect \Y $flatten\checker_inst.$procmux$751_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$742
+  cell $mux $flatten\checker_inst.$procmux$756
     parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$737_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2931
+    connect \A $flatten\checker_inst.$procmux$751_Y
+    connect \B $auto$rtlil.cc:3097:Anyseq$2937
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$742_Y
+    connect \Y $flatten\checker_inst.$procmux$756_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$747
+  cell $mux $flatten\checker_inst.$procmux$761
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2933
-    connect \B $flatten\checker_inst.$procmux$742_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2939
+    connect \B $flatten\checker_inst.$procmux$756_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$48_CHECK[0:0]$133
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$821
+  cell $mux $flatten\checker_inst.$procmux$835
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
-    connect \S \checker_inst.mem_wmask [1]
-    connect \Y $flatten\checker_inst.$procmux$821_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$826
-    parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$821_Y
-    connect \B 1'0
-    connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$826_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$831
-    parameter \WIDTH 1
-    connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$826_Y
-    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$52_EN[0:0]$142
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$835
-    parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2935
-    connect \B \checker_inst.rvfi_mem_rmask [1]
     connect \S \checker_inst.mem_wmask [1]
     connect \Y $flatten\checker_inst.$procmux$835_Y
   end
@@ -2379,7 +2217,7 @@ module \rvfi_testbench
   cell $mux $flatten\checker_inst.$procmux$840
     parameter \WIDTH 1
     connect \A $flatten\checker_inst.$procmux$835_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2937
+    connect \B 1'0
     connect \S \checker_inst.spec_trap
     connect \Y $flatten\checker_inst.$procmux$840_Y
   end
@@ -2387,68 +2225,68 @@ module \rvfi_testbench
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
   cell $mux $flatten\checker_inst.$procmux$845
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2939
+    connect \A 1'0
     connect \B $flatten\checker_inst.$procmux$840_Y
+    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
+    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$52_EN[0:0]$142
+  end
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
+  cell $mux $flatten\checker_inst.$procmux$849
+    parameter \WIDTH 1
+    connect \A $auto$rtlil.cc:3097:Anyseq$2941
+    connect \B \checker_inst.rvfi_mem_rmask [1]
+    connect \S \checker_inst.mem_wmask [1]
+    connect \Y $flatten\checker_inst.$procmux$849_Y
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
+  cell $mux $flatten\checker_inst.$procmux$854
+    parameter \WIDTH 1
+    connect \A $flatten\checker_inst.$procmux$849_Y
+    connect \B $auto$rtlil.cc:3097:Anyseq$2943
+    connect \S \checker_inst.spec_trap
+    connect \Y $flatten\checker_inst.$procmux$854_Y
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
+  cell $mux $flatten\checker_inst.$procmux$859
+    parameter \WIDTH 1
+    connect \A $auto$rtlil.cc:3097:Anyseq$2945
+    connect \B $flatten\checker_inst.$procmux$854_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$52_CHECK[0:0]$141
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$863
+  cell $mux $flatten\checker_inst.$procmux$877
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2941
+    connect \A $auto$rtlil.cc:3097:Anyseq$2947
     connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$205_Y
     connect \S \checker_inst.mem_wmask [1]
-    connect \Y $flatten\checker_inst.$procmux$863_Y
+    connect \Y $flatten\checker_inst.$procmux$877_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$868
+  cell $mux $flatten\checker_inst.$procmux$882
     parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$863_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2943
+    connect \A $flatten\checker_inst.$procmux$877_Y
+    connect \B $auto$rtlil.cc:3097:Anyseq$2949
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$868_Y
+    connect \Y $flatten\checker_inst.$procmux$882_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$873
+  cell $mux $flatten\checker_inst.$procmux$887
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2945
-    connect \B $flatten\checker_inst.$procmux$868_Y
+    connect \A $auto$rtlil.cc:3097:Anyseq$2951
+    connect \B $flatten\checker_inst.$procmux$882_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
     connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$53_CHECK[0:0]$143
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$947
+  cell $mux $flatten\checker_inst.$procmux$961
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
-    connect \S \checker_inst.mem_wmask [2]
-    connect \Y $flatten\checker_inst.$procmux$947_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$952
-    parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$947_Y
-    connect \B 1'0
-    connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$952_Y
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$957
-    parameter \WIDTH 1
-    connect \A 1'0
-    connect \B $flatten\checker_inst.$procmux$952_Y
-    connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_EN[0:0]$152
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$961
-    parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2947
-    connect \B \checker_inst.rvfi_mem_rmask [2]
     connect \S \checker_inst.mem_wmask [2]
     connect \Y $flatten\checker_inst.$procmux$961_Y
   end
@@ -2457,7 +2295,7 @@ module \rvfi_testbench
   cell $mux $flatten\checker_inst.$procmux$966
     parameter \WIDTH 1
     connect \A $flatten\checker_inst.$procmux$961_Y
-    connect \B $auto$rtlil.cc:3097:Anyseq$2949
+    connect \B 1'0
     connect \S \checker_inst.spec_trap
     connect \Y $flatten\checker_inst.$procmux$966_Y
   end
@@ -2465,66 +2303,50 @@ module \rvfi_testbench
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
   cell $mux $flatten\checker_inst.$procmux$971
     parameter \WIDTH 1
-    connect \A $auto$rtlil.cc:3097:Anyseq$2951
+    connect \A 1'0
     connect \B $flatten\checker_inst.$procmux$966_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_CHECK[0:0]$151
+    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_EN[0:0]$152
   end
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.17-171.11|rvfi_insn_check.sv:168.21-168.33"
-  cell $mux $flatten\checker_inst.$procmux$989
+  cell $mux $flatten\checker_inst.$procmux$975
     parameter \WIDTH 1
     connect \A $auto$rtlil.cc:3097:Anyseq$2953
-    connect \B $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$207_Y
+    connect \B \checker_inst.rvfi_mem_rmask [2]
     connect \S \checker_inst.mem_wmask [2]
-    connect \Y $flatten\checker_inst.$procmux$989_Y
+    connect \Y $flatten\checker_inst.$procmux$975_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:149.6-176.9|rvfi_insn_check.sv:149.10-149.20"
-  cell $mux $flatten\checker_inst.$procmux$994
+  cell $mux $flatten\checker_inst.$procmux$980
     parameter \WIDTH 1
-    connect \A $flatten\checker_inst.$procmux$989_Y
+    connect \A $flatten\checker_inst.$procmux$975_Y
     connect \B $auto$rtlil.cc:3097:Anyseq$2955
     connect \S \checker_inst.spec_trap
-    connect \Y $flatten\checker_inst.$procmux$994_Y
+    connect \Y $flatten\checker_inst.$procmux$980_Y
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.4-180.7|rvfi_insn_check.sv:130.8-130.23"
-  cell $mux $flatten\checker_inst.$procmux$999
+  cell $mux $flatten\checker_inst.$procmux$985
     parameter \WIDTH 1
     connect \A $auto$rtlil.cc:3097:Anyseq$2957
-    connect \B $flatten\checker_inst.$procmux$994_Y
+    connect \B $flatten\checker_inst.$procmux$980_Y
     connect \S $flatten\checker_inst.$logic_and$rvfi_insn_check.sv:130$177_Y
-    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$58_CHECK[0:0]$153
+    connect \Y $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_CHECK[0:0]$151
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:63.54-63.88"
-  cell $mux $flatten\checker_inst.$ternary$rvfi_insn_check.sv:63$69
-    parameter \WIDTH 32
-    connect \A 0
-    connect \B \checker_inst.rs1_rdata
-    connect \S $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189_Y
-    connect \Y \checker_inst.insn_spec.rvfi_rs1_rdata
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:64.54-64.88"
-  cell $mux $flatten\checker_inst.$ternary$rvfi_insn_check.sv:64$71
-    parameter \WIDTH 32
-    connect \A 0
-    connect \B \checker_inst.mem_wdata
-    connect \S $flatten\checker_inst.$ne$rvfi_insn_check.sv:153$191_Y
-    connect \Y \checker_inst.insn_spec.rvfi_rs2_rdata
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:51.34-51.58|rvfi_insn_check.sv:66.17-90.4"
-  cell $add $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$251
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:48.27-48.51|rvfi_insn_check.sv:66.17-90.4"
+  cell $add $flatten\checker_inst.\insn_spec.$add$insn_jal.v:48$250
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
     parameter \B_WIDTH 32
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.pc
-    connect \B { \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [7] \wrapper.uut.instr [30:25] \wrapper.uut.instr [11:8] 1'0 }
-    connect \Y $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$251_Y
+    connect \B { \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [19:12] \wrapper.uut.instr [20] \wrapper.uut.instr [30:21] 1'0 }
+    connect \Y \checker_inst.spec_pc_wdata
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:51.61-51.78|rvfi_insn_check.sv:66.17-90.4"
-  cell $add $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$252
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:51.41-51.58|rvfi_insn_check.sv:66.17-90.4"
+  cell $add $flatten\checker_inst.\insn_spec.$add$insn_jal.v:51$255
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -2532,90 +2354,68 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.pc
     connect \B 3'100
-    connect \Y $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$252_Y
+    connect \Y $flatten\checker_inst.\insn_spec.$add$insn_jal.v:51$255_Y
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:50.15-50.47|rvfi_insn_check.sv:66.17-90.4"
-  cell $eq $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:50$250
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 32
-    parameter \B_SIGNED 0
-    parameter \B_WIDTH 32
-    parameter \Y_WIDTH 1
-    connect \A \checker_inst.insn_spec.rvfi_rs1_rdata
-    connect \B \checker_inst.insn_spec.rvfi_rs2_rdata
-    connect \Y \checker_inst.insn_spec.cond
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:52.54-52.76|rvfi_insn_check.sv:66.17-90.4"
-  cell $logic_not $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$256
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 3
-    parameter \Y_WIDTH 1
-    connect \A \wrapper.uut.instr [14:12]
-    connect \Y $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$256_Y
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:52.80-52.106|rvfi_insn_check.sv:66.17-90.4"
-  cell $eq $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$258
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:49.54-49.80|rvfi_insn_check.sv:66.17-90.4"
+  cell $eq $flatten\checker_inst.\insn_spec.$eq$insn_jal.v:49$253
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
     parameter \B_WIDTH 7
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [6:0]
-    connect \B 7'1100011
-    connect \Y $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$258_Y
+    connect \B 7'1101111
+    connect \Y $flatten\checker_inst.\insn_spec.$eq$insn_jal.v:49$253_Y
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:52.23-52.76|rvfi_insn_check.sv:66.17-90.4"
-  cell $logic_and $flatten\checker_inst.\insn_spec.$logic_and$insn_beq.v:52$257
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:49.23-49.80|rvfi_insn_check.sv:66.17-90.4"
+  cell $logic_and $flatten\checker_inst.\insn_spec.$logic_and$insn_jal.v:49$254
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \checker_inst.valid
-    connect \B $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$256_Y
-    connect \Y $flatten\checker_inst.\insn_spec.$logic_and$insn_beq.v:52$257_Y
-  end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:52.23-52.106|rvfi_insn_check.sv:66.17-90.4"
-  cell $logic_and $flatten\checker_inst.\insn_spec.$logic_and$insn_beq.v:52$259
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 1
-    parameter \B_SIGNED 0
-    parameter \B_WIDTH 1
-    parameter \Y_WIDTH 1
-    connect \A $flatten\checker_inst.\insn_spec.$logic_and$insn_beq.v:52$257_Y
-    connect \B $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$258_Y
+    connect \B $flatten\checker_inst.\insn_spec.$eq$insn_jal.v:49$253_Y
     connect \Y \checker_inst.spec_valid
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:56.55-56.72|rvfi_insn_check.sv:66.17-90.4"
-  cell $reduce_bool $flatten\checker_inst.\insn_spec.$ne$insn_beq.v:56$261
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:53.55-53.72|rvfi_insn_check.sv:66.17-90.4"
+  cell $reduce_bool $flatten\checker_inst.\insn_spec.$ne$insn_jal.v:53$259
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \Y_WIDTH 1
     connect \A \checker_inst.spec_pc_wdata [1:0]
     connect \Y \checker_inst.spec_trap
   end
-  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_beq.v:51.27-51.78|rvfi_insn_check.sv:66.17-90.4"
-  cell $mux $flatten\checker_inst.\insn_spec.$ternary$insn_beq.v:51$253
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:51.26-51.62|rvfi_insn_check.sv:66.17-90.4"
+  cell $reduce_bool $flatten\checker_inst.\insn_spec.$reduce_bool$insn_jal.v:51$256
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 5
+    parameter \Y_WIDTH 1
+    connect \A \wrapper.uut.instr [11:7]
+    connect \Y $flatten\checker_inst.\insn_spec.$reduce_bool$insn_jal.v:51$256_Y
+  end
+  attribute \src "rvfi_testbench.sv:39.18-57.3|insn_jal.v:51.26-51.62|rvfi_insn_check.sv:66.17-90.4"
+  cell $mux $flatten\checker_inst.\insn_spec.$ternary$insn_jal.v:51$257
     parameter \WIDTH 32
-    connect \A $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$252_Y
-    connect \B $flatten\checker_inst.\insn_spec.$add$insn_beq.v:51$251_Y
-    connect \S \checker_inst.insn_spec.cond
-    connect \Y \checker_inst.spec_pc_wdata
+    connect \A 0
+    connect \B $flatten\checker_inst.\insn_spec.$add$insn_jal.v:51$255_Y
+    connect \S $flatten\checker_inst.\insn_spec.$reduce_bool$insn_jal.v:51$256_Y
+    connect \Y \checker_inst.spec_rd_wdata
   end
   attribute \reg "instr"
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:0.0-0.0"
-  cell $anyseq $flatten\wrapper.$anyseq$265
+  cell $anyseq $flatten\wrapper.$anyseq$263
     parameter \WIDTH 32
     connect \Y \wrapper.uut.instr
   end
   attribute \reg "rd_data"
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:0.0-0.0"
-  cell $anyseq $flatten\wrapper.$anyseq$266
+  cell $anyseq $flatten\wrapper.$anyseq$264
     parameter \WIDTH 32
     connect \Y \checker_inst.mem_rdata
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119.51-119.70|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$285
+  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$283
     parameter \A_SIGNED 0
     parameter \A_WIDTH 64
     parameter \B_SIGNED 0
@@ -2623,21 +2423,21 @@ module \rvfi_testbench
     parameter \Y_WIDTH 64
     connect \A \wrapper.uut.instr_index
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$285_Y
+    connect \Y $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$283_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215.45-215.82|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215$318
+  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215$316
     parameter \A_SIGNED 1
     parameter \A_WIDTH 32
     parameter \B_SIGNED 1
     parameter \B_WIDTH 32
-    parameter \Y_WIDTH 32
+    parameter \Y_WIDTH 33
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2
-    connect \Y $auto$wreduce.cc:454:run$2865 [31:0]
+    connect \Y $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215$316_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:85.24-85.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:85$274
+  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:85$272
     parameter \A_SIGNED 1
     parameter \A_WIDTH 32
     parameter \B_SIGNED 1
@@ -2648,7 +2448,7 @@ module \rvfi_testbench
     connect \Y \wrapper.uut.pc_plus_4
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:90.37-90.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:90$275
+  cell $add $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:90$273
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -2659,7 +2459,7 @@ module \rvfi_testbench
     connect \Y \wrapper.uut.target
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281.36-281.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$331
+  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$329
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -2667,62 +2467,70 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2
-    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$331_Y
+    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$329_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462.51-462.73|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$354
+  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$352
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$353_Y
+    connect \A $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$351_Y
     connect \B \wrapper.uut.instr [12]
-    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$354_Y
+    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$352_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464.46-464.68|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356
+  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$354
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14]
-    connect \B $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$353_Y
-    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356_Y
+    connect \B $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$351_Y
+    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$354_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464.46-464.80|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$357
+  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$355
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356_Y
+    connect \A $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$354_Y
     connect \B \wrapper.uut.instr [12]
-    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$357_Y
+    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$355_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464.46-464.92|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$358
+  cell $and $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$357_Y
+    connect \A $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$355_Y
     connect \B \wrapper.uut.instr [30]
-    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$358_Y
+    connect \Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:158.38-158.58|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_not $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:158$289
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 5
+    parameter \Y_WIDTH 1
+    connect \A \checker_inst.rd_addr
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:158$289_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227.39-227.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_not $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$323
+  cell $logic_not $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$321
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \Y_WIDTH 1
-    connect \A $auto$wreduce.cc:454:run$2870
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$323_Y
+    connect \A $auto$wreduce.cc:454:run$2882
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$321_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336
+  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$334
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -2730,10 +2538,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 2'11
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$334_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.53-394.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337
+  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$335
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -2741,10 +2549,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 3'110
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337_Y
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$335_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.73-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$339
+  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -2752,10 +2560,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 3'111
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$339_Y
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345
+  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$343
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -2763,10 +2571,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$343_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.54|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348
+  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$346
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -2774,10 +2582,18 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 3'101
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348_Y
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$346_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_not $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$368
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 3
+    parameter \Y_WIDTH 1
+    connect \A \wrapper.uut.instr [14:12]
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$368_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.59-529.75|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$381
+  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$379
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -2785,10 +2601,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 2'10
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$381_Y
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$379_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.99-529.115|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$385
+  cell $eq $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$383
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -2796,119 +2612,130 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 3'100
-    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$385_Y
+    connect \Y $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$383_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347
+  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
-    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$346_Y
-    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$343_Y
+    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$344_Y
+    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.59-440.97|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$351
+  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$349
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$346_Y
-    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
-    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$351_Y
+    connect \A $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$344_Y
+    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348_Y
+    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$349_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352
+  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348_Y
-    connect \B $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$351_Y
-    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$346_Y
+    connect \B $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$349_Y
+    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
+    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$358_Y
+    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \A $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
     connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$360_Y
     connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
   end
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 1
-    parameter \B_SIGNED 0
-    parameter \B_WIDTH 1
-    parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
-    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$362_Y
-    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
-  end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.93|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374
+  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\checker_inst.\insn_spec.$eq$insn_beq.v:52$256_Y
-    connect \B $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$351_Y
-    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374_Y
+    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$368_Y
+    connect \B $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$349_Y
+    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.38-529.174|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392
+  cell $logic_and $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
-    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$346_Y
-    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392_Y
+    connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$388_Y
+    connect \B $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$344_Y
+    connect \Y $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$334_Y
+    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$335_Y
+    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
+    connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
     connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337_Y
     connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
   end
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.75|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$380
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
-    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$339_Y
-    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
+    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$343_Y
+    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$379_Y
+    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$380_Y
   end
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.75|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.95|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$382
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
-    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$381_Y
+    connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$380_Y
+    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$334_Y
     connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$382_Y
   end
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.95|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.115|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$384
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
@@ -2916,10 +2743,10 @@ module \rvfi_testbench
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$382_Y
-    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
+    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$383_Y
     connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$384_Y
   end
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.115|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.135|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$386
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
@@ -2927,10 +2754,10 @@ module \rvfi_testbench
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$384_Y
-    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$385_Y
+    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$335_Y
     connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$386_Y
   end
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.135|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.155|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$388
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
@@ -2941,30 +2768,41 @@ module \rvfi_testbench
     connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$337_Y
     connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$388_Y
   end
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.39-529.155|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 1
-    parameter \B_SIGNED 0
-    parameter \B_WIDTH 1
-    parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$388_Y
-    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$339_Y
-    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
-  end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395
+  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$381_Y
-    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$336_Y
-    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+    connect \A $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$379_Y
+    connect \B $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$334_Y
+    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633.45-633.81|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$403
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$339_Y
+    connect \B \wrapper.uut.o_flag
+    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$403_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633.45-633.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_or $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$405
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$403_Y
+    connect \B \wrapper.uut.carry
+    connect \Y $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$405_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:239.37-239.74|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $lt $flatten\wrapper.\uut.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:239$325
+  cell $lt $flatten\wrapper.\uut.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:239$323
     parameter \A_SIGNED 1
     parameter \A_WIDTH 32
     parameter \B_SIGNED 1
@@ -2972,10 +2810,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2
-    connect \Y $auto$wreduce.cc:454:run$2866 [0]
+    connect \Y $auto$wreduce.cc:454:run$2879 [0]
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:246.37-246.78|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $lt $flatten\wrapper.\uut.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:246$326
+  cell $lt $flatten\wrapper.\uut.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:246$324
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -2983,26 +2821,26 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2
-    connect \Y $auto$wreduce.cc:454:run$2867 [0]
+    connect \Y $auto$wreduce.cc:454:run$2880 [0]
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411.45-411.62|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$341
+  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$339
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.addr [1:0]
-    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$341_Y
+    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$339_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.53-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$346
+  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$344
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [31:25]
-    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$346_Y
+    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$344_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.77-440.97|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $ne $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350
+  cell $ne $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3010,18 +2848,18 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [31:25]
     connect \B 6'100000
-    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
+    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$348_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359
+  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
-    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.53-470.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $ne $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$360
+  cell $ne $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$358
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3029,10 +2867,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$360_Y
+    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$358_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.73-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $ne $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$362
+  cell $ne $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$360
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3040,18 +2878,18 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14:12]
     connect \B 2'10
-    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$362_Y
+    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$360_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591.52-591.73|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$398
+  cell $reduce_bool $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$396
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \Y_WIDTH 1
     connect \A \checker_inst.pc_wdata [1:0]
-    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$398_Y
+    connect \Y $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$396_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:37.25-37.31|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $not $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:37$271
+  cell $not $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:37$269
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
@@ -3059,23 +2897,23 @@ module \rvfi_testbench
     connect \Y \checker_inst.rvfi_valid
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462.51-462.61|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $not $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$353
+  cell $not $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$351
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [13]
-    connect \Y $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$353_Y
+    connect \Y $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$351_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588.45-588.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $not $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$397
+  cell $not $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$395
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [14]
-    connect \Y $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$397_Y
+    connect \Y $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$395_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274.36-274.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $or $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$330
+  cell $or $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$328
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -3083,10 +2921,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2
-    connect \Y $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$330_Y
+    connect \Y $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$328_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485.94-485.115|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $or $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365
+  cell $or $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$363
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
@@ -3094,20 +2932,20 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [13]
     connect \B \wrapper.uut.instr [12]
-    connect \Y $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365_Y
+    connect \Y $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$363_Y
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1165
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1179
     parameter \WIDTH 1
-    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$399_Y
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:645$418_Y
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$1168_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$1182_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3115,83 +2953,83 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 7'1100111
-    connect \Y $flatten\wrapper.\uut.$procmux$1168_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$1182_CMP
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1181
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1195
     parameter \WIDTH 4
     connect \A 4'0000
     connect \B $auto$rtlil.cc:3097:Anyseq$2959
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\alu_ctrl[3:0]
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1201
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1215
     parameter \WIDTH 3
     connect \A 3'000
     connect \B $auto$rtlil.cc:3097:Anyseq$2961
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\imm_sel[2:0]
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1221
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1235
     parameter \WIDTH 3
     connect \A 3'010
     connect \B $auto$rtlil.cc:3097:Anyseq$2963
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\rd_data_sel[2:0]
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1229
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1243
     parameter \WIDTH 2
-    connect \A 2'11
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:638$412_Y
     connect \B 2'00
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\pc_sel[1:0]
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1237
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1251
     parameter \WIDTH 1
     connect \A 1'1
     connect \B $auto$rtlil.cc:3097:Anyseq$2965
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\src_2_sel[0:0]
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1245
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1259
     parameter \WIDTH 1
     connect \A 1'0
     connect \B $auto$rtlil.cc:3097:Anyseq$2967
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\src_1_sel[0:0]
   end
   attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.33-615.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:615.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1253
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.33-616.49|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:616.29-646.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$1267
     parameter \WIDTH 1
-    connect \A 1'1
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$406_Y
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$359_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$357_Y
     connect \Y $flatten\wrapper.\uut.$10\rf_wr_en[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.29-592.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1270
+  cell $mux $flatten\wrapper.\uut.$procmux$1284
     parameter \WIDTH 1
-    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$399_Y
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$397_Y
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
     connect \Y $flatten\wrapper.\uut.$9\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$1273_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$1287_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3199,74 +3037,74 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 7'1100011
-    connect \Y $flatten\wrapper.\uut.$procmux$1273_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$1287_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.29-592.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1290
+  cell $mux $flatten\wrapper.\uut.$procmux$1304
     parameter \WIDTH 4
-    connect \A { $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$397_Y 1'0 \wrapper.uut.instr [14:13] }
+    connect \A { $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$395_Y 1'0 \wrapper.uut.instr [14:13] }
     connect \B $auto$rtlil.cc:3097:Anyseq$2969
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
     connect \Y $flatten\wrapper.\uut.$9\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.29-592.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1312
+  cell $mux $flatten\wrapper.\uut.$procmux$1326
     parameter \WIDTH 3
     connect \A 3'011
     connect \B $auto$rtlil.cc:3097:Anyseq$2971
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
     connect \Y $flatten\wrapper.\uut.$9\imm_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.29-592.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1334
+  cell $mux $flatten\wrapper.\uut.$procmux$1348
     parameter \WIDTH 3
     connect \A 3'100
     connect \B $auto$rtlil.cc:3097:Anyseq$2973
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
     connect \Y $flatten\wrapper.\uut.$9\rd_data_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.29-592.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1344
+  cell $mux $flatten\wrapper.\uut.$procmux$1358
     parameter \WIDTH 1
-    connect \A $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$396_Y
+    connect \A $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$394_Y
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
-    connect \Y $auto$wreduce.cc:454:run$2864 [0]
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
+    connect \Y $auto$wreduce.cc:454:run$2878 [0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.29-592.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1354
+  cell $mux $flatten\wrapper.\uut.$procmux$1368
     parameter \WIDTH 1
     connect \A 1'0
     connect \B $auto$rtlil.cc:3097:Anyseq$2975
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
     connect \Y $flatten\wrapper.\uut.$9\src_1_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.33-560.69|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560.29-592.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1392
+  cell $mux $flatten\wrapper.\uut.$procmux$1406
     parameter \WIDTH 1
     connect \A 1'1
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$395_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:560$393_Y
     connect \Y $flatten\wrapper.\uut.$2\rd_addr_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.38-529.174|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1403
+  cell $mux $flatten\wrapper.\uut.$procmux$1417
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
     connect \Y $flatten\wrapper.\uut.$8\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$1412_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$1426_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3274,146 +3112,146 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 6'110011
-    connect \Y $flatten\wrapper.\uut.$procmux$1412_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$1426_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.38-529.174|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1437
+  cell $mux $flatten\wrapper.\uut.$procmux$1451
     parameter \WIDTH 4
     connect \A { \wrapper.uut.instr [30] \wrapper.uut.instr [14:12] }
     connect \B $auto$rtlil.cc:3097:Anyseq$2977
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
     connect \Y $flatten\wrapper.\uut.$8\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.38-529.174|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1502
+  cell $mux $flatten\wrapper.\uut.$procmux$1516
     parameter \WIDTH 3
     connect \A 3'000
     connect \B $auto$rtlil.cc:3097:Anyseq$2979
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
     connect \Y $flatten\wrapper.\uut.$8\rd_data_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.38-529.174|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1535
+  cell $mux $flatten\wrapper.\uut.$procmux$1549
     parameter \WIDTH 1
     connect \A 1'0
     connect \B $auto$rtlil.cc:3097:Anyseq$2981
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
     connect \Y $flatten\wrapper.\uut.$8\src_1_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.38-529.174|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1569
+  cell $mux $flatten\wrapper.\uut.$procmux$1583
     parameter \WIDTH 1
     connect \A 1'1
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$392_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:529$390_Y
     connect \Y $flatten\wrapper.\uut.$8\rf_wr_en[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.38-515.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1602
+  cell $mux $flatten\wrapper.\uut.$procmux$1616
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$8\ctrl_instr_trap[0:0]
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$7\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.38-515.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1630
+  cell $mux $flatten\wrapper.\uut.$procmux$1644
     parameter \WIDTH 4
     connect \A $flatten\wrapper.\uut.$8\alu_ctrl[3:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$2983
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$7\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.38-515.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1686
+  cell $mux $flatten\wrapper.\uut.$procmux$1700
     parameter \WIDTH 3
     connect \A $flatten\wrapper.\uut.$8\rd_data_sel[2:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$2985
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$7\rd_data_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.38-515.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1714
+  cell $mux $flatten\wrapper.\uut.$procmux$1728
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$8\src_1_sel[0:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$2987
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$7\src_1_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.38-515.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:515.34-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1742
+  cell $mux $flatten\wrapper.\uut.$procmux$1756
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$8\rf_wr_en[0:0]
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$7\rf_wr_en[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.93|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.29-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1770
+  cell $mux $flatten\wrapper.\uut.$procmux$1784
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$7\ctrl_instr_trap[0:0]
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372_Y
     connect \Y $flatten\wrapper.\uut.$6\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.93|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.29-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1792
+  cell $mux $flatten\wrapper.\uut.$procmux$1806
     parameter \WIDTH 4
     connect \A $flatten\wrapper.\uut.$7\alu_ctrl[3:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$2989
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372_Y
     connect \Y $flatten\wrapper.\uut.$6\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.93|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.29-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1836
+  cell $mux $flatten\wrapper.\uut.$procmux$1850
     parameter \WIDTH 3
     connect \A $flatten\wrapper.\uut.$7\rd_data_sel[2:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$2991
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372_Y
     connect \Y $flatten\wrapper.\uut.$6\rd_data_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.93|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.29-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1858
+  cell $mux $flatten\wrapper.\uut.$procmux$1872
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$7\src_1_sel[0:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$2993
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372_Y
     connect \Y $flatten\wrapper.\uut.$6\src_1_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.33-501.93|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501.29-554.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1880
+  cell $mux $flatten\wrapper.\uut.$procmux$1894
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$7\rf_wr_en[0:0]
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$374_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:501$372_Y
     connect \Y $flatten\wrapper.\uut.$6\rf_wr_en[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.29-496.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1903
+  cell $mux $flatten\wrapper.\uut.$procmux$1917
     parameter \WIDTH 1
-    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$344_Y
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$342_Y
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
     connect \Y $flatten\wrapper.\uut.$5\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$1906_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$1920_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3421,65 +3259,65 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 6'100011
-    connect \Y $flatten\wrapper.\uut.$procmux$1906_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$1920_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.29-496.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1927
+  cell $mux $flatten\wrapper.\uut.$procmux$1941
     parameter \WIDTH 4
     connect \A 4'0000
     connect \B $auto$rtlil.cc:3097:Anyseq$2995
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
     connect \Y $flatten\wrapper.\uut.$5\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.29-496.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1951
+  cell $mux $flatten\wrapper.\uut.$procmux$1965
     parameter \WIDTH 3
     connect \A 3'010
     connect \B $auto$rtlil.cc:3097:Anyseq$2997
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
     connect \Y $flatten\wrapper.\uut.$5\imm_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.29-496.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$1998
+  cell $mux $flatten\wrapper.\uut.$procmux$2012
     parameter \WIDTH 1
     connect \A 1'1
     connect \B $auto$rtlil.cc:3097:Anyseq$2999
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
     connect \Y $flatten\wrapper.\uut.$5\src_2_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.29-496.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2010
+  cell $mux $flatten\wrapper.\uut.$procmux$2024
     parameter \WIDTH 1
     connect \A 1'0
     connect \B $auto$rtlil.cc:3097:Anyseq$3001
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
     connect \Y $flatten\wrapper.\uut.$5\src_1_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.33-470.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470.29-496.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2033
+  cell $mux $flatten\wrapper.\uut.$procmux$2047
     parameter \WIDTH 4
-    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$367_Y
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365_Y
     connect \B 4'0000
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$363_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$361_Y
     connect \Y $flatten\wrapper.\uut.$5\wr_en[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.34-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2046
+  cell $mux $flatten\wrapper.\uut.$procmux$2060
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$4\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2052_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2066_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3487,137 +3325,137 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 5'10011
-    connect \Y $flatten\wrapper.\uut.$procmux$2052_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2066_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.34-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2078
+  cell $mux $flatten\wrapper.\uut.$procmux$2092
     parameter \WIDTH 4
-    connect \A { $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$358_Y \wrapper.uut.instr [14:12] }
+    connect \A { $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:464$356_Y \wrapper.uut.instr [14:12] }
     connect \B $auto$rtlil.cc:3097:Anyseq$3003
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$4\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.34-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2108
+  cell $mux $flatten\wrapper.\uut.$procmux$2122
     parameter \WIDTH 3
-    connect \A { 2'00 $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$354_Y }
+    connect \A { 2'00 $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:462$352_Y }
     connect \B $auto$rtlil.cc:3097:Anyseq$3005
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$4\imm_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.34-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2138
+  cell $mux $flatten\wrapper.\uut.$procmux$2152
     parameter \WIDTH 3
     connect \A 3'000
     connect \B $auto$rtlil.cc:3097:Anyseq$3007
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$4\rd_data_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.34-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2169
+  cell $mux $flatten\wrapper.\uut.$procmux$2183
     parameter \WIDTH 1
     connect \A 1'1
     connect \B $auto$rtlil.cc:3097:Anyseq$3009
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$4\src_2_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.34-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2185
+  cell $mux $flatten\wrapper.\uut.$procmux$2199
     parameter \WIDTH 1
     connect \A 1'0
     connect \B $auto$rtlil.cc:3097:Anyseq$3011
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$4\src_1_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.38-440.98|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440.34-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2201
+  cell $mux $flatten\wrapper.\uut.$procmux$2215
     parameter \WIDTH 1
     connect \A 1'1
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$352_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:440$350_Y
     connect \Y $flatten\wrapper.\uut.$4\rf_wr_en[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.29-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2232
+  cell $mux $flatten\wrapper.\uut.$procmux$2246
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$4\ctrl_instr_trap[0:0]
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
     connect \Y $flatten\wrapper.\uut.$3\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.29-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2258
+  cell $mux $flatten\wrapper.\uut.$procmux$2272
     parameter \WIDTH 4
     connect \A $flatten\wrapper.\uut.$4\alu_ctrl[3:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$3013
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
     connect \Y $flatten\wrapper.\uut.$3\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.29-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2284
+  cell $mux $flatten\wrapper.\uut.$procmux$2298
     parameter \WIDTH 3
     connect \A $flatten\wrapper.\uut.$4\imm_sel[2:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$3015
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
     connect \Y $flatten\wrapper.\uut.$3\imm_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.29-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2310
+  cell $mux $flatten\wrapper.\uut.$procmux$2324
     parameter \WIDTH 3
     connect \A $flatten\wrapper.\uut.$4\rd_data_sel[2:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$3017
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
     connect \Y $flatten\wrapper.\uut.$3\rd_data_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.29-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2336
+  cell $mux $flatten\wrapper.\uut.$procmux$2350
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$4\src_2_sel[0:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$3019
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
     connect \Y $flatten\wrapper.\uut.$3\src_2_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.29-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2349
+  cell $mux $flatten\wrapper.\uut.$procmux$2363
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$4\src_1_sel[0:0]
     connect \B $auto$rtlil.cc:3097:Anyseq$3021
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
     connect \Y $flatten\wrapper.\uut.$3\src_1_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.33-426.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426.29-465.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2362
+  cell $mux $flatten\wrapper.\uut.$procmux$2376
     parameter \WIDTH 1
     connect \A $flatten\wrapper.\uut.$4\rf_wr_en[0:0]
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$347_Y
+    connect \S $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:426$345_Y
     connect \Y $flatten\wrapper.\uut.$3\rf_wr_en[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2389
+  cell $mux $flatten\wrapper.\uut.$procmux$2403
     parameter \WIDTH 1
-    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$344_Y
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$342_Y
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
     connect \Y $flatten\wrapper.\uut.$2\ctrl_instr_trap[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2392_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2406_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3625,84 +3463,84 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 2'11
-    connect \Y $flatten\wrapper.\uut.$procmux$2392_CMP
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2417
-    parameter \WIDTH 4
-    connect \A 4'0000
-    connect \B $auto$rtlil.cc:3097:Anyseq$3023
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
-    connect \Y $flatten\wrapper.\uut.$2\alu_ctrl[3:0]
+    connect \Y $flatten\wrapper.\uut.$procmux$2406_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $mux $flatten\wrapper.\uut.$procmux$2431
-    parameter \WIDTH 3
-    connect \A \wrapper.uut.instr [14:12]
-    connect \B $auto$rtlil.cc:3097:Anyseq$3025
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
-    connect \Y $flatten\wrapper.\uut.$2\ld_ctrl[2:0]
+    parameter \WIDTH 4
+    connect \A 4'0000
+    connect \B $auto$rtlil.cc:3097:Anyseq$3023
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
+    connect \Y $flatten\wrapper.\uut.$2\alu_ctrl[3:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $mux $flatten\wrapper.\uut.$procmux$2445
     parameter \WIDTH 3
+    connect \A \wrapper.uut.instr [14:12]
+    connect \B $auto$rtlil.cc:3097:Anyseq$3025
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
+    connect \Y $flatten\wrapper.\uut.$2\ld_ctrl[2:0]
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$2459
+    parameter \WIDTH 3
     connect \A 3'000
     connect \B $auto$rtlil.cc:3097:Anyseq$3027
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
     connect \Y $flatten\wrapper.\uut.$2\imm_sel[2:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2471
+  cell $mux $flatten\wrapper.\uut.$procmux$2485
     parameter \WIDTH 3
     connect \A 3'001
     connect \B $auto$rtlil.cc:3097:Anyseq$3029
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
     connect \Y $flatten\wrapper.\uut.$2\rd_data_sel[2:0]
-  end
-  attribute \full_case 1
-  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2498
-    parameter \WIDTH 1
-    connect \A 1'1
-    connect \B $auto$rtlil.cc:3097:Anyseq$3031
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
-    connect \Y $flatten\wrapper.\uut.$2\src_2_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $mux $flatten\wrapper.\uut.$procmux$2512
     parameter \WIDTH 1
-    connect \A 1'0
-    connect \B $auto$rtlil.cc:3097:Anyseq$3033
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
-    connect \Y $flatten\wrapper.\uut.$2\src_1_sel[0:0]
+    connect \A 1'1
+    connect \B $auto$rtlil.cc:3097:Anyseq$3031
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
+    connect \Y $flatten\wrapper.\uut.$2\src_2_sel[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
   cell $mux $flatten\wrapper.\uut.$procmux$2526
     parameter \WIDTH 1
-    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$342_Y
+    connect \A 1'0
+    connect \B $auto$rtlil.cc:3097:Anyseq$3033
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
+    connect \Y $flatten\wrapper.\uut.$2\src_1_sel[0:0]
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.33-394.89|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394.29-421.32|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$procmux$2540
+    parameter \WIDTH 1
+    connect \A $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$340_Y
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$340_Y
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:394$338_Y
     connect \Y $flatten\wrapper.\uut.$2\rf_wr_en[0:0]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2544
+  cell $pmux $flatten\wrapper.\uut.$procmux$2558
     parameter \S_WIDTH 8
     parameter \WIDTH 1
     connect \A 1'1
-    connect \B { $flatten\wrapper.\uut.$2\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$3\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$5\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$6\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$9\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$399_Y $flatten\wrapper.\uut.$10\ctrl_instr_trap[0:0] 1'0 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2392_CMP $flatten\wrapper.\uut.$procmux$2052_CMP $flatten\wrapper.\uut.$procmux$1906_CMP $flatten\wrapper.\uut.$procmux$1412_CMP $flatten\wrapper.\uut.$procmux$1273_CMP $flatten\wrapper.\uut.$procmux$2548_CMP $flatten\wrapper.\uut.$procmux$1168_CMP $auto$opt_reduce.cc:134:opt_mux$2856 }
+    connect \B { $flatten\wrapper.\uut.$2\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$3\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$5\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$6\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$9\ctrl_instr_trap[0:0] $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$397_Y $flatten\wrapper.\uut.$10\ctrl_instr_trap[0:0] 1'0 }
+    connect \S { $flatten\wrapper.\uut.$procmux$2406_CMP $flatten\wrapper.\uut.$procmux$2066_CMP $flatten\wrapper.\uut.$procmux$1920_CMP $flatten\wrapper.\uut.$procmux$1426_CMP $flatten\wrapper.\uut.$procmux$1287_CMP $flatten\wrapper.\uut.$procmux$2562_CMP $flatten\wrapper.\uut.$procmux$1182_CMP $auto$opt_reduce.cc:134:opt_mux$2870 }
     connect \Y \checker_inst.trap
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2545_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2559_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3710,11 +3548,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 5'10111
-    connect \Y $flatten\wrapper.\uut.$procmux$2545_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2559_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2546_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2560_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3722,11 +3560,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 6'110111
-    connect \Y $flatten\wrapper.\uut.$procmux$2546_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2560_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2548_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2562_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 7
     parameter \B_SIGNED 0
@@ -3734,118 +3572,118 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.opcode
     connect \B 7'1101111
-    connect \Y $flatten\wrapper.\uut.$procmux$2548_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2562_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2566
+  cell $pmux $flatten\wrapper.\uut.$procmux$2580
     parameter \S_WIDTH 7
     parameter \WIDTH 4
     connect \A $auto$rtlil.cc:3097:Anyseq$3035
     connect \B { $flatten\wrapper.\uut.$2\alu_ctrl[3:0] $flatten\wrapper.\uut.$3\alu_ctrl[3:0] $flatten\wrapper.\uut.$5\alu_ctrl[3:0] $flatten\wrapper.\uut.$6\alu_ctrl[3:0] $flatten\wrapper.\uut.$9\alu_ctrl[3:0] $flatten\wrapper.\uut.$10\alu_ctrl[3:0] 4'0000 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2392_CMP $flatten\wrapper.\uut.$procmux$2052_CMP $flatten\wrapper.\uut.$procmux$1906_CMP $flatten\wrapper.\uut.$procmux$1412_CMP $flatten\wrapper.\uut.$procmux$1273_CMP $flatten\wrapper.\uut.$procmux$1168_CMP $flatten\wrapper.\uut.$procmux$2545_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2406_CMP $flatten\wrapper.\uut.$procmux$2066_CMP $flatten\wrapper.\uut.$procmux$1920_CMP $flatten\wrapper.\uut.$procmux$1426_CMP $flatten\wrapper.\uut.$procmux$1287_CMP $flatten\wrapper.\uut.$procmux$1182_CMP $flatten\wrapper.\uut.$procmux$2559_CMP }
     connect \Y \wrapper.uut.alu_ctrl
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2577
+  cell $mux $flatten\wrapper.\uut.$procmux$2591
     parameter \WIDTH 3
     connect \A $auto$rtlil.cc:3097:Anyseq$3037
     connect \B $flatten\wrapper.\uut.$2\ld_ctrl[2:0]
-    connect \S $flatten\wrapper.\uut.$procmux$2392_CMP
+    connect \S $flatten\wrapper.\uut.$procmux$2406_CMP
     connect \Y \wrapper.uut.ld_ctrl
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2585
+  cell $pmux $flatten\wrapper.\uut.$procmux$2599
     parameter \S_WIDTH 7
     parameter \WIDTH 3
     connect \A $auto$rtlil.cc:3097:Anyseq$3039
     connect \B { $flatten\wrapper.\uut.$2\imm_sel[2:0] $flatten\wrapper.\uut.$3\imm_sel[2:0] $flatten\wrapper.\uut.$5\imm_sel[2:0] $flatten\wrapper.\uut.$9\imm_sel[2:0] 3'100 $flatten\wrapper.\uut.$10\imm_sel[2:0] 3'101 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2392_CMP $flatten\wrapper.\uut.$procmux$2052_CMP $flatten\wrapper.\uut.$procmux$1906_CMP $flatten\wrapper.\uut.$procmux$1273_CMP $flatten\wrapper.\uut.$procmux$2548_CMP $flatten\wrapper.\uut.$procmux$1168_CMP $auto$opt_reduce.cc:134:opt_mux$2856 }
+    connect \S { $flatten\wrapper.\uut.$procmux$2406_CMP $flatten\wrapper.\uut.$procmux$2066_CMP $flatten\wrapper.\uut.$procmux$1920_CMP $flatten\wrapper.\uut.$procmux$1287_CMP $flatten\wrapper.\uut.$procmux$2562_CMP $flatten\wrapper.\uut.$procmux$1182_CMP $auto$opt_reduce.cc:134:opt_mux$2870 }
     connect \Y \wrapper.uut.imm_sel
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2606
+  cell $pmux $flatten\wrapper.\uut.$procmux$2620
     parameter \S_WIDTH 8
     parameter \WIDTH 3
     connect \A $auto$rtlil.cc:3097:Anyseq$3041
     connect \B { $flatten\wrapper.\uut.$2\rd_data_sel[2:0] $flatten\wrapper.\uut.$3\rd_data_sel[2:0] $flatten\wrapper.\uut.$6\rd_data_sel[2:0] $flatten\wrapper.\uut.$9\rd_data_sel[2:0] 3'010 $flatten\wrapper.\uut.$10\rd_data_sel[2:0] 6'011000 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2392_CMP $flatten\wrapper.\uut.$procmux$2052_CMP $flatten\wrapper.\uut.$procmux$1412_CMP $flatten\wrapper.\uut.$procmux$1273_CMP $flatten\wrapper.\uut.$procmux$2548_CMP $flatten\wrapper.\uut.$procmux$1168_CMP $flatten\wrapper.\uut.$procmux$2546_CMP $flatten\wrapper.\uut.$procmux$2545_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2406_CMP $flatten\wrapper.\uut.$procmux$2066_CMP $flatten\wrapper.\uut.$procmux$1426_CMP $flatten\wrapper.\uut.$procmux$1287_CMP $flatten\wrapper.\uut.$procmux$2562_CMP $flatten\wrapper.\uut.$procmux$1182_CMP $flatten\wrapper.\uut.$procmux$2560_CMP $flatten\wrapper.\uut.$procmux$2559_CMP }
     connect \Y \wrapper.uut.rd_data_sel
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2619
+  cell $pmux $flatten\wrapper.\uut.$procmux$2633
     parameter \S_WIDTH 3
     parameter \WIDTH 2
     connect \A 2'00
-    connect \B { 1'0 $auto$wreduce.cc:454:run$2864 [0] 2'01 $flatten\wrapper.\uut.$10\pc_sel[1:0] }
-    connect \S { $flatten\wrapper.\uut.$procmux$1273_CMP $flatten\wrapper.\uut.$procmux$2548_CMP $flatten\wrapper.\uut.$procmux$1168_CMP }
+    connect \B { 1'0 $auto$wreduce.cc:454:run$2878 [0] 2'01 $flatten\wrapper.\uut.$10\pc_sel[1:0] }
+    connect \S { $flatten\wrapper.\uut.$procmux$1287_CMP $flatten\wrapper.\uut.$procmux$2562_CMP $flatten\wrapper.\uut.$procmux$1182_CMP }
     connect \Y \wrapper.uut.pc_sel
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2628
+  cell $pmux $flatten\wrapper.\uut.$procmux$2642
     parameter \S_WIDTH 7
     parameter \WIDTH 1
     connect \A $auto$rtlil.cc:3097:Anyseq$3043
     connect \B { $flatten\wrapper.\uut.$2\src_2_sel[0:0] $flatten\wrapper.\uut.$3\src_2_sel[0:0] $flatten\wrapper.\uut.$5\src_2_sel[0:0] $flatten\wrapper.\uut.$6\src_1_sel[0:0] $flatten\wrapper.\uut.$9\src_1_sel[0:0] $flatten\wrapper.\uut.$10\src_2_sel[0:0] 1'1 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2392_CMP $flatten\wrapper.\uut.$procmux$2052_CMP $flatten\wrapper.\uut.$procmux$1906_CMP $flatten\wrapper.\uut.$procmux$1412_CMP $flatten\wrapper.\uut.$procmux$1273_CMP $flatten\wrapper.\uut.$procmux$1168_CMP $flatten\wrapper.\uut.$procmux$2545_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2406_CMP $flatten\wrapper.\uut.$procmux$2066_CMP $flatten\wrapper.\uut.$procmux$1920_CMP $flatten\wrapper.\uut.$procmux$1426_CMP $flatten\wrapper.\uut.$procmux$1287_CMP $flatten\wrapper.\uut.$procmux$1182_CMP $flatten\wrapper.\uut.$procmux$2559_CMP }
     connect \Y \wrapper.uut.src_2_sel
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2637
+  cell $pmux $flatten\wrapper.\uut.$procmux$2651
     parameter \S_WIDTH 7
     parameter \WIDTH 1
     connect \A $auto$rtlil.cc:3097:Anyseq$3045
     connect \B { $flatten\wrapper.\uut.$2\src_1_sel[0:0] $flatten\wrapper.\uut.$3\src_1_sel[0:0] $flatten\wrapper.\uut.$5\src_1_sel[0:0] $flatten\wrapper.\uut.$6\src_1_sel[0:0] $flatten\wrapper.\uut.$9\src_1_sel[0:0] $flatten\wrapper.\uut.$10\src_1_sel[0:0] 1'1 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2392_CMP $flatten\wrapper.\uut.$procmux$2052_CMP $flatten\wrapper.\uut.$procmux$1906_CMP $flatten\wrapper.\uut.$procmux$1412_CMP $flatten\wrapper.\uut.$procmux$1273_CMP $flatten\wrapper.\uut.$procmux$1168_CMP $flatten\wrapper.\uut.$procmux$2545_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2406_CMP $flatten\wrapper.\uut.$procmux$2066_CMP $flatten\wrapper.\uut.$procmux$1920_CMP $flatten\wrapper.\uut.$procmux$1426_CMP $flatten\wrapper.\uut.$procmux$1287_CMP $flatten\wrapper.\uut.$procmux$1182_CMP $flatten\wrapper.\uut.$procmux$2559_CMP }
     connect \Y \wrapper.uut.src_1_sel
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2646
+  cell $pmux $flatten\wrapper.\uut.$procmux$2660
     parameter \S_WIDTH 5
     parameter \WIDTH 1
     connect \A 1'0
     connect \B { $flatten\wrapper.\uut.$2\rf_wr_en[0:0] $flatten\wrapper.\uut.$3\rf_wr_en[0:0] $flatten\wrapper.\uut.$6\rf_wr_en[0:0] $flatten\wrapper.\uut.$10\rf_wr_en[0:0] 1'1 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2392_CMP $flatten\wrapper.\uut.$procmux$2052_CMP $flatten\wrapper.\uut.$procmux$1412_CMP $flatten\wrapper.\uut.$procmux$1168_CMP $auto$opt_reduce.cc:134:opt_mux$2860 }
+    connect \S { $flatten\wrapper.\uut.$procmux$2406_CMP $flatten\wrapper.\uut.$procmux$2066_CMP $flatten\wrapper.\uut.$procmux$1426_CMP $flatten\wrapper.\uut.$procmux$1182_CMP $auto$opt_reduce.cc:134:opt_mux$2874 }
     connect \Y \wrapper.uut.rf_wr_en
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2659
+  cell $mux $flatten\wrapper.\uut.$procmux$2673
     parameter \WIDTH 4
     connect \A 4'0000
     connect \B $flatten\wrapper.\uut.$5\wr_en[3:0]
-    connect \S $flatten\wrapper.\uut.$procmux$1906_CMP
+    connect \S $flatten\wrapper.\uut.$procmux$1920_CMP
     connect \Y \checker_inst.mem_wmask
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:391.9-693.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2671
+  cell $mux $flatten\wrapper.\uut.$procmux$2685
     parameter \WIDTH 1
     connect \A 1'0
     connect \B $flatten\wrapper.\uut.$2\rd_addr_sel[0:0]
-    connect \S $flatten\wrapper.\uut.$procmux$1273_CMP
+    connect \S $flatten\wrapper.\uut.$procmux$1287_CMP
     connect \Y \wrapper.uut.rd_addr_sel
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:348.9-355.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2674
+  cell $pmux $flatten\wrapper.\uut.$procmux$2688
     parameter \S_WIDTH 3
     parameter \WIDTH 4
     connect \A 4'0000
     connect \B 12'001111110001
-    connect \S { $flatten\wrapper.\uut.$procmux$2677_CMP $flatten\wrapper.\uut.$procmux$2676_CMP $auto$opt_reduce.cc:134:opt_mux$2862 }
+    connect \S { $flatten\wrapper.\uut.$procmux$2691_CMP $flatten\wrapper.\uut.$procmux$2690_CMP $auto$opt_reduce.cc:134:opt_mux$2876 }
     connect \Y \checker_inst.rvfi_mem_rmask
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:348.9-355.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2675_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2689_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3853,11 +3691,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.ld_ctrl
     connect \B 3'100
-    connect \Y $flatten\wrapper.\uut.$procmux$2675_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2689_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:348.9-355.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2676_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2690_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3865,11 +3703,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.ld_ctrl
     connect \B 2'10
-    connect \Y $flatten\wrapper.\uut.$procmux$2676_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2690_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:348.9-355.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2677_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2691_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3877,30 +3715,30 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.ld_ctrl
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$procmux$2677_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2691_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:348.9-355.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_not $flatten\wrapper.\uut.$procmux$2678_CMP0
+  cell $logic_not $flatten\wrapper.\uut.$procmux$2692_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.ld_ctrl
-    connect \Y $flatten\wrapper.\uut.$procmux$2678_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2692_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:337.9-344.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2680
+  cell $pmux $flatten\wrapper.\uut.$procmux$2694
     parameter \S_WIDTH 5
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3047
     connect \B { \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7:0] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [7] \checker_inst.mem_rdata [15:0] \checker_inst.mem_rdata 24'000000000000000000000000 \checker_inst.mem_rdata [7:0] 16'0000000000000000 \checker_inst.mem_rdata [15:0] }
-    connect \S { $flatten\wrapper.\uut.$procmux$2678_CMP $flatten\wrapper.\uut.$procmux$2677_CMP $flatten\wrapper.\uut.$procmux$2676_CMP $flatten\wrapper.\uut.$procmux$2675_CMP $flatten\wrapper.\uut.$procmux$2681_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2692_CMP $flatten\wrapper.\uut.$procmux$2691_CMP $flatten\wrapper.\uut.$procmux$2690_CMP $flatten\wrapper.\uut.$procmux$2689_CMP $flatten\wrapper.\uut.$procmux$2695_CMP }
     connect \Y \wrapper.uut.rd_data_ext
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:337.9-344.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2681_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2695_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3908,21 +3746,21 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.ld_ctrl
     connect \B 3'101
-    connect \Y $flatten\wrapper.\uut.$procmux$2681_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2695_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:310.9-318.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2687
+  cell $pmux $flatten\wrapper.\uut.$procmux$2701
     parameter \S_WIDTH 6
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3049
     connect \B { \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31:20] 27'000000000000000000000000000 \wrapper.uut.instr [24:20] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31:25] \wrapper.uut.instr [11:7] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [7] \wrapper.uut.instr [30:25] \wrapper.uut.instr [11:8] 1'0 \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [19:12] \wrapper.uut.instr [20] \wrapper.uut.instr [30:21] 1'0 \wrapper.uut.instr [31:12] 12'000000000000 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2693_CMP $flatten\wrapper.\uut.$procmux$2692_CMP $flatten\wrapper.\uut.$procmux$2691_CMP $flatten\wrapper.\uut.$procmux$2690_CMP $flatten\wrapper.\uut.$procmux$2689_CMP $flatten\wrapper.\uut.$procmux$2688_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2707_CMP $flatten\wrapper.\uut.$procmux$2706_CMP $flatten\wrapper.\uut.$procmux$2705_CMP $flatten\wrapper.\uut.$procmux$2704_CMP $flatten\wrapper.\uut.$procmux$2703_CMP $flatten\wrapper.\uut.$procmux$2702_CMP }
     connect \Y \wrapper.uut.imm_ext
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:310.9-318.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2688_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2702_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3930,11 +3768,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.imm_sel
     connect \B 3'101
-    connect \Y $flatten\wrapper.\uut.$procmux$2688_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2702_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:310.9-318.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2689_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2703_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3942,11 +3780,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.imm_sel
     connect \B 3'100
-    connect \Y $flatten\wrapper.\uut.$procmux$2689_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2703_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:310.9-318.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2690_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2704_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3954,11 +3792,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.imm_sel
     connect \B 2'11
-    connect \Y $flatten\wrapper.\uut.$procmux$2690_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2704_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:310.9-318.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2691_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2705_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3966,11 +3804,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.imm_sel
     connect \B 2'10
-    connect \Y $flatten\wrapper.\uut.$procmux$2691_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2705_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:310.9-318.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2692_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2706_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -3978,30 +3816,48 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.imm_sel
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$procmux$2692_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2706_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:310.9-318.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_not $flatten\wrapper.\uut.$procmux$2693_CMP0
+  cell $logic_not $flatten\wrapper.\uut.$procmux$2707_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.imm_sel
-    connect \Y $flatten\wrapper.\uut.$procmux$2693_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2707_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2707
+  cell $mux $flatten\wrapper.\uut.$procmux$2718
+    parameter \WIDTH 1
+    connect \A 1'0
+    connect \B $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215$316_Y [32]
+    connect \S $flatten\wrapper.\uut.$procmux$2719_CMP
+    connect \Y \wrapper.uut.carry
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $logic_not $flatten\wrapper.\uut.$procmux$2719_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 4
+    parameter \Y_WIDTH 1
+    connect \A \wrapper.uut.alu_ctrl
+    connect \Y $flatten\wrapper.\uut.$procmux$2719_CMP
+  end
+  attribute \full_case 1
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $pmux $flatten\wrapper.\uut.$procmux$2721
     parameter \S_WIDTH 10
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3051
-    connect \B { $auto$wreduce.cc:454:run$2865 [31:0] $auto$wreduce.cc:454:run$2870 $auto$wreduce.cc:454:run$2869 31'0000000000000000000000000000000 $auto$wreduce.cc:454:run$2866 [0] 31'0000000000000000000000000000000 $auto$wreduce.cc:454:run$2867 [0] $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$327_Y $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$328_Y $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$329_Y $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$330_Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$331_Y }
-    connect \S { $flatten\wrapper.\uut.$procmux$2717_CMP $flatten\wrapper.\uut.$procmux$2716_CMP $flatten\wrapper.\uut.$procmux$2715_CMP $flatten\wrapper.\uut.$procmux$2714_CMP $flatten\wrapper.\uut.$procmux$2713_CMP $flatten\wrapper.\uut.$procmux$2712_CMP $flatten\wrapper.\uut.$procmux$2711_CMP $flatten\wrapper.\uut.$procmux$2710_CMP $flatten\wrapper.\uut.$procmux$2709_CMP $flatten\wrapper.\uut.$procmux$2708_CMP }
+    connect \B { $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215$316_Y [31:0] $auto$wreduce.cc:454:run$2882 $auto$wreduce.cc:454:run$2881 31'0000000000000000000000000000000 $auto$wreduce.cc:454:run$2879 [0] 31'0000000000000000000000000000000 $auto$wreduce.cc:454:run$2880 [0] $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$325_Y $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$326_Y $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$327_Y $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:274$328_Y $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:281$329_Y }
+    connect \S { $flatten\wrapper.\uut.$procmux$2719_CMP $flatten\wrapper.\uut.$procmux$2730_CMP $flatten\wrapper.\uut.$procmux$2729_CMP $flatten\wrapper.\uut.$procmux$2728_CMP $flatten\wrapper.\uut.$procmux$2727_CMP $flatten\wrapper.\uut.$procmux$2726_CMP $flatten\wrapper.\uut.$procmux$2725_CMP $flatten\wrapper.\uut.$procmux$2724_CMP $flatten\wrapper.\uut.$procmux$2723_CMP $flatten\wrapper.\uut.$procmux$2722_CMP }
     connect \Y \wrapper.uut.addr
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2708_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2722_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4009,11 +3865,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 3'111
-    connect \Y $flatten\wrapper.\uut.$procmux$2708_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2722_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2709_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2723_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4021,11 +3877,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 3'110
-    connect \Y $flatten\wrapper.\uut.$procmux$2709_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2723_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2710_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2724_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4033,11 +3889,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 4'1101
-    connect \Y $flatten\wrapper.\uut.$procmux$2710_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2724_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2711_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2725_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4045,11 +3901,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 3'101
-    connect \Y $flatten\wrapper.\uut.$procmux$2711_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2725_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2712_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2726_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4057,11 +3913,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 3'100
-    connect \Y $flatten\wrapper.\uut.$procmux$2712_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2726_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2713_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2727_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4069,11 +3925,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 2'11
-    connect \Y $flatten\wrapper.\uut.$procmux$2713_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2727_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2714_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2728_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4081,11 +3937,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 2'10
-    connect \Y $flatten\wrapper.\uut.$procmux$2714_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2728_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2715_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2729_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4093,11 +3949,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$procmux$2715_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2729_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2716_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2730_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 4
     parameter \B_SIGNED 0
@@ -4105,94 +3961,94 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.alu_ctrl
     connect \B 4'1000
-    connect \Y $flatten\wrapper.\uut.$procmux$2716_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2730_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_not $flatten\wrapper.\uut.$procmux$2717_CMP0
-    parameter \A_SIGNED 0
-    parameter \A_WIDTH 4
-    parameter \Y_WIDTH 1
-    connect \A \wrapper.uut.alu_ctrl
-    connect \Y $flatten\wrapper.\uut.$procmux$2717_CMP
+  cell $mux $flatten\wrapper.\uut.$procmux$2742
+    parameter \WIDTH 1
+    connect \A 1'0
+    connect \B $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$319_Y
+    connect \S $flatten\wrapper.\uut.$procmux$2719_CMP
+    connect \Y \wrapper.uut.o_flag
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:212.9-290.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2736
+  cell $pmux $flatten\wrapper.\uut.$procmux$2750
     parameter \S_WIDTH 3
     parameter \WIDTH 1
     connect \A $auto$rtlil.cc:3097:Anyseq$3053
-    connect \B { $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$323_Y $auto$wreduce.cc:454:run$2866 [0] $auto$wreduce.cc:454:run$2867 [0] }
-    connect \S { $flatten\wrapper.\uut.$procmux$2716_CMP $flatten\wrapper.\uut.$procmux$2714_CMP $flatten\wrapper.\uut.$procmux$2713_CMP }
+    connect \B { $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:227$321_Y $auto$wreduce.cc:454:run$2879 [0] $auto$wreduce.cc:454:run$2880 [0] }
+    connect \S { $flatten\wrapper.\uut.$procmux$2730_CMP $flatten\wrapper.\uut.$procmux$2728_CMP $flatten\wrapper.\uut.$procmux$2727_CMP }
     connect \Y \wrapper.uut.b_flag
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.13-175.29|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.9-178.50|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2741
+  cell $mux $flatten\wrapper.\uut.$procmux$2755
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
     connect \S \wrapper.uut.rf_wr_en
-    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31]
+    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.13-175.29|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.9-178.50|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2744
+  cell $mux $flatten\wrapper.\uut.$procmux$2758
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3055
     connect \B \checker_inst.rd_wdata
     connect \S \wrapper.uut.rf_wr_en
-    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_DATA[31:0]$295
+    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_DATA[31:0]$293
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.13-175.29|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.9-178.50|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2747
+  cell $mux $flatten\wrapper.\uut.$procmux$2761
     parameter \WIDTH 5
     connect \A $auto$rtlil.cc:3097:Anyseq$3057
     connect \B \checker_inst.rd_addr
     connect \S \wrapper.uut.rf_wr_en
-    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_ADDR[4:0]$294
+    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_ADDR[4:0]$292
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.13-175.29|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.9-178.50|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2750
+  cell $mux $flatten\wrapper.\uut.$procmux$2764
     parameter \WIDTH 1
     connect \A 1'1
     connect \B 1'0
     connect \S \wrapper.uut.rf_wr_en
-    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31]
+    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31]
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.13-175.29|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.9-178.50|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2753
+  cell $mux $flatten\wrapper.\uut.$procmux$2767
     parameter \WIDTH 32
-    connect \A $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$309_DATA
+    connect \A $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$307_DATA
     connect \B $auto$rtlil.cc:3097:Anyseq$3059
     connect \S \wrapper.uut.rf_wr_en
-    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_DATA[31:0]$298
+    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_DATA[31:0]$296
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.13-175.29|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:175.9-178.50|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$procmux$2756
+  cell $mux $flatten\wrapper.\uut.$procmux$2770
     parameter \WIDTH 5
     connect \A \checker_inst.rd_addr
     connect \B $auto$rtlil.cc:3097:Anyseq$3061
     connect \S \wrapper.uut.rf_wr_en
-    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_ADDR[4:0]$297
+    connect \Y $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_ADDR[4:0]$295
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:155.9-164.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2759
+  cell $pmux $flatten\wrapper.\uut.$procmux$2773
     parameter \S_WIDTH 5
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3063
     connect \B { \wrapper.uut.addr \wrapper.uut.rd_data_ext \wrapper.uut.pc_plus_4 \wrapper.uut.imm_ext 32'00000000000000000000000000000000 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2764_CMP $flatten\wrapper.\uut.$procmux$2763_CMP $flatten\wrapper.\uut.$procmux$2762_CMP $flatten\wrapper.\uut.$procmux$2761_CMP $flatten\wrapper.\uut.$procmux$2760_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2778_CMP $flatten\wrapper.\uut.$procmux$2777_CMP $flatten\wrapper.\uut.$procmux$2776_CMP $flatten\wrapper.\uut.$procmux$2775_CMP $flatten\wrapper.\uut.$procmux$2774_CMP }
     connect \Y \wrapper.uut.rf_dst_data
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:155.9-164.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2760_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2774_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -4200,11 +4056,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.rd_data_sel
     connect \B 3'100
-    connect \Y $flatten\wrapper.\uut.$procmux$2760_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2774_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:155.9-164.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2761_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2775_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -4212,11 +4068,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.rd_data_sel
     connect \B 2'11
-    connect \Y $flatten\wrapper.\uut.$procmux$2761_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2775_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:155.9-164.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2762_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2776_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -4224,11 +4080,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.rd_data_sel
     connect \B 2'10
-    connect \Y $flatten\wrapper.\uut.$procmux$2762_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2776_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:155.9-164.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2763_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2777_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \B_SIGNED 0
@@ -4236,68 +4092,68 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.rd_data_sel
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$procmux$2763_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2777_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:155.9-164.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_not $flatten\wrapper.\uut.$procmux$2764_CMP0
+  cell $logic_not $flatten\wrapper.\uut.$procmux$2778_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 3
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.rd_data_sel
-    connect \Y $flatten\wrapper.\uut.$procmux$2764_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2778_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:146.9-150.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2765
+  cell $pmux $flatten\wrapper.\uut.$procmux$2779
     parameter \S_WIDTH 2
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3065
     connect \B { \checker_inst.mem_wdata \wrapper.uut.imm_ext }
-    connect \S { $flatten\wrapper.\uut.$procmux$2767_CMP \wrapper.uut.src_2_sel }
+    connect \S { $flatten\wrapper.\uut.$procmux$2781_CMP \wrapper.uut.src_2_sel }
     connect \Y \wrapper.uut.alu_in_2
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:146.9-150.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $not $flatten\wrapper.\uut.$procmux$2767_CMP0
+  cell $not $flatten\wrapper.\uut.$procmux$2781_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.src_2_sel
-    connect \Y $flatten\wrapper.\uut.$procmux$2767_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2781_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:138.9-142.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2768
+  cell $pmux $flatten\wrapper.\uut.$procmux$2782
     parameter \S_WIDTH 2
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3067
     connect \B { \checker_inst.rs1_rdata \wrapper.uut.pc }
-    connect \S { $flatten\wrapper.\uut.$procmux$2770_CMP \wrapper.uut.src_1_sel }
+    connect \S { $flatten\wrapper.\uut.$procmux$2784_CMP \wrapper.uut.src_1_sel }
     connect \Y \wrapper.uut.alu_in_1
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:138.9-142.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $not $flatten\wrapper.\uut.$procmux$2770_CMP0
+  cell $not $flatten\wrapper.\uut.$procmux$2784_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.src_1_sel
-    connect \Y $flatten\wrapper.\uut.$procmux$2770_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2784_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:127.9-133.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2771
+  cell $pmux $flatten\wrapper.\uut.$procmux$2785
     parameter \S_WIDTH 4
     parameter \WIDTH 32
     connect \A $auto$rtlil.cc:3097:Anyseq$3069
     connect \B { \wrapper.uut.pc_plus_4 \wrapper.uut.target \wrapper.uut.addr \wrapper.uut.addr [31:1] 1'0 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2775_CMP $flatten\wrapper.\uut.$procmux$2774_CMP $flatten\wrapper.\uut.$procmux$2773_CMP $flatten\wrapper.\uut.$procmux$2772_CMP }
+    connect \S { $flatten\wrapper.\uut.$procmux$2789_CMP $flatten\wrapper.\uut.$procmux$2788_CMP $flatten\wrapper.\uut.$procmux$2787_CMP $flatten\wrapper.\uut.$procmux$2786_CMP }
     connect \Y \checker_inst.pc_wdata
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:127.9-133.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2772_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2786_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \B_SIGNED 0
@@ -4305,11 +4161,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.pc_sel
     connect \B 2'11
-    connect \Y $flatten\wrapper.\uut.$procmux$2772_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2786_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:127.9-133.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2773_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2787_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \B_SIGNED 0
@@ -4317,11 +4173,11 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.pc_sel
     connect \B 2'10
-    connect \Y $flatten\wrapper.\uut.$procmux$2773_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2787_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:127.9-133.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $eq $flatten\wrapper.\uut.$procmux$2774_CMP0
+  cell $eq $flatten\wrapper.\uut.$procmux$2788_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \B_SIGNED 0
@@ -4329,38 +4185,38 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.pc_sel
     connect \B 1'1
-    connect \Y $flatten\wrapper.\uut.$procmux$2774_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2788_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:127.9-133.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $logic_not $flatten\wrapper.\uut.$procmux$2775_CMP0
+  cell $logic_not $flatten\wrapper.\uut.$procmux$2789_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 2
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.pc_sel
-    connect \Y $flatten\wrapper.\uut.$procmux$2775_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2789_CMP
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:97.9-101.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $pmux $flatten\wrapper.\uut.$procmux$2785
+  cell $pmux $flatten\wrapper.\uut.$procmux$2799
     parameter \S_WIDTH 2
     parameter \WIDTH 5
     connect \A $auto$rtlil.cc:3097:Anyseq$3071
     connect \B { \wrapper.uut.instr [11:7] 5'00000 }
-    connect \S { $flatten\wrapper.\uut.$procmux$2787_CMP \wrapper.uut.rd_addr_sel }
+    connect \S { $flatten\wrapper.\uut.$procmux$2801_CMP \wrapper.uut.rd_addr_sel }
     connect \Y \checker_inst.rd_addr
   end
   attribute \full_case 1
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0.0-0.0|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:97.9-101.16|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $not $flatten\wrapper.\uut.$procmux$2787_CMP0
+  cell $not $flatten\wrapper.\uut.$procmux$2801_CMP0
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.rd_addr_sel
-    connect \Y $flatten\wrapper.\uut.$procmux$2787_CMP
+    connect \Y $flatten\wrapper.\uut.$procmux$2801_CMP
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:232.36-232.79|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $shl $flatten\wrapper.\uut.$shl$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:232$324
+  cell $shl $flatten\wrapper.\uut.$shl$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:232$322
     parameter \A_SIGNED 1
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -4368,10 +4224,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2 [4:0]
-    connect \Y $auto$wreduce.cc:454:run$2869
+    connect \Y $auto$wreduce.cc:454:run$2881
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259.36-259.79|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $shr $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$328
+  cell $shr $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$326
     parameter \A_SIGNED 1
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -4379,10 +4235,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2 [4:0]
-    connect \Y $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$328_Y
+    connect \Y $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:259$326_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266.36-266.80|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $sshr $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$329
+  cell $sshr $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$327
     parameter \A_SIGNED 1
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -4390,10 +4246,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2 [4:0]
-    connect \Y $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$329_Y
+    connect \Y $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:266$327_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:225.36-225.73|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $sub $flatten\wrapper.\uut.$sub$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:225$322
+  cell $sub $flatten\wrapper.\uut.$sub$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:225$320
     parameter \A_SIGNED 1
     parameter \A_WIDTH 32
     parameter \B_SIGNED 1
@@ -4401,34 +4257,42 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2
-    connect \Y $auto$wreduce.cc:454:run$2870
+    connect \Y $auto$wreduce.cc:454:run$2882
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176.33-176.77|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$308
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$306
     parameter \WIDTH 32
     connect \A \wrapper.uut.rf_dst_data
     connect \B 0
-    connect \S $flatten\checker_inst.$eq$rvfi_insn_check.sv:156$193_Y
+    connect \S $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:158$289_Y
     connect \Y \checker_inst.rd_wdata
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183.22-183.75|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$313
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$311
     parameter \WIDTH 32
-    connect \A $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$312_DATA
+    connect \A $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$310_DATA
     connect \B 0
     connect \S $flatten\checker_inst.$eq$rvfi_insn_check.sv:143$184_Y
     connect \Y \checker_inst.rs1_rdata
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184.22-184.75|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184$316
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184$314
     parameter \WIDTH 32
-    connect \A $auto$wreduce.cc:454:run$2868
+    connect \A $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184$313_DATA
     connect \B 0
     connect \S $flatten\checker_inst.$eq$rvfi_insn_check.sv:146$186_Y
     connect \Y \checker_inst.mem_wdata
   end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219.38-219.104|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$319
+    parameter \WIDTH 1
+    connect \A $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$318_Y
+    connect \B 1'0
+    connect \S $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$317_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$319_Y
+  end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:29.21-29.54|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:29$270
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:29$268
     parameter \WIDTH 7
     connect \A \wrapper.uut.instr [6:0]
     connect \B 7'0000000
@@ -4436,39 +4300,85 @@ module \rvfi_testbench
     connect \Y \wrapper.uut.opcode
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411.44-411.77|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$342
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$340
     parameter \WIDTH 1
     connect \A 1'1
     connect \B 1'0
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$341_Y
-    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$342_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$339_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$340_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420.51-420.84|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$344
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$342
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$341_Y
-    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$344_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$339_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:420$342_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485.41-485.123|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$367
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365
     parameter \WIDTH 4
-    connect \A { \wrapper.uut.instr [13] \wrapper.uut.instr [13] $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365_Y 1'1 }
+    connect \A { \wrapper.uut.instr [13] \wrapper.uut.instr [13] $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$363_Y 1'1 }
     connect \B 4'0000
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$341_Y
-    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$367_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:411$339_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:485$365_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591.51-591.88|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$399
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$397
     parameter \WIDTH 1
     connect \A 1'0
     connect \B 1'1
-    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$398_Y
-    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$399_Y
+    connect \S $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$396_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:591$397_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633.44-633.113|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$406
+    parameter \WIDTH 1
+    connect \A 1'1
+    connect \B 1'0
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$405_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$406_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:638.42-638.113|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:638$412
+    parameter \WIDTH 2
+    connect \A 2'11
+    connect \B 2'00
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$405_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:638$412_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:645.51-645.120|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:645$418
+    parameter \WIDTH 1
+    connect \A 1'0
+    connect \B 1'1
+    connect \S $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:633$405_Y
+    connect \Y $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:645$418_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219.40-219.67|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $xor $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$317
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A \wrapper.uut.alu_in_1 [31]
+    connect \B \wrapper.uut.alu_in_2 [31]
+    connect \Y $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$317_Y
+  end
+  attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219.80-219.103|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
+  cell $xor $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$318
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:215$316_Y [31]
+    connect \B \wrapper.uut.alu_in_1 [31]
+    connect \Y $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:219$318_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253.36-253.55|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $xor $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$327
+  cell $xor $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$325
     parameter \A_SIGNED 0
     parameter \A_WIDTH 32
     parameter \B_SIGNED 0
@@ -4476,10 +4386,10 @@ module \rvfi_testbench
     parameter \Y_WIDTH 32
     connect \A \wrapper.uut.alu_in_1
     connect \B \wrapper.uut.alu_in_2
-    connect \Y $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$327_Y
+    connect \Y $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:253$325_Y
   end
   attribute \src "rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582.50-582.68|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:15.10-24.777"
-  cell $xor $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$396
+  cell $xor $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$394
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
@@ -4487,7 +4397,7 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \wrapper.uut.instr [12]
     connect \B \wrapper.uut.b_flag
-    connect \Y $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$396_Y
+    connect \Y $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:582$394_Y
   end
   attribute \module_not_derived 1
   attribute \src "rvfi_testbench.sv:0.0-0.0"
@@ -4514,7 +4424,7 @@ module \rvfi_testbench
     parameter \Y_WIDTH 1
     connect \A \cycle_reg
     connect \B 8'11111111
-    connect \Y $auto$wreduce.cc:454:run$2871 [0]
+    connect \Y $auto$wreduce.cc:454:run$2883 [0]
   end
   attribute \src "rvfi_testbench.sv:33.21-33.42"
   cell $mux $ternary$rvfi_testbench.sv:33$6
@@ -4551,46 +4461,46 @@ module \rvfi_testbench
     connect \RD_ADDR { \checker_inst.rd_addr \wrapper.uut.instr [19:15] \wrapper.uut.instr [24:20] }
     connect \RD_ARST 3'000
     connect \RD_CLK $auto$rtlil.cc:3097:Anyseq$3073
-    connect \RD_DATA { $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$309_DATA $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$312_DATA $auto$wreduce.cc:454:run$2868 }
+    connect \RD_DATA { $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$307_DATA $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$310_DATA $flatten\wrapper.\uut.$memrd$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:184$313_DATA }
     connect \RD_EN 3'111
     connect \RD_SRST 3'000
-    connect \WR_ADDR { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_ADDR[4:0]$297 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_ADDR[4:0]$294 }
+    connect \WR_ADDR { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_ADDR[4:0]$295 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_ADDR[4:0]$292 }
     connect \WR_CLK { \clock \clock }
-    connect \WR_DATA { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_DATA[31:0]$298 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_DATA[31:0]$295 }
-    connect \WR_EN { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] }
+    connect \WR_DATA { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_DATA[31:0]$296 $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_DATA[31:0]$293 }
+    connect \WR_EN { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] }
   end
-  connect $auto$wreduce.cc:454:run$2864 [1] 1'0
-  connect $auto$wreduce.cc:454:run$2866 [31:1] 31'0000000000000000000000000000000
-  connect $auto$wreduce.cc:454:run$2867 [31:1] 31'0000000000000000000000000000000
-  connect $auto$wreduce.cc:454:run$2871 [31:1] 31'0000000000000000000000000000000
-  connect $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [30:0] { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$267_EN[31:0]$296 [31] }
-  connect $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [30:0] { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$268_EN[31:0]$299 [31] }
+  connect $auto$wreduce.cc:454:run$2878 [1] 1'0
+  connect $auto$wreduce.cc:454:run$2879 [31:1] 31'0000000000000000000000000000000
+  connect $auto$wreduce.cc:454:run$2880 [31:1] 31'0000000000000000000000000000000
+  connect $auto$wreduce.cc:454:run$2883 [31:1] 31'0000000000000000000000000000000
+  connect $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [30:0] { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:176$265_EN[31:0]$294 [31] }
+  connect $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [30:0] { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:178$266_EN[31:0]$297 [31] }
   connect \checker_inst.clock \clock
   connect \checker_inst.halt 1'0
   connect \checker_inst.insn \wrapper.uut.instr
   connect \checker_inst.insn_pma_x 1'1
   connect \checker_inst.insn_spec.ialign16 1'0
-  connect \checker_inst.insn_spec.insn_funct3 \wrapper.uut.instr [14:12]
-  connect \checker_inst.insn_spec.insn_imm { \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [7] \wrapper.uut.instr [30:25] \wrapper.uut.instr [11:8] 1'0 }
+  connect \checker_inst.insn_spec.insn_imm { \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [31] \wrapper.uut.instr [19:12] \wrapper.uut.instr [20] \wrapper.uut.instr [30:21] 1'0 }
   connect \checker_inst.insn_spec.insn_opcode \wrapper.uut.instr [6:0]
   connect \checker_inst.insn_spec.insn_padding 0
-  connect \checker_inst.insn_spec.insn_rs1 \wrapper.uut.instr [19:15]
-  connect \checker_inst.insn_spec.insn_rs2 \wrapper.uut.instr [24:20]
+  connect \checker_inst.insn_spec.insn_rd \wrapper.uut.instr [11:7]
   connect \checker_inst.insn_spec.misa_ok 1'1
   connect \checker_inst.insn_spec.next_pc \checker_inst.spec_pc_wdata
   connect \checker_inst.insn_spec.rvfi_insn \wrapper.uut.instr
   connect \checker_inst.insn_spec.rvfi_mem_rdata \checker_inst.mem_rdata
   connect \checker_inst.insn_spec.rvfi_pc_rdata \wrapper.uut.pc
+  connect \checker_inst.insn_spec.rvfi_rs1_rdata 0
+  connect \checker_inst.insn_spec.rvfi_rs2_rdata 0
   connect \checker_inst.insn_spec.rvfi_valid \checker_inst.valid
   connect \checker_inst.insn_spec.spec_mem_addr 0
   connect \checker_inst.insn_spec.spec_mem_rmask 4'0000
   connect \checker_inst.insn_spec.spec_mem_wdata 0
   connect \checker_inst.insn_spec.spec_mem_wmask 4'0000
   connect \checker_inst.insn_spec.spec_pc_wdata \checker_inst.spec_pc_wdata
-  connect \checker_inst.insn_spec.spec_rd_addr 5'00000
-  connect \checker_inst.insn_spec.spec_rd_wdata 0
-  connect \checker_inst.insn_spec.spec_rs1_addr \wrapper.uut.instr [19:15]
-  connect \checker_inst.insn_spec.spec_rs2_addr \wrapper.uut.instr [24:20]
+  connect \checker_inst.insn_spec.spec_rd_addr \wrapper.uut.instr [11:7]
+  connect \checker_inst.insn_spec.spec_rd_wdata \checker_inst.spec_rd_wdata
+  connect \checker_inst.insn_spec.spec_rs1_addr 5'00000
+  connect \checker_inst.insn_spec.spec_rs2_addr 5'00000
   connect \checker_inst.insn_spec.spec_trap \checker_inst.spec_trap
   connect \checker_inst.insn_spec.spec_valid \checker_inst.spec_valid
   connect \checker_inst.intr 1'0
@@ -4602,10 +4512,10 @@ module \rvfi_testbench
   connect \checker_inst.mem_rmask \checker_inst.rvfi_mem_rmask
   connect \checker_inst.pc_rdata \wrapper.uut.pc
   connect \checker_inst.rs1_addr \wrapper.uut.instr [19:15]
-  connect \checker_inst.rs1_rdata_or_zero \checker_inst.insn_spec.rvfi_rs1_rdata
+  connect \checker_inst.rs1_rdata_or_zero 0
   connect \checker_inst.rs2_addr \wrapper.uut.instr [24:20]
   connect \checker_inst.rs2_rdata \checker_inst.mem_wdata
-  connect \checker_inst.rs2_rdata_or_zero \checker_inst.insn_spec.rvfi_rs2_rdata
+  connect \checker_inst.rs2_rdata_or_zero 0
   connect \checker_inst.rvfi_halt 1'0
   connect \checker_inst.rvfi_insn \wrapper.uut.instr
   connect \checker_inst.rvfi_intr 1'0
@@ -4629,10 +4539,9 @@ module \rvfi_testbench
   connect \checker_inst.spec_mem_rmask 4'0000
   connect \checker_inst.spec_mem_wdata 0
   connect \checker_inst.spec_mem_wmask 4'0000
-  connect \checker_inst.spec_rd_addr 5'00000
-  connect \checker_inst.spec_rd_wdata 0
-  connect \checker_inst.spec_rs1_addr \wrapper.uut.instr [19:15]
-  connect \checker_inst.spec_rs2_addr \wrapper.uut.instr [24:20]
+  connect \checker_inst.spec_rd_addr \wrapper.uut.instr [11:7]
+  connect \checker_inst.spec_rs1_addr 5'00000
+  connect \checker_inst.spec_rs2_addr 5'00000
   connect \rvfi_halt 1'0
   connect \rvfi_insn \wrapper.uut.instr
   connect \rvfi_intr 1'0
