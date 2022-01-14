@@ -49,7 +49,7 @@ module myRiscv (
     assign rvfi_rs1_rdata = src_data_1;
     assign rvfi_rs2_rdata = src_data_2;
     assign rvfi_rd_addr = rf_dst_addr;
-    assign rvfi_rd_wdata = rf_dst_data;
+    assign rvfi_rd_wdata = (rf_dst_addr == 32'b0) ? 32'b0 : rf_dst_data;
     
     // Program Counter
     // assign rvfi_pc_rdata = pc_last;
@@ -595,19 +595,19 @@ module myRiscv (
             // Jump and link
             JUMP:       begin
                             wr_en = 4'b0000;
-                            // rf_wr_en = 1'b1;
-                            rf_wr_en = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 1'b0 : 1'b1;
+                            rf_wr_en = 1'b1;
+                            // rf_wr_en = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 1'b0 : 1'b1;
                             src_1_sel = 1'bX;
                             src_2_sel = 1'bX;
-                            // pc_sel = 2'b01;
-                            pc_sel = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 2'b00 : 2'b01;
+                            pc_sel = 2'b01;
+                            // pc_sel = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 2'b00 : 2'b01;
                             rd_data_sel = 3'b010;
                             wr_data_sel = 2'bX;
                             imm_sel = 3'b100;
                             ld_ctrl = 3'bX;
                             alu_ctrl = 4'bX;
-                            // ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
-                            ctrl_instr_trap = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 1'b1 : 1'b0;
+                            ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
+                            // ctrl_instr_trap = (target[1:0] != 2'b00 || target_o_flag == 1'b1) ? 1'b1 : 1'b0;
                         end
             
             // Jump and link register
@@ -628,20 +628,21 @@ module myRiscv (
                             end
                             else begin
                                 wr_en = 4'b0000;
-                                // rf_wr_en = 1'b1;
-                                rf_wr_en = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b0 : 1'b1;
+                                rf_wr_en = 1'b1;
+                                // rf_wr_en = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b0 : 1'b1;
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b1;
                                 // pc_sel = 2'b10;
+                                pc_sel = 2'b11;
+                                // pc_sel = (addr[1:0] != 2'b00) ? 2'b00 : 2'b11;
                                 // pc_sel = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 2'b00 : 2'b10;
-                                pc_sel = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 2'b00 : 2'b11;
                                 rd_data_sel = 3'b010;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'b000;
                                 ld_ctrl = 3'bX;
                                 alu_ctrl = 4'b0000;
-                                // ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
-                                ctrl_instr_trap = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b1 : 1'b0;
+                                ctrl_instr_trap = (pc_next[1:0] != 2'b00) ? 1'b1 : 1'b0;
+                                // ctrl_instr_trap = (addr[1:0] != 2'b00 || o_flag == 1'b1 || carry == 1'b1) ? 1'b1 : 1'b0;
                             end
 
                         end
