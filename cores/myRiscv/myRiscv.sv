@@ -61,7 +61,7 @@ module myRiscv (
     assign rvfi_mem_rmask = rmask;
     assign rvfi_mem_wmask = wr_en;
     assign rvfi_mem_rdata = rd_data;
-    assign rvfi_mem_wdata = wr_data;    
+    assign rvfi_mem_wdata = wr_data_ext;    
 
     // -------------------------------------------------------- RVFI CONTROL --------------------------------------------------------
 
@@ -88,7 +88,7 @@ module myRiscv (
     end
 
     // Write-Data decorder for selecting wr_data to write to the data memory
-    assign wr_data = src_data_2;
+    assign wr_data = wr_data_ext;
 
     // Adder for updating the PC for non-branch instructions
     assign pc_plus_4 = signed'(pc) + signed'(32'b0100);
@@ -325,7 +325,7 @@ module myRiscv (
 
     // ------------------------- LoadExtend Unit -------------------------
 
-    // Enumerate load instruction funct3's
+    // Enumerate load instruction control
     typedef enum logic [4:0] {
         LD_BYTE_0   = 5'b000_00,
         LD_BYTE_1   = 5'b000_01,
@@ -340,7 +340,7 @@ module myRiscv (
         LD_BYTE_U_3 = 5'b100_11,
         LD_HALF_U_0 = 5'b101_00,
         LD_HALF_U_1 = 5'b101_10
-    } ld_funct3s_t;
+    } ld_ctrls_t;
     
     // 
     always_comb begin
@@ -385,6 +385,40 @@ module myRiscv (
 
     // ------------------------- LoadExtend Unit -------------------------
 
+
+    // ------------------------- StoreExtend Unit -------------------------
+
+    // Enumerate store instruction control
+    typedef enum logic [4:0] {
+        S_BYTE_0   = 5'b000_00,
+        S_BYTE_1   = 5'b000_01,
+        S_BYTE_2   = 5'b000_10,
+        S_BYTE_3   = 5'b000_11,
+        S_HALF_0   = 5'b001_00,
+        S_HALF_1   = 5'b001_10,
+        S_WORD     = 5'b010_00
+    } s_ctrls_t;
+
+    logic [4:0] s_ctrl;
+    logic [31:0] wr_data_ext;
+
+    // 
+    always_comb begin
+        wr_data_ext = 32'b0;
+        case (s_ctrl)
+            S_BYTE_0:       wr_data_ext[7:0] = src_data_2[7:0];
+            S_BYTE_1:       wr_data_ext[15:8] = src_data_2[7:0];
+            S_BYTE_2:       wr_data_ext[23:16] = src_data_2[7:0];
+            S_BYTE_3:       wr_data_ext[31:24] = src_data_2[7:0];
+            S_HALF_0:       wr_data_ext[15:0] = src_data_2[15:0];
+            S_HALF_1:       wr_data_ext[31:16] = src_data_2[15:0];
+            S_WORD:         wr_data_ext = src_data_2;
+            default:        wr_data_ext = 'X;
+        endcase
+    end
+
+    // ------------------------- StoreExtend Unit -------------------------
+
     // -------------------------------------------------------- DATAPATH --------------------------------------------------------
 
 
@@ -416,6 +450,7 @@ module myRiscv (
         ctrl_instr_trap = 1'b0;
         rd_addr_sel = 1'b0;
         force_zero_lsb = 1'b0;
+        s_ctrl = 5'b010_00;
 
         case (opcode)
             // Load instructions
@@ -437,7 +472,7 @@ module myRiscv (
                             else begin
                                 force_zero_lsb = 1'b1;
                                 wr_en = 4'b0000;
-                                rf_wr_en = 1'b1;
+                                // rf_wr_en = 1'b1;
                                 if (funct3 == 3'b010)
                                     rf_wr_en = (result[1:0] != 2'b0) ? 1'b0 : 1'b1;
                                 else if (funct3 == 3'b001 || funct3 == 3'b101)
@@ -524,17 +559,39 @@ module myRiscv (
                                 ctrl_instr_trap = 1'b1;
                             end
                             else begin
-                                wr_en = (result[1:0] != 2'b0) ? 1'b0 : {funct3[1], funct3[1], (funct3[1] | funct3[0]), 1'b1};
+                                force_zero_lsb = 1'b1;
+                                if (funct3 == 3'b010)
+                                    wr_en = (result[1:0] != 2'b0) ? 4'b0000 : 4'b1111;
+                                else if (funct3 == 3'b001)
+                                    wr_en = (result[0] != 1'b0) ? 4'b0000 : ((result[1] == 1'b0) ? 4'b0011 : 4'b1100);
+                                else begin
+                                    case (result[1:0])
+                                        2'b00:      wr_en = 4'b0001;
+                                        2'b01:      wr_en = 4'b0010;
+                                        2'b10:      wr_en = 4'b0100;
+                                        2'b11:      wr_en = 4'b1000;
+                                        default:    wr_en = 4'bX;
+                                    endcase
+                                end
+                                // wr_en = (result[1:0] != 2'b0) ? 4'b0000 : {funct3[1], funct3[1], (funct3[1] | funct3[0]), 1'b1};
                                 rf_wr_en = 1'b0;
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b1;
                                 pc_sel = 2'b00;
+                                rd_addr_sel = 1'b1;
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = funct3[1:0];
                                 imm_sel = 3'b010;
+                                s_ctrl = {funct3, result[1:0]};
                                 ld_ctrl = 5'bX;
                                 alu_ctrl = 4'b0000;
-                                ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                                if (funct3 == 3'b010)
+                                    ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                                else if (funct3 == 3'b001)
+                                    ctrl_instr_trap = (result[0] != 1'b0) ? 1'b1 : 1'b0;
+                                else 
+                                    ctrl_instr_trap = 1'b0;
+                                // ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
                             end
                         end
             
