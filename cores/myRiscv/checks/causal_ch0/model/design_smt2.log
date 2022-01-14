@@ -33,30 +33,30 @@ Input filename: design.il
 
 === rvfi_testbench ===
 
-   Number of wires:                419
-   Number of wire bits:           3969
-   Number of public wires:         143
-   Number of public wire bits:    2458
+   Number of wires:                424
+   Number of wire bits:           3912
+   Number of public wires:         142
+   Number of public wire bits:    2426
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                320
+   Number of cells:                325
      $add                            5
      $and                            5
      $anyconst                       2
      $anyseq                        68
      $assert                         1
      $assume                         5
-     $dff                            5
-     $eq                            45
+     $dff                            4
+     $eq                            46
      $gt                             1
      $initstate                      1
-     $logic_and                      8
+     $logic_and                      9
      $logic_not                     11
-     $logic_or                       9
+     $logic_or                      14
      $lt                             3
      $mem_v2                         1
-     $mux                          102
+     $mux                          101
      $ne                             4
      $not                            6
      $or                             2
@@ -73,6 +73,6 @@ Input filename: design.il
 4. Executing SMT2 backend.
 Creating SMT-LIBv2 representation of module rvfi_testbench.
 
-End of script. Logfile hash: 523e9dda39, CPU: user 0.03s system 0.00s, MEM: 12.57 MB peak
+End of script. Logfile hash: ab3155bd11, CPU: user 0.06s system 0.01s, MEM: 12.70 MB peak
 Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 49% 2x read_ilang (0 sec), 47% 2x write_smt2 (0 sec), ...
+Time spent: 49% 2x read_ilang (0 sec), 48% 2x write_smt2 (0 sec), ...

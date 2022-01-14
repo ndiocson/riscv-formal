@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="3">
+<testsuite disabled="0" errors="0" failures="0" name="insn_auipc_ch0" skipped="0" tests="1" time="3">
+<properties>
+<property name="os" value="posix"/>
+</properties>
+<testcase classname="insn_auipc_ch0" name="default" status="PASS" time="3">
+<system-out>SBY 15:38:09 [checks/insn_auipc_ch0] Removing directory '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_auipc_ch0'.
+SBY 15:38:09 [checks/insn_auipc_ch0] Writing 'checks/insn_auipc_ch0/src/defines.sv'.
+SBY 15:38:09 [checks/insn_auipc_ch0] Writing 'checks/insn_auipc_ch0/src/insn_auipc_ch0.sv'.
+SBY 15:38:09 [checks/insn_auipc_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_macros.vh' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_auipc_ch0/src/rvfi_macros.vh'.
+SBY 15:38:09 [checks/insn_auipc_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_channel.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_auipc_ch0/src/rvfi_channel.sv'.
+SBY 15:38:09 [checks/insn_auipc_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_testbench.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_auipc_ch0/src/rvfi_testbench.sv'.
+SBY 15:38:09 [checks/insn_auipc_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_insn_check.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_auipc_ch0/src/rvfi_insn_check.sv'.
+SBY 15:38:09 [checks/insn_auipc_ch0] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_auipc.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_auipc_ch0/src/insn_auipc.v'.
+SBY 15:38:09 [checks/insn_auipc_ch0] engine_0: smtbmc boolector
+SBY 15:38:09 [checks/insn_auipc_ch0] base: starting process &quot;cd checks/insn_auipc_ch0/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 15:38:09 [checks/insn_auipc_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:358.25-358.49.
+SBY 15:38:09 [checks/insn_auipc_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:359.25-359.49.
+SBY 15:38:09 [checks/insn_auipc_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:360.25-360.49.
+SBY 15:38:09 [checks/insn_auipc_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:361.25-361.49.
+SBY 15:38:09 [checks/insn_auipc_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:362.25-362.49.
+SBY 15:38:09 [checks/insn_auipc_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:363.25-363.49.
+SBY 15:38:10 [checks/insn_auipc_ch0] base: finished (returncode=0)
+SBY 15:38:10 [checks/insn_auipc_ch0] smt2: starting process &quot;cd checks/insn_auipc_ch0/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 15:38:10 [checks/insn_auipc_ch0] smt2: finished (returncode=0)
+SBY 15:38:10 [checks/insn_auipc_ch0] engine_0: starting process &quot;cd checks/insn_auipc_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20:21  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 15:38:10 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Solver: boolector
+SBY 15:38:10 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 0..
+SBY 15:38:10 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 1..
+SBY 15:38:10 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 2..
+SBY 15:38:10 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 3..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 4..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 5..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 6..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 7..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:00  Skipping step 8..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 9..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 10..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 11..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 12..
+SBY 15:38:11 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 13..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 14..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 15..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 16..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 17..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:01  Skipping step 18..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:02  Skipping step 19..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:02  Checking assumptions in step 20..
+SBY 15:38:12 [checks/insn_auipc_ch0] engine_0: ##   0:00:02  Checking assertions in step 20..
+SBY 15:38:14 [checks/insn_auipc_ch0] engine_0: ##   0:00:03  Status: passed
+SBY 15:38:14 [checks/insn_auipc_ch0] engine_0: finished (returncode=0)
+SBY 15:38:14 [checks/insn_auipc_ch0] engine_0: Status returned by engine: pass
+SBY 15:38:14 [checks/insn_auipc_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:04 (4)
+SBY 15:38:14 [checks/insn_auipc_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:03 (3)
+SBY 15:38:14 [checks/insn_auipc_ch0] summary: engine_0 (smtbmc boolector) returned pass
+SBY 15:38:14 [checks/insn_auipc_ch0] DONE (PASS, rc=0)
+</system-out></testcase></testsuite></testsuites>

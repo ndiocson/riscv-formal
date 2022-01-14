@@ -2,8 +2,8 @@
 mode bmc
 expect pass,fail
 append 0
-depth 21
-skip 20
+depth 100
+skip 0
 
 [engines]
 smtbmc boolector

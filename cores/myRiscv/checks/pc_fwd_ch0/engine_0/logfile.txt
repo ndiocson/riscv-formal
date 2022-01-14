@@ -7,7 +7,7 @@
 ##   0:00:00  Skipping step 5..
 ##   0:00:00  Skipping step 6..
 ##   0:00:00  Skipping step 7..
-##   0:00:00  Skipping step 8..
+##   0:00:01  Skipping step 8..
 ##   0:00:01  Skipping step 9..
 ##   0:00:01  Skipping step 10..
 ##   0:00:01  Skipping step 11..
@@ -26,9 +26,9 @@
 ##   0:00:02  Skipping step 24..
 ##   0:00:02  Skipping step 25..
 ##   0:00:02  Skipping step 26..
-##   0:00:02  Skipping step 27..
+##   0:00:03  Skipping step 27..
 ##   0:00:03  Skipping step 28..
 ##   0:00:03  Skipping step 29..
 ##   0:00:03  Checking assumptions in step 30..
 ##   0:00:03  Checking assertions in step 30..
-##   0:00:03  Status: passed
+##   0:00:04  Status: passed

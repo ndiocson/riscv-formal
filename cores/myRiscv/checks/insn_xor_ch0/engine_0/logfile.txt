@@ -16,9 +16,9 @@
 ##   0:00:01  Skipping step 14..
 ##   0:00:01  Skipping step 15..
 ##   0:00:01  Skipping step 16..
-##   0:00:01  Skipping step 17..
+##   0:00:02  Skipping step 17..
 ##   0:00:02  Skipping step 18..
 ##   0:00:02  Skipping step 19..
 ##   0:00:02  Checking assumptions in step 20..
 ##   0:00:02  Checking assertions in step 20..
-##   0:00:04  Status: passed
+##   0:00:05  Status: passed

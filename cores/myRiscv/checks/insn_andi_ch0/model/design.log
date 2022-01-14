@@ -422,7 +422,7 @@ No latch inferred for signal `\rvfi_insn_check.$formal$rvfi_insn_check.sv:172$64
 No latch inferred for signal `\rvfi_insn_check.$formal$rvfi_insn_check.sv:172$64_EN' from process `\rvfi_insn_check.$proc$rvfi_insn_check.sv:123$92'.
 No latch inferred for signal `\rvfi_insn_check.$formal$rvfi_insn_check.sv:176$65_CHECK' from process `\rvfi_insn_check.$proc$rvfi_insn_check.sv:123$92'.
 No latch inferred for signal `\rvfi_insn_check.$formal$rvfi_insn_check.sv:176$65_EN' from process `\rvfi_insn_check.$proc$rvfi_insn_check.sv:123$92'.
-Latch inferred for signal `\rvfi_insn_check.\i' from process `\rvfi_insn_check.$proc$rvfi_insn_check.sv:123$92': $auto$proc_dlatch.cc:427:proc_dlatch$2781
+Latch inferred for signal `\rvfi_insn_check.\i' from process `\rvfi_insn_check.$proc$rvfi_insn_check.sv:123$92': $auto$proc_dlatch.cc:427:proc_dlatch$2793
 No latch inferred for signal `\myRiscv.\wr_en' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$328'.
 No latch inferred for signal `\myRiscv.\rf_wr_en' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$328'.
 No latch inferred for signal `\myRiscv.\src_1_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$328'.
@@ -451,25 +451,25 @@ No latch inferred for signal `\myRiscv.\pc_next' from process `\myRiscv.$proc$/h
 
 4.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\myRiscv.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_ADDR' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$286'.
-  created $dff cell `$procdff$2836' with positive edge clock.
+  created $dff cell `$procdff$2848' with positive edge clock.
 Creating register for signal `\myRiscv.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_DATA' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$286'.
-  created $dff cell `$procdff$2837' with positive edge clock.
+  created $dff cell `$procdff$2849' with positive edge clock.
 Creating register for signal `\myRiscv.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$286'.
-  created $dff cell `$procdff$2838' with positive edge clock.
+  created $dff cell `$procdff$2850' with positive edge clock.
 Creating register for signal `\myRiscv.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_ADDR' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$286'.
-  created $dff cell `$procdff$2839' with positive edge clock.
+  created $dff cell `$procdff$2851' with positive edge clock.
 Creating register for signal `\myRiscv.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_DATA' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$286'.
-  created $dff cell `$procdff$2840' with positive edge clock.
+  created $dff cell `$procdff$2852' with positive edge clock.
 Creating register for signal `\myRiscv.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:183$286'.
-  created $dff cell `$procdff$2841' with positive edge clock.
+  created $dff cell `$procdff$2853' with positive edge clock.
 Creating register for signal `\myRiscv.\pc' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$275'.
-  created $dff cell `$procdff$2842' with positive edge clock.
+  created $dff cell `$procdff$2854' with positive edge clock.
 Creating register for signal `\myRiscv.\pc_last' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$275'.
-  created $dff cell `$procdff$2843' with positive edge clock.
+  created $dff cell `$procdff$2855' with positive edge clock.
 Creating register for signal `\myRiscv.\instr_index' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$275'.
-  created $dff cell `$procdff$2844' with positive edge clock.
+  created $dff cell `$procdff$2856' with positive edge clock.
 Creating register for signal `\rvfi_testbench.\cycle_reg' using process `\rvfi_testbench.$proc$rvfi_testbench.sv:35$7'.
-  created $dff cell `$procdff$2845' with positive edge clock.
+  created $dff cell `$procdff$2857' with positive edge clock.
 
 4.2.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
@@ -541,149 +541,149 @@ Optimizing module rvfi_testbench.
 
 4.7.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\rvfi_testbench'.
-<suppressed ~604 debug messages>
-Removed a total of 207 cells.
+<suppressed ~619 debug messages>
+Removed a total of 212 cells.
 
 4.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \rvfi_testbench..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1180.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1196.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1216.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1236.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1244.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1252.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1260.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1268.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1275.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1285.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1305.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1327.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1361.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1371.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1381.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1390.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1399.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1411.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1414.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1416.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1445.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1448.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1450.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1510.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1513.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1515.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1526.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1529.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1531.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1543.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1546.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1548.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1560.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1563.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1565.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1577.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1580.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1582.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1593.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1596.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1598.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1610.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1612.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1638.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1640.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1694.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1696.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1708.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1710.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1722.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1724.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1736.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1738.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1750.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1752.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1764.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1766.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1777.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1799.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1843.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1854.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1865.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1876.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1887.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1898.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1192.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1208.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1228.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1248.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1256.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1264.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1272.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1280.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1287.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1297.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1317.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1339.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1373.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1383.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1393.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1402.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1411.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1423.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1426.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1428.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1457.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1460.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1462.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1522.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1525.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1527.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1538.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1541.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1543.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1555.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1558.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1560.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1572.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1575.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1577.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1589.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1592.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1594.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1605.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1608.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1610.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1622.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1624.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1650.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1652.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1706.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1708.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1720.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1722.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1734.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1736.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1748.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1750.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1762.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1764.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$1776.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1778.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1789.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1811.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1855.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1866.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1877.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1888.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1899.
     dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1910.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1934.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1958.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1993.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1922.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1946.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$1970.
     dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2005.
     dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2017.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2028.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2029.
     dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2040.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2054.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2056.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2086.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2088.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2116.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2118.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2146.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2148.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2161.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2163.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2177.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2179.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2193.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2195.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2209.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2211.
-    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2224.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2226.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2239.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2265.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2291.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2317.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2330.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2343.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2356.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2369.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2382.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2396.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2424.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2438.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2452.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2478.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2491.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2505.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2519.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2533.
-    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2546.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2052.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2066.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2068.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2098.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2100.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2128.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2130.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2158.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2160.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2173.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2175.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2189.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2191.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2205.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2207.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2221.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2223.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$2236.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2238.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2251.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2277.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2303.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2329.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2342.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2355.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2368.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2381.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2394.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2408.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2436.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2450.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2464.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2490.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2503.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2517.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2531.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2545.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$2558.
     dead port 1/2 on $mux $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:129$279.
 Removed 111 multiplexer ports.
 <suppressed ~76 debug messages>
 
 4.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \rvfi_testbench.
-    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1705: { }
-    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1761: { }
-    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1852: { }
-    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1896: { }
-    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$2328: { }
-    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$2380: { }
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2549: { $flatten\wrapper.\uut.$procmux$2397_CMP $flatten\wrapper.\uut.$procmux$2057_CMP $flatten\wrapper.\uut.$procmux$1911_CMP $flatten\wrapper.\uut.$procmux$1417_CMP $flatten\wrapper.\uut.$procmux$1286_CMP $flatten\wrapper.\uut.$procmux$2553_CMP $flatten\wrapper.\uut.$procmux$1181_CMP $auto$opt_reduce.cc:134:opt_mux$2849 }
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2582: $flatten\wrapper.\uut.$procmux$2397_CMP
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2590: { $flatten\wrapper.\uut.$procmux$2397_CMP $flatten\wrapper.\uut.$procmux$2057_CMP $flatten\wrapper.\uut.$procmux$1911_CMP $flatten\wrapper.\uut.$procmux$1286_CMP $flatten\wrapper.\uut.$procmux$2553_CMP $flatten\wrapper.\uut.$procmux$1181_CMP $auto$opt_reduce.cc:134:opt_mux$2851 }
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2611: { $flatten\wrapper.\uut.$procmux$2397_CMP $flatten\wrapper.\uut.$procmux$2057_CMP $flatten\wrapper.\uut.$procmux$1417_CMP $flatten\wrapper.\uut.$procmux$2553_CMP $flatten\wrapper.\uut.$procmux$1181_CMP $flatten\wrapper.\uut.$procmux$2551_CMP $flatten\wrapper.\uut.$procmux$2550_CMP }
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2624: { $flatten\wrapper.\uut.$procmux$1286_CMP $flatten\wrapper.\uut.$procmux$2553_CMP $flatten\wrapper.\uut.$procmux$1181_CMP }
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2651: { $flatten\wrapper.\uut.$procmux$2397_CMP $flatten\wrapper.\uut.$procmux$2057_CMP $flatten\wrapper.\uut.$procmux$1417_CMP $flatten\wrapper.\uut.$procmux$2553_CMP $flatten\wrapper.\uut.$procmux$1181_CMP $auto$opt_reduce.cc:134:opt_mux$2853 }
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2664: $flatten\wrapper.\uut.$procmux$1911_CMP
-    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2672: { $flatten\wrapper.\uut.$procmux$2675_CMP $flatten\wrapper.\uut.$procmux$2674_CMP $auto$opt_reduce.cc:134:opt_mux$2855 }
-    Consolidated identical input bits for $mux cell $flatten\wrapper.\uut.$procmux$2739:
+    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1717: { }
+    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1773: { }
+    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1864: { }
+    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$1908: { }
+    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$2340: { }
+    New ctrl vector for $mux cell $flatten\wrapper.\uut.$procmux$2392: { }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2561: { $flatten\wrapper.\uut.$procmux$2409_CMP $flatten\wrapper.\uut.$procmux$2069_CMP $flatten\wrapper.\uut.$procmux$1923_CMP $flatten\wrapper.\uut.$procmux$1429_CMP $flatten\wrapper.\uut.$procmux$1298_CMP $flatten\wrapper.\uut.$procmux$2565_CMP $flatten\wrapper.\uut.$procmux$1193_CMP $auto$opt_reduce.cc:134:opt_mux$2861 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2594: $flatten\wrapper.\uut.$procmux$2409_CMP
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2602: { $flatten\wrapper.\uut.$procmux$2409_CMP $flatten\wrapper.\uut.$procmux$2069_CMP $flatten\wrapper.\uut.$procmux$1923_CMP $flatten\wrapper.\uut.$procmux$1298_CMP $flatten\wrapper.\uut.$procmux$2565_CMP $flatten\wrapper.\uut.$procmux$1193_CMP $auto$opt_reduce.cc:134:opt_mux$2863 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2623: { $flatten\wrapper.\uut.$procmux$2409_CMP $flatten\wrapper.\uut.$procmux$2069_CMP $flatten\wrapper.\uut.$procmux$1429_CMP $flatten\wrapper.\uut.$procmux$2565_CMP $flatten\wrapper.\uut.$procmux$1193_CMP $flatten\wrapper.\uut.$procmux$2563_CMP $flatten\wrapper.\uut.$procmux$2562_CMP }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2636: { $flatten\wrapper.\uut.$procmux$1298_CMP $flatten\wrapper.\uut.$procmux$2565_CMP $flatten\wrapper.\uut.$procmux$1193_CMP }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2663: { $flatten\wrapper.\uut.$procmux$2409_CMP $flatten\wrapper.\uut.$procmux$2069_CMP $flatten\wrapper.\uut.$procmux$1429_CMP $flatten\wrapper.\uut.$procmux$2565_CMP $flatten\wrapper.\uut.$procmux$1193_CMP $auto$opt_reduce.cc:134:opt_mux$2865 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2676: $flatten\wrapper.\uut.$procmux$1923_CMP
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$2684: { $flatten\wrapper.\uut.$procmux$2687_CMP $flatten\wrapper.\uut.$procmux$2686_CMP $auto$opt_reduce.cc:134:opt_mux$2867 }
+    Consolidated identical input bits for $mux cell $flatten\wrapper.\uut.$procmux$2751:
       Old ports: A=0, B=32'11111111111111111111111111111111, Y=$flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289
       New ports: A=1'0, B=1'1, Y=$flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0]
       New connections: $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31:1] = { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [0] }
-    Consolidated identical input bits for $mux cell $flatten\wrapper.\uut.$procmux$2748:
+    Consolidated identical input bits for $mux cell $flatten\wrapper.\uut.$procmux$2760:
       Old ports: A=32'11111111111111111111111111111111, B=0, Y=$flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292
       New ports: A=1'1, B=1'0, Y=$flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0]
       New connections: $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31:1] = { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [0] }
@@ -697,7 +697,7 @@ Removed a total of 22 cells.
 
 4.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \rvfi_testbench..
-Removed 0 unused cells and 331 unused wires.
+Removed 0 unused cells and 336 unused wires.
 <suppressed ~1 debug messages>
 
 4.7.7. Executing OPT_EXPR pass (perform const folding).
@@ -740,42 +740,44 @@ Removed top 2 bits (of 7) from port B of cell rvfi_testbench.$flatten\checker_in
 Removed top 29 bits (of 32) from port B of cell rvfi_testbench.$flatten\checker_inst.\insn_spec.$add$insn_andi.v:49$259 ($add).
 Removed top 28 bits (of 32) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:104$268 ($add).
 Removed top 63 bits (of 64) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:129$278 ($add).
+Removed top 1 bits (of 33) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:224$311 ($add).
+Removed top 1 bits (of 33) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:224$311 ($add).
 Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$329 ($eq).
 Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:434$338 ($eq).
 Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$343 ($ne).
 Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$353 ($ne).
 Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$355 ($ne).
-Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:568$374 ($eq).
-Removed top 1 bits (of 2) from mux cell rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$381 ($mux).
-Removed top 1 bits (of 2) from mux cell rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:606$394 ($mux).
-Removed top 1 bits (of 2) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2759_CMP0 ($eq).
-Removed top 1 bits (of 2) from mux cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$1359 ($mux).
-Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$1417_CMP0 ($eq).
-Removed top 1 bits (of 2) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2770_CMP0 ($eq).
-Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$1911_CMP0 ($eq).
-Removed top 2 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2057_CMP0 ($eq).
-Removed top 5 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2397_CMP0 ($eq).
-Removed top 2 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2550_CMP0 ($eq).
-Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2551_CMP0 ($eq).
-Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2674_CMP0 ($eq).
-Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2675_CMP0 ($eq).
-Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2688_CMP0 ($eq).
-Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2689_CMP0 ($eq).
-Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2690_CMP0 ($eq).
-Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2706_CMP0 ($eq).
-Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2707_CMP0 ($eq).
-Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2709_CMP0 ($eq).
-Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2710_CMP0 ($eq).
-Removed top 2 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2711_CMP0 ($eq).
-Removed top 2 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2712_CMP0 ($eq).
-Removed top 3 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2713_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$374 ($eq).
+Removed top 1 bits (of 2) from mux cell rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$393 ($mux).
+Removed top 1 bits (of 2) from mux cell rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:606$406 ($mux).
+Removed top 1 bits (of 2) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2771_CMP0 ($eq).
+Removed top 1 bits (of 2) from mux cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$1371 ($mux).
+Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$1429_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2782_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$1923_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2069_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2409_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2562_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2563_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2686_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2687_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2700_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2701_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2702_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2718_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2719_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2721_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2722_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2723_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2724_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$2725_CMP0 ($eq).
 Removed top 1 bits (of 9) from port Y of cell rvfi_testbench.$add$rvfi_testbench.sv:36$9 ($add).
 Removed top 24 bits (of 32) from wire rvfi_testbench.$add$rvfi_testbench.sv:36$9_Y.
 Removed top 1 bits (of 2) from wire rvfi_testbench.$flatten\wrapper.\uut.$9\pc_sel[1:0].
 Removed top 31 bits (of 32) from wire rvfi_testbench.$flatten\wrapper.\uut.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:248$318_Y.
 Removed top 31 bits (of 32) from wire rvfi_testbench.$flatten\wrapper.\uut.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:255$319_Y.
-Removed top 1 bits (of 2) from wire rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$381_Y.
-Removed top 1 bits (of 2) from wire rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:606$394_Y.
+Removed top 1 bits (of 2) from wire rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$393_Y.
+Removed top 1 bits (of 2) from wire rvfi_testbench.$flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:606$406_Y.
 Removed top 31 bits (of 32) from wire rvfi_testbench.$ne$rvfi_testbench.sv:36$8_Y.
 
 4.9. Executing OPT_CLEAN pass (remove unused cells and wires).
@@ -806,14 +808,14 @@ Removed 0 unused cells and 1 unused wires.
 
 === rvfi_testbench ===
 
-   Number of wires:                449
-   Number of wire bits:           4433
+   Number of wires:                456
+   Number of wire bits:           4440
    Number of public wires:         200
    Number of public wire bits:    3325
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                311
+   Number of cells:                318
      $add                            6
      $and                            6
      $anyseq                         2
@@ -821,11 +823,11 @@ Removed 0 unused cells and 1 unused wires.
      $assume                         2
      $cover                          4
      $dff                            3
-     $eq                            48
+     $eq                            49
      $initstate                      1
-     $logic_and                     13
+     $logic_and                     14
      $logic_not                     14
-     $logic_or                       8
+     $logic_or                      13
      $lt                             3
      $mem_v2                         1
      $mux                          136
@@ -866,9 +868,9 @@ Finding identical cells in module `\rvfi_testbench'.
 Removed a total of 0 cells.
 
 9.3. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $procdff$2845 ($dff) from module rvfi_testbench (D = $add$rvfi_testbench.sv:36$9_Y, Q = \cycle_reg, rval = 8'00000001).
-Adding SRST signal on $flatten\wrapper.\uut.$procdff$2844 ($dff) from module rvfi_testbench (D = $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:129$278_Y, Q = \wrapper.uut.instr_index, rval = 64'0000000000000000000000000000000000000000000000000000000000000000).
-Adding SRST signal on $flatten\wrapper.\uut.$procdff$2842 ($dff) from module rvfi_testbench (D = \checker_inst.pc_wdata, Q = \wrapper.uut.pc, rval = 0).
+Adding SRST signal on $procdff$2857 ($dff) from module rvfi_testbench (D = $add$rvfi_testbench.sv:36$9_Y, Q = \cycle_reg, rval = 8'00000001).
+Adding SRST signal on $flatten\wrapper.\uut.$procdff$2856 ($dff) from module rvfi_testbench (D = $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:129$278_Y, Q = \wrapper.uut.instr_index, rval = 64'0000000000000000000000000000000000000000000000000000000000000000).
+Adding SRST signal on $flatten\wrapper.\uut.$procdff$2854 ($dff) from module rvfi_testbench (D = \checker_inst.pc_wdata, Q = \wrapper.uut.pc, rval = 0).
 
 9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \rvfi_testbench..
@@ -909,6 +911,6 @@ Module rvfi_testbench directly or indirectly contains formal properties -> setti
 Output filename: ../model/design.il
 
 Warnings: 6 unique messages, 6 total
-End of script. Logfile hash: c2a8132c03, CPU: user 0.74s system 0.02s, MEM: 25.95 MB peak
+End of script. Logfile hash: d48f365ccf, CPU: user 0.79s system 0.01s, MEM: 26.26 MB peak
 Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
 Time spent: 16% 8x opt_clean (0 sec), 15% 3x check (0 sec), ...

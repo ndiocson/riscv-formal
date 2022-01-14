@@ -33,25 +33,25 @@ Input filename: design.il
 
 === rvfi_testbench ===
 
-   Number of wires:                534
-   Number of wire bits:           4842
+   Number of wires:                541
+   Number of wire bits:           4849
    Number of public wires:         201
    Number of public wire bits:    3305
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                393
+   Number of cells:                400
      $add                            6
      $and                            5
      $anyseq                        88
      $assert                        17
      $assume                         2
      $dff                            3
-     $eq                            48
+     $eq                            49
      $initstate                      1
-     $logic_and                     11
+     $logic_and                     12
      $logic_not                     14
-     $logic_or                       8
+     $logic_or                      13
      $lt                             3
      $mem_v2                         1
      $mux                          136
@@ -70,6 +70,6 @@ Input filename: design.il
 4. Executing SMT2 backend.
 Creating SMT-LIBv2 representation of module rvfi_testbench.
 
-End of script. Logfile hash: dbc204d3d6, CPU: user 0.03s system 0.01s, MEM: 12.91 MB peak
+End of script. Logfile hash: 53d15ae414, CPU: user 0.10s system 0.00s, MEM: 13.08 MB peak
 Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 55% 2x write_smt2 (0 sec), 41% 2x read_ilang (0 sec), ...
+Time spent: 49% 2x write_smt2 (0 sec), 49% 2x read_ilang (0 sec), ...

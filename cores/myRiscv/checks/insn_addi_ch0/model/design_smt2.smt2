@@ -5,10 +5,10 @@
 ; yosys-smt2-anyseq rvfi_testbench#0 32 rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:0.0-0.0 instr
 (declare-fun |rvfi_testbench#0| (|rvfi_testbench_s|) (_ BitVec 32)) ; \wrapper.uut.instr
 (define-fun |rvfi_testbench#1| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvor ((_ extract 13 13) (|rvfi_testbench#0| state)) ((_ extract 12 12) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:493$358_Y
-; yosys-smt2-anyseq rvfi_testbench#2 32 $auto$setundef.cc:501:execute$3009
-(declare-fun |rvfi_testbench#2| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3010
-; yosys-smt2-anyseq rvfi_testbench#3 32 $auto$setundef.cc:501:execute$3025
-(declare-fun |rvfi_testbench#3| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3026
+; yosys-smt2-anyseq rvfi_testbench#2 32 $auto$setundef.cc:501:execute$3021
+(declare-fun |rvfi_testbench#2| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3022
+; yosys-smt2-anyseq rvfi_testbench#3 32 $auto$setundef.cc:501:execute$3037
+(declare-fun |rvfi_testbench#3| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3038
 (declare-fun |rvfi_testbench#4| (|rvfi_testbench_s|) (_ BitVec 32)) ; \wrapper.uut.pc
 ; yosys-smt2-memory wrapper.uut.mem 5 32 3 2 sync
 (declare-fun |rvfi_testbench#5#0| (|rvfi_testbench_s|) (Array (_ BitVec 5) (_ BitVec 32))) ; wrapper.uut.mem
@@ -24,344 +24,351 @@
 (define-fun |rvfi_testbench_m:R2D wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#8| state))
 (define-fun |rvfi_testbench#9| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 15 15) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 16 16) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 17 17) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 18 18) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 19 19) (|rvfi_testbench#0| state)) #b1)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:143$184_Y
 (define-fun |rvfi_testbench#10| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#9| state) #b00000000000000000000000000000000 (|rvfi_testbench#7| state))) ; \checker_inst.rs1_rdata
-; yosys-smt2-anyseq rvfi_testbench#11 1 $auto$setundef.cc:501:execute$3003
-(declare-fun |rvfi_testbench#11| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3004
-; yosys-smt2-anyseq rvfi_testbench#12 1 $auto$setundef.cc:501:execute$2927
-(declare-fun |rvfi_testbench#12| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2928
+; yosys-smt2-anyseq rvfi_testbench#11 1 $auto$setundef.cc:501:execute$3015
+(declare-fun |rvfi_testbench#11| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3016
+; yosys-smt2-anyseq rvfi_testbench#12 1 $auto$setundef.cc:501:execute$2939
+(declare-fun |rvfi_testbench#12| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2940
 (define-fun |rvfi_testbench#13| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 14 12) (|rvfi_testbench#0| state)) #b000)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$352_Y
 (define-fun |rvfi_testbench#14| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#12| state) #b0)) ; $flatten\wrapper.\uut.$10\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#15 1 $auto$setundef.cc:501:execute$2933
-(declare-fun |rvfi_testbench#15| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2934
-(define-fun |rvfi_testbench#16| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b010)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:568$374_Y
+; yosys-smt2-anyseq rvfi_testbench#15 1 $auto$setundef.cc:501:execute$2945
+(declare-fun |rvfi_testbench#15| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2946
+(define-fun |rvfi_testbench#16| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b010)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$374_Y
 (define-fun |rvfi_testbench#17| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b011)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$329_Y
-(define-fun |rvfi_testbench#18| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#16| state) false  (|rvfi_testbench#17| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:568$376_Y
+(define-fun |rvfi_testbench#18| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#16| state) false  (|rvfi_testbench#17| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:568$388_Y
 (define-fun |rvfi_testbench#19| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#18| state) (|rvfi_testbench#15| state) #b0)) ; $flatten\wrapper.\uut.$9\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#20 1 $auto$setundef.cc:501:execute$2939
-(declare-fun |rvfi_testbench#20| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2940
-(define-fun |rvfi_testbench#21| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 31 25) (|rvfi_testbench#0| state)) #b0000000)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:434$339_Y
-(define-fun |rvfi_testbench#22| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#21| state) (|rvfi_testbench#20| state) #b0)) ; $flatten\wrapper.\uut.$8\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#23 1 $auto$setundef.cc:501:execute$2945
-(declare-fun |rvfi_testbench#23| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2946
-(define-fun |rvfi_testbench#24| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b101)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$341_Y
-(define-fun |rvfi_testbench#25| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 31 25) (|rvfi_testbench#0| state)) #b0100000)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$343_Y
-(define-fun |rvfi_testbench#26| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#21| state) false) (or  (|rvfi_testbench#25| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$344_Y
-(define-fun |rvfi_testbench#27| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#24| state) false) (or  (|rvfi_testbench#26| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$345_Y
-(define-fun |rvfi_testbench#28| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#23| state) (|rvfi_testbench#22| state))) ; $flatten\wrapper.\uut.$7\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#29 1 $auto$setundef.cc:501:execute$2951
-(declare-fun |rvfi_testbench#29| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2952
-(define-fun |rvfi_testbench#30| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 12 12) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#0| state)) #b1)))) ; $flatten\checker_inst.\insn_spec.$eq$insn_addi.v:45$253_Y
-(define-fun |rvfi_testbench#31| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#30| state) false) (or  (|rvfi_testbench#26| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:509$367_Y
-(define-fun |rvfi_testbench#32| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#31| state) (|rvfi_testbench#29| state) (|rvfi_testbench#28| state))) ; $flatten\wrapper.\uut.$6\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#33 1 $auto$setundef.cc:501:execute$2959
-(declare-fun |rvfi_testbench#33| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2960
-(define-fun |rvfi_testbench#34| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 14 12) (|rvfi_testbench#0| state)) #b001)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$353_Y
-(define-fun |rvfi_testbench#35| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#13| state) false) (or  (|rvfi_testbench#34| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$354_Y
-(define-fun |rvfi_testbench#36| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 14 12) (|rvfi_testbench#0| state)) #b010)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$355_Y
-(define-fun |rvfi_testbench#37| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#35| state) false) (or  (|rvfi_testbench#36| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$356_Y
-(define-fun |rvfi_testbench#38| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#33| state) #b0)) ; $flatten\wrapper.\uut.$5\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#39 1 $auto$setundef.cc:501:execute$2969
-(declare-fun |rvfi_testbench#39| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2970
-(define-fun |rvfi_testbench#40| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#39| state) #b0)) ; $flatten\wrapper.\uut.$4\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#41 1 $auto$setundef.cc:501:execute$2979
-(declare-fun |rvfi_testbench#41| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2980
-(define-fun |rvfi_testbench#42| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b001)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:434$338_Y
-(define-fun |rvfi_testbench#43| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#42| state) false) (or  (|rvfi_testbench#21| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:434$340_Y
-(define-fun |rvfi_testbench#44| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#43| state) (|rvfi_testbench#41| state) (|rvfi_testbench#40| state))) ; $flatten\wrapper.\uut.$3\src_1_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#45 1 $auto$setundef.cc:501:execute$2991
-(declare-fun |rvfi_testbench#45| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2992
-(define-fun |rvfi_testbench#46| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b110)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$330_Y
-(define-fun |rvfi_testbench#47| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#17| state) false  (|rvfi_testbench#46| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$331_Y
-(define-fun |rvfi_testbench#48| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b111)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$332_Y
-(define-fun |rvfi_testbench#49| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#47| state) false  (|rvfi_testbench#48| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$333_Y
-(define-fun |rvfi_testbench#50| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#49| state) (|rvfi_testbench#45| state) #b0)) ; $flatten\wrapper.\uut.$2\src_1_sel[0:0]
-(declare-fun |rvfi_testbench#51| (|rvfi_testbench_s|) (_ BitVec 1)) ; \reset
-(define-fun |rvfi_testbench#52| ((state |rvfi_testbench_s|)) (_ BitVec 7) (ite (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1) #b0000000 ((_ extract 6 0) (|rvfi_testbench#0| state)))) ; \wrapper.uut.opcode
-(define-fun |rvfi_testbench#53| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b0010111)) ; $flatten\wrapper.\uut.$procmux$2550_CMP
-(define-fun |rvfi_testbench#54| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b1100111)) ; $flatten\wrapper.\uut.$procmux$1181_CMP
-(define-fun |rvfi_testbench#55| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b1100011)) ; $flatten\wrapper.\uut.$procmux$1286_CMP
-(define-fun |rvfi_testbench#56| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b0110011)) ; $flatten\wrapper.\uut.$procmux$1417_CMP
-(define-fun |rvfi_testbench#57| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b0100011)) ; $flatten\wrapper.\uut.$procmux$1911_CMP
-(define-fun |rvfi_testbench#58| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b0010011)) ; $flatten\wrapper.\uut.$procmux$2057_CMP
-(define-fun |rvfi_testbench#59| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b0000011)) ; $flatten\wrapper.\uut.$procmux$2397_CMP
-(define-fun |rvfi_testbench#60| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#50| state) (ite (|rvfi_testbench#58| state) (|rvfi_testbench#44| state) (ite (|rvfi_testbench#57| state) (|rvfi_testbench#38| state) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#32| state) (ite (|rvfi_testbench#55| state) (|rvfi_testbench#19| state) (ite (|rvfi_testbench#54| state) (|rvfi_testbench#14| state) (ite (|rvfi_testbench#53| state) #b1 (|rvfi_testbench#11| state))))))))) ; \wrapper.uut.src_1_sel
-(define-fun |rvfi_testbench#61| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#60| state))) ; $flatten\wrapper.\uut.$procmux$2766_CMP
-(define-fun |rvfi_testbench#62| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#61| state)) #b1) (|rvfi_testbench#10| state) (ite (= ((_ extract 0 0) (|rvfi_testbench#60| state)) #b1) (|rvfi_testbench#4| state) (|rvfi_testbench#3| state)))) ; \wrapper.uut.alu_in_1
-; yosys-smt2-anyseq rvfi_testbench#63 32 $auto$setundef.cc:501:execute$3023
-(declare-fun |rvfi_testbench#63| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3024
-; yosys-smt2-anyseq rvfi_testbench#64 32 $auto$setundef.cc:501:execute$3007
-(declare-fun |rvfi_testbench#64| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3008
-; yosys-smt2-anyseq rvfi_testbench#65 3 $auto$setundef.cc:501:execute$2997
-(declare-fun |rvfi_testbench#65| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2998
-; yosys-smt2-anyseq rvfi_testbench#66 3 $auto$setundef.cc:501:execute$2921
-(declare-fun |rvfi_testbench#66| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2922
-(define-fun |rvfi_testbench#67| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#66| state) #b000)) ; $flatten\wrapper.\uut.$10\imm_sel[2:0]
-; yosys-smt2-anyseq rvfi_testbench#68 3 $auto$setundef.cc:501:execute$2931
-(declare-fun |rvfi_testbench#68| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2932
-(define-fun |rvfi_testbench#69| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#18| state) (|rvfi_testbench#68| state) #b011)) ; $flatten\wrapper.\uut.$9\imm_sel[2:0]
-; yosys-smt2-anyseq rvfi_testbench#70 3 $auto$setundef.cc:501:execute$2955
-(declare-fun |rvfi_testbench#70| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2956
-(define-fun |rvfi_testbench#71| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#70| state) #b010)) ; $flatten\wrapper.\uut.$5\imm_sel[2:0]
-(define-fun |rvfi_testbench#72| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot ((_ extract 13 13) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$346_Y
-(define-fun |rvfi_testbench#73| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand (|rvfi_testbench#72| state) ((_ extract 12 12) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$347_Y
-; yosys-smt2-anyseq rvfi_testbench#74 3 $auto$setundef.cc:501:execute$2963
-(declare-fun |rvfi_testbench#74| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2964
-(define-fun |rvfi_testbench#75| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#74| state) (concat #b00 (|rvfi_testbench#73| state)))) ; $flatten\wrapper.\uut.$4\imm_sel[2:0]
-; yosys-smt2-anyseq rvfi_testbench#76 3 $auto$setundef.cc:501:execute$2973
-(declare-fun |rvfi_testbench#76| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2974
-(define-fun |rvfi_testbench#77| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#43| state) (|rvfi_testbench#76| state) (|rvfi_testbench#75| state))) ; $flatten\wrapper.\uut.$3\imm_sel[2:0]
-; yosys-smt2-anyseq rvfi_testbench#78 3 $auto$setundef.cc:501:execute$2985
-(declare-fun |rvfi_testbench#78| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2986
-(define-fun |rvfi_testbench#79| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#49| state) (|rvfi_testbench#78| state) #b000)) ; $flatten\wrapper.\uut.$2\imm_sel[2:0]
-(define-fun |rvfi_testbench#80| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b0110111)) ; $flatten\wrapper.\uut.$procmux$2551_CMP
-(define-fun |rvfi_testbench#81| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#53| state) (|rvfi_testbench#80| state))) ; $auto$opt_reduce.cc:134:opt_mux$2849
-(define-fun |rvfi_testbench#82| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#52| state) #b1101111)) ; $flatten\wrapper.\uut.$procmux$2553_CMP
-(define-fun |rvfi_testbench#83| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#79| state) (ite (|rvfi_testbench#58| state) (|rvfi_testbench#77| state) (ite (|rvfi_testbench#57| state) (|rvfi_testbench#71| state) (ite (|rvfi_testbench#55| state) (|rvfi_testbench#69| state) (ite (|rvfi_testbench#82| state) #b100 (ite (|rvfi_testbench#54| state) (|rvfi_testbench#67| state) (ite (|rvfi_testbench#81| state) #b101 (|rvfi_testbench#65| state))))))))) ; \wrapper.uut.imm_sel
-(define-fun |rvfi_testbench#84| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#83| state) #b101)) ; $flatten\wrapper.\uut.$procmux$2686_CMP
-(define-fun |rvfi_testbench#85| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#83| state) #b100)) ; $flatten\wrapper.\uut.$procmux$2687_CMP
-(define-fun |rvfi_testbench#86| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#83| state) #b011)) ; $flatten\wrapper.\uut.$procmux$2688_CMP
-(define-fun |rvfi_testbench#87| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#83| state) #b010)) ; $flatten\wrapper.\uut.$procmux$2689_CMP
-(define-fun |rvfi_testbench#88| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#83| state) #b001)) ; $flatten\wrapper.\uut.$procmux$2690_CMP
-(define-fun |rvfi_testbench#89| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#83| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#83| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#83| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2691_CMP
-(define-fun |rvfi_testbench#90| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#89| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) ((_ extract 31 20) (|rvfi_testbench#0| state)))))))))))))))))))))) (ite (|rvfi_testbench#88| state) (concat #b000000000000000000000000000 ((_ extract 24 20) (|rvfi_testbench#0| state))) (ite (|rvfi_testbench#87| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 25) (|rvfi_testbench#0| state)) ((_ extract 11 7) (|rvfi_testbench#0| state))))))))))))))))))))))) (ite (|rvfi_testbench#86| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 7 7) (|rvfi_testbench#0| state)) (concat ((_ extract 30 25) (|rvfi_testbench#0| state)) (concat ((_ extract 11 8) (|rvfi_testbench#0| state)) #b0))))))))))))))))))))))) (ite (|rvfi_testbench#85| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 19 12) (|rvfi_testbench#0| state)) (concat ((_ extract 20 20) (|rvfi_testbench#0| state)) (concat ((_ extract 30 21) (|rvfi_testbench#0| state)) #b0))))))))))))))) (ite (|rvfi_testbench#84| state) (concat ((_ extract 31 12) (|rvfi_testbench#0| state)) #b000000000000) (|rvfi_testbench#64| state)))))))) ; \wrapper.uut.imm_ext
-(define-fun |rvfi_testbench#91| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 20 20) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#0| state)) #b1)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:146$186_Y
-(define-fun |rvfi_testbench#92| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#91| state) #b00000000000000000000000000000000 (|rvfi_testbench#6| state))) ; \checker_inst.mem_wdata
-; yosys-smt2-anyseq rvfi_testbench#93 1 $auto$setundef.cc:501:execute$3001
-(declare-fun |rvfi_testbench#93| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3002
-; yosys-smt2-anyseq rvfi_testbench#94 1 $auto$setundef.cc:501:execute$2925
-(declare-fun |rvfi_testbench#94| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2926
-(define-fun |rvfi_testbench#95| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#94| state) #b1)) ; $flatten\wrapper.\uut.$10\src_2_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#96 1 $auto$setundef.cc:501:execute$2957
-(declare-fun |rvfi_testbench#96| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2958
-(define-fun |rvfi_testbench#97| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#96| state) #b1)) ; $flatten\wrapper.\uut.$5\src_2_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#98 1 $auto$setundef.cc:501:execute$2967
-(declare-fun |rvfi_testbench#98| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2968
-(define-fun |rvfi_testbench#99| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#98| state) #b1)) ; $flatten\wrapper.\uut.$4\src_2_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#100 1 $auto$setundef.cc:501:execute$2977
-(declare-fun |rvfi_testbench#100| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2978
-(define-fun |rvfi_testbench#101| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#43| state) (|rvfi_testbench#100| state) (|rvfi_testbench#99| state))) ; $flatten\wrapper.\uut.$3\src_2_sel[0:0]
-; yosys-smt2-anyseq rvfi_testbench#102 1 $auto$setundef.cc:501:execute$2989
-(declare-fun |rvfi_testbench#102| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2990
-(define-fun |rvfi_testbench#103| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#49| state) (|rvfi_testbench#102| state) #b1)) ; $flatten\wrapper.\uut.$2\src_2_sel[0:0]
-(define-fun |rvfi_testbench#104| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#103| state) (ite (|rvfi_testbench#58| state) (|rvfi_testbench#101| state) (ite (|rvfi_testbench#57| state) (|rvfi_testbench#97| state) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#32| state) (ite (|rvfi_testbench#55| state) (|rvfi_testbench#19| state) (ite (|rvfi_testbench#54| state) (|rvfi_testbench#95| state) (ite (|rvfi_testbench#53| state) #b1 (|rvfi_testbench#93| state))))))))) ; \wrapper.uut.src_2_sel
-(define-fun |rvfi_testbench#105| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#104| state))) ; $flatten\wrapper.\uut.$procmux$2763_CMP
-(define-fun |rvfi_testbench#106| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#105| state)) #b1) (|rvfi_testbench#92| state) (ite (= ((_ extract 0 0) (|rvfi_testbench#104| state)) #b1) (|rvfi_testbench#90| state) (|rvfi_testbench#63| state)))) ; \wrapper.uut.alu_in_2
-(define-fun |rvfi_testbench#107| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvand (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:290$324_Y
-(define-fun |rvfi_testbench#108| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvor (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:283$323_Y
-(define-fun |rvfi_testbench#109| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvashr (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:275$322_Y
-(define-fun |rvfi_testbench#110| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvlshr (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:268$321_Y
-(define-fun |rvfi_testbench#111| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvxor (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:262$320_Y
-(define-fun |rvfi_testbench#112| ((state |rvfi_testbench_s|)) Bool (bvult (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $auto$wreduce.cc:454:run$2859 [0]
-(define-fun |rvfi_testbench#113| ((state |rvfi_testbench_s|)) Bool (bvslt (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $auto$wreduce.cc:454:run$2858 [0]
-(define-fun |rvfi_testbench#114| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvshl (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$shl$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:241$317_Y
-(define-fun |rvfi_testbench#115| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvsub (|rvfi_testbench#62| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$sub$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:234$315_Y
-(define-fun |rvfi_testbench#116| ((state |rvfi_testbench_s|)) (_ BitVec 33) (bvadd (concat #b0 (|rvfi_testbench#62| state)) (concat #b0 (|rvfi_testbench#106| state)))) ; $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:225$311_Y
-; yosys-smt2-anyseq rvfi_testbench#117 4 $auto$setundef.cc:501:execute$2993
-(declare-fun |rvfi_testbench#117| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2994
-; yosys-smt2-anyseq rvfi_testbench#118 4 $auto$setundef.cc:501:execute$2919
-(declare-fun |rvfi_testbench#118| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2920
-(define-fun |rvfi_testbench#119| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#118| state) #b0000)) ; $flatten\wrapper.\uut.$10\alu_ctrl[3:0]
-(define-fun |rvfi_testbench#120| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot ((_ extract 14 14) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:593$382_Y
-; yosys-smt2-anyseq rvfi_testbench#121 4 $auto$setundef.cc:501:execute$2929
-(declare-fun |rvfi_testbench#121| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2930
-(define-fun |rvfi_testbench#122| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#18| state) (|rvfi_testbench#121| state) (concat (|rvfi_testbench#120| state) (concat #b0 ((_ extract 14 13) (|rvfi_testbench#0| state)))))) ; $flatten\wrapper.\uut.$9\alu_ctrl[3:0]
-; yosys-smt2-anyseq rvfi_testbench#123 4 $auto$setundef.cc:501:execute$2935
-(declare-fun |rvfi_testbench#123| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2936
-(define-fun |rvfi_testbench#124| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#21| state) (|rvfi_testbench#123| state) (concat ((_ extract 30 30) (|rvfi_testbench#0| state)) ((_ extract 14 12) (|rvfi_testbench#0| state))))) ; $flatten\wrapper.\uut.$8\alu_ctrl[3:0]
-; yosys-smt2-anyseq rvfi_testbench#125 4 $auto$setundef.cc:501:execute$2941
-(declare-fun |rvfi_testbench#125| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2942
-(define-fun |rvfi_testbench#126| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#125| state) (|rvfi_testbench#124| state))) ; $flatten\wrapper.\uut.$7\alu_ctrl[3:0]
-; yosys-smt2-anyseq rvfi_testbench#127 4 $auto$setundef.cc:501:execute$2947
-(declare-fun |rvfi_testbench#127| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2948
-(define-fun |rvfi_testbench#128| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#31| state) (|rvfi_testbench#127| state) (|rvfi_testbench#126| state))) ; $flatten\wrapper.\uut.$6\alu_ctrl[3:0]
-; yosys-smt2-anyseq rvfi_testbench#129 4 $auto$setundef.cc:501:execute$2953
-(declare-fun |rvfi_testbench#129| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2954
-(define-fun |rvfi_testbench#130| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#129| state) #b0000)) ; $flatten\wrapper.\uut.$5\alu_ctrl[3:0]
-(define-fun |rvfi_testbench#131| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand ((_ extract 14 14) (|rvfi_testbench#0| state)) (|rvfi_testbench#72| state))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:472$349_Y
-(define-fun |rvfi_testbench#132| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand (|rvfi_testbench#131| state) ((_ extract 12 12) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:472$350_Y
-(define-fun |rvfi_testbench#133| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand (|rvfi_testbench#132| state) ((_ extract 30 30) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:472$351_Y
-; yosys-smt2-anyseq rvfi_testbench#134 4 $auto$setundef.cc:501:execute$2961
-(declare-fun |rvfi_testbench#134| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2962
-(define-fun |rvfi_testbench#135| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#134| state) (concat (|rvfi_testbench#133| state) ((_ extract 14 12) (|rvfi_testbench#0| state))))) ; $flatten\wrapper.\uut.$4\alu_ctrl[3:0]
-; yosys-smt2-anyseq rvfi_testbench#136 4 $auto$setundef.cc:501:execute$2971
-(declare-fun |rvfi_testbench#136| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2972
-(define-fun |rvfi_testbench#137| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#43| state) (|rvfi_testbench#136| state) (|rvfi_testbench#135| state))) ; $flatten\wrapper.\uut.$3\alu_ctrl[3:0]
-; yosys-smt2-anyseq rvfi_testbench#138 4 $auto$setundef.cc:501:execute$2981
-(declare-fun |rvfi_testbench#138| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2982
-(define-fun |rvfi_testbench#139| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#49| state) (|rvfi_testbench#138| state) #b0000)) ; $flatten\wrapper.\uut.$2\alu_ctrl[3:0]
-(define-fun |rvfi_testbench#140| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#139| state) (ite (|rvfi_testbench#58| state) (|rvfi_testbench#137| state) (ite (|rvfi_testbench#57| state) (|rvfi_testbench#130| state) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#128| state) (ite (|rvfi_testbench#55| state) (|rvfi_testbench#122| state) (ite (|rvfi_testbench#54| state) (|rvfi_testbench#119| state) (ite (|rvfi_testbench#53| state) #b0000 (|rvfi_testbench#117| state))))))))) ; \wrapper.uut.alu_ctrl
-(define-fun |rvfi_testbench#141| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b0111)) ; $flatten\wrapper.\uut.$procmux$2706_CMP
-(define-fun |rvfi_testbench#142| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b0110)) ; $flatten\wrapper.\uut.$procmux$2707_CMP
-(define-fun |rvfi_testbench#143| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b1101)) ; $flatten\wrapper.\uut.$procmux$2708_CMP
-(define-fun |rvfi_testbench#144| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b0101)) ; $flatten\wrapper.\uut.$procmux$2709_CMP
-(define-fun |rvfi_testbench#145| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b0100)) ; $flatten\wrapper.\uut.$procmux$2710_CMP
-(define-fun |rvfi_testbench#146| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b0011)) ; $flatten\wrapper.\uut.$procmux$2711_CMP
-(define-fun |rvfi_testbench#147| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b0010)) ; $flatten\wrapper.\uut.$procmux$2712_CMP
-(define-fun |rvfi_testbench#148| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b0001)) ; $flatten\wrapper.\uut.$procmux$2713_CMP
-(define-fun |rvfi_testbench#149| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#140| state) #b1000)) ; $flatten\wrapper.\uut.$procmux$2714_CMP
-(define-fun |rvfi_testbench#150| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#140| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#140| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#140| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#140| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2703_CMP
-(define-fun |rvfi_testbench#151| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#150| state) ((_ extract 31 0) (|rvfi_testbench#116| state)) (ite (|rvfi_testbench#149| state) (|rvfi_testbench#115| state) (ite (|rvfi_testbench#148| state) (|rvfi_testbench#114| state) (ite (|rvfi_testbench#147| state) (concat #b0000000000000000000000000000000 (ite (|rvfi_testbench#113| state) #b1 #b0)) (ite (|rvfi_testbench#146| state) (concat #b0000000000000000000000000000000 (ite (|rvfi_testbench#112| state) #b1 #b0)) (ite (|rvfi_testbench#145| state) (|rvfi_testbench#111| state) (ite (|rvfi_testbench#144| state) (|rvfi_testbench#110| state) (ite (|rvfi_testbench#143| state) (|rvfi_testbench#109| state) (ite (|rvfi_testbench#142| state) (|rvfi_testbench#108| state) (ite (|rvfi_testbench#141| state) (|rvfi_testbench#107| state) (|rvfi_testbench#2| state)))))))))))) ; \wrapper.uut.addr
-(define-fun |rvfi_testbench#152| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#151| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#151| state)) #b1))) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:419$334_Y
-(define-fun |rvfi_testbench#153| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#152| state) #b0000 (concat ((_ extract 13 13) (|rvfi_testbench#0| state)) (concat ((_ extract 13 13) (|rvfi_testbench#0| state)) (concat (|rvfi_testbench#1| state) #b1))))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:493$360_Y
-(define-fun |rvfi_testbench#154| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#37| state) #b0000 (|rvfi_testbench#153| state))) ; $flatten\wrapper.\uut.$5\wr_en[3:0]
-(define-fun |rvfi_testbench#155| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#57| state) (|rvfi_testbench#154| state) #b0000)) ; \checker_inst.mem_wmask
+; yosys-smt2-anyseq rvfi_testbench#20 1 $auto$setundef.cc:501:execute$2951
+(declare-fun |rvfi_testbench#20| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2952
+(define-fun |rvfi_testbench#21| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b001)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:434$338_Y
+(define-fun |rvfi_testbench#22| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#21| state) false  (|rvfi_testbench#16| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$375_Y
+(define-fun |rvfi_testbench#23| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#22| state) false  (|rvfi_testbench#17| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$377_Y
+(define-fun |rvfi_testbench#24| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b100)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$378_Y
+(define-fun |rvfi_testbench#25| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#23| state) false  (|rvfi_testbench#24| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$379_Y
+(define-fun |rvfi_testbench#26| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b110)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$330_Y
+(define-fun |rvfi_testbench#27| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#25| state) false  (|rvfi_testbench#26| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$381_Y
+(define-fun |rvfi_testbench#28| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b111)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$332_Y
+(define-fun |rvfi_testbench#29| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#27| state) false  (|rvfi_testbench#28| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$383_Y
+(define-fun |rvfi_testbench#30| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 31 25) (|rvfi_testbench#0| state)) #b0000000)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:434$339_Y
+(define-fun |rvfi_testbench#31| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#29| state) false) (or  (|rvfi_testbench#30| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:537$385_Y
+(define-fun |rvfi_testbench#32| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#31| state) (|rvfi_testbench#20| state) #b0)) ; $flatten\wrapper.\uut.$8\src_1_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#33 1 $auto$setundef.cc:501:execute$2957
+(declare-fun |rvfi_testbench#33| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2958
+(define-fun |rvfi_testbench#34| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 14 12) (|rvfi_testbench#0| state)) #b101)) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$341_Y
+(define-fun |rvfi_testbench#35| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 31 25) (|rvfi_testbench#0| state)) #b0100000)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$343_Y
+(define-fun |rvfi_testbench#36| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#30| state) false) (or  (|rvfi_testbench#35| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$344_Y
+(define-fun |rvfi_testbench#37| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#34| state) false) (or  (|rvfi_testbench#36| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:448$345_Y
+(define-fun |rvfi_testbench#38| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#33| state) (|rvfi_testbench#32| state))) ; $flatten\wrapper.\uut.$7\src_1_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#39 1 $auto$setundef.cc:501:execute$2963
+(declare-fun |rvfi_testbench#39| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2964
+(define-fun |rvfi_testbench#40| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 12 12) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#0| state)) #b1)))) ; $flatten\checker_inst.\insn_spec.$eq$insn_addi.v:45$253_Y
+(define-fun |rvfi_testbench#41| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#40| state) false) (or  (|rvfi_testbench#36| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:509$367_Y
+(define-fun |rvfi_testbench#42| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#41| state) (|rvfi_testbench#39| state) (|rvfi_testbench#38| state))) ; $flatten\wrapper.\uut.$6\src_1_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#43 1 $auto$setundef.cc:501:execute$2971
+(declare-fun |rvfi_testbench#43| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2972
+(define-fun |rvfi_testbench#44| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 14 12) (|rvfi_testbench#0| state)) #b001)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$353_Y
+(define-fun |rvfi_testbench#45| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#13| state) false) (or  (|rvfi_testbench#44| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$354_Y
+(define-fun |rvfi_testbench#46| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 14 12) (|rvfi_testbench#0| state)) #b010)) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$355_Y
+(define-fun |rvfi_testbench#47| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#45| state) false) (or  (|rvfi_testbench#46| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:478$356_Y
+(define-fun |rvfi_testbench#48| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#47| state) (|rvfi_testbench#43| state) #b0)) ; $flatten\wrapper.\uut.$5\src_1_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#49 1 $auto$setundef.cc:501:execute$2981
+(declare-fun |rvfi_testbench#49| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2982
+(define-fun |rvfi_testbench#50| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#49| state) #b0)) ; $flatten\wrapper.\uut.$4\src_1_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#51 1 $auto$setundef.cc:501:execute$2991
+(declare-fun |rvfi_testbench#51| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2992
+(define-fun |rvfi_testbench#52| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#21| state) false) (or  (|rvfi_testbench#30| state) false))) ; $flatten\wrapper.\uut.$logic_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:434$340_Y
+(define-fun |rvfi_testbench#53| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#52| state) (|rvfi_testbench#51| state) (|rvfi_testbench#50| state))) ; $flatten\wrapper.\uut.$3\src_1_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#54 1 $auto$setundef.cc:501:execute$3003
+(declare-fun |rvfi_testbench#54| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3004
+(define-fun |rvfi_testbench#55| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#17| state) false  (|rvfi_testbench#26| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$331_Y
+(define-fun |rvfi_testbench#56| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#55| state) false  (|rvfi_testbench#28| state) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:402$333_Y
+(define-fun |rvfi_testbench#57| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#54| state) #b0)) ; $flatten\wrapper.\uut.$2\src_1_sel[0:0]
+(declare-fun |rvfi_testbench#58| (|rvfi_testbench_s|) (_ BitVec 1)) ; \reset
+(define-fun |rvfi_testbench#59| ((state |rvfi_testbench_s|)) (_ BitVec 7) (ite (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1) #b0000000 ((_ extract 6 0) (|rvfi_testbench#0| state)))) ; \wrapper.uut.opcode
+(define-fun |rvfi_testbench#60| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b0010111)) ; $flatten\wrapper.\uut.$procmux$2562_CMP
+(define-fun |rvfi_testbench#61| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b1100111)) ; $flatten\wrapper.\uut.$procmux$1193_CMP
+(define-fun |rvfi_testbench#62| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b1100011)) ; $flatten\wrapper.\uut.$procmux$1298_CMP
+(define-fun |rvfi_testbench#63| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b0110011)) ; $flatten\wrapper.\uut.$procmux$1429_CMP
+(define-fun |rvfi_testbench#64| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b0100011)) ; $flatten\wrapper.\uut.$procmux$1923_CMP
+(define-fun |rvfi_testbench#65| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b0010011)) ; $flatten\wrapper.\uut.$procmux$2069_CMP
+(define-fun |rvfi_testbench#66| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b0000011)) ; $flatten\wrapper.\uut.$procmux$2409_CMP
+(define-fun |rvfi_testbench#67| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#57| state) (ite (|rvfi_testbench#65| state) (|rvfi_testbench#53| state) (ite (|rvfi_testbench#64| state) (|rvfi_testbench#48| state) (ite (|rvfi_testbench#63| state) (|rvfi_testbench#42| state) (ite (|rvfi_testbench#62| state) (|rvfi_testbench#19| state) (ite (|rvfi_testbench#61| state) (|rvfi_testbench#14| state) (ite (|rvfi_testbench#60| state) #b1 (|rvfi_testbench#11| state))))))))) ; \wrapper.uut.src_1_sel
+(define-fun |rvfi_testbench#68| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#67| state))) ; $flatten\wrapper.\uut.$procmux$2778_CMP
+(define-fun |rvfi_testbench#69| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#68| state)) #b1) (|rvfi_testbench#10| state) (ite (= ((_ extract 0 0) (|rvfi_testbench#67| state)) #b1) (|rvfi_testbench#4| state) (|rvfi_testbench#3| state)))) ; \wrapper.uut.alu_in_1
+; yosys-smt2-anyseq rvfi_testbench#70 32 $auto$setundef.cc:501:execute$3035
+(declare-fun |rvfi_testbench#70| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3036
+; yosys-smt2-anyseq rvfi_testbench#71 32 $auto$setundef.cc:501:execute$3019
+(declare-fun |rvfi_testbench#71| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3020
+; yosys-smt2-anyseq rvfi_testbench#72 3 $auto$setundef.cc:501:execute$3009
+(declare-fun |rvfi_testbench#72| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$3010
+; yosys-smt2-anyseq rvfi_testbench#73 3 $auto$setundef.cc:501:execute$2933
+(declare-fun |rvfi_testbench#73| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2934
+(define-fun |rvfi_testbench#74| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#73| state) #b000)) ; $flatten\wrapper.\uut.$10\imm_sel[2:0]
+; yosys-smt2-anyseq rvfi_testbench#75 3 $auto$setundef.cc:501:execute$2943
+(declare-fun |rvfi_testbench#75| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2944
+(define-fun |rvfi_testbench#76| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#18| state) (|rvfi_testbench#75| state) #b011)) ; $flatten\wrapper.\uut.$9\imm_sel[2:0]
+; yosys-smt2-anyseq rvfi_testbench#77 3 $auto$setundef.cc:501:execute$2967
+(declare-fun |rvfi_testbench#77| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2968
+(define-fun |rvfi_testbench#78| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#47| state) (|rvfi_testbench#77| state) #b010)) ; $flatten\wrapper.\uut.$5\imm_sel[2:0]
+(define-fun |rvfi_testbench#79| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot ((_ extract 13 13) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$346_Y
+(define-fun |rvfi_testbench#80| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand (|rvfi_testbench#79| state) ((_ extract 12 12) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:470$347_Y
+; yosys-smt2-anyseq rvfi_testbench#81 3 $auto$setundef.cc:501:execute$2975
+(declare-fun |rvfi_testbench#81| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2976
+(define-fun |rvfi_testbench#82| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#81| state) (concat #b00 (|rvfi_testbench#80| state)))) ; $flatten\wrapper.\uut.$4\imm_sel[2:0]
+; yosys-smt2-anyseq rvfi_testbench#83 3 $auto$setundef.cc:501:execute$2985
+(declare-fun |rvfi_testbench#83| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2986
+(define-fun |rvfi_testbench#84| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#52| state) (|rvfi_testbench#83| state) (|rvfi_testbench#82| state))) ; $flatten\wrapper.\uut.$3\imm_sel[2:0]
+; yosys-smt2-anyseq rvfi_testbench#85 3 $auto$setundef.cc:501:execute$2997
+(declare-fun |rvfi_testbench#85| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2998
+(define-fun |rvfi_testbench#86| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#85| state) #b000)) ; $flatten\wrapper.\uut.$2\imm_sel[2:0]
+(define-fun |rvfi_testbench#87| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b0110111)) ; $flatten\wrapper.\uut.$procmux$2563_CMP
+(define-fun |rvfi_testbench#88| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#60| state) (|rvfi_testbench#87| state))) ; $auto$opt_reduce.cc:134:opt_mux$2861
+(define-fun |rvfi_testbench#89| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#59| state) #b1101111)) ; $flatten\wrapper.\uut.$procmux$2565_CMP
+(define-fun |rvfi_testbench#90| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#86| state) (ite (|rvfi_testbench#65| state) (|rvfi_testbench#84| state) (ite (|rvfi_testbench#64| state) (|rvfi_testbench#78| state) (ite (|rvfi_testbench#62| state) (|rvfi_testbench#76| state) (ite (|rvfi_testbench#89| state) #b100 (ite (|rvfi_testbench#61| state) (|rvfi_testbench#74| state) (ite (|rvfi_testbench#88| state) #b101 (|rvfi_testbench#72| state))))))))) ; \wrapper.uut.imm_sel
+(define-fun |rvfi_testbench#91| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#90| state) #b101)) ; $flatten\wrapper.\uut.$procmux$2698_CMP
+(define-fun |rvfi_testbench#92| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#90| state) #b100)) ; $flatten\wrapper.\uut.$procmux$2699_CMP
+(define-fun |rvfi_testbench#93| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#90| state) #b011)) ; $flatten\wrapper.\uut.$procmux$2700_CMP
+(define-fun |rvfi_testbench#94| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#90| state) #b010)) ; $flatten\wrapper.\uut.$procmux$2701_CMP
+(define-fun |rvfi_testbench#95| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#90| state) #b001)) ; $flatten\wrapper.\uut.$procmux$2702_CMP
+(define-fun |rvfi_testbench#96| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#90| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#90| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#90| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2703_CMP
+(define-fun |rvfi_testbench#97| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#96| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) ((_ extract 31 20) (|rvfi_testbench#0| state)))))))))))))))))))))) (ite (|rvfi_testbench#95| state) (concat #b000000000000000000000000000 ((_ extract 24 20) (|rvfi_testbench#0| state))) (ite (|rvfi_testbench#94| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 25) (|rvfi_testbench#0| state)) ((_ extract 11 7) (|rvfi_testbench#0| state))))))))))))))))))))))) (ite (|rvfi_testbench#93| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 7 7) (|rvfi_testbench#0| state)) (concat ((_ extract 30 25) (|rvfi_testbench#0| state)) (concat ((_ extract 11 8) (|rvfi_testbench#0| state)) #b0))))))))))))))))))))))) (ite (|rvfi_testbench#92| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 19 12) (|rvfi_testbench#0| state)) (concat ((_ extract 20 20) (|rvfi_testbench#0| state)) (concat ((_ extract 30 21) (|rvfi_testbench#0| state)) #b0))))))))))))))) (ite (|rvfi_testbench#91| state) (concat ((_ extract 31 12) (|rvfi_testbench#0| state)) #b000000000000) (|rvfi_testbench#71| state)))))))) ; \wrapper.uut.imm_ext
+(define-fun |rvfi_testbench#98| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 20 20) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#0| state)) #b1)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:146$186_Y
+(define-fun |rvfi_testbench#99| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#98| state) #b00000000000000000000000000000000 (|rvfi_testbench#6| state))) ; \checker_inst.mem_wdata
+; yosys-smt2-anyseq rvfi_testbench#100 1 $auto$setundef.cc:501:execute$3013
+(declare-fun |rvfi_testbench#100| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3014
+; yosys-smt2-anyseq rvfi_testbench#101 1 $auto$setundef.cc:501:execute$2937
+(declare-fun |rvfi_testbench#101| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2938
+(define-fun |rvfi_testbench#102| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#101| state) #b1)) ; $flatten\wrapper.\uut.$10\src_2_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#103 1 $auto$setundef.cc:501:execute$2969
+(declare-fun |rvfi_testbench#103| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2970
+(define-fun |rvfi_testbench#104| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#47| state) (|rvfi_testbench#103| state) #b1)) ; $flatten\wrapper.\uut.$5\src_2_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#105 1 $auto$setundef.cc:501:execute$2979
+(declare-fun |rvfi_testbench#105| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2980
+(define-fun |rvfi_testbench#106| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#105| state) #b1)) ; $flatten\wrapper.\uut.$4\src_2_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#107 1 $auto$setundef.cc:501:execute$2989
+(declare-fun |rvfi_testbench#107| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2990
+(define-fun |rvfi_testbench#108| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#52| state) (|rvfi_testbench#107| state) (|rvfi_testbench#106| state))) ; $flatten\wrapper.\uut.$3\src_2_sel[0:0]
+; yosys-smt2-anyseq rvfi_testbench#109 1 $auto$setundef.cc:501:execute$3001
+(declare-fun |rvfi_testbench#109| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3002
+(define-fun |rvfi_testbench#110| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#109| state) #b1)) ; $flatten\wrapper.\uut.$2\src_2_sel[0:0]
+(define-fun |rvfi_testbench#111| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#110| state) (ite (|rvfi_testbench#65| state) (|rvfi_testbench#108| state) (ite (|rvfi_testbench#64| state) (|rvfi_testbench#104| state) (ite (|rvfi_testbench#63| state) (|rvfi_testbench#42| state) (ite (|rvfi_testbench#62| state) (|rvfi_testbench#19| state) (ite (|rvfi_testbench#61| state) (|rvfi_testbench#102| state) (ite (|rvfi_testbench#60| state) #b1 (|rvfi_testbench#100| state))))))))) ; \wrapper.uut.src_2_sel
+(define-fun |rvfi_testbench#112| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#111| state))) ; $flatten\wrapper.\uut.$procmux$2775_CMP
+(define-fun |rvfi_testbench#113| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#112| state)) #b1) (|rvfi_testbench#99| state) (ite (= ((_ extract 0 0) (|rvfi_testbench#111| state)) #b1) (|rvfi_testbench#97| state) (|rvfi_testbench#70| state)))) ; \wrapper.uut.alu_in_2
+(define-fun |rvfi_testbench#114| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvand (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:290$324_Y
+(define-fun |rvfi_testbench#115| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvor (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:283$323_Y
+(define-fun |rvfi_testbench#116| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvashr (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $flatten\wrapper.\uut.$sshr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:275$322_Y
+(define-fun |rvfi_testbench#117| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvlshr (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $flatten\wrapper.\uut.$shr$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:268$321_Y
+(define-fun |rvfi_testbench#118| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvxor (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:262$320_Y
+(define-fun |rvfi_testbench#119| ((state |rvfi_testbench_s|)) Bool (bvult (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $auto$wreduce.cc:454:run$2871 [0]
+(define-fun |rvfi_testbench#120| ((state |rvfi_testbench_s|)) Bool (bvslt (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $auto$wreduce.cc:454:run$2870 [0]
+(define-fun |rvfi_testbench#121| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvshl (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $flatten\wrapper.\uut.$shl$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:241$317_Y
+(define-fun |rvfi_testbench#122| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvsub (|rvfi_testbench#69| state) (|rvfi_testbench#113| state))) ; $flatten\wrapper.\uut.$sub$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:234$315_Y
+(define-fun |rvfi_testbench#123| ((state |rvfi_testbench_s|)) (_ BitVec 33) (bvadd (concat ((_ extract 31 31) (|rvfi_testbench#69| state)) (|rvfi_testbench#69| state)) (concat ((_ extract 31 31) (|rvfi_testbench#113| state)) (|rvfi_testbench#113| state)))) ; $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:224$311_Y
+; yosys-smt2-anyseq rvfi_testbench#124 4 $auto$setundef.cc:501:execute$3005
+(declare-fun |rvfi_testbench#124| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$3006
+; yosys-smt2-anyseq rvfi_testbench#125 4 $auto$setundef.cc:501:execute$2931
+(declare-fun |rvfi_testbench#125| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2932
+(define-fun |rvfi_testbench#126| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#125| state) #b0000)) ; $flatten\wrapper.\uut.$10\alu_ctrl[3:0]
+(define-fun |rvfi_testbench#127| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot ((_ extract 14 14) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:593$394_Y
+; yosys-smt2-anyseq rvfi_testbench#128 4 $auto$setundef.cc:501:execute$2941
+(declare-fun |rvfi_testbench#128| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2942
+(define-fun |rvfi_testbench#129| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#18| state) (|rvfi_testbench#128| state) (concat (|rvfi_testbench#127| state) (concat #b0 ((_ extract 14 13) (|rvfi_testbench#0| state)))))) ; $flatten\wrapper.\uut.$9\alu_ctrl[3:0]
+; yosys-smt2-anyseq rvfi_testbench#130 4 $auto$setundef.cc:501:execute$2947
+(declare-fun |rvfi_testbench#130| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2948
+(define-fun |rvfi_testbench#131| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#31| state) (|rvfi_testbench#130| state) (concat ((_ extract 30 30) (|rvfi_testbench#0| state)) ((_ extract 14 12) (|rvfi_testbench#0| state))))) ; $flatten\wrapper.\uut.$8\alu_ctrl[3:0]
+; yosys-smt2-anyseq rvfi_testbench#132 4 $auto$setundef.cc:501:execute$2953
+(declare-fun |rvfi_testbench#132| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2954
+(define-fun |rvfi_testbench#133| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#132| state) (|rvfi_testbench#131| state))) ; $flatten\wrapper.\uut.$7\alu_ctrl[3:0]
+; yosys-smt2-anyseq rvfi_testbench#134 4 $auto$setundef.cc:501:execute$2959
+(declare-fun |rvfi_testbench#134| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2960
+(define-fun |rvfi_testbench#135| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#41| state) (|rvfi_testbench#134| state) (|rvfi_testbench#133| state))) ; $flatten\wrapper.\uut.$6\alu_ctrl[3:0]
+; yosys-smt2-anyseq rvfi_testbench#136 4 $auto$setundef.cc:501:execute$2965
+(declare-fun |rvfi_testbench#136| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2966
+(define-fun |rvfi_testbench#137| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#47| state) (|rvfi_testbench#136| state) #b0000)) ; $flatten\wrapper.\uut.$5\alu_ctrl[3:0]
+(define-fun |rvfi_testbench#138| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand ((_ extract 14 14) (|rvfi_testbench#0| state)) (|rvfi_testbench#79| state))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:472$349_Y
+(define-fun |rvfi_testbench#139| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand (|rvfi_testbench#138| state) ((_ extract 12 12) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:472$350_Y
+(define-fun |rvfi_testbench#140| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvand (|rvfi_testbench#139| state) ((_ extract 30 30) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:472$351_Y
+; yosys-smt2-anyseq rvfi_testbench#141 4 $auto$setundef.cc:501:execute$2973
+(declare-fun |rvfi_testbench#141| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2974
+(define-fun |rvfi_testbench#142| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#141| state) (concat (|rvfi_testbench#140| state) ((_ extract 14 12) (|rvfi_testbench#0| state))))) ; $flatten\wrapper.\uut.$4\alu_ctrl[3:0]
+; yosys-smt2-anyseq rvfi_testbench#143 4 $auto$setundef.cc:501:execute$2983
+(declare-fun |rvfi_testbench#143| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2984
+(define-fun |rvfi_testbench#144| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#52| state) (|rvfi_testbench#143| state) (|rvfi_testbench#142| state))) ; $flatten\wrapper.\uut.$3\alu_ctrl[3:0]
+; yosys-smt2-anyseq rvfi_testbench#145 4 $auto$setundef.cc:501:execute$2993
+(declare-fun |rvfi_testbench#145| (|rvfi_testbench_s|) (_ BitVec 4)) ; $auto$rtlil.cc:3097:Anyseq$2994
+(define-fun |rvfi_testbench#146| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#145| state) #b0000)) ; $flatten\wrapper.\uut.$2\alu_ctrl[3:0]
+(define-fun |rvfi_testbench#147| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#146| state) (ite (|rvfi_testbench#65| state) (|rvfi_testbench#144| state) (ite (|rvfi_testbench#64| state) (|rvfi_testbench#137| state) (ite (|rvfi_testbench#63| state) (|rvfi_testbench#135| state) (ite (|rvfi_testbench#62| state) (|rvfi_testbench#129| state) (ite (|rvfi_testbench#61| state) (|rvfi_testbench#126| state) (ite (|rvfi_testbench#60| state) #b0000 (|rvfi_testbench#124| state))))))))) ; \wrapper.uut.alu_ctrl
+(define-fun |rvfi_testbench#148| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b0111)) ; $flatten\wrapper.\uut.$procmux$2718_CMP
+(define-fun |rvfi_testbench#149| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b0110)) ; $flatten\wrapper.\uut.$procmux$2719_CMP
+(define-fun |rvfi_testbench#150| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b1101)) ; $flatten\wrapper.\uut.$procmux$2720_CMP
+(define-fun |rvfi_testbench#151| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b0101)) ; $flatten\wrapper.\uut.$procmux$2721_CMP
+(define-fun |rvfi_testbench#152| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b0100)) ; $flatten\wrapper.\uut.$procmux$2722_CMP
+(define-fun |rvfi_testbench#153| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b0011)) ; $flatten\wrapper.\uut.$procmux$2723_CMP
+(define-fun |rvfi_testbench#154| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b0010)) ; $flatten\wrapper.\uut.$procmux$2724_CMP
+(define-fun |rvfi_testbench#155| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b0001)) ; $flatten\wrapper.\uut.$procmux$2725_CMP
+(define-fun |rvfi_testbench#156| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#147| state) #b1000)) ; $flatten\wrapper.\uut.$procmux$2726_CMP
+(define-fun |rvfi_testbench#157| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#147| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#147| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#147| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#147| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2715_CMP
+(define-fun |rvfi_testbench#158| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#157| state) ((_ extract 31 0) (|rvfi_testbench#123| state)) (ite (|rvfi_testbench#156| state) (|rvfi_testbench#122| state) (ite (|rvfi_testbench#155| state) (|rvfi_testbench#121| state) (ite (|rvfi_testbench#154| state) (concat #b0000000000000000000000000000000 (ite (|rvfi_testbench#120| state) #b1 #b0)) (ite (|rvfi_testbench#153| state) (concat #b0000000000000000000000000000000 (ite (|rvfi_testbench#119| state) #b1 #b0)) (ite (|rvfi_testbench#152| state) (|rvfi_testbench#118| state) (ite (|rvfi_testbench#151| state) (|rvfi_testbench#117| state) (ite (|rvfi_testbench#150| state) (|rvfi_testbench#116| state) (ite (|rvfi_testbench#149| state) (|rvfi_testbench#115| state) (ite (|rvfi_testbench#148| state) (|rvfi_testbench#114| state) (|rvfi_testbench#2| state)))))))))))) ; \wrapper.uut.addr
+(define-fun |rvfi_testbench#159| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#158| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#158| state)) #b1))) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:419$334_Y
+(define-fun |rvfi_testbench#160| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#159| state) #b0000 (concat ((_ extract 13 13) (|rvfi_testbench#0| state)) (concat ((_ extract 13 13) (|rvfi_testbench#0| state)) (concat (|rvfi_testbench#1| state) #b1))))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:493$360_Y
+(define-fun |rvfi_testbench#161| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#47| state) #b0000 (|rvfi_testbench#160| state))) ; $flatten\wrapper.\uut.$5\wr_en[3:0]
+(define-fun |rvfi_testbench#162| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#64| state) (|rvfi_testbench#161| state) #b0000)) ; \checker_inst.mem_wmask
 ; yosys-smt2-wire wrapper.wr_en 4
-(define-fun |rvfi_testbench_n wrapper.wr_en| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#155| state))
+(define-fun |rvfi_testbench_n wrapper.wr_en| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#162| state))
 ; yosys-smt2-wire wrapper.wr_data 32
-(define-fun |rvfi_testbench_n wrapper.wr_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n wrapper.wr_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire wrapper.uut.wr_en 4
-(define-fun |rvfi_testbench_n wrapper.uut.wr_en| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#155| state))
+(define-fun |rvfi_testbench_n wrapper.uut.wr_en| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#162| state))
 ; yosys-smt2-wire wrapper.uut.wr_data 32
-(define-fun |rvfi_testbench_n wrapper.uut.wr_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
-(define-fun |rvfi_testbench#156| ((state |rvfi_testbench_s|)) (_ BitVec 33) (bvadd (concat #b0 (|rvfi_testbench#4| state)) (concat #b0 (|rvfi_testbench#90| state)))) ; { \wrapper.uut.target_carry \wrapper.uut.target }
-(define-fun |rvfi_testbench#157| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#156| state)) ((_ extract 31 31) (|rvfi_testbench#4| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:110$273_Y
-(define-fun |rvfi_testbench#158| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#4| state)) ((_ extract 31 31) (|rvfi_testbench#90| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:110$270_Y
-(define-fun |rvfi_testbench#159| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#158| state)) #b1) false  (= ((_ extract 32 32) (|rvfi_testbench#156| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:110$272_Y
-(define-fun |rvfi_testbench#160| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#159| state) #b0 (|rvfi_testbench#157| state))) ; \wrapper.uut.target_o_flag
+(define-fun |rvfi_testbench_n wrapper.uut.wr_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
+(define-fun |rvfi_testbench#163| ((state |rvfi_testbench_s|)) (_ BitVec 33) (bvadd (concat #b0 (|rvfi_testbench#4| state)) (concat #b0 (|rvfi_testbench#97| state)))) ; { \wrapper.uut.target_carry \wrapper.uut.target }
+(define-fun |rvfi_testbench#164| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#163| state)) ((_ extract 31 31) (|rvfi_testbench#4| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:110$273_Y
+(define-fun |rvfi_testbench#165| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#4| state)) ((_ extract 31 31) (|rvfi_testbench#97| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:110$270_Y
+(define-fun |rvfi_testbench#166| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#165| state)) #b1) false  (= ((_ extract 32 32) (|rvfi_testbench#163| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:110$272_Y
+(define-fun |rvfi_testbench#167| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#166| state) #b0 (|rvfi_testbench#164| state))) ; \wrapper.uut.target_o_flag
 ; yosys-smt2-wire wrapper.uut.target_o_flag 1
-(define-fun |rvfi_testbench_n wrapper.uut.target_o_flag| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#160| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.target_o_flag| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#167| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.target_carry 1
-(define-fun |rvfi_testbench_n wrapper.uut.target_carry| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 32 32) (|rvfi_testbench#156| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.target_carry| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 32 32) (|rvfi_testbench#163| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.target 32
-(define-fun |rvfi_testbench_n wrapper.uut.target| ((state |rvfi_testbench_s|)) (_ BitVec 32) ((_ extract 31 0) (|rvfi_testbench#156| state)))
+(define-fun |rvfi_testbench_n wrapper.uut.target| ((state |rvfi_testbench_s|)) (_ BitVec 32) ((_ extract 31 0) (|rvfi_testbench#163| state)))
 ; yosys-smt2-wire wrapper.uut.src_data_2 32
-(define-fun |rvfi_testbench_n wrapper.uut.src_data_2| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n wrapper.uut.src_data_2| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire wrapper.uut.src_data_1 32
 (define-fun |rvfi_testbench_n wrapper.uut.src_data_1| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#10| state))
 ; yosys-smt2-wire wrapper.uut.src_2_sel 1
-(define-fun |rvfi_testbench_n wrapper.uut.src_2_sel| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#104| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.src_2_sel| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#111| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.src_1_sel 1
-(define-fun |rvfi_testbench_n wrapper.uut.src_1_sel| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#60| state)) #b1))
-(define-fun |rvfi_testbench#161| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#51| state))) ; \checker_inst.rvfi_valid
+(define-fun |rvfi_testbench_n wrapper.uut.src_1_sel| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#67| state)) #b1))
+(define-fun |rvfi_testbench#168| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#58| state))) ; \checker_inst.rvfi_valid
 ; yosys-smt2-wire wrapper.uut.rvfi_valid 1
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#161| state)) #b1))
-(define-fun |rvfi_testbench#162| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#116| state)) ((_ extract 31 31) (|rvfi_testbench#62| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:228$313_Y
-(define-fun |rvfi_testbench#163| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#62| state)) ((_ extract 31 31) (|rvfi_testbench#106| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:228$312_Y
-(define-fun |rvfi_testbench#164| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#163| state)) #b1) #b0 (|rvfi_testbench#162| state))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:228$314_Y
-(define-fun |rvfi_testbench#165| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#150| state) (|rvfi_testbench#164| state) #b0)) ; \wrapper.uut.o_flag
-(define-fun |rvfi_testbench#166| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#152| state) false  (= ((_ extract 0 0) (|rvfi_testbench#165| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:635$402_Y
-(define-fun |rvfi_testbench#167| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#150| state) ((_ extract 32 32) (|rvfi_testbench#116| state)) #b0)) ; \wrapper.uut.carry
-(define-fun |rvfi_testbench#168| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#166| state) false  (= ((_ extract 0 0) (|rvfi_testbench#167| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:635$404_Y
-(define-fun |rvfi_testbench#169| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#168| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:647$417_Y
-(define-fun |rvfi_testbench#170| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#13| state) #b1 (|rvfi_testbench#169| state))) ; $flatten\wrapper.\uut.$10\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#171| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#156| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#156| state)) #b1))) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$377_Y
-(define-fun |rvfi_testbench#172| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#171| state) false  (= ((_ extract 0 0) (|rvfi_testbench#160| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$379_Y
-(define-fun |rvfi_testbench#173| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#172| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:613$398_Y
-; yosys-smt2-anyseq rvfi_testbench#174 32 $auto$setundef.cc:501:execute$3027
-(declare-fun |rvfi_testbench#174| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3028
-(define-fun |rvfi_testbench#175| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvadd (|rvfi_testbench#4| state) #b00000000000000000000000000000100)) ; \wrapper.uut.pc_plus_4
-(define-fun |rvfi_testbench#176| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#168| state) #b00 #b11)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:640$411_Y
-(define-fun |rvfi_testbench#177| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#13| state) #b00 (|rvfi_testbench#176| state))) ; $flatten\wrapper.\uut.$10\pc_sel[1:0]
-(define-fun |rvfi_testbench#178| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#172| state) #b0 #b1)) ; $auto$wreduce.cc:454:run$2861 [0]
-; yosys-smt2-anyseq rvfi_testbench#179 1 $auto$setundef.cc:501:execute$3011
-(declare-fun |rvfi_testbench#179| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3012
-(define-fun |rvfi_testbench#180| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 4 4) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 5 5) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 6 6) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 7 7) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 12 12) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 15 15) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 16 16) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 17 17) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 18 18) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 19 19) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 20 20) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 25 25) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 26 26) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 27 27) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 28 28) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 29 29) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 30 30) (|rvfi_testbench#115| state)) #b1) (= ((_ extract 31 31) (|rvfi_testbench#115| state)) #b1)))) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:236$316_Y
-(define-fun |rvfi_testbench#181| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#149| state) (ite (|rvfi_testbench#180| state) #b1 #b0) (ite (|rvfi_testbench#147| state) (ite (|rvfi_testbench#113| state) #b1 #b0) (ite (|rvfi_testbench#146| state) (ite (|rvfi_testbench#112| state) #b1 #b0) (|rvfi_testbench#179| state))))) ; \wrapper.uut.b_flag
-(define-fun |rvfi_testbench#182| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 12 12) (|rvfi_testbench#0| state)) (|rvfi_testbench#181| state))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$380_Y
-(define-fun |rvfi_testbench#183| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#172| state) #b0 (|rvfi_testbench#182| state))) ; $auto$wreduce.cc:454:run$2860 [0]
-(define-fun |rvfi_testbench#184| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#18| state) #b0 (|rvfi_testbench#183| state))) ; $auto$wreduce.cc:454:run$2857 [0]
-(define-fun |rvfi_testbench#185| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#55| state) (concat #b0 (|rvfi_testbench#184| state)) (ite (|rvfi_testbench#82| state) (concat #b0 (|rvfi_testbench#178| state)) (ite (|rvfi_testbench#54| state) (|rvfi_testbench#177| state) #b00)))) ; \wrapper.uut.pc_sel
-(define-fun |rvfi_testbench#186| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#185| state) #b11)) ; $flatten\wrapper.\uut.$procmux$2768_CMP
-(define-fun |rvfi_testbench#187| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#185| state) #b10)) ; $flatten\wrapper.\uut.$procmux$2769_CMP
-(define-fun |rvfi_testbench#188| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#185| state) #b01)) ; $flatten\wrapper.\uut.$procmux$2770_CMP
-(define-fun |rvfi_testbench#189| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#185| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#185| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2771_CMP
-(define-fun |rvfi_testbench#190| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#189| state) (|rvfi_testbench#175| state) (ite (|rvfi_testbench#188| state) ((_ extract 31 0) (|rvfi_testbench#156| state)) (ite (|rvfi_testbench#187| state) (|rvfi_testbench#151| state) (ite (|rvfi_testbench#186| state) (concat ((_ extract 31 1) (|rvfi_testbench#151| state)) #b0) (|rvfi_testbench#174| state)))))) ; \checker_inst.pc_wdata
-(define-fun |rvfi_testbench#191| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#190| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#190| state)) #b1))) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:594$383_Y
-(define-fun |rvfi_testbench#192| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#191| state) false  (= ((_ extract 0 0) (|rvfi_testbench#160| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:594$385_Y
-(define-fun |rvfi_testbench#193| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#192| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:594$386_Y
-(define-fun |rvfi_testbench#194| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#18| state) #b1 (|rvfi_testbench#193| state))) ; $flatten\wrapper.\uut.$9\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#195| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#21| state) #b1 #b0)) ; $flatten\wrapper.\uut.$8\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#196| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#27| state) #b1 (|rvfi_testbench#195| state))) ; $flatten\wrapper.\uut.$7\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#197| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#31| state) #b1 (|rvfi_testbench#196| state))) ; $flatten\wrapper.\uut.$6\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#198| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#152| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:428$337_Y
-(define-fun |rvfi_testbench#199| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) #b1 (|rvfi_testbench#198| state))) ; $flatten\wrapper.\uut.$5\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#200| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#27| state) #b1 #b0)) ; $flatten\wrapper.\uut.$4\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#201| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#43| state) #b1 (|rvfi_testbench#200| state))) ; $flatten\wrapper.\uut.$3\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#202| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#49| state) #b1 (|rvfi_testbench#198| state))) ; $flatten\wrapper.\uut.$2\ctrl_instr_trap[0:0]
-(define-fun |rvfi_testbench#203| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#202| state) (ite (|rvfi_testbench#58| state) (|rvfi_testbench#201| state) (ite (|rvfi_testbench#57| state) (|rvfi_testbench#199| state) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#197| state) (ite (|rvfi_testbench#55| state) (|rvfi_testbench#194| state) (ite (|rvfi_testbench#82| state) (|rvfi_testbench#173| state) (ite (|rvfi_testbench#54| state) (|rvfi_testbench#170| state) (ite (|rvfi_testbench#81| state) #b0 #b1))))))))) ; \checker_inst.trap
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#168| state)) #b1))
+(define-fun |rvfi_testbench#169| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#123| state)) ((_ extract 31 31) (|rvfi_testbench#69| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:228$313_Y
+(define-fun |rvfi_testbench#170| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 31 31) (|rvfi_testbench#69| state)) ((_ extract 31 31) (|rvfi_testbench#113| state)))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:228$312_Y
+(define-fun |rvfi_testbench#171| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#170| state)) #b1) #b0 (|rvfi_testbench#169| state))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:228$314_Y
+(define-fun |rvfi_testbench#172| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#157| state) (|rvfi_testbench#171| state) #b0)) ; \wrapper.uut.o_flag
+(define-fun |rvfi_testbench#173| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#159| state) false  (= ((_ extract 0 0) (|rvfi_testbench#172| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:635$414_Y
+(define-fun |rvfi_testbench#174| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#157| state) ((_ extract 32 32) (|rvfi_testbench#123| state)) #b0)) ; \wrapper.uut.carry
+(define-fun |rvfi_testbench#175| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#173| state) false  (= ((_ extract 0 0) (|rvfi_testbench#174| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:635$416_Y
+(define-fun |rvfi_testbench#176| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#175| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:647$429_Y
+(define-fun |rvfi_testbench#177| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#13| state) #b1 (|rvfi_testbench#176| state))) ; $flatten\wrapper.\uut.$10\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#178| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#163| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#163| state)) #b1))) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$389_Y
+(define-fun |rvfi_testbench#179| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#178| state) false  (= ((_ extract 0 0) (|rvfi_testbench#167| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$391_Y
+(define-fun |rvfi_testbench#180| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#179| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:613$410_Y
+; yosys-smt2-anyseq rvfi_testbench#181 32 $auto$setundef.cc:501:execute$3039
+(declare-fun |rvfi_testbench#181| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3040
+(define-fun |rvfi_testbench#182| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvadd (|rvfi_testbench#4| state) #b00000000000000000000000000000100)) ; \wrapper.uut.pc_plus_4
+(define-fun |rvfi_testbench#183| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#175| state) #b00 #b11)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:640$423_Y
+(define-fun |rvfi_testbench#184| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#13| state) #b00 (|rvfi_testbench#183| state))) ; $flatten\wrapper.\uut.$10\pc_sel[1:0]
+(define-fun |rvfi_testbench#185| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#179| state) #b0 #b1)) ; $auto$wreduce.cc:454:run$2873 [0]
+; yosys-smt2-anyseq rvfi_testbench#186 1 $auto$setundef.cc:501:execute$3023
+(declare-fun |rvfi_testbench#186| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$3024
+(define-fun |rvfi_testbench#187| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 4 4) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 5 5) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 6 6) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 7 7) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 12 12) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 15 15) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 16 16) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 17 17) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 18 18) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 19 19) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 20 20) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 25 25) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 26 26) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 27 27) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 28 28) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 29 29) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 30 30) (|rvfi_testbench#122| state)) #b1) (= ((_ extract 31 31) (|rvfi_testbench#122| state)) #b1)))) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:236$316_Y
+(define-fun |rvfi_testbench#188| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#156| state) (ite (|rvfi_testbench#187| state) #b1 #b0) (ite (|rvfi_testbench#154| state) (ite (|rvfi_testbench#120| state) #b1 #b0) (ite (|rvfi_testbench#153| state) (ite (|rvfi_testbench#119| state) #b1 #b0) (|rvfi_testbench#186| state))))) ; \wrapper.uut.b_flag
+(define-fun |rvfi_testbench#189| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvxor ((_ extract 12 12) (|rvfi_testbench#0| state)) (|rvfi_testbench#188| state))) ; $flatten\wrapper.\uut.$xor$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:588$392_Y
+(define-fun |rvfi_testbench#190| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#179| state) #b0 (|rvfi_testbench#189| state))) ; $auto$wreduce.cc:454:run$2872 [0]
+(define-fun |rvfi_testbench#191| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#18| state) #b0 (|rvfi_testbench#190| state))) ; $auto$wreduce.cc:454:run$2869 [0]
+(define-fun |rvfi_testbench#192| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#62| state) (concat #b0 (|rvfi_testbench#191| state)) (ite (|rvfi_testbench#89| state) (concat #b0 (|rvfi_testbench#185| state)) (ite (|rvfi_testbench#61| state) (|rvfi_testbench#184| state) #b00)))) ; \wrapper.uut.pc_sel
+(define-fun |rvfi_testbench#193| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#192| state) #b11)) ; $flatten\wrapper.\uut.$procmux$2780_CMP
+(define-fun |rvfi_testbench#194| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#192| state) #b10)) ; $flatten\wrapper.\uut.$procmux$2781_CMP
+(define-fun |rvfi_testbench#195| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#192| state) #b01)) ; $flatten\wrapper.\uut.$procmux$2782_CMP
+(define-fun |rvfi_testbench#196| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#192| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#192| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2783_CMP
+(define-fun |rvfi_testbench#197| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#196| state) (|rvfi_testbench#182| state) (ite (|rvfi_testbench#195| state) ((_ extract 31 0) (|rvfi_testbench#163| state)) (ite (|rvfi_testbench#194| state) (|rvfi_testbench#158| state) (ite (|rvfi_testbench#193| state) (concat ((_ extract 31 1) (|rvfi_testbench#158| state)) #b0) (|rvfi_testbench#181| state)))))) ; \checker_inst.pc_wdata
+(define-fun |rvfi_testbench#198| ((state |rvfi_testbench_s|)) Bool (or  (= ((_ extract 0 0) (|rvfi_testbench#197| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#197| state)) #b1))) ; $flatten\wrapper.\uut.$ne$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:594$395_Y
+(define-fun |rvfi_testbench#199| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#198| state) false  (= ((_ extract 0 0) (|rvfi_testbench#167| state)) #b1) false)) ; $flatten\wrapper.\uut.$logic_or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:594$397_Y
+(define-fun |rvfi_testbench#200| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#199| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:594$398_Y
+(define-fun |rvfi_testbench#201| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#18| state) #b1 (|rvfi_testbench#200| state))) ; $flatten\wrapper.\uut.$9\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#202| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#31| state) #b1 #b0)) ; $flatten\wrapper.\uut.$8\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#203| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) #b1 (|rvfi_testbench#202| state))) ; $flatten\wrapper.\uut.$7\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#204| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#41| state) #b1 (|rvfi_testbench#203| state))) ; $flatten\wrapper.\uut.$6\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#205| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#159| state) #b1 #b0)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:428$337_Y
+(define-fun |rvfi_testbench#206| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#47| state) #b1 (|rvfi_testbench#205| state))) ; $flatten\wrapper.\uut.$5\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#207| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) #b1 #b0)) ; $flatten\wrapper.\uut.$4\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#208| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#52| state) #b1 (|rvfi_testbench#207| state))) ; $flatten\wrapper.\uut.$3\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#209| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#56| state) #b1 (|rvfi_testbench#205| state))) ; $flatten\wrapper.\uut.$2\ctrl_instr_trap[0:0]
+(define-fun |rvfi_testbench#210| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#209| state) (ite (|rvfi_testbench#65| state) (|rvfi_testbench#208| state) (ite (|rvfi_testbench#64| state) (|rvfi_testbench#206| state) (ite (|rvfi_testbench#63| state) (|rvfi_testbench#204| state) (ite (|rvfi_testbench#62| state) (|rvfi_testbench#201| state) (ite (|rvfi_testbench#89| state) (|rvfi_testbench#180| state) (ite (|rvfi_testbench#61| state) (|rvfi_testbench#177| state) (ite (|rvfi_testbench#88| state) #b0 #b1))))))))) ; \checker_inst.trap
 ; yosys-smt2-wire wrapper.uut.rvfi_trap 1
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#203| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#210| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.rvfi_rs2_rdata 32
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_rs2_addr 5
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_rs2_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 24 20) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.uut.rvfi_rs1_rdata 32
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_rs1_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#10| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_rs1_addr 5
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_rs1_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
-; yosys-smt2-anyseq rvfi_testbench#204 32 $auto$setundef.cc:501:execute$3021
-(declare-fun |rvfi_testbench#204| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3022
-; yosys-smt2-anyseq rvfi_testbench#205 32 $auto$setundef.cc:501:execute$3005
-(declare-fun |rvfi_testbench#205| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3006
-; yosys-smt2-anyseq rvfi_testbench#206 32 rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:0.0-0.0 rd_data
-(declare-fun |rvfi_testbench#206| (|rvfi_testbench_s|) (_ BitVec 32)) ; \checker_inst.mem_rdata
-; yosys-smt2-anyseq rvfi_testbench#207 3 $auto$setundef.cc:501:execute$2995
-(declare-fun |rvfi_testbench#207| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2996
-; yosys-smt2-anyseq rvfi_testbench#208 3 $auto$setundef.cc:501:execute$2983
-(declare-fun |rvfi_testbench#208| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2984
-(define-fun |rvfi_testbench#209| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#49| state) (|rvfi_testbench#208| state) ((_ extract 14 12) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$2\ld_ctrl[2:0]
-(define-fun |rvfi_testbench#210| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#209| state) (|rvfi_testbench#207| state))) ; \wrapper.uut.ld_ctrl
-(define-fun |rvfi_testbench#211| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#210| state) #b101)) ; $flatten\wrapper.\uut.$procmux$2679_CMP
-(define-fun |rvfi_testbench#212| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#210| state) #b100)) ; $flatten\wrapper.\uut.$procmux$2673_CMP
-(define-fun |rvfi_testbench#213| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#210| state) #b010)) ; $flatten\wrapper.\uut.$procmux$2674_CMP
-(define-fun |rvfi_testbench#214| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#210| state) #b001)) ; $flatten\wrapper.\uut.$procmux$2675_CMP
-(define-fun |rvfi_testbench#215| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#210| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#210| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#210| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2676_CMP
-(define-fun |rvfi_testbench#216| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#215| state) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) ((_ extract 7 0) (|rvfi_testbench#206| state)))))))))))))))))))))))))) (ite (|rvfi_testbench#214| state) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) (concat ((_ extract 7 7) (|rvfi_testbench#206| state)) ((_ extract 15 0) (|rvfi_testbench#206| state)))))))))))))))))) (ite (|rvfi_testbench#213| state) (|rvfi_testbench#206| state) (ite (|rvfi_testbench#212| state) (concat #b000000000000000000000000 ((_ extract 7 0) (|rvfi_testbench#206| state))) (ite (|rvfi_testbench#211| state) (concat #b0000000000000000 ((_ extract 15 0) (|rvfi_testbench#206| state))) (|rvfi_testbench#205| state))))))) ; \wrapper.uut.rd_data_ext
-(define-fun |rvfi_testbench#217| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 7 7) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#0| state)) #b1)))) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:168$284_Y
-(define-fun |rvfi_testbench#218| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#217| state) #b00000000000000000000000000000000 (|rvfi_testbench#151| state))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:168$285_Y
-; yosys-smt2-anyseq rvfi_testbench#219 2 $auto$setundef.cc:501:execute$2999
-(declare-fun |rvfi_testbench#219| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$3000
-; yosys-smt2-anyseq rvfi_testbench#220 2 $auto$setundef.cc:501:execute$2923
-(declare-fun |rvfi_testbench#220| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2924
-(define-fun |rvfi_testbench#221| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#220| state) #b10)) ; $flatten\wrapper.\uut.$10\rd_data_sel[1:0]
-; yosys-smt2-anyseq rvfi_testbench#222 2 $auto$setundef.cc:501:execute$2937
-(declare-fun |rvfi_testbench#222| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2938
-(define-fun |rvfi_testbench#223| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#21| state) (|rvfi_testbench#222| state) #b00)) ; $flatten\wrapper.\uut.$8\rd_data_sel[1:0]
-; yosys-smt2-anyseq rvfi_testbench#224 2 $auto$setundef.cc:501:execute$2943
-(declare-fun |rvfi_testbench#224| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2944
-(define-fun |rvfi_testbench#225| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#224| state) (|rvfi_testbench#223| state))) ; $flatten\wrapper.\uut.$7\rd_data_sel[1:0]
-; yosys-smt2-anyseq rvfi_testbench#226 2 $auto$setundef.cc:501:execute$2949
-(declare-fun |rvfi_testbench#226| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2950
-(define-fun |rvfi_testbench#227| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#31| state) (|rvfi_testbench#226| state) (|rvfi_testbench#225| state))) ; $flatten\wrapper.\uut.$6\rd_data_sel[1:0]
-; yosys-smt2-anyseq rvfi_testbench#228 2 $auto$setundef.cc:501:execute$2965
-(declare-fun |rvfi_testbench#228| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2966
-(define-fun |rvfi_testbench#229| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#27| state) (|rvfi_testbench#228| state) #b00)) ; $flatten\wrapper.\uut.$4\rd_data_sel[1:0]
-; yosys-smt2-anyseq rvfi_testbench#230 2 $auto$setundef.cc:501:execute$2975
-(declare-fun |rvfi_testbench#230| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2976
-(define-fun |rvfi_testbench#231| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#43| state) (|rvfi_testbench#230| state) (|rvfi_testbench#229| state))) ; $flatten\wrapper.\uut.$3\rd_data_sel[1:0]
-; yosys-smt2-anyseq rvfi_testbench#232 2 $auto$setundef.cc:501:execute$2987
-(declare-fun |rvfi_testbench#232| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2988
-(define-fun |rvfi_testbench#233| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#49| state) (|rvfi_testbench#232| state) #b01)) ; $flatten\wrapper.\uut.$2\rd_data_sel[1:0]
-(define-fun |rvfi_testbench#234| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#233| state) (ite (|rvfi_testbench#58| state) (|rvfi_testbench#231| state) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#227| state) (ite (|rvfi_testbench#82| state) #b10 (ite (|rvfi_testbench#54| state) (|rvfi_testbench#221| state) (ite (|rvfi_testbench#80| state) #b11 (ite (|rvfi_testbench#53| state) #b00 (|rvfi_testbench#219| state))))))))) ; \wrapper.uut.rd_data_sel
-(define-fun |rvfi_testbench#235| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#234| state) #b11)) ; $flatten\wrapper.\uut.$procmux$2757_CMP
-(define-fun |rvfi_testbench#236| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#234| state) #b10)) ; $flatten\wrapper.\uut.$procmux$2758_CMP
-(define-fun |rvfi_testbench#237| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#234| state) #b01)) ; $flatten\wrapper.\uut.$procmux$2759_CMP
-(define-fun |rvfi_testbench#238| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#234| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#234| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2760_CMP
-(define-fun |rvfi_testbench#239| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#238| state) (|rvfi_testbench#218| state) (ite (|rvfi_testbench#237| state) (|rvfi_testbench#216| state) (ite (|rvfi_testbench#236| state) (|rvfi_testbench#175| state) (ite (|rvfi_testbench#235| state) (|rvfi_testbench#90| state) (|rvfi_testbench#204| state)))))) ; \checker_inst.rd_wdata
+; yosys-smt2-anyseq rvfi_testbench#211 32 $auto$setundef.cc:501:execute$3033
+(declare-fun |rvfi_testbench#211| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3034
+; yosys-smt2-anyseq rvfi_testbench#212 32 $auto$setundef.cc:501:execute$3017
+(declare-fun |rvfi_testbench#212| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3018
+; yosys-smt2-anyseq rvfi_testbench#213 32 rvfi_testbench.sv:59.15-63.3|/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv:0.0-0.0 rd_data
+(declare-fun |rvfi_testbench#213| (|rvfi_testbench_s|) (_ BitVec 32)) ; \checker_inst.mem_rdata
+; yosys-smt2-anyseq rvfi_testbench#214 3 $auto$setundef.cc:501:execute$3007
+(declare-fun |rvfi_testbench#214| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$3008
+; yosys-smt2-anyseq rvfi_testbench#215 3 $auto$setundef.cc:501:execute$2995
+(declare-fun |rvfi_testbench#215| (|rvfi_testbench_s|) (_ BitVec 3)) ; $auto$rtlil.cc:3097:Anyseq$2996
+(define-fun |rvfi_testbench#216| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#215| state) ((_ extract 14 12) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$2\ld_ctrl[2:0]
+(define-fun |rvfi_testbench#217| ((state |rvfi_testbench_s|)) (_ BitVec 3) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#216| state) (|rvfi_testbench#214| state))) ; \wrapper.uut.ld_ctrl
+(define-fun |rvfi_testbench#218| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#217| state) #b101)) ; $flatten\wrapper.\uut.$procmux$2691_CMP
+(define-fun |rvfi_testbench#219| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#217| state) #b100)) ; $flatten\wrapper.\uut.$procmux$2685_CMP
+(define-fun |rvfi_testbench#220| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#217| state) #b010)) ; $flatten\wrapper.\uut.$procmux$2686_CMP
+(define-fun |rvfi_testbench#221| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#217| state) #b001)) ; $flatten\wrapper.\uut.$procmux$2687_CMP
+(define-fun |rvfi_testbench#222| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#217| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#217| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#217| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2688_CMP
+(define-fun |rvfi_testbench#223| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#222| state) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) ((_ extract 7 0) (|rvfi_testbench#213| state)))))))))))))))))))))))))) (ite (|rvfi_testbench#221| state) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) (concat ((_ extract 7 7) (|rvfi_testbench#213| state)) ((_ extract 15 0) (|rvfi_testbench#213| state)))))))))))))))))) (ite (|rvfi_testbench#220| state) (|rvfi_testbench#213| state) (ite (|rvfi_testbench#219| state) (concat #b000000000000000000000000 ((_ extract 7 0) (|rvfi_testbench#213| state))) (ite (|rvfi_testbench#218| state) (concat #b0000000000000000 ((_ extract 15 0) (|rvfi_testbench#213| state))) (|rvfi_testbench#212| state))))))) ; \wrapper.uut.rd_data_ext
+(define-fun |rvfi_testbench#224| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 7 7) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#0| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#0| state)) #b1)))) ; $flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:168$284_Y
+(define-fun |rvfi_testbench#225| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#224| state) #b00000000000000000000000000000000 (|rvfi_testbench#158| state))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:168$285_Y
+; yosys-smt2-anyseq rvfi_testbench#226 2 $auto$setundef.cc:501:execute$3011
+(declare-fun |rvfi_testbench#226| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$3012
+; yosys-smt2-anyseq rvfi_testbench#227 2 $auto$setundef.cc:501:execute$2935
+(declare-fun |rvfi_testbench#227| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2936
+(define-fun |rvfi_testbench#228| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#13| state) (|rvfi_testbench#227| state) #b10)) ; $flatten\wrapper.\uut.$10\rd_data_sel[1:0]
+; yosys-smt2-anyseq rvfi_testbench#229 2 $auto$setundef.cc:501:execute$2949
+(declare-fun |rvfi_testbench#229| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2950
+(define-fun |rvfi_testbench#230| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#31| state) (|rvfi_testbench#229| state) #b00)) ; $flatten\wrapper.\uut.$8\rd_data_sel[1:0]
+; yosys-smt2-anyseq rvfi_testbench#231 2 $auto$setundef.cc:501:execute$2955
+(declare-fun |rvfi_testbench#231| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2956
+(define-fun |rvfi_testbench#232| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#231| state) (|rvfi_testbench#230| state))) ; $flatten\wrapper.\uut.$7\rd_data_sel[1:0]
+; yosys-smt2-anyseq rvfi_testbench#233 2 $auto$setundef.cc:501:execute$2961
+(declare-fun |rvfi_testbench#233| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2962
+(define-fun |rvfi_testbench#234| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#41| state) (|rvfi_testbench#233| state) (|rvfi_testbench#232| state))) ; $flatten\wrapper.\uut.$6\rd_data_sel[1:0]
+; yosys-smt2-anyseq rvfi_testbench#235 2 $auto$setundef.cc:501:execute$2977
+(declare-fun |rvfi_testbench#235| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2978
+(define-fun |rvfi_testbench#236| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#37| state) (|rvfi_testbench#235| state) #b00)) ; $flatten\wrapper.\uut.$4\rd_data_sel[1:0]
+; yosys-smt2-anyseq rvfi_testbench#237 2 $auto$setundef.cc:501:execute$2987
+(declare-fun |rvfi_testbench#237| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$2988
+(define-fun |rvfi_testbench#238| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#52| state) (|rvfi_testbench#237| state) (|rvfi_testbench#236| state))) ; $flatten\wrapper.\uut.$3\rd_data_sel[1:0]
+; yosys-smt2-anyseq rvfi_testbench#239 2 $auto$setundef.cc:501:execute$2999
+(declare-fun |rvfi_testbench#239| (|rvfi_testbench_s|) (_ BitVec 2)) ; $auto$rtlil.cc:3097:Anyseq$3000
+(define-fun |rvfi_testbench#240| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#239| state) #b01)) ; $flatten\wrapper.\uut.$2\rd_data_sel[1:0]
+(define-fun |rvfi_testbench#241| ((state |rvfi_testbench_s|)) (_ BitVec 2) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#240| state) (ite (|rvfi_testbench#65| state) (|rvfi_testbench#238| state) (ite (|rvfi_testbench#63| state) (|rvfi_testbench#234| state) (ite (|rvfi_testbench#89| state) #b10 (ite (|rvfi_testbench#61| state) (|rvfi_testbench#228| state) (ite (|rvfi_testbench#87| state) #b11 (ite (|rvfi_testbench#60| state) #b00 (|rvfi_testbench#226| state))))))))) ; \wrapper.uut.rd_data_sel
+(define-fun |rvfi_testbench#242| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#241| state) #b11)) ; $flatten\wrapper.\uut.$procmux$2769_CMP
+(define-fun |rvfi_testbench#243| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#241| state) #b10)) ; $flatten\wrapper.\uut.$procmux$2770_CMP
+(define-fun |rvfi_testbench#244| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#241| state) #b01)) ; $flatten\wrapper.\uut.$procmux$2771_CMP
+(define-fun |rvfi_testbench#245| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#241| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#241| state)) #b1)))) ; $flatten\wrapper.\uut.$procmux$2772_CMP
+(define-fun |rvfi_testbench#246| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#245| state) (|rvfi_testbench#225| state) (ite (|rvfi_testbench#244| state) (|rvfi_testbench#223| state) (ite (|rvfi_testbench#243| state) (|rvfi_testbench#182| state) (ite (|rvfi_testbench#242| state) (|rvfi_testbench#97| state) (|rvfi_testbench#211| state)))))) ; \checker_inst.rd_wdata
 ; yosys-smt2-wire wrapper.uut.rvfi_rd_wdata 32
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#239| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#246| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_rd_addr 5
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_rd_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.uut.rvfi_pc_wdata 32
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#190| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#197| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_pc_rdata 32
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_pc_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
-(declare-fun |rvfi_testbench#240| (|rvfi_testbench_s|) (_ BitVec 64)) ; \wrapper.uut.instr_index
+(declare-fun |rvfi_testbench#247| (|rvfi_testbench_s|) (_ BitVec 64)) ; \wrapper.uut.instr_index
 ; yosys-smt2-wire wrapper.uut.rvfi_order 64
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#240| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#247| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_mode 2
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_mode| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b11)
 ; yosys-smt2-wire wrapper.uut.rvfi_mem_wmask 4
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#155| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#162| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_mem_wdata 32
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
-(define-fun |rvfi_testbench#241| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#212| state) (|rvfi_testbench#215| state))) ; $auto$opt_reduce.cc:134:opt_mux$2855
-(define-fun |rvfi_testbench#242| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#214| state) #b0011 (ite (|rvfi_testbench#213| state) #b1111 (ite (|rvfi_testbench#241| state) #b0001 #b0000)))) ; \checker_inst.rvfi_mem_rmask
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
+(define-fun |rvfi_testbench#248| ((state |rvfi_testbench_s|)) Bool (or  (|rvfi_testbench#219| state) (|rvfi_testbench#222| state))) ; $auto$opt_reduce.cc:134:opt_mux$2867
+(define-fun |rvfi_testbench#249| ((state |rvfi_testbench_s|)) (_ BitVec 4) (ite (|rvfi_testbench#221| state) #b0011 (ite (|rvfi_testbench#220| state) #b1111 (ite (|rvfi_testbench#248| state) #b0001 #b0000)))) ; \checker_inst.rvfi_mem_rmask
 ; yosys-smt2-wire wrapper.uut.rvfi_mem_rmask 4
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#242| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#249| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_mem_rdata 32
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_mem_addr 32
-(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#151| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#158| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_ixl 2
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_ixl| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b01)
 ; yosys-smt2-wire wrapper.uut.rvfi_intr 1
@@ -370,88 +377,88 @@
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_insn| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#0| state))
 ; yosys-smt2-wire wrapper.uut.rvfi_halt 1
 (define-fun |rvfi_testbench_n wrapper.uut.rvfi_halt| ((state |rvfi_testbench_s|)) Bool false)
-(define-fun |rvfi_testbench#243| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#168| state) #b0 #b1)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:635$405_Y
-(define-fun |rvfi_testbench#244| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#13| state) #b0 (|rvfi_testbench#243| state))) ; $flatten\wrapper.\uut.$10\rf_wr_en[0:0]
-(define-fun |rvfi_testbench#245| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#21| state) #b0 #b1)) ; $flatten\wrapper.\uut.$8\rf_wr_en[0:0]
-(define-fun |rvfi_testbench#246| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#27| state) #b0 (|rvfi_testbench#245| state))) ; $flatten\wrapper.\uut.$7\rf_wr_en[0:0]
-(define-fun |rvfi_testbench#247| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#31| state) #b0 (|rvfi_testbench#246| state))) ; $flatten\wrapper.\uut.$6\rf_wr_en[0:0]
-(define-fun |rvfi_testbench#248| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#27| state) #b0 #b1)) ; $flatten\wrapper.\uut.$4\rf_wr_en[0:0]
-(define-fun |rvfi_testbench#249| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#43| state) #b0 (|rvfi_testbench#248| state))) ; $flatten\wrapper.\uut.$3\rf_wr_en[0:0]
-(define-fun |rvfi_testbench#250| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#152| state) #b0 #b1)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:419$335_Y
-(define-fun |rvfi_testbench#251| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#49| state) #b0 (|rvfi_testbench#250| state))) ; $flatten\wrapper.\uut.$2\rf_wr_en[0:0]
-(define-fun |rvfi_testbench#252| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#59| state) (|rvfi_testbench#251| state) (ite (|rvfi_testbench#58| state) (|rvfi_testbench#249| state) (ite (|rvfi_testbench#56| state) (|rvfi_testbench#247| state) (ite (|rvfi_testbench#82| state) (|rvfi_testbench#178| state) (ite (|rvfi_testbench#54| state) (|rvfi_testbench#244| state) (ite (|rvfi_testbench#81| state) #b1 #b0))))))) ; \wrapper.uut.rf_wr_en
+(define-fun |rvfi_testbench#250| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#175| state) #b0 #b1)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:635$417_Y
+(define-fun |rvfi_testbench#251| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#13| state) #b0 (|rvfi_testbench#250| state))) ; $flatten\wrapper.\uut.$10\rf_wr_en[0:0]
+(define-fun |rvfi_testbench#252| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#31| state) #b0 #b1)) ; $flatten\wrapper.\uut.$8\rf_wr_en[0:0]
+(define-fun |rvfi_testbench#253| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) #b0 (|rvfi_testbench#252| state))) ; $flatten\wrapper.\uut.$7\rf_wr_en[0:0]
+(define-fun |rvfi_testbench#254| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#41| state) #b0 (|rvfi_testbench#253| state))) ; $flatten\wrapper.\uut.$6\rf_wr_en[0:0]
+(define-fun |rvfi_testbench#255| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#37| state) #b0 #b1)) ; $flatten\wrapper.\uut.$4\rf_wr_en[0:0]
+(define-fun |rvfi_testbench#256| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#52| state) #b0 (|rvfi_testbench#255| state))) ; $flatten\wrapper.\uut.$3\rf_wr_en[0:0]
+(define-fun |rvfi_testbench#257| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#159| state) #b0 #b1)) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:419$335_Y
+(define-fun |rvfi_testbench#258| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#56| state) #b0 (|rvfi_testbench#257| state))) ; $flatten\wrapper.\uut.$2\rf_wr_en[0:0]
+(define-fun |rvfi_testbench#259| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#66| state) (|rvfi_testbench#258| state) (ite (|rvfi_testbench#65| state) (|rvfi_testbench#256| state) (ite (|rvfi_testbench#63| state) (|rvfi_testbench#254| state) (ite (|rvfi_testbench#89| state) (|rvfi_testbench#185| state) (ite (|rvfi_testbench#61| state) (|rvfi_testbench#251| state) (ite (|rvfi_testbench#88| state) #b1 #b0))))))) ; \wrapper.uut.rf_wr_en
 ; yosys-smt2-wire wrapper.uut.rf_wr_en 1
-(define-fun |rvfi_testbench_n wrapper.uut.rf_wr_en| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#252| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.rf_wr_en| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#259| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.rf_src_addr_2 5
 (define-fun |rvfi_testbench_n wrapper.uut.rf_src_addr_2| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 24 20) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.uut.rf_src_addr_1 5
 (define-fun |rvfi_testbench_n wrapper.uut.rf_src_addr_1| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.uut.rf_dst_data 32
-(define-fun |rvfi_testbench_n wrapper.uut.rf_dst_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#239| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rf_dst_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#246| state))
 ; yosys-smt2-wire wrapper.uut.rf_dst_addr 5
 (define-fun |rvfi_testbench_n wrapper.uut.rf_dst_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.uut.reset 1
-(define-fun |rvfi_testbench_n wrapper.uut.reset| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.reset| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.rd_data_sel 2
-(define-fun |rvfi_testbench_n wrapper.uut.rd_data_sel| ((state |rvfi_testbench_s|)) (_ BitVec 2) (|rvfi_testbench#234| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rd_data_sel| ((state |rvfi_testbench_s|)) (_ BitVec 2) (|rvfi_testbench#241| state))
 ; yosys-smt2-wire wrapper.uut.rd_data_ext 32
-(define-fun |rvfi_testbench_n wrapper.uut.rd_data_ext| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#216| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rd_data_ext| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#223| state))
 ; yosys-smt2-wire wrapper.uut.rd_data 32
-(define-fun |rvfi_testbench_n wrapper.uut.rd_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n wrapper.uut.rd_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire wrapper.uut.pc_sel 2
-(define-fun |rvfi_testbench_n wrapper.uut.pc_sel| ((state |rvfi_testbench_s|)) (_ BitVec 2) (|rvfi_testbench#185| state))
+(define-fun |rvfi_testbench_n wrapper.uut.pc_sel| ((state |rvfi_testbench_s|)) (_ BitVec 2) (|rvfi_testbench#192| state))
 ; yosys-smt2-wire wrapper.uut.pc_plus_4 32
-(define-fun |rvfi_testbench_n wrapper.uut.pc_plus_4| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#175| state))
+(define-fun |rvfi_testbench_n wrapper.uut.pc_plus_4| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#182| state))
 ; yosys-smt2-wire wrapper.uut.pc_next 32
-(define-fun |rvfi_testbench_n wrapper.uut.pc_next| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#190| state))
+(define-fun |rvfi_testbench_n wrapper.uut.pc_next| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#197| state))
 ; yosys-smt2-register wrapper.uut.pc 32
 ; yosys-smt2-wire wrapper.uut.pc 32
 (define-fun |rvfi_testbench_n wrapper.uut.pc| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
 ; yosys-smt2-wire wrapper.uut.opcode 7
-(define-fun |rvfi_testbench_n wrapper.uut.opcode| ((state |rvfi_testbench_s|)) (_ BitVec 7) (|rvfi_testbench#52| state))
+(define-fun |rvfi_testbench_n wrapper.uut.opcode| ((state |rvfi_testbench_s|)) (_ BitVec 7) (|rvfi_testbench#59| state))
 ; yosys-smt2-wire wrapper.uut.o_flag 1
-(define-fun |rvfi_testbench_n wrapper.uut.o_flag| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#165| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.o_flag| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#172| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.ld_ctrl 3
-(define-fun |rvfi_testbench_n wrapper.uut.ld_ctrl| ((state |rvfi_testbench_s|)) (_ BitVec 3) (|rvfi_testbench#210| state))
+(define-fun |rvfi_testbench_n wrapper.uut.ld_ctrl| ((state |rvfi_testbench_s|)) (_ BitVec 3) (|rvfi_testbench#217| state))
 ; yosys-smt2-register wrapper.uut.instr_index 64
 ; yosys-smt2-wire wrapper.uut.instr_index 64
-(define-fun |rvfi_testbench_n wrapper.uut.instr_index| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#240| state))
+(define-fun |rvfi_testbench_n wrapper.uut.instr_index| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#247| state))
 ; yosys-smt2-wire wrapper.uut.instr 32
 (define-fun |rvfi_testbench_n wrapper.uut.instr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#0| state))
 ; yosys-smt2-wire wrapper.uut.imm_sel 3
-(define-fun |rvfi_testbench_n wrapper.uut.imm_sel| ((state |rvfi_testbench_s|)) (_ BitVec 3) (|rvfi_testbench#83| state))
+(define-fun |rvfi_testbench_n wrapper.uut.imm_sel| ((state |rvfi_testbench_s|)) (_ BitVec 3) (|rvfi_testbench#90| state))
 ; yosys-smt2-wire wrapper.uut.imm_ext 32
-(define-fun |rvfi_testbench_n wrapper.uut.imm_ext| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#90| state))
+(define-fun |rvfi_testbench_n wrapper.uut.imm_ext| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#97| state))
 ; yosys-smt2-wire wrapper.uut.funct7 7
 (define-fun |rvfi_testbench_n wrapper.uut.funct7| ((state |rvfi_testbench_s|)) (_ BitVec 7) ((_ extract 31 25) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.uut.funct3 3
 (define-fun |rvfi_testbench_n wrapper.uut.funct3| ((state |rvfi_testbench_s|)) (_ BitVec 3) ((_ extract 14 12) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.uut.dst_data 32
-(define-fun |rvfi_testbench_n wrapper.uut.dst_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#239| state))
+(define-fun |rvfi_testbench_n wrapper.uut.dst_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#246| state))
 ; yosys-smt2-wire wrapper.uut.ctrl_instr_trap 1
-(define-fun |rvfi_testbench_n wrapper.uut.ctrl_instr_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#203| state)) #b1))
-(declare-fun |rvfi_testbench#253| (|rvfi_testbench_s|) Bool) ; \clock
+(define-fun |rvfi_testbench_n wrapper.uut.ctrl_instr_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#210| state)) #b1))
+(declare-fun |rvfi_testbench#260| (|rvfi_testbench_s|) Bool) ; \clock
 ; yosys-smt2-wire wrapper.uut.clk 1
 ; yosys-smt2-clock wrapper.uut.clk posedge
-(define-fun |rvfi_testbench_n wrapper.uut.clk| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#253| state))
+(define-fun |rvfi_testbench_n wrapper.uut.clk| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#260| state))
 ; yosys-smt2-wire wrapper.uut.carry 1
-(define-fun |rvfi_testbench_n wrapper.uut.carry| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#167| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.carry| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#174| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.b_flag 1
-(define-fun |rvfi_testbench_n wrapper.uut.b_flag| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#181| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.uut.b_flag| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#188| state)) #b1))
 ; yosys-smt2-wire wrapper.uut.alu_in_2 32
-(define-fun |rvfi_testbench_n wrapper.uut.alu_in_2| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#106| state))
+(define-fun |rvfi_testbench_n wrapper.uut.alu_in_2| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#113| state))
 ; yosys-smt2-wire wrapper.uut.alu_in_1 32
-(define-fun |rvfi_testbench_n wrapper.uut.alu_in_1| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#62| state))
+(define-fun |rvfi_testbench_n wrapper.uut.alu_in_1| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#69| state))
 ; yosys-smt2-wire wrapper.uut.alu_ctrl 4
-(define-fun |rvfi_testbench_n wrapper.uut.alu_ctrl| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#140| state))
+(define-fun |rvfi_testbench_n wrapper.uut.alu_ctrl| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#147| state))
 ; yosys-smt2-wire wrapper.uut.addr 32
-(define-fun |rvfi_testbench_n wrapper.uut.addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#151| state))
+(define-fun |rvfi_testbench_n wrapper.uut.addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#158| state))
 ; yosys-smt2-wire wrapper.rvfi_valid 1
-(define-fun |rvfi_testbench_n wrapper.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#161| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#168| state)) #b1))
 ; yosys-smt2-wire wrapper.rvfi_trap 1
-(define-fun |rvfi_testbench_n wrapper.rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#203| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#210| state)) #b1))
 ; yosys-smt2-wire wrapper.rvfi_rs2_rdata 32
-(define-fun |rvfi_testbench_n wrapper.rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire wrapper.rvfi_rs2_addr 5
 (define-fun |rvfi_testbench_n wrapper.rvfi_rs2_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 24 20) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.rvfi_rs1_rdata 32
@@ -459,27 +466,27 @@
 ; yosys-smt2-wire wrapper.rvfi_rs1_addr 5
 (define-fun |rvfi_testbench_n wrapper.rvfi_rs1_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.rvfi_rd_wdata 32
-(define-fun |rvfi_testbench_n wrapper.rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#239| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#246| state))
 ; yosys-smt2-wire wrapper.rvfi_rd_addr 5
 (define-fun |rvfi_testbench_n wrapper.rvfi_rd_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire wrapper.rvfi_pc_wdata 32
-(define-fun |rvfi_testbench_n wrapper.rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#190| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#197| state))
 ; yosys-smt2-wire wrapper.rvfi_pc_rdata 32
 (define-fun |rvfi_testbench_n wrapper.rvfi_pc_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
 ; yosys-smt2-wire wrapper.rvfi_order 64
-(define-fun |rvfi_testbench_n wrapper.rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#240| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#247| state))
 ; yosys-smt2-wire wrapper.rvfi_mode 2
 (define-fun |rvfi_testbench_n wrapper.rvfi_mode| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b11)
 ; yosys-smt2-wire wrapper.rvfi_mem_wmask 4
-(define-fun |rvfi_testbench_n wrapper.rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#155| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#162| state))
 ; yosys-smt2-wire wrapper.rvfi_mem_wdata 32
-(define-fun |rvfi_testbench_n wrapper.rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire wrapper.rvfi_mem_rmask 4
-(define-fun |rvfi_testbench_n wrapper.rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#242| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#249| state))
 ; yosys-smt2-wire wrapper.rvfi_mem_rdata 32
-(define-fun |rvfi_testbench_n wrapper.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire wrapper.rvfi_mem_addr 32
-(define-fun |rvfi_testbench_n wrapper.rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#151| state))
+(define-fun |rvfi_testbench_n wrapper.rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#158| state))
 ; yosys-smt2-wire wrapper.rvfi_ixl 2
 (define-fun |rvfi_testbench_n wrapper.rvfi_ixl| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b01)
 ; yosys-smt2-wire wrapper.rvfi_intr 1
@@ -489,24 +496,24 @@
 ; yosys-smt2-wire wrapper.rvfi_halt 1
 (define-fun |rvfi_testbench_n wrapper.rvfi_halt| ((state |rvfi_testbench_s|)) Bool false)
 ; yosys-smt2-wire wrapper.reset 1
-(define-fun |rvfi_testbench_n wrapper.reset| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1))
+(define-fun |rvfi_testbench_n wrapper.reset| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1))
 ; yosys-smt2-wire wrapper.rd_data 32
-(define-fun |rvfi_testbench_n wrapper.rd_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n wrapper.rd_data| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire wrapper.pc 32
 (define-fun |rvfi_testbench_n wrapper.pc| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
 ; yosys-smt2-wire wrapper.instr 32
 (define-fun |rvfi_testbench_n wrapper.instr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#0| state))
 ; yosys-smt2-wire wrapper.clock 1
 ; yosys-smt2-clock wrapper.clock posedge
-(define-fun |rvfi_testbench_n wrapper.clock| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#253| state))
+(define-fun |rvfi_testbench_n wrapper.clock| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#260| state))
 ; yosys-smt2-wire wrapper.addr 32
-(define-fun |rvfi_testbench_n wrapper.addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#151| state))
+(define-fun |rvfi_testbench_n wrapper.addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#158| state))
 ; yosys-smt2-wire rvfi_valid 1
-(define-fun |rvfi_testbench_n rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#161| state)) #b1))
+(define-fun |rvfi_testbench_n rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#168| state)) #b1))
 ; yosys-smt2-wire rvfi_trap 1
-(define-fun |rvfi_testbench_n rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#203| state)) #b1))
+(define-fun |rvfi_testbench_n rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#210| state)) #b1))
 ; yosys-smt2-wire rvfi_rs2_rdata 32
-(define-fun |rvfi_testbench_n rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire rvfi_rs2_addr 5
 (define-fun |rvfi_testbench_n rvfi_rs2_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 24 20) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire rvfi_rs1_rdata 32
@@ -514,27 +521,27 @@
 ; yosys-smt2-wire rvfi_rs1_addr 5
 (define-fun |rvfi_testbench_n rvfi_rs1_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire rvfi_rd_wdata 32
-(define-fun |rvfi_testbench_n rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#239| state))
+(define-fun |rvfi_testbench_n rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#246| state))
 ; yosys-smt2-wire rvfi_rd_addr 5
 (define-fun |rvfi_testbench_n rvfi_rd_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire rvfi_pc_wdata 32
-(define-fun |rvfi_testbench_n rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#190| state))
+(define-fun |rvfi_testbench_n rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#197| state))
 ; yosys-smt2-wire rvfi_pc_rdata 32
 (define-fun |rvfi_testbench_n rvfi_pc_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
 ; yosys-smt2-wire rvfi_order 64
-(define-fun |rvfi_testbench_n rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#240| state))
+(define-fun |rvfi_testbench_n rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#247| state))
 ; yosys-smt2-wire rvfi_mode 2
 (define-fun |rvfi_testbench_n rvfi_mode| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b11)
 ; yosys-smt2-wire rvfi_mem_wmask 4
-(define-fun |rvfi_testbench_n rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#155| state))
+(define-fun |rvfi_testbench_n rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#162| state))
 ; yosys-smt2-wire rvfi_mem_wdata 32
-(define-fun |rvfi_testbench_n rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire rvfi_mem_rmask 4
-(define-fun |rvfi_testbench_n rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#242| state))
+(define-fun |rvfi_testbench_n rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#249| state))
 ; yosys-smt2-wire rvfi_mem_rdata 32
-(define-fun |rvfi_testbench_n rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire rvfi_mem_addr 32
-(define-fun |rvfi_testbench_n rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#151| state))
+(define-fun |rvfi_testbench_n rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#158| state))
 ; yosys-smt2-wire rvfi_ixl 2
 (define-fun |rvfi_testbench_n rvfi_ixl| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b01)
 ; yosys-smt2-wire rvfi_intr 1
@@ -545,48 +552,48 @@
 (define-fun |rvfi_testbench_n rvfi_halt| ((state |rvfi_testbench_s|)) Bool false)
 ; yosys-smt2-input reset 1
 ; yosys-smt2-wire reset 1
-(define-fun |rvfi_testbench_n reset| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1))
-(declare-fun |rvfi_testbench#254| (|rvfi_testbench_s|) (_ BitVec 8)) ; \cycle_reg
+(define-fun |rvfi_testbench_n reset| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1))
+(declare-fun |rvfi_testbench#261| (|rvfi_testbench_s|) (_ BitVec 8)) ; \cycle_reg
 ; yosys-smt2-register cycle_reg 8
 ; yosys-smt2-wire cycle_reg 8
-(define-fun |rvfi_testbench_n cycle_reg| ((state |rvfi_testbench_s|)) (_ BitVec 8) (|rvfi_testbench#254| state))
-(define-fun |rvfi_testbench#255| ((state |rvfi_testbench_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1) #b00000000 (|rvfi_testbench#254| state))) ; \cycle
+(define-fun |rvfi_testbench_n cycle_reg| ((state |rvfi_testbench_s|)) (_ BitVec 8) (|rvfi_testbench#261| state))
+(define-fun |rvfi_testbench#262| ((state |rvfi_testbench_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1) #b00000000 (|rvfi_testbench#261| state))) ; \cycle
 ; yosys-smt2-wire cycle 8
-(define-fun |rvfi_testbench_n cycle| ((state |rvfi_testbench_s|)) (_ BitVec 8) (|rvfi_testbench#255| state))
+(define-fun |rvfi_testbench_n cycle| ((state |rvfi_testbench_s|)) (_ BitVec 8) (|rvfi_testbench#262| state))
 ; yosys-smt2-input clock 1
 ; yosys-smt2-wire clock 1
 ; yosys-smt2-clock clock posedge
-(define-fun |rvfi_testbench_n clock| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#253| state))
-(define-fun |rvfi_testbench#256| ((state |rvfi_testbench_s|)) Bool (bvult (|rvfi_testbench#255| state) #b00000001)) ; \checker_inst.reset
-(define-fun |rvfi_testbench#257| ((state |rvfi_testbench_s|)) Bool (not (or  (|rvfi_testbench#256| state) false))) ; $flatten\checker_inst.$logic_not$rvfi_insn_check.sv:130$176_Y
-(define-fun |rvfi_testbench#258| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#257| state) false) (or  (= ((_ extract 0 0) (|rvfi_testbench#161| state)) #b1) false))) ; \checker_inst.valid
+(define-fun |rvfi_testbench_n clock| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#260| state))
+(define-fun |rvfi_testbench#263| ((state |rvfi_testbench_s|)) Bool (bvult (|rvfi_testbench#262| state) #b00000001)) ; \checker_inst.reset
+(define-fun |rvfi_testbench#264| ((state |rvfi_testbench_s|)) Bool (not (or  (|rvfi_testbench#263| state) false))) ; $flatten\checker_inst.$logic_not$rvfi_insn_check.sv:130$176_Y
+(define-fun |rvfi_testbench#265| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#264| state) false) (or  (= ((_ extract 0 0) (|rvfi_testbench#168| state)) #b1) false))) ; \checker_inst.valid
 ; yosys-smt2-wire checker_inst.valid 1
-(define-fun |rvfi_testbench_n checker_inst.valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#258| state))
+(define-fun |rvfi_testbench_n checker_inst.valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#265| state))
 ; yosys-smt2-wire checker_inst.trap 1
-(define-fun |rvfi_testbench_n checker_inst.trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#203| state)) #b1))
-(define-fun |rvfi_testbench#259| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#258| state) false) (or  (|rvfi_testbench#30| state) false))) ; $flatten\checker_inst.\insn_spec.$logic_and$insn_addi.v:45$254_Y
-(define-fun |rvfi_testbench#260| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 6 0) (|rvfi_testbench#0| state)) #b0010011)) ; $flatten\checker_inst.\insn_spec.$eq$insn_addi.v:45$255_Y
-(define-fun |rvfi_testbench#261| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#259| state) false) (or  (|rvfi_testbench#260| state) false))) ; \checker_inst.spec_valid
+(define-fun |rvfi_testbench_n checker_inst.trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#210| state)) #b1))
+(define-fun |rvfi_testbench#266| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#265| state) false) (or  (|rvfi_testbench#40| state) false))) ; $flatten\checker_inst.\insn_spec.$logic_and$insn_addi.v:45$254_Y
+(define-fun |rvfi_testbench#267| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 6 0) (|rvfi_testbench#0| state)) #b0010011)) ; $flatten\checker_inst.\insn_spec.$eq$insn_addi.v:45$255_Y
+(define-fun |rvfi_testbench#268| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#266| state) false) (or  (|rvfi_testbench#267| state) false))) ; \checker_inst.spec_valid
 ; yosys-smt2-wire checker_inst.spec_valid 1
-(define-fun |rvfi_testbench_n checker_inst.spec_valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#261| state))
+(define-fun |rvfi_testbench_n checker_inst.spec_valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#268| state))
 ; yosys-smt2-wire checker_inst.spec_trap 1
 (define-fun |rvfi_testbench_n checker_inst.spec_trap| ((state |rvfi_testbench_s|)) Bool false)
 ; yosys-smt2-wire checker_inst.spec_rs2_addr 5
 (define-fun |rvfi_testbench_n checker_inst.spec_rs2_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) #b00000)
 ; yosys-smt2-wire checker_inst.spec_rs1_addr 5
 (define-fun |rvfi_testbench_n checker_inst.spec_rs1_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
-(define-fun |rvfi_testbench#262| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 19 15) (|rvfi_testbench#0| state)) #b00000)) ; $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189_Y
-(define-fun |rvfi_testbench#263| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#262| state) (|rvfi_testbench#10| state) #b00000000000000000000000000000000)) ; \checker_inst.insn_spec.rvfi_rs1_rdata
-(define-fun |rvfi_testbench#264| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvadd (|rvfi_testbench#263| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) ((_ extract 31 20) (|rvfi_testbench#0| state)))))))))))))))))))))))) ; \checker_inst.insn_spec.result
-(define-fun |rvfi_testbench#265| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 11 7) (|rvfi_testbench#0| state)) #b00000)) ; $flatten\checker_inst.\insn_spec.$reduce_bool$insn_addi.v:48$257_Y
-(define-fun |rvfi_testbench#266| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#265| state) (|rvfi_testbench#264| state) #b00000000000000000000000000000000)) ; \checker_inst.spec_rd_wdata
+(define-fun |rvfi_testbench#269| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 19 15) (|rvfi_testbench#0| state)) #b00000)) ; $flatten\checker_inst.$ne$rvfi_insn_check.sv:150$189_Y
+(define-fun |rvfi_testbench#270| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#269| state) (|rvfi_testbench#10| state) #b00000000000000000000000000000000)) ; \checker_inst.insn_spec.rvfi_rs1_rdata
+(define-fun |rvfi_testbench#271| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvadd (|rvfi_testbench#270| state) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) (concat ((_ extract 31 31) (|rvfi_testbench#0| state)) ((_ extract 31 20) (|rvfi_testbench#0| state)))))))))))))))))))))))) ; \checker_inst.insn_spec.result
+(define-fun |rvfi_testbench#272| ((state |rvfi_testbench_s|)) Bool (distinct ((_ extract 11 7) (|rvfi_testbench#0| state)) #b00000)) ; $flatten\checker_inst.\insn_spec.$reduce_bool$insn_addi.v:48$257_Y
+(define-fun |rvfi_testbench#273| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#272| state) (|rvfi_testbench#271| state) #b00000000000000000000000000000000)) ; \checker_inst.spec_rd_wdata
 ; yosys-smt2-wire checker_inst.spec_rd_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.spec_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#266| state))
+(define-fun |rvfi_testbench_n checker_inst.spec_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#273| state))
 ; yosys-smt2-wire checker_inst.spec_rd_addr 5
 (define-fun |rvfi_testbench_n checker_inst.spec_rd_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
-(define-fun |rvfi_testbench#267| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvadd (|rvfi_testbench#4| state) #b00000000000000000000000000000100)) ; \checker_inst.spec_pc_wdata
+(define-fun |rvfi_testbench#274| ((state |rvfi_testbench_s|)) (_ BitVec 32) (bvadd (|rvfi_testbench#4| state) #b00000000000000000000000000000100)) ; \checker_inst.spec_pc_wdata
 ; yosys-smt2-wire checker_inst.spec_pc_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.spec_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#267| state))
+(define-fun |rvfi_testbench_n checker_inst.spec_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#274| state))
 ; yosys-smt2-wire checker_inst.spec_mem_wmask 4
 (define-fun |rvfi_testbench_n checker_inst.spec_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) #b0000)
 ; yosys-smt2-wire checker_inst.spec_mem_wdata 32
@@ -596,11 +603,11 @@
 ; yosys-smt2-wire checker_inst.spec_mem_addr 32
 (define-fun |rvfi_testbench_n checker_inst.spec_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) #b00000000000000000000000000000000)
 ; yosys-smt2-wire checker_inst.rvfi_valid 1
-(define-fun |rvfi_testbench_n checker_inst.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#161| state)) #b1))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#168| state)) #b1))
 ; yosys-smt2-wire checker_inst.rvfi_trap 1
-(define-fun |rvfi_testbench_n checker_inst.rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#203| state)) #b1))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_trap| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 0 0) (|rvfi_testbench#210| state)) #b1))
 ; yosys-smt2-wire checker_inst.rvfi_rs2_rdata 32
-(define-fun |rvfi_testbench_n checker_inst.rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire checker_inst.rvfi_rs2_addr 5
 (define-fun |rvfi_testbench_n checker_inst.rvfi_rs2_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 24 20) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.rvfi_rs1_rdata 32
@@ -608,27 +615,27 @@
 ; yosys-smt2-wire checker_inst.rvfi_rs1_addr 5
 (define-fun |rvfi_testbench_n checker_inst.rvfi_rs1_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.rvfi_rd_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#239| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#246| state))
 ; yosys-smt2-wire checker_inst.rvfi_rd_addr 5
 (define-fun |rvfi_testbench_n checker_inst.rvfi_rd_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.rvfi_pc_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#190| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#197| state))
 ; yosys-smt2-wire checker_inst.rvfi_pc_rdata 32
 (define-fun |rvfi_testbench_n checker_inst.rvfi_pc_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
 ; yosys-smt2-wire checker_inst.rvfi_order 64
-(define-fun |rvfi_testbench_n checker_inst.rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#240| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_order| ((state |rvfi_testbench_s|)) (_ BitVec 64) (|rvfi_testbench#247| state))
 ; yosys-smt2-wire checker_inst.rvfi_mode 2
 (define-fun |rvfi_testbench_n checker_inst.rvfi_mode| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b11)
 ; yosys-smt2-wire checker_inst.rvfi_mem_wmask 4
-(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#155| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#162| state))
 ; yosys-smt2-wire checker_inst.rvfi_mem_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire checker_inst.rvfi_mem_rmask 4
-(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#242| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#249| state))
 ; yosys-smt2-wire checker_inst.rvfi_mem_rdata 32
-(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire checker_inst.rvfi_mem_addr 32
-(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#151| state))
+(define-fun |rvfi_testbench_n checker_inst.rvfi_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#158| state))
 ; yosys-smt2-wire checker_inst.rvfi_ixl 2
 (define-fun |rvfi_testbench_n checker_inst.rvfi_ixl| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b01)
 ; yosys-smt2-wire checker_inst.rvfi_intr 1
@@ -640,33 +647,33 @@
 ; yosys-smt2-wire checker_inst.rs2_rdata_or_zero 32
 (define-fun |rvfi_testbench_n checker_inst.rs2_rdata_or_zero| ((state |rvfi_testbench_s|)) (_ BitVec 32) #b00000000000000000000000000000000)
 ; yosys-smt2-wire checker_inst.rs2_rdata 32
-(define-fun |rvfi_testbench_n checker_inst.rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n checker_inst.rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire checker_inst.rs2_addr 5
 (define-fun |rvfi_testbench_n checker_inst.rs2_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 24 20) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.rs1_rdata_or_zero 32
-(define-fun |rvfi_testbench_n checker_inst.rs1_rdata_or_zero| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#263| state))
+(define-fun |rvfi_testbench_n checker_inst.rs1_rdata_or_zero| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#270| state))
 ; yosys-smt2-wire checker_inst.rs1_rdata 32
 (define-fun |rvfi_testbench_n checker_inst.rs1_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#10| state))
 ; yosys-smt2-wire checker_inst.rs1_addr 5
 (define-fun |rvfi_testbench_n checker_inst.rs1_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.reset 1
-(define-fun |rvfi_testbench_n checker_inst.reset| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#256| state))
+(define-fun |rvfi_testbench_n checker_inst.reset| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#263| state))
 ; yosys-smt2-wire checker_inst.rd_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#239| state))
+(define-fun |rvfi_testbench_n checker_inst.rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#246| state))
 ; yosys-smt2-wire checker_inst.rd_addr 5
 (define-fun |rvfi_testbench_n checker_inst.rd_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.pc_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#190| state))
+(define-fun |rvfi_testbench_n checker_inst.pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#197| state))
 ; yosys-smt2-wire checker_inst.pc_rdata 32
 (define-fun |rvfi_testbench_n checker_inst.pc_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
 ; yosys-smt2-wire checker_inst.mem_wmask 4
-(define-fun |rvfi_testbench_n checker_inst.mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#155| state))
+(define-fun |rvfi_testbench_n checker_inst.mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#162| state))
 ; yosys-smt2-wire checker_inst.mem_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#92| state))
+(define-fun |rvfi_testbench_n checker_inst.mem_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#99| state))
 ; yosys-smt2-wire checker_inst.mem_rmask 4
-(define-fun |rvfi_testbench_n checker_inst.mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#242| state))
+(define-fun |rvfi_testbench_n checker_inst.mem_rmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) (|rvfi_testbench#249| state))
 ; yosys-smt2-wire checker_inst.mem_rdata 32
-(define-fun |rvfi_testbench_n checker_inst.mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n checker_inst.mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire checker_inst.mem_pma_w 1
 (define-fun |rvfi_testbench_n checker_inst.mem_pma_w| ((state |rvfi_testbench_s|)) Bool true)
 ; yosys-smt2-wire checker_inst.mem_pma_r 1
@@ -674,13 +681,13 @@
 ; yosys-smt2-wire checker_inst.mem_log2len 2
 (define-fun |rvfi_testbench_n checker_inst.mem_log2len| ((state |rvfi_testbench_s|)) (_ BitVec 2) #b00)
 ; yosys-smt2-wire checker_inst.mem_addr 32
-(define-fun |rvfi_testbench_n checker_inst.mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#151| state))
+(define-fun |rvfi_testbench_n checker_inst.mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#158| state))
 ; yosys-smt2-wire checker_inst.mem_access_fault 1
 (define-fun |rvfi_testbench_n checker_inst.mem_access_fault| ((state |rvfi_testbench_s|)) Bool false)
 ; yosys-smt2-wire checker_inst.intr 1
 (define-fun |rvfi_testbench_n checker_inst.intr| ((state |rvfi_testbench_s|)) Bool false)
 ; yosys-smt2-wire checker_inst.insn_spec.spec_valid 1
-(define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#261| state))
+(define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#268| state))
 ; yosys-smt2-wire checker_inst.insn_spec.spec_trap 1
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_trap| ((state |rvfi_testbench_s|)) Bool false)
 ; yosys-smt2-wire checker_inst.insn_spec.spec_rs2_addr 5
@@ -688,11 +695,11 @@
 ; yosys-smt2-wire checker_inst.insn_spec.spec_rs1_addr 5
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_rs1_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 19 15) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.insn_spec.spec_rd_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#266| state))
+(define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_rd_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#273| state))
 ; yosys-smt2-wire checker_inst.insn_spec.spec_rd_addr 5
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_rd_addr| ((state |rvfi_testbench_s|)) (_ BitVec 5) ((_ extract 11 7) (|rvfi_testbench#0| state)))
 ; yosys-smt2-wire checker_inst.insn_spec.spec_pc_wdata 32
-(define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#267| state))
+(define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_pc_wdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#274| state))
 ; yosys-smt2-wire checker_inst.insn_spec.spec_mem_wmask 4
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_mem_wmask| ((state |rvfi_testbench_s|)) (_ BitVec 4) #b0000)
 ; yosys-smt2-wire checker_inst.insn_spec.spec_mem_wdata 32
@@ -702,19 +709,19 @@
 ; yosys-smt2-wire checker_inst.insn_spec.spec_mem_addr 32
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.spec_mem_addr| ((state |rvfi_testbench_s|)) (_ BitVec 32) #b00000000000000000000000000000000)
 ; yosys-smt2-wire checker_inst.insn_spec.rvfi_valid 1
-(define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#258| state))
+(define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_valid| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#265| state))
 ; yosys-smt2-wire checker_inst.insn_spec.rvfi_rs2_rdata 32
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_rs2_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) #b00000000000000000000000000000000)
 ; yosys-smt2-wire checker_inst.insn_spec.rvfi_rs1_rdata 32
-(define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_rs1_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#263| state))
+(define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_rs1_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#270| state))
 ; yosys-smt2-wire checker_inst.insn_spec.rvfi_pc_rdata 32
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_pc_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#4| state))
 ; yosys-smt2-wire checker_inst.insn_spec.rvfi_mem_rdata 32
-(define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#206| state))
+(define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_mem_rdata| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#213| state))
 ; yosys-smt2-wire checker_inst.insn_spec.rvfi_insn 32
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.rvfi_insn| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#0| state))
 ; yosys-smt2-wire checker_inst.insn_spec.result 32
-(define-fun |rvfi_testbench_n checker_inst.insn_spec.result| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#264| state))
+(define-fun |rvfi_testbench_n checker_inst.insn_spec.result| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#271| state))
 ; yosys-smt2-wire checker_inst.insn_spec.misa_ok 1
 (define-fun |rvfi_testbench_n checker_inst.insn_spec.misa_ok| ((state |rvfi_testbench_s|)) Bool true)
 ; yosys-smt2-wire checker_inst.insn_spec.insn_rs1 5
@@ -737,184 +744,184 @@
 (define-fun |rvfi_testbench_n checker_inst.halt| ((state |rvfi_testbench_s|)) Bool false)
 ; yosys-smt2-wire checker_inst.clock 1
 ; yosys-smt2-clock checker_inst.clock posedge
-(define-fun |rvfi_testbench_n checker_inst.clock| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#253| state))
-(define-fun |rvfi_testbench#268| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#255| state) #b00010100)) ; \checker_inst.check
+(define-fun |rvfi_testbench_n checker_inst.clock| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#260| state))
+(define-fun |rvfi_testbench#275| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#262| state) #b00010100)) ; \checker_inst.check
 ; yosys-smt2-wire checker_inst.check 1
-(define-fun |rvfi_testbench_n checker_inst.check| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#268| state))
-; yosys-smt2-anyseq rvfi_testbench#269 1 $auto$setundef.cc:501:execute$2879
-(declare-fun |rvfi_testbench#269| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2880
-(define-fun |rvfi_testbench#270| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#257| state) false) (or  (|rvfi_testbench#268| state) false))) ; $flatten\checker_inst.$auto$rtlil.cc:2346:Not$2835
-(define-fun |rvfi_testbench#271| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (ite (|rvfi_testbench#261| state) #b1 #b0) (|rvfi_testbench#269| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:130$32_CHECK[0:0]$101
-(define-fun |rvfi_testbench#272| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) #b1 #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:130$32_EN[0:0]$102
+(define-fun |rvfi_testbench_n checker_inst.check| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench#275| state))
+; yosys-smt2-anyseq rvfi_testbench#276 1 $auto$setundef.cc:501:execute$2891
+(declare-fun |rvfi_testbench#276| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2892
+(define-fun |rvfi_testbench#277| ((state |rvfi_testbench_s|)) Bool (and (or  (|rvfi_testbench#264| state) false) (or  (|rvfi_testbench#275| state) false))) ; $flatten\checker_inst.$auto$rtlil.cc:2346:Not$2847
+(define-fun |rvfi_testbench#278| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (ite (|rvfi_testbench#268| state) #b1 #b0) (|rvfi_testbench#276| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:130$32_CHECK[0:0]$101
+(define-fun |rvfi_testbench#279| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) #b1 #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:130$32_EN[0:0]$102
 ; yosys-smt2-assume 0 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:130.30-131.23
-(define-fun |rvfi_testbench_u 0| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#271| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#272| state)) #b1)))) ; $flatten/checker_inst.$assume$rvfi_insn_check.sv:130$215
-; yosys-smt2-anyseq rvfi_testbench#273 1 $auto$setundef.cc:501:execute$2877
-(declare-fun |rvfi_testbench#273| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2878
-(define-fun |rvfi_testbench#274| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#203| state))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:178$210_Y
-(define-fun |rvfi_testbench#275| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#274| state) (|rvfi_testbench#273| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:176$65_CHECK[0:0]$167
+(define-fun |rvfi_testbench_u 0| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#278| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#279| state)) #b1)))) ; $flatten/checker_inst.$assume$rvfi_insn_check.sv:130$215
+; yosys-smt2-anyseq rvfi_testbench#280 1 $auto$setundef.cc:501:execute$2889
+(declare-fun |rvfi_testbench#280| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2890
+(define-fun |rvfi_testbench#281| ((state |rvfi_testbench_s|)) (_ BitVec 1) (bvnot (|rvfi_testbench#210| state))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:178$210_Y
+(define-fun |rvfi_testbench#282| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#281| state) (|rvfi_testbench#280| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:176$65_CHECK[0:0]$167
 ; yosys-smt2-assert 0 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:176.9-178.31
-(define-fun |rvfi_testbench_a 0| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#275| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#272| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:176$248
-; yosys-smt2-anyseq rvfi_testbench#276 1 $auto$setundef.cc:501:execute$2875
-(declare-fun |rvfi_testbench#276| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2876
-; yosys-smt2-anyseq rvfi_testbench#277 1 $auto$setundef.cc:501:execute$2873
-(declare-fun |rvfi_testbench#277| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2874
-(define-fun |rvfi_testbench#278| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 31 24) (|rvfi_testbench#206| state)) ((_ extract 31 24) (|rvfi_testbench#92| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$209_Y
-(define-fun |rvfi_testbench#279| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 3 3) (|rvfi_testbench#155| state)) #b1) (ite (|rvfi_testbench#278| state) #b1 #b0) (|rvfi_testbench#277| state))) ; $flatten\checker_inst.$procmux$1128_Y
-(define-fun |rvfi_testbench#280| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#279| state) (|rvfi_testbench#276| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$63_CHECK[0:0]$163
-(define-fun |rvfi_testbench#281| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 3 3) (|rvfi_testbench#155| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$1086_Y
-(define-fun |rvfi_testbench#282| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#281| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$62_EN[0:0]$162
+(define-fun |rvfi_testbench_a 0| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#282| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#279| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:176$248
+; yosys-smt2-anyseq rvfi_testbench#283 1 $auto$setundef.cc:501:execute$2887
+(declare-fun |rvfi_testbench#283| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2888
+; yosys-smt2-anyseq rvfi_testbench#284 1 $auto$setundef.cc:501:execute$2885
+(declare-fun |rvfi_testbench#284| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2886
+(define-fun |rvfi_testbench#285| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 31 24) (|rvfi_testbench#213| state)) ((_ extract 31 24) (|rvfi_testbench#99| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$209_Y
+(define-fun |rvfi_testbench#286| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 3 3) (|rvfi_testbench#162| state)) #b1) (ite (|rvfi_testbench#285| state) #b1 #b0) (|rvfi_testbench#284| state))) ; $flatten\checker_inst.$procmux$1140_Y
+(define-fun |rvfi_testbench#287| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#286| state) (|rvfi_testbench#283| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$63_CHECK[0:0]$163
+(define-fun |rvfi_testbench#288| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 3 3) (|rvfi_testbench#162| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$1098_Y
+(define-fun |rvfi_testbench#289| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#288| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$62_EN[0:0]$162
 ; yosys-smt2-assert 1 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:169.30-170.59
-(define-fun |rvfi_testbench_a 1| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#280| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#282| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$246
-; yosys-smt2-anyseq rvfi_testbench#283 1 $auto$setundef.cc:501:execute$2867
-(declare-fun |rvfi_testbench#283| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2868
-; yosys-smt2-anyseq rvfi_testbench#284 1 $auto$setundef.cc:501:execute$2865
-(declare-fun |rvfi_testbench#284| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2866
-(define-fun |rvfi_testbench#285| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 23 16) (|rvfi_testbench#206| state)) ((_ extract 23 16) (|rvfi_testbench#92| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$207_Y
-(define-fun |rvfi_testbench#286| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 2 2) (|rvfi_testbench#155| state)) #b1) (ite (|rvfi_testbench#285| state) #b1 #b0) (|rvfi_testbench#284| state))) ; $flatten\checker_inst.$procmux$1002_Y
-(define-fun |rvfi_testbench#287| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#286| state) (|rvfi_testbench#283| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$58_CHECK[0:0]$153
-(define-fun |rvfi_testbench#288| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 2 2) (|rvfi_testbench#155| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$960_Y
-(define-fun |rvfi_testbench#289| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#288| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_EN[0:0]$152
+(define-fun |rvfi_testbench_a 1| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#287| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#289| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$246
+; yosys-smt2-anyseq rvfi_testbench#290 1 $auto$setundef.cc:501:execute$2879
+(declare-fun |rvfi_testbench#290| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2880
+; yosys-smt2-anyseq rvfi_testbench#291 1 $auto$setundef.cc:501:execute$2877
+(declare-fun |rvfi_testbench#291| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2878
+(define-fun |rvfi_testbench#292| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 23 16) (|rvfi_testbench#213| state)) ((_ extract 23 16) (|rvfi_testbench#99| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$207_Y
+(define-fun |rvfi_testbench#293| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 2 2) (|rvfi_testbench#162| state)) #b1) (ite (|rvfi_testbench#292| state) #b1 #b0) (|rvfi_testbench#291| state))) ; $flatten\checker_inst.$procmux$1014_Y
+(define-fun |rvfi_testbench#294| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#293| state) (|rvfi_testbench#290| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$58_CHECK[0:0]$153
+(define-fun |rvfi_testbench#295| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 2 2) (|rvfi_testbench#162| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$1000_Y
+(define-fun |rvfi_testbench#296| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#295| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_EN[0:0]$152
 ; yosys-smt2-assert 2 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:169.30-170.59
-(define-fun |rvfi_testbench_a 2| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#287| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#289| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$241
-; yosys-smt2-anyseq rvfi_testbench#290 1 $auto$setundef.cc:501:execute$2913
-(declare-fun |rvfi_testbench#290| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2914
-; yosys-smt2-anyseq rvfi_testbench#291 1 $auto$setundef.cc:501:execute$2911
-(declare-fun |rvfi_testbench#291| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2912
-(define-fun |rvfi_testbench#292| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 15 8) (|rvfi_testbench#206| state)) ((_ extract 15 8) (|rvfi_testbench#92| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$205_Y
-(define-fun |rvfi_testbench#293| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 1 1) (|rvfi_testbench#155| state)) #b1) (ite (|rvfi_testbench#292| state) #b1 #b0) (|rvfi_testbench#291| state))) ; $flatten\checker_inst.$procmux$876_Y
-(define-fun |rvfi_testbench#294| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#293| state) (|rvfi_testbench#290| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$53_CHECK[0:0]$143
-(define-fun |rvfi_testbench#295| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 1 1) (|rvfi_testbench#155| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$834_Y
-(define-fun |rvfi_testbench#296| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#295| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$52_EN[0:0]$142
+(define-fun |rvfi_testbench_a 2| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#294| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#296| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$241
+; yosys-smt2-anyseq rvfi_testbench#297 1 $auto$setundef.cc:501:execute$2925
+(declare-fun |rvfi_testbench#297| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2926
+; yosys-smt2-anyseq rvfi_testbench#298 1 $auto$setundef.cc:501:execute$2923
+(declare-fun |rvfi_testbench#298| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2924
+(define-fun |rvfi_testbench#299| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 15 8) (|rvfi_testbench#213| state)) ((_ extract 15 8) (|rvfi_testbench#99| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$205_Y
+(define-fun |rvfi_testbench#300| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 1 1) (|rvfi_testbench#162| state)) #b1) (ite (|rvfi_testbench#299| state) #b1 #b0) (|rvfi_testbench#298| state))) ; $flatten\checker_inst.$procmux$888_Y
+(define-fun |rvfi_testbench#301| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#300| state) (|rvfi_testbench#297| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$53_CHECK[0:0]$143
+(define-fun |rvfi_testbench#302| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 1 1) (|rvfi_testbench#162| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$846_Y
+(define-fun |rvfi_testbench#303| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#302| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$52_EN[0:0]$142
 ; yosys-smt2-assert 3 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:169.30-170.59
-(define-fun |rvfi_testbench_a 3| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#294| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#296| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$236
-; yosys-smt2-anyseq rvfi_testbench#297 1 $auto$setundef.cc:501:execute$2905
-(declare-fun |rvfi_testbench#297| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2906
-; yosys-smt2-anyseq rvfi_testbench#298 1 $auto$setundef.cc:501:execute$2903
-(declare-fun |rvfi_testbench#298| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2904
-(define-fun |rvfi_testbench#299| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 7 0) (|rvfi_testbench#206| state)) ((_ extract 7 0) (|rvfi_testbench#92| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$203_Y
-(define-fun |rvfi_testbench#300| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#155| state)) #b1) (ite (|rvfi_testbench#299| state) #b1 #b0) (|rvfi_testbench#298| state))) ; $flatten\checker_inst.$procmux$750_Y
-(define-fun |rvfi_testbench#301| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#300| state) (|rvfi_testbench#297| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$48_CHECK[0:0]$133
-(define-fun |rvfi_testbench#302| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#155| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$708_Y
-(define-fun |rvfi_testbench#303| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#302| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$47_EN[0:0]$132
+(define-fun |rvfi_testbench_a 3| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#301| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#303| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$236
+; yosys-smt2-anyseq rvfi_testbench#304 1 $auto$setundef.cc:501:execute$2917
+(declare-fun |rvfi_testbench#304| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2918
+; yosys-smt2-anyseq rvfi_testbench#305 1 $auto$setundef.cc:501:execute$2915
+(declare-fun |rvfi_testbench#305| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2916
+(define-fun |rvfi_testbench#306| ((state |rvfi_testbench_s|)) Bool (= ((_ extract 7 0) (|rvfi_testbench#213| state)) ((_ extract 7 0) (|rvfi_testbench#99| state)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:170$203_Y
+(define-fun |rvfi_testbench#307| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#162| state)) #b1) (ite (|rvfi_testbench#306| state) #b1 #b0) (|rvfi_testbench#305| state))) ; $flatten\checker_inst.$procmux$762_Y
+(define-fun |rvfi_testbench#308| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#307| state) (|rvfi_testbench#304| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:169$48_CHECK[0:0]$133
+(define-fun |rvfi_testbench#309| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#162| state)) #b1) #b1 #b0)) ; $flatten\checker_inst.$procmux$720_Y
+(define-fun |rvfi_testbench#310| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#309| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$47_EN[0:0]$132
 ; yosys-smt2-assert 4 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:169.30-170.59
-(define-fun |rvfi_testbench_a 4| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#301| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#303| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$231
-; yosys-smt2-anyseq rvfi_testbench#304 1 $auto$setundef.cc:501:execute$2871
-(declare-fun |rvfi_testbench#304| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2872
-; yosys-smt2-anyseq rvfi_testbench#305 1 $auto$setundef.cc:501:execute$2869
-(declare-fun |rvfi_testbench#305| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2870
-(define-fun |rvfi_testbench#306| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 3 3) (|rvfi_testbench#155| state)) #b1) ((_ extract 3 3) (|rvfi_testbench#242| state)) (|rvfi_testbench#305| state))) ; $flatten\checker_inst.$procmux$1100_Y
-(define-fun |rvfi_testbench#307| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#306| state) (|rvfi_testbench#304| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$62_CHECK[0:0]$161
+(define-fun |rvfi_testbench_a 4| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#308| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#310| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:169$231
+; yosys-smt2-anyseq rvfi_testbench#311 1 $auto$setundef.cc:501:execute$2883
+(declare-fun |rvfi_testbench#311| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2884
+; yosys-smt2-anyseq rvfi_testbench#312 1 $auto$setundef.cc:501:execute$2881
+(declare-fun |rvfi_testbench#312| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2882
+(define-fun |rvfi_testbench#313| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 3 3) (|rvfi_testbench#162| state)) #b1) ((_ extract 3 3) (|rvfi_testbench#249| state)) (|rvfi_testbench#312| state))) ; $flatten\checker_inst.$procmux$1112_Y
+(define-fun |rvfi_testbench#314| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#313| state) (|rvfi_testbench#311| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$62_CHECK[0:0]$161
 ; yosys-smt2-assert 5 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.40-169.29
-(define-fun |rvfi_testbench_a 5| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#307| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#282| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$245
-; yosys-smt2-anyseq rvfi_testbench#308 1 $auto$setundef.cc:501:execute$2917
-(declare-fun |rvfi_testbench#308| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2918
-; yosys-smt2-anyseq rvfi_testbench#309 1 $auto$setundef.cc:501:execute$2915
-(declare-fun |rvfi_testbench#309| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2916
-(define-fun |rvfi_testbench#310| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 2 2) (|rvfi_testbench#155| state)) #b1) ((_ extract 2 2) (|rvfi_testbench#242| state)) (|rvfi_testbench#309| state))) ; $flatten\checker_inst.$procmux$974_Y
-(define-fun |rvfi_testbench#311| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#310| state) (|rvfi_testbench#308| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_CHECK[0:0]$151
+(define-fun |rvfi_testbench_a 5| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#314| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#289| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$245
+; yosys-smt2-anyseq rvfi_testbench#315 1 $auto$setundef.cc:501:execute$2929
+(declare-fun |rvfi_testbench#315| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2930
+; yosys-smt2-anyseq rvfi_testbench#316 1 $auto$setundef.cc:501:execute$2927
+(declare-fun |rvfi_testbench#316| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2928
+(define-fun |rvfi_testbench#317| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 2 2) (|rvfi_testbench#162| state)) #b1) ((_ extract 2 2) (|rvfi_testbench#249| state)) (|rvfi_testbench#316| state))) ; $flatten\checker_inst.$procmux$986_Y
+(define-fun |rvfi_testbench#318| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#317| state) (|rvfi_testbench#315| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$57_CHECK[0:0]$151
 ; yosys-smt2-assert 6 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.40-169.29
-(define-fun |rvfi_testbench_a 6| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#311| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#289| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$240
-; yosys-smt2-anyseq rvfi_testbench#312 1 $auto$setundef.cc:501:execute$2909
-(declare-fun |rvfi_testbench#312| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2910
-; yosys-smt2-anyseq rvfi_testbench#313 1 $auto$setundef.cc:501:execute$2907
-(declare-fun |rvfi_testbench#313| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2908
-(define-fun |rvfi_testbench#314| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 1 1) (|rvfi_testbench#155| state)) #b1) ((_ extract 1 1) (|rvfi_testbench#242| state)) (|rvfi_testbench#313| state))) ; $flatten\checker_inst.$procmux$848_Y
-(define-fun |rvfi_testbench#315| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#314| state) (|rvfi_testbench#312| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$52_CHECK[0:0]$141
+(define-fun |rvfi_testbench_a 6| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#318| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#296| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$240
+; yosys-smt2-anyseq rvfi_testbench#319 1 $auto$setundef.cc:501:execute$2921
+(declare-fun |rvfi_testbench#319| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2922
+; yosys-smt2-anyseq rvfi_testbench#320 1 $auto$setundef.cc:501:execute$2919
+(declare-fun |rvfi_testbench#320| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2920
+(define-fun |rvfi_testbench#321| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 1 1) (|rvfi_testbench#162| state)) #b1) ((_ extract 1 1) (|rvfi_testbench#249| state)) (|rvfi_testbench#320| state))) ; $flatten\checker_inst.$procmux$860_Y
+(define-fun |rvfi_testbench#322| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#321| state) (|rvfi_testbench#319| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$52_CHECK[0:0]$141
 ; yosys-smt2-assert 7 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.40-169.29
-(define-fun |rvfi_testbench_a 7| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#315| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#296| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$235
-; yosys-smt2-anyseq rvfi_testbench#316 1 $auto$setundef.cc:501:execute$2901
-(declare-fun |rvfi_testbench#316| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2902
-; yosys-smt2-anyseq rvfi_testbench#317 1 $auto$setundef.cc:501:execute$2899
-(declare-fun |rvfi_testbench#317| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2900
-(define-fun |rvfi_testbench#318| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#155| state)) #b1) ((_ extract 0 0) (|rvfi_testbench#242| state)) (|rvfi_testbench#317| state))) ; $flatten\checker_inst.$procmux$722_Y
-(define-fun |rvfi_testbench#319| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#318| state) (|rvfi_testbench#316| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$47_CHECK[0:0]$131
+(define-fun |rvfi_testbench_a 7| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#322| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#303| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$235
+; yosys-smt2-anyseq rvfi_testbench#323 1 $auto$setundef.cc:501:execute$2913
+(declare-fun |rvfi_testbench#323| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2914
+; yosys-smt2-anyseq rvfi_testbench#324 1 $auto$setundef.cc:501:execute$2911
+(declare-fun |rvfi_testbench#324| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2912
+(define-fun |rvfi_testbench#325| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#162| state)) #b1) ((_ extract 0 0) (|rvfi_testbench#249| state)) (|rvfi_testbench#324| state))) ; $flatten\checker_inst.$procmux$734_Y
+(define-fun |rvfi_testbench#326| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#325| state) (|rvfi_testbench#323| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:168$47_CHECK[0:0]$131
 ; yosys-smt2-assert 8 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:168.40-169.29
-(define-fun |rvfi_testbench_a 8| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#319| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#303| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$230
-; yosys-smt2-anyseq rvfi_testbench#320 1 $auto$setundef.cc:501:execute$2897
-(declare-fun |rvfi_testbench#320| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2898
-(define-fun |rvfi_testbench#321| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#267| state) (|rvfi_testbench#190| state))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:158$195_Y
-(define-fun |rvfi_testbench#322| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (ite (|rvfi_testbench#321| state) #b1 #b0) (|rvfi_testbench#320| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:157$43_CHECK[0:0]$123
+(define-fun |rvfi_testbench_a 8| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#326| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#310| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:168$230
+; yosys-smt2-anyseq rvfi_testbench#327 1 $auto$setundef.cc:501:execute$2909
+(declare-fun |rvfi_testbench#327| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2910
+(define-fun |rvfi_testbench#328| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#274| state) (|rvfi_testbench#197| state))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:158$195_Y
+(define-fun |rvfi_testbench#329| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (ite (|rvfi_testbench#328| state) #b1 #b0) (|rvfi_testbench#327| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:157$43_CHECK[0:0]$123
 ; yosys-smt2-assert 9 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:157.41-158.76
-(define-fun |rvfi_testbench_a 9| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#322| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#272| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:157$226
-; yosys-smt2-anyseq rvfi_testbench#323 1 $auto$setundef.cc:501:execute$2895
-(declare-fun |rvfi_testbench#323| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2896
-(define-fun |rvfi_testbench#324| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#266| state) (|rvfi_testbench#239| state))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:157$194_Y
-(define-fun |rvfi_testbench#325| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (ite (|rvfi_testbench#324| state) #b1 #b0) (|rvfi_testbench#323| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:156$42_CHECK[0:0]$121
+(define-fun |rvfi_testbench_a 9| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#329| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#279| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:157$226
+; yosys-smt2-anyseq rvfi_testbench#330 1 $auto$setundef.cc:501:execute$2907
+(declare-fun |rvfi_testbench#330| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2908
+(define-fun |rvfi_testbench#331| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#273| state) (|rvfi_testbench#246| state))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:157$194_Y
+(define-fun |rvfi_testbench#332| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (ite (|rvfi_testbench#331| state) #b1 #b0) (|rvfi_testbench#330| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:156$42_CHECK[0:0]$121
 ; yosys-smt2-assert 10 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:156.39-157.40
-(define-fun |rvfi_testbench_a 10| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#325| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#272| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:156$225
-; yosys-smt2-anyseq rvfi_testbench#326 1 $auto$setundef.cc:501:execute$2893
-(declare-fun |rvfi_testbench#326| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2894
-(define-fun |rvfi_testbench#327| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) #b1 (|rvfi_testbench#326| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:154$41_CHECK[0:0]$119
+(define-fun |rvfi_testbench_a 10| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#332| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#279| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:156$225
+; yosys-smt2-anyseq rvfi_testbench#333 1 $auto$setundef.cc:501:execute$2905
+(declare-fun |rvfi_testbench#333| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2906
+(define-fun |rvfi_testbench#334| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) #b1 (|rvfi_testbench#333| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:154$41_CHECK[0:0]$119
 ; yosys-smt2-assert 11 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:154.42-156.38
-(define-fun |rvfi_testbench_a 11| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#327| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#272| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:154$224
-; yosys-smt2-anyseq rvfi_testbench#328 1 $auto$setundef.cc:501:execute$2891
-(declare-fun |rvfi_testbench#328| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2892
-; yosys-smt2-anyseq rvfi_testbench#329 1 $auto$setundef.cc:501:execute$2889
-(declare-fun |rvfi_testbench#329| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2890
-(define-fun |rvfi_testbench#330| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#262| state) #b1 (|rvfi_testbench#329| state))) ; $flatten\checker_inst.$procmux$551_Y
-(define-fun |rvfi_testbench#331| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#330| state) (|rvfi_testbench#328| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_CHECK[0:0]$115
-(define-fun |rvfi_testbench#332| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#262| state) #b1 #b0)) ; $flatten\checker_inst.$procmux$540_Y
-(define-fun |rvfi_testbench#333| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#332| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_EN[0:0]$116
+(define-fun |rvfi_testbench_a 11| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#334| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#279| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:154$224
+; yosys-smt2-anyseq rvfi_testbench#335 1 $auto$setundef.cc:501:execute$2903
+(declare-fun |rvfi_testbench#335| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2904
+; yosys-smt2-anyseq rvfi_testbench#336 1 $auto$setundef.cc:501:execute$2901
+(declare-fun |rvfi_testbench#336| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2902
+(define-fun |rvfi_testbench#337| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#269| state) #b1 (|rvfi_testbench#336| state))) ; $flatten\checker_inst.$procmux$563_Y
+(define-fun |rvfi_testbench#338| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#337| state) (|rvfi_testbench#335| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_CHECK[0:0]$115
+(define-fun |rvfi_testbench#339| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#269| state) #b1 #b0)) ; $flatten\checker_inst.$procmux$552_Y
+(define-fun |rvfi_testbench#340| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#339| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:150$39_EN[0:0]$116
 ; yosys-smt2-assert 12 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:150.30-151.41
-(define-fun |rvfi_testbench_a 12| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#331| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#333| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:150$222
-; yosys-smt2-anyseq rvfi_testbench#334 1 $auto$setundef.cc:501:execute$2887
-(declare-fun |rvfi_testbench#334| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2888
-; yosys-smt2-anyseq rvfi_testbench#335 1 $auto$setundef.cc:501:execute$2885
-(declare-fun |rvfi_testbench#335| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2886
-(define-fun |rvfi_testbench#336| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 4 4) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 5 5) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 6 6) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 7 7) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 12 12) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 15 15) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 16 16) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 17 17) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 18 18) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 19 19) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 20 20) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 25 25) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 26 26) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 27 27) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 28 28) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 29 29) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 30 30) (|rvfi_testbench#92| state)) #b1) (= ((_ extract 31 31) (|rvfi_testbench#92| state)) #b1)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:147$187_Y
-(define-fun |rvfi_testbench#337| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#91| state) (ite (|rvfi_testbench#336| state) #b1 #b0) (|rvfi_testbench#335| state))) ; $flatten\checker_inst.$procmux$531_Y
-(define-fun |rvfi_testbench#338| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#337| state) (|rvfi_testbench#334| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_CHECK[0:0]$113
-(define-fun |rvfi_testbench#339| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#91| state) #b1 #b0)) ; $flatten\checker_inst.$procmux$523_Y
-(define-fun |rvfi_testbench#340| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#339| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_EN[0:0]$114
+(define-fun |rvfi_testbench_a 12| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#338| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#340| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:150$222
+; yosys-smt2-anyseq rvfi_testbench#341 1 $auto$setundef.cc:501:execute$2899
+(declare-fun |rvfi_testbench#341| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2900
+; yosys-smt2-anyseq rvfi_testbench#342 1 $auto$setundef.cc:501:execute$2897
+(declare-fun |rvfi_testbench#342| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2898
+(define-fun |rvfi_testbench#343| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 4 4) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 5 5) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 6 6) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 7 7) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 12 12) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 15 15) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 16 16) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 17 17) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 18 18) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 19 19) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 20 20) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 25 25) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 26 26) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 27 27) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 28 28) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 29 29) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 30 30) (|rvfi_testbench#99| state)) #b1) (= ((_ extract 31 31) (|rvfi_testbench#99| state)) #b1)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:147$187_Y
+(define-fun |rvfi_testbench#344| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#98| state) (ite (|rvfi_testbench#343| state) #b1 #b0) (|rvfi_testbench#342| state))) ; $flatten\checker_inst.$procmux$543_Y
+(define-fun |rvfi_testbench#345| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#344| state) (|rvfi_testbench#341| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_CHECK[0:0]$113
+(define-fun |rvfi_testbench#346| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#98| state) #b1 #b0)) ; $flatten\checker_inst.$procmux$535_Y
+(define-fun |rvfi_testbench#347| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#346| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:146$38_EN[0:0]$114
 ; yosys-smt2-assert 13 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:146.24-147.29
-(define-fun |rvfi_testbench_a 13| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#338| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#340| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:146$221
-; yosys-smt2-anyseq rvfi_testbench#341 1 $auto$setundef.cc:501:execute$2883
-(declare-fun |rvfi_testbench#341| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2884
-; yosys-smt2-anyseq rvfi_testbench#342 1 $auto$setundef.cc:501:execute$2881
-(declare-fun |rvfi_testbench#342| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2882
-(define-fun |rvfi_testbench#343| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 4 4) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 5 5) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 6 6) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 7 7) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 12 12) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 15 15) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 16 16) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 17 17) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 18 18) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 19 19) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 20 20) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 25 25) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 26 26) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 27 27) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 28 28) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 29 29) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 30 30) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 31 31) (|rvfi_testbench#10| state)) #b1)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:144$185_Y
-(define-fun |rvfi_testbench#344| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#9| state) (ite (|rvfi_testbench#343| state) #b1 #b0) (|rvfi_testbench#342| state))) ; $flatten\checker_inst.$procmux$515_Y
-(define-fun |rvfi_testbench#345| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#344| state) (|rvfi_testbench#341| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:143$37_CHECK[0:0]$111
-(define-fun |rvfi_testbench#346| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#9| state) #b1 #b0)) ; $flatten\checker_inst.$procmux$507_Y
-(define-fun |rvfi_testbench#347| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#270| state) (|rvfi_testbench#346| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:143$37_EN[0:0]$112
+(define-fun |rvfi_testbench_a 13| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#345| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#347| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:146$221
+; yosys-smt2-anyseq rvfi_testbench#348 1 $auto$setundef.cc:501:execute$2895
+(declare-fun |rvfi_testbench#348| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2896
+; yosys-smt2-anyseq rvfi_testbench#349 1 $auto$setundef.cc:501:execute$2893
+(declare-fun |rvfi_testbench#349| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2894
+(define-fun |rvfi_testbench#350| ((state |rvfi_testbench_s|)) Bool (not (or  (= ((_ extract 0 0) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 1 1) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 2 2) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 3 3) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 4 4) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 5 5) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 6 6) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 7 7) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 8 8) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 9 9) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 10 10) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 11 11) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 12 12) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 13 13) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 14 14) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 15 15) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 16 16) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 17 17) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 18 18) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 19 19) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 20 20) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 21 21) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 22 22) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 23 23) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 24 24) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 25 25) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 26 26) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 27 27) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 28 28) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 29 29) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 30 30) (|rvfi_testbench#10| state)) #b1) (= ((_ extract 31 31) (|rvfi_testbench#10| state)) #b1)))) ; $flatten\checker_inst.$eq$rvfi_insn_check.sv:144$185_Y
+(define-fun |rvfi_testbench#351| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#9| state) (ite (|rvfi_testbench#350| state) #b1 #b0) (|rvfi_testbench#349| state))) ; $flatten\checker_inst.$procmux$527_Y
+(define-fun |rvfi_testbench#352| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#351| state) (|rvfi_testbench#348| state))) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:143$37_CHECK[0:0]$111
+(define-fun |rvfi_testbench#353| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#9| state) #b1 #b0)) ; $flatten\checker_inst.$procmux$519_Y
+(define-fun |rvfi_testbench#354| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (|rvfi_testbench#277| state) (|rvfi_testbench#353| state) #b0)) ; $flatten\checker_inst.$0$formal$rvfi_insn_check.sv:143$37_EN[0:0]$112
 ; yosys-smt2-assert 14 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:143.24-144.29
-(define-fun |rvfi_testbench_a 14| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#345| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#347| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:143$220
-; yosys-smt2-anyseq rvfi_testbench#348 1 $auto$setundef.cc:501:execute$2863
-(declare-fun |rvfi_testbench#348| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2864
+(define-fun |rvfi_testbench_a 14| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#352| state)) #b1) (not (= ((_ extract 0 0) (|rvfi_testbench#354| state)) #b1)))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:143$220
+; yosys-smt2-anyseq rvfi_testbench#355 1 $auto$setundef.cc:501:execute$2875
+(declare-fun |rvfi_testbench#355| (|rvfi_testbench_s|) (_ BitVec 1)) ; $auto$rtlil.cc:3097:Anyseq$2876
 ; yosys-smt2-assert 15 rvfi_testbench.sv:39.18-57.3|rvfi_insn_check.sv:133.57-134.18
-(define-fun |rvfi_testbench_a 15| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#348| state)) #b1) (not false))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:133$216
-(define-fun |rvfi_testbench#349| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench_is| state)) ; $initstate$2_wire
-(define-fun |rvfi_testbench#350| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#51| state) (ite (|rvfi_testbench#349| state) #b1 #b0))) ; $eq$rvfi_testbench.sv:29$3_Y
+(define-fun |rvfi_testbench_a 15| ((state |rvfi_testbench_s|)) Bool (or (= ((_ extract 0 0) (|rvfi_testbench#355| state)) #b1) (not false))) ; $flatten/checker_inst.$assert$rvfi_insn_check.sv:133$216
+(define-fun |rvfi_testbench#356| ((state |rvfi_testbench_s|)) Bool (|rvfi_testbench_is| state)) ; $initstate$2_wire
+(define-fun |rvfi_testbench#357| ((state |rvfi_testbench_s|)) Bool (= (|rvfi_testbench#58| state) (ite (|rvfi_testbench#356| state) #b1 #b0))) ; $eq$rvfi_testbench.sv:29$3_Y
 ; yosys-smt2-assume 1 rvfi_testbench.sv:26.1273-29.39
-(define-fun |rvfi_testbench_u 1| ((state |rvfi_testbench_s|)) Bool (or (|rvfi_testbench#350| state) (not true))) ; $assume$rvfi_testbench.sv:26$4
-(define-fun |rvfi_testbench#351| ((state |rvfi_testbench_s|)) Bool (distinct (|rvfi_testbench#254| state) #b11111111)) ; $auto$wreduce.cc:454:run$2862 [0]
-(define-fun |rvfi_testbench#352| ((state |rvfi_testbench_s|)) (_ BitVec 8) (bvadd (|rvfi_testbench#254| state) (concat #b0000000 (ite (|rvfi_testbench#351| state) #b1 #b0)))) ; $add$rvfi_testbench.sv:36$9_Y
-(define-fun |rvfi_testbench#353| ((state |rvfi_testbench_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1) #b00000001 (|rvfi_testbench#352| state))) ; $auto$rtlil.cc:2443:Mux$3039
-(define-fun |rvfi_testbench#354| ((state |rvfi_testbench_s|)) (_ BitVec 64) (bvadd (|rvfi_testbench#240| state) #b0000000000000000000000000000000000000000000000000000000000000001)) ; $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:129$278_Y
-(define-fun |rvfi_testbench#355| ((state |rvfi_testbench_s|)) (_ BitVec 64) (ite (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1) #b0000000000000000000000000000000000000000000000000000000000000000 (|rvfi_testbench#354| state))) ; $auto$rtlil.cc:2443:Mux$3037
-(define-fun |rvfi_testbench#356| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#51| state)) #b1) #b00000000000000000000000000000000 (|rvfi_testbench#190| state))) ; $auto$rtlil.cc:2443:Mux$3035
-; yosys-smt2-anyseq rvfi_testbench#357 5 $auto$setundef.cc:501:execute$3015
-(declare-fun |rvfi_testbench#357| (|rvfi_testbench_s|) (_ BitVec 5)) ; $auto$rtlil.cc:3097:Anyseq$3016
-(define-fun |rvfi_testbench#358| ((state |rvfi_testbench_s|)) (_ BitVec 5) (ite (= ((_ extract 0 0) (|rvfi_testbench#252| state)) #b1) ((_ extract 11 7) (|rvfi_testbench#0| state)) (|rvfi_testbench#357| state))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_ADDR[4:0]$287
-; yosys-smt2-anyseq rvfi_testbench#359 32 $auto$setundef.cc:501:execute$3013
-(declare-fun |rvfi_testbench#359| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3014
-(define-fun |rvfi_testbench#360| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#217| state) #b00000000000000000000000000000000 (|rvfi_testbench#239| state))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$301_Y
-(define-fun |rvfi_testbench#361| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#252| state)) #b1) (|rvfi_testbench#360| state) (|rvfi_testbench#359| state))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_DATA[31:0]$288
-(define-fun |rvfi_testbench#362| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#252| state)) #b1) #b1 #b0)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31]
-(define-fun |rvfi_testbench_m:W0A wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 5) (|rvfi_testbench#358| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_ADDR[4:0]$287
-(define-fun |rvfi_testbench_m:W0D wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#361| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_DATA[31:0]$288
-(define-fun |rvfi_testbench_m:W0M wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (concat (|rvfi_testbench#362| state) (|rvfi_testbench#362| state))))))))))))))))))))))))))))))))) ; { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] }
+(define-fun |rvfi_testbench_u 1| ((state |rvfi_testbench_s|)) Bool (or (|rvfi_testbench#357| state) (not true))) ; $assume$rvfi_testbench.sv:26$4
+(define-fun |rvfi_testbench#358| ((state |rvfi_testbench_s|)) Bool (distinct (|rvfi_testbench#261| state) #b11111111)) ; $auto$wreduce.cc:454:run$2874 [0]
+(define-fun |rvfi_testbench#359| ((state |rvfi_testbench_s|)) (_ BitVec 8) (bvadd (|rvfi_testbench#261| state) (concat #b0000000 (ite (|rvfi_testbench#358| state) #b1 #b0)))) ; $add$rvfi_testbench.sv:36$9_Y
+(define-fun |rvfi_testbench#360| ((state |rvfi_testbench_s|)) (_ BitVec 8) (ite (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1) #b00000001 (|rvfi_testbench#359| state))) ; $auto$rtlil.cc:2443:Mux$3051
+(define-fun |rvfi_testbench#361| ((state |rvfi_testbench_s|)) (_ BitVec 64) (bvadd (|rvfi_testbench#247| state) #b0000000000000000000000000000000000000000000000000000000000000001)) ; $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:129$278_Y
+(define-fun |rvfi_testbench#362| ((state |rvfi_testbench_s|)) (_ BitVec 64) (ite (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1) #b0000000000000000000000000000000000000000000000000000000000000000 (|rvfi_testbench#361| state))) ; $auto$rtlil.cc:2443:Mux$3049
+(define-fun |rvfi_testbench#363| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#58| state)) #b1) #b00000000000000000000000000000000 (|rvfi_testbench#197| state))) ; $auto$rtlil.cc:2443:Mux$3047
+; yosys-smt2-anyseq rvfi_testbench#364 5 $auto$setundef.cc:501:execute$3027
+(declare-fun |rvfi_testbench#364| (|rvfi_testbench_s|) (_ BitVec 5)) ; $auto$rtlil.cc:3097:Anyseq$3028
+(define-fun |rvfi_testbench#365| ((state |rvfi_testbench_s|)) (_ BitVec 5) (ite (= ((_ extract 0 0) (|rvfi_testbench#259| state)) #b1) ((_ extract 11 7) (|rvfi_testbench#0| state)) (|rvfi_testbench#364| state))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_ADDR[4:0]$287
+; yosys-smt2-anyseq rvfi_testbench#366 32 $auto$setundef.cc:501:execute$3025
+(declare-fun |rvfi_testbench#366| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3026
+(define-fun |rvfi_testbench#367| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (|rvfi_testbench#224| state) #b00000000000000000000000000000000 (|rvfi_testbench#246| state))) ; $flatten\wrapper.\uut.$ternary$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$301_Y
+(define-fun |rvfi_testbench#368| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#259| state)) #b1) (|rvfi_testbench#367| state) (|rvfi_testbench#366| state))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_DATA[31:0]$288
+(define-fun |rvfi_testbench#369| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#259| state)) #b1) #b1 #b0)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31]
+(define-fun |rvfi_testbench_m:W0A wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 5) (|rvfi_testbench#365| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_ADDR[4:0]$287
+(define-fun |rvfi_testbench_m:W0D wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#368| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_DATA[31:0]$288
+(define-fun |rvfi_testbench_m:W0M wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (concat (|rvfi_testbench#369| state) (|rvfi_testbench#369| state))))))))))))))))))))))))))))))))) ; { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:185$263_EN[31:0]$289 [31] }
 (define-fun |rvfi_testbench#5#1| ((state |rvfi_testbench_s|)) (Array (_ BitVec 5) (_ BitVec 32)) (store (|rvfi_testbench#5#0| state) (|rvfi_testbench_m:W0A wrapper.uut.mem| state) (bvor (bvand (|rvfi_testbench_m:W0D wrapper.uut.mem| state) (|rvfi_testbench_m:W0M wrapper.uut.mem| state)) (bvand (select (|rvfi_testbench#5#0| state) (|rvfi_testbench_m:W0A wrapper.uut.mem| state)) (bvnot (|rvfi_testbench_m:W0M wrapper.uut.mem| state)))))) ; wrapper.uut.mem
-; yosys-smt2-anyseq rvfi_testbench#363 5 $auto$setundef.cc:501:execute$3019
-(declare-fun |rvfi_testbench#363| (|rvfi_testbench_s|) (_ BitVec 5)) ; $auto$rtlil.cc:3097:Anyseq$3020
-(define-fun |rvfi_testbench#364| ((state |rvfi_testbench_s|)) (_ BitVec 5) (ite (= ((_ extract 0 0) (|rvfi_testbench#252| state)) #b1) (|rvfi_testbench#363| state) ((_ extract 11 7) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_ADDR[4:0]$290
-; yosys-smt2-anyseq rvfi_testbench#365 32 $auto$setundef.cc:501:execute$3017
-(declare-fun |rvfi_testbench#365| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3018
-(define-fun |rvfi_testbench#366| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#252| state)) #b1) (|rvfi_testbench#365| state) (|rvfi_testbench#8| state))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_DATA[31:0]$291
-(define-fun |rvfi_testbench#367| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#252| state)) #b1) #b0 #b1)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31]
-(define-fun |rvfi_testbench_m:W1A wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 5) (|rvfi_testbench#364| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_ADDR[4:0]$290
-(define-fun |rvfi_testbench_m:W1D wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#366| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_DATA[31:0]$291
-(define-fun |rvfi_testbench_m:W1M wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (concat (|rvfi_testbench#367| state) (|rvfi_testbench#367| state))))))))))))))))))))))))))))))))) ; { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] }
+; yosys-smt2-anyseq rvfi_testbench#370 5 $auto$setundef.cc:501:execute$3031
+(declare-fun |rvfi_testbench#370| (|rvfi_testbench_s|) (_ BitVec 5)) ; $auto$rtlil.cc:3097:Anyseq$3032
+(define-fun |rvfi_testbench#371| ((state |rvfi_testbench_s|)) (_ BitVec 5) (ite (= ((_ extract 0 0) (|rvfi_testbench#259| state)) #b1) (|rvfi_testbench#370| state) ((_ extract 11 7) (|rvfi_testbench#0| state)))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_ADDR[4:0]$290
+; yosys-smt2-anyseq rvfi_testbench#372 32 $auto$setundef.cc:501:execute$3029
+(declare-fun |rvfi_testbench#372| (|rvfi_testbench_s|) (_ BitVec 32)) ; $auto$rtlil.cc:3097:Anyseq$3030
+(define-fun |rvfi_testbench#373| ((state |rvfi_testbench_s|)) (_ BitVec 32) (ite (= ((_ extract 0 0) (|rvfi_testbench#259| state)) #b1) (|rvfi_testbench#372| state) (|rvfi_testbench#8| state))) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_DATA[31:0]$291
+(define-fun |rvfi_testbench#374| ((state |rvfi_testbench_s|)) (_ BitVec 1) (ite (= ((_ extract 0 0) (|rvfi_testbench#259| state)) #b1) #b0 #b1)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31]
+(define-fun |rvfi_testbench_m:W1A wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 5) (|rvfi_testbench#371| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_ADDR[4:0]$290
+(define-fun |rvfi_testbench_m:W1D wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (|rvfi_testbench#373| state)) ; $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_DATA[31:0]$291
+(define-fun |rvfi_testbench_m:W1M wrapper.uut.mem| ((state |rvfi_testbench_s|)) (_ BitVec 32) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (concat (|rvfi_testbench#374| state) (|rvfi_testbench#374| state))))))))))))))))))))))))))))))))) ; { $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] $flatten\wrapper.\uut.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:187$264_EN[31:0]$292 [31] }
 (define-fun |rvfi_testbench#5#2| ((state |rvfi_testbench_s|)) (Array (_ BitVec 5) (_ BitVec 32)) (store (|rvfi_testbench#5#1| state) (|rvfi_testbench_m:W1A wrapper.uut.mem| state) (bvor (bvand (|rvfi_testbench_m:W1D wrapper.uut.mem| state) (|rvfi_testbench_m:W1M wrapper.uut.mem| state)) (bvand (select (|rvfi_testbench#5#1| state) (|rvfi_testbench_m:W1A wrapper.uut.mem| state)) (bvnot (|rvfi_testbench_m:W1M wrapper.uut.mem| state)))))) ; wrapper.uut.mem
 (define-fun |rvfi_testbench_a| ((state |rvfi_testbench_s|)) Bool (and
   (|rvfi_testbench_a 0| state)
@@ -939,13 +946,13 @@
   (|rvfi_testbench_u 1| state)
 ))
 (define-fun |rvfi_testbench_i| ((state |rvfi_testbench_s|)) Bool 
-  (= (|rvfi_testbench#254| state) #b00000000) ; cycle_reg
+  (= (|rvfi_testbench#261| state) #b00000000) ; cycle_reg
 )
 (define-fun |rvfi_testbench_h| ((state |rvfi_testbench_s|)) Bool true)
 (define-fun |rvfi_testbench_t| ((state |rvfi_testbench_s|) (next_state |rvfi_testbench_s|)) Bool (and
-  (= (|rvfi_testbench#353| state) (|rvfi_testbench#254| next_state)) ; $auto$ff.cc:262:slice$3031 \cycle_reg
-  (= (|rvfi_testbench#355| state) (|rvfi_testbench#240| next_state)) ; $auto$ff.cc:262:slice$3032 \wrapper.uut.instr_index
-  (= (|rvfi_testbench#356| state) (|rvfi_testbench#4| next_state)) ; $auto$ff.cc:262:slice$3033 \wrapper.uut.pc
+  (= (|rvfi_testbench#360| state) (|rvfi_testbench#261| next_state)) ; $auto$ff.cc:262:slice$3043 \cycle_reg
+  (= (|rvfi_testbench#362| state) (|rvfi_testbench#247| next_state)) ; $auto$ff.cc:262:slice$3044 \wrapper.uut.instr_index
+  (= (|rvfi_testbench#363| state) (|rvfi_testbench#4| next_state)) ; $auto$ff.cc:262:slice$3045 \wrapper.uut.pc
   (= (|rvfi_testbench#5#2| state) (|rvfi_testbench#5#0| next_state)) ; wrapper.uut.mem
 )) ; end of module rvfi_testbench
 ; yosys-smt2-topmod rvfi_testbench

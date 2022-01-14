@@ -7,7 +7,7 @@
 ##   0:00:00  Skipping step 5..
 ##   0:00:00  Skipping step 6..
 ##   0:00:00  Skipping step 7..
-##   0:00:00  Skipping step 8..
+##   0:00:01  Skipping step 8..
 ##   0:00:01  Skipping step 9..
 ##   0:00:01  Skipping step 10..
 ##   0:00:01  Skipping step 11..

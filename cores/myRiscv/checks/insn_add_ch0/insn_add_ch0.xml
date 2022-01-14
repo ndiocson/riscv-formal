@@ -1,58 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites disabled="0" errors="0" failures="0" tests="1" time="4">
-<testsuite disabled="0" errors="0" failures="0" name="insn_add_ch0" skipped="0" tests="1" time="4">
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="177">
+<testsuite disabled="0" errors="0" failures="0" name="insn_add_ch0" skipped="0" tests="1" time="177">
 <properties>
 <property name="os" value="posix"/>
 </properties>
-<testcase classname="insn_add_ch0" name="default" status="PASS" time="4">
-<system-out>SBY 14:56:58 [checks/insn_add_ch0] Removing directory '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0'.
-SBY 14:56:58 [checks/insn_add_ch0] Writing 'checks/insn_add_ch0/src/defines.sv'.
-SBY 14:56:58 [checks/insn_add_ch0] Writing 'checks/insn_add_ch0/src/insn_add_ch0.sv'.
-SBY 14:56:58 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_macros.vh' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_macros.vh'.
-SBY 14:56:58 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_channel.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_channel.sv'.
-SBY 14:56:58 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_testbench.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_testbench.sv'.
-SBY 14:56:58 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_insn_check.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_insn_check.sv'.
-SBY 14:56:58 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_add.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/insn_add.v'.
-SBY 14:56:58 [checks/insn_add_ch0] engine_0: smtbmc boolector
-SBY 14:56:58 [checks/insn_add_ch0] base: starting process &quot;cd checks/insn_add_ch0/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 14:56:58 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:358.25-358.49.
-SBY 14:56:58 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:359.25-359.49.
-SBY 14:56:58 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:360.25-360.49.
-SBY 14:56:58 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:361.25-361.49.
-SBY 14:56:58 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:362.25-362.49.
-SBY 14:56:58 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:363.25-363.49.
-SBY 14:56:59 [checks/insn_add_ch0] base: finished (returncode=0)
-SBY 14:56:59 [checks/insn_add_ch0] smt2: starting process &quot;cd checks/insn_add_ch0/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 14:56:59 [checks/insn_add_ch0] smt2: finished (returncode=0)
-SBY 14:56:59 [checks/insn_add_ch0] engine_0: starting process &quot;cd checks/insn_add_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20:21  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 14:56:59 [checks/insn_add_ch0] engine_0: ##   0:00:00  Solver: boolector
-SBY 14:56:59 [checks/insn_add_ch0] engine_0: ##   0:00:00  Skipping step 0..
-SBY 14:56:59 [checks/insn_add_ch0] engine_0: ##   0:00:00  Skipping step 1..
-SBY 14:56:59 [checks/insn_add_ch0] engine_0: ##   0:00:00  Skipping step 2..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:00  Skipping step 3..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:00  Skipping step 4..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:00  Skipping step 5..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:00  Skipping step 6..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 7..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 8..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 9..
-SBY 14:57:00 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 10..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 11..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 12..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 13..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 14..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 15..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 16..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 17..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 18..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Skipping step 19..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assumptions in step 20..
-SBY 14:57:01 [checks/insn_add_ch0] engine_0: ##   0:00:02  Checking assertions in step 20..
-SBY 14:57:04 [checks/insn_add_ch0] engine_0: ##   0:00:04  Status: passed
-SBY 14:57:04 [checks/insn_add_ch0] engine_0: finished (returncode=0)
-SBY 14:57:04 [checks/insn_add_ch0] engine_0: Status returned by engine: pass
-SBY 14:57:04 [checks/insn_add_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:05 (5)
-SBY 14:57:04 [checks/insn_add_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:04 (4)
-SBY 14:57:04 [checks/insn_add_ch0] summary: engine_0 (smtbmc boolector) returned pass
-SBY 14:57:04 [checks/insn_add_ch0] DONE (PASS, rc=0)
+<testcase classname="insn_add_ch0" name="default" status="PASS" time="177">
+<system-out>SBY 17:58:43 [checks/insn_add_ch0] Removing directory '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0'.
+SBY 17:58:43 [checks/insn_add_ch0] Writing 'checks/insn_add_ch0/src/defines.sv'.
+SBY 17:58:43 [checks/insn_add_ch0] Writing 'checks/insn_add_ch0/src/insn_add_ch0.sv'.
+SBY 17:58:43 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_macros.vh' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_macros.vh'.
+SBY 17:58:43 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_channel.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_channel.sv'.
+SBY 17:58:43 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_testbench.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_testbench.sv'.
+SBY 17:58:43 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_insn_check.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/rvfi_insn_check.sv'.
+SBY 17:58:43 [checks/insn_add_ch0] Copy '/home/ndcsn/workspace/riscv-formal/insns/insn_add.v' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/insn_add_ch0/src/insn_add.v'.
+SBY 17:58:43 [checks/insn_add_ch0] engine_0: smtbmc boolector
+SBY 17:58:43 [checks/insn_add_ch0] base: starting process &quot;cd checks/insn_add_ch0/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 17:58:43 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:349.25-349.49.
+SBY 17:58:43 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:350.25-350.49.
+SBY 17:58:43 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:351.25-351.49.
+SBY 17:58:43 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:352.25-352.49.
+SBY 17:58:43 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:353.25-353.49.
+SBY 17:58:43 [checks/insn_add_ch0] base: Warning: wire '\rvfi_mem_rmask' is assigned in a block at /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:354.25-354.49.
+SBY 17:58:44 [checks/insn_add_ch0] base: finished (returncode=0)
+SBY 17:58:44 [checks/insn_add_ch0] smt2: starting process &quot;cd checks/insn_add_ch0/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 17:58:44 [checks/insn_add_ch0] smt2: finished (returncode=0)
+SBY 17:58:44 [checks/insn_add_ch0] engine_0: starting process &quot;cd checks/insn_add_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 100  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 17:58:44 [checks/insn_add_ch0] engine_0: ##   0:00:00  Solver: boolector
+SBY 17:58:44 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:58:44 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assumptions in step 4..
+SBY 17:58:45 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assertions in step 4..
+SBY 17:58:46 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assumptions in step 5..
+SBY 17:58:46 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assertions in step 5..
+SBY 17:58:46 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assumptions in step 6..
+SBY 17:58:46 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assertions in step 6..
+SBY 17:58:46 [checks/insn_add_ch0] engine_0: ##   0:00:01  Checking assumptions in step 7..
+SBY 17:58:46 [checks/insn_add_ch0] engine_0: ##   0:00:02  Checking assertions in step 7..
+SBY 17:58:47 [checks/insn_add_ch0] engine_0: ##   0:00:02  Checking assumptions in step 8..
+SBY 17:58:47 [checks/insn_add_ch0] engine_0: ##   0:00:02  Checking assertions in step 8..
+SBY 17:58:47 [checks/insn_add_ch0] engine_0: ##   0:00:02  Checking assumptions in step 9..
+SBY 17:58:47 [checks/insn_add_ch0] engine_0: ##   0:00:02  Checking assertions in step 9..
+SBY 17:58:47 [checks/insn_add_ch0] engine_0: ##   0:00:03  Checking assumptions in step 10..
+SBY 17:58:47 [checks/insn_add_ch0] engine_0: ##   0:00:03  Checking assertions in step 10..
+SBY 17:58:48 [checks/insn_add_ch0] engine_0: ##   0:00:03  Checking assumptions in step 11..
+SBY 17:58:48 [checks/insn_add_ch0] engine_0: ##   0:00:03  Checking assertions in step 11..
+SBY 17:58:48 [checks/insn_add_ch0] engine_0: ##   0:00:03  Checking assumptions in step 12..
+SBY 17:58:48 [checks/insn_add_ch0] engine_0: ##   0:00:03  Checking assertions in step 12..
+SBY 17:58:48 [checks/insn_add_ch0] engine_0: ##   0:00:04  Checking assumptions in step 13..
+SBY 17:58:49 [checks/insn_add_ch0] engine_0: ##   0:00:04  Checking assertions in step 13..
+SBY 17:58:49 [checks/insn_add_ch0] engine_0: ##   0:00:04  Checking assumptions in step 14..
+SBY 17:58:49 [checks/insn_add_ch0] engine_0: ##   0:00:04  Checking assertions in step 14..
+SBY 17:58:49 [checks/insn_add_ch0] engine_0: ##   0:00:05  Checking assumptions in step 15..
+SBY 17:58:50 [checks/insn_add_ch0] engine_0: ##   0:00:05  Checking assertions in step 15..
+SBY 17:58:50 [checks/insn_add_ch0] engine_0: ##   0:00:05  Checking assumptions in step 16..
+SBY 17:58:50 [checks/insn_add_ch0] engine_0: ##   0:00:05  Checking assertions in step 16..
+SBY 17:58:50 [checks/insn_add_ch0] engine_0: ##   0:00:06  Checking assumptions in step 17..
+SBY 17:58:51 [checks/insn_add_ch0] engine_0: ##   0:00:06  Checking assertions in step 17..
+SBY 17:58:51 [checks/insn_add_ch0] engine_0: ##   0:00:06  Checking assumptions in step 18..
+SBY 17:58:51 [checks/insn_add_ch0] engine_0: ##   0:00:06  Checking assertions in step 18..
+SBY 17:58:51 [checks/insn_add_ch0] engine_0: ##   0:00:07  Checking assumptions in step 19..
+SBY 17:58:52 [checks/insn_add_ch0] engine_0: ##   0:00:07  Checking assertions in step 19..
+SBY 17:58:52 [checks/insn_add_ch0] engine_0: ##   0:00:07  Checking assumptions in step 20..
+SBY 17:58:52 [checks/insn_add_ch0] engine_0: ##   0:00:08  Checking assertions in step 20..
+SBY 17:58:53 [checks/insn_add_ch0] engine_0: ##   0:00:08  Checking assumptions in step 21..
+SBY 17:58:54 [checks/insn_add_ch0] engine_0: ##   0:00:10  Checking assertions in step 21..
+SBY 17:58:55 [checks/insn_add_ch0] engine_0: ##   0:00:10  Checking assumptions in step 22..
+SBY 17:58:55 [checks/insn_add_ch0] engine_0: ##   0:00:11  Checking assertions in step 22..
+SBY 17:58:56 [checks/insn_add_ch0] engine_0: ##   0:00:11  Checking assumptions in step 23..
+SBY 17:58:56 [checks/insn_add_ch0] engine_0: ##   0:00:11  Checking assertions in step 23..
+SBY 17:58:56 [checks/insn_add_ch0] engine_0: ##   0:00:12  Checking assumptions in step 24..
+SBY 17:58:57 [checks/insn_add_ch0] engine_0: ##   0:00:12  Checking assertions in step 24..
+SBY 17:58:57 [checks/insn_add_ch0] engine_0: ##   0:00:13  Checking assumptions in step 25..
+SBY 17:58:58 [checks/insn_add_ch0] engine_0: ##   0:00:13  Checking assertions in step 25..
+SBY 17:58:58 [checks/insn_add_ch0] engine_0: ##   0:00:14  Checking assumptions in step 26..
+SBY 17:58:59 [checks/insn_add_ch0] engine_0: ##   0:00:14  Checking assertions in step 26..
+SBY 17:58:59 [checks/insn_add_ch0] engine_0: ##   0:00:15  Checking assumptions in step 27..
+SBY 17:59:00 [checks/insn_add_ch0] engine_0: ##   0:00:15  Checking assertions in step 27..
+SBY 17:59:00 [checks/insn_add_ch0] engine_0: ##   0:00:16  Checking assumptions in step 28..
+SBY 17:59:01 [checks/insn_add_ch0] engine_0: ##   0:00:16  Checking assertions in step 28..
+SBY 17:59:01 [checks/insn_add_ch0] engine_0: ##   0:00:16  Checking assumptions in step 29..
+SBY 17:59:01 [checks/insn_add_ch0] engine_0: ##   0:00:17  Checking assertions in step 29..
+SBY 17:59:02 [checks/insn_add_ch0] engine_0: ##   0:00:17  Checking assumptions in step 30..
+SBY 17:59:02 [checks/insn_add_ch0] engine_0: ##   0:00:17  Checking assertions in step 30..
+SBY 17:59:02 [checks/insn_add_ch0] engine_0: ##   0:00:18  Checking assumptions in step 31..
+SBY 17:59:03 [checks/insn_add_ch0] engine_0: ##   0:00:18  Checking assertions in step 31..
+SBY 17:59:03 [checks/insn_add_ch0] engine_0: ##   0:00:19  Checking assumptions in step 32..
+SBY 17:59:04 [checks/insn_add_ch0] engine_0: ##   0:00:19  Checking assertions in step 32..
+SBY 17:59:04 [checks/insn_add_ch0] engine_0: ##   0:00:19  Checking assumptions in step 33..
+SBY 17:59:04 [checks/insn_add_ch0] engine_0: ##   0:00:20  Checking assertions in step 33..
+SBY 17:59:05 [checks/insn_add_ch0] engine_0: ##   0:00:20  Checking assumptions in step 34..
+SBY 17:59:05 [checks/insn_add_ch0] engine_0: ##   0:00:20  Checking assertions in step 34..
+SBY 17:59:06 [checks/insn_add_ch0] engine_0: ##   0:00:21  Checking assumptions in step 35..
+SBY 17:59:06 [checks/insn_add_ch0] engine_0: ##   0:00:21  Checking assertions in step 35..
+SBY 17:59:06 [checks/insn_add_ch0] engine_0: ##   0:00:22  Checking assumptions in step 36..
+SBY 17:59:07 [checks/insn_add_ch0] engine_0: ##   0:00:22  Checking assertions in step 36..
+SBY 17:59:07 [checks/insn_add_ch0] engine_0: ##   0:00:23  Checking assumptions in step 37..
+SBY 17:59:08 [checks/insn_add_ch0] engine_0: ##   0:00:23  Checking assertions in step 37..
+SBY 17:59:08 [checks/insn_add_ch0] engine_0: ##   0:00:23  Checking assumptions in step 38..
+SBY 17:59:09 [checks/insn_add_ch0] engine_0: ##   0:00:24  Checking assertions in step 38..
+SBY 17:59:09 [checks/insn_add_ch0] engine_0: ##   0:00:24  Checking assumptions in step 39..
+SBY 17:59:09 [checks/insn_add_ch0] engine_0: ##   0:00:25  Checking assertions in step 39..
+SBY 17:59:10 [checks/insn_add_ch0] engine_0: ##   0:00:25  Checking assumptions in step 40..
+SBY 17:59:10 [checks/insn_add_ch0] engine_0: ##   0:00:26  Checking assertions in step 40..
+SBY 17:59:11 [checks/insn_add_ch0] engine_0: ##   0:00:26  Checking assumptions in step 41..
+SBY 17:59:11 [checks/insn_add_ch0] engine_0: ##   0:00:27  Checking assertions in step 41..
+SBY 17:59:12 [checks/insn_add_ch0] engine_0: ##   0:00:27  Checking assumptions in step 42..
+SBY 17:59:12 [checks/insn_add_ch0] engine_0: ##   0:00:28  Checking assertions in step 42..
+SBY 17:59:13 [checks/insn_add_ch0] engine_0: ##   0:00:28  Checking assumptions in step 43..
+SBY 17:59:13 [checks/insn_add_ch0] engine_0: ##   0:00:29  Checking assertions in step 43..
+SBY 17:59:14 [checks/insn_add_ch0] engine_0: ##   0:00:29  Checking assumptions in step 44..
+SBY 17:59:14 [checks/insn_add_ch0] engine_0: ##   0:00:30  Checking assertions in step 44..
+SBY 17:59:15 [checks/insn_add_ch0] engine_0: ##   0:00:30  Checking assumptions in step 45..
+SBY 17:59:15 [checks/insn_add_ch0] engine_0: ##   0:00:31  Checking assertions in step 45..
+SBY 17:59:16 [checks/insn_add_ch0] engine_0: ##   0:00:31  Checking assumptions in step 46..
+SBY 17:59:16 [checks/insn_add_ch0] engine_0: ##   0:00:32  Checking assertions in step 46..
+SBY 17:59:17 [checks/insn_add_ch0] engine_0: ##   0:00:32  Checking assumptions in step 47..
+SBY 17:59:18 [checks/insn_add_ch0] engine_0: ##   0:00:33  Checking assertions in step 47..
+SBY 17:59:18 [checks/insn_add_ch0] engine_0: ##   0:00:33  Checking assumptions in step 48..
+SBY 17:59:19 [checks/insn_add_ch0] engine_0: ##   0:00:34  Checking assertions in step 48..
+SBY 17:59:19 [checks/insn_add_ch0] engine_0: ##   0:00:34  Checking assumptions in step 49..
+SBY 17:59:20 [checks/insn_add_ch0] engine_0: ##   0:00:35  Checking assertions in step 49..
+SBY 17:59:20 [checks/insn_add_ch0] engine_0: ##   0:00:36  Checking assumptions in step 50..
+SBY 17:59:21 [checks/insn_add_ch0] engine_0: ##   0:00:36  Checking assertions in step 50..
+SBY 17:59:22 [checks/insn_add_ch0] engine_0: ##   0:00:37  Checking assumptions in step 51..
+SBY 17:59:22 [checks/insn_add_ch0] engine_0: ##   0:00:38  Checking assertions in step 51..
+SBY 17:59:23 [checks/insn_add_ch0] engine_0: ##   0:00:38  Checking assumptions in step 52..
+SBY 17:59:24 [checks/insn_add_ch0] engine_0: ##   0:00:39  Checking assertions in step 52..
+SBY 17:59:24 [checks/insn_add_ch0] engine_0: ##   0:00:39  Checking assumptions in step 53..
+SBY 17:59:25 [checks/insn_add_ch0] engine_0: ##   0:00:40  Checking assertions in step 53..
+SBY 17:59:25 [checks/insn_add_ch0] engine_0: ##   0:00:41  Checking assumptions in step 54..
+SBY 17:59:26 [checks/insn_add_ch0] engine_0: ##   0:00:42  Checking assertions in step 54..
+SBY 17:59:27 [checks/insn_add_ch0] engine_0: ##   0:00:42  Checking assumptions in step 55..
+SBY 17:59:28 [checks/insn_add_ch0] engine_0: ##   0:00:43  Checking assertions in step 55..
+SBY 17:59:28 [checks/insn_add_ch0] engine_0: ##   0:00:43  Checking assumptions in step 56..
+SBY 17:59:29 [checks/insn_add_ch0] engine_0: ##   0:00:44  Checking assertions in step 56..
+SBY 17:59:29 [checks/insn_add_ch0] engine_0: ##   0:00:45  Checking assumptions in step 57..
+SBY 17:59:31 [checks/insn_add_ch0] engine_0: ##   0:00:46  Checking assertions in step 57..
+SBY 17:59:31 [checks/insn_add_ch0] engine_0: ##   0:00:46  Checking assumptions in step 58..
+SBY 17:59:32 [checks/insn_add_ch0] engine_0: ##   0:00:47  Checking assertions in step 58..
+SBY 17:59:32 [checks/insn_add_ch0] engine_0: ##   0:00:48  Checking assumptions in step 59..
+SBY 17:59:34 [checks/insn_add_ch0] engine_0: ##   0:00:49  Checking assertions in step 59..
+SBY 17:59:34 [checks/insn_add_ch0] engine_0: ##   0:00:49  Checking assumptions in step 60..
+SBY 17:59:35 [checks/insn_add_ch0] engine_0: ##   0:00:50  Checking assertions in step 60..
+SBY 17:59:36 [checks/insn_add_ch0] engine_0: ##   0:00:51  Checking assumptions in step 61..
+SBY 17:59:37 [checks/insn_add_ch0] engine_0: ##   0:00:52  Checking assertions in step 61..
+SBY 17:59:37 [checks/insn_add_ch0] engine_0: ##   0:00:52  Checking assumptions in step 62..
+SBY 17:59:38 [checks/insn_add_ch0] engine_0: ##   0:00:54  Checking assertions in step 62..
+SBY 17:59:39 [checks/insn_add_ch0] engine_0: ##   0:00:54  Checking assumptions in step 63..
+SBY 17:59:40 [checks/insn_add_ch0] engine_0: ##   0:00:55  Checking assertions in step 63..
+SBY 17:59:40 [checks/insn_add_ch0] engine_0: ##   0:00:56  Checking assumptions in step 64..
+SBY 17:59:42 [checks/insn_add_ch0] engine_0: ##   0:00:57  Checking assertions in step 64..
+SBY 17:59:42 [checks/insn_add_ch0] engine_0: ##   0:00:58  Checking assumptions in step 65..
+SBY 17:59:44 [checks/insn_add_ch0] engine_0: ##   0:00:59  Checking assertions in step 65..
+SBY 17:59:44 [checks/insn_add_ch0] engine_0: ##   0:00:59  Checking assumptions in step 66..
+SBY 17:59:45 [checks/insn_add_ch0] engine_0: ##   0:01:01  Checking assertions in step 66..
+SBY 17:59:46 [checks/insn_add_ch0] engine_0: ##   0:01:01  Checking assumptions in step 67..
+SBY 17:59:47 [checks/insn_add_ch0] engine_0: ##   0:01:03  Checking assertions in step 67..
+SBY 17:59:48 [checks/insn_add_ch0] engine_0: ##   0:01:03  Checking assumptions in step 68..
+SBY 17:59:49 [checks/insn_add_ch0] engine_0: ##   0:01:04  Checking assertions in step 68..
+SBY 17:59:50 [checks/insn_add_ch0] engine_0: ##   0:01:05  Checking assumptions in step 69..
+SBY 17:59:51 [checks/insn_add_ch0] engine_0: ##   0:01:06  Checking assertions in step 69..
+SBY 17:59:52 [checks/insn_add_ch0] engine_0: ##   0:01:07  Checking assumptions in step 70..
+SBY 17:59:53 [checks/insn_add_ch0] engine_0: ##   0:01:09  Checking assertions in step 70..
+SBY 17:59:54 [checks/insn_add_ch0] engine_0: ##   0:01:09  Checking assumptions in step 71..
+SBY 17:59:55 [checks/insn_add_ch0] engine_0: ##   0:01:11  Checking assertions in step 71..
+SBY 17:59:56 [checks/insn_add_ch0] engine_0: ##   0:01:11  Checking assumptions in step 72..
+SBY 17:59:57 [checks/insn_add_ch0] engine_0: ##   0:01:13  Checking assertions in step 72..
+SBY 17:59:58 [checks/insn_add_ch0] engine_0: ##   0:01:13  Checking assumptions in step 73..
+SBY 18:00:01 [checks/insn_add_ch0] engine_0: ##   0:01:16  Checking assertions in step 73..
+SBY 18:00:01 [checks/insn_add_ch0] engine_0: ##   0:01:16  Checking assumptions in step 74..
+SBY 18:00:04 [checks/insn_add_ch0] engine_0: ##   0:01:19  Checking assertions in step 74..
+SBY 18:00:04 [checks/insn_add_ch0] engine_0: ##   0:01:19  Checking assumptions in step 75..
+SBY 18:00:07 [checks/insn_add_ch0] engine_0: ##   0:01:22  Checking assertions in step 75..
+SBY 18:00:07 [checks/insn_add_ch0] engine_0: ##   0:01:23  Checking assumptions in step 76..
+SBY 18:00:10 [checks/insn_add_ch0] engine_0: ##   0:01:25  Checking assertions in step 76..
+SBY 18:00:11 [checks/insn_add_ch0] engine_0: ##   0:01:26  Checking assumptions in step 77..
+SBY 18:00:14 [checks/insn_add_ch0] engine_0: ##   0:01:29  Checking assertions in step 77..
+SBY 18:00:14 [checks/insn_add_ch0] engine_0: ##   0:01:30  Checking assumptions in step 78..
+SBY 18:00:17 [checks/insn_add_ch0] engine_0: ##   0:01:32  Checking assertions in step 78..
+SBY 18:00:18 [checks/insn_add_ch0] engine_0: ##   0:01:33  Checking assumptions in step 79..
+SBY 18:00:21 [checks/insn_add_ch0] engine_0: ##   0:01:36  Checking assertions in step 79..
+SBY 18:00:21 [checks/insn_add_ch0] engine_0: ##   0:01:37  Checking assumptions in step 80..
+SBY 18:00:25 [checks/insn_add_ch0] engine_0: ##   0:01:40  Checking assertions in step 80..
+SBY 18:00:25 [checks/insn_add_ch0] engine_0: ##   0:01:41  Checking assumptions in step 81..
+SBY 18:00:29 [checks/insn_add_ch0] engine_0: ##   0:01:44  Checking assertions in step 81..
+SBY 18:00:29 [checks/insn_add_ch0] engine_0: ##   0:01:44  Checking assumptions in step 82..
+SBY 18:00:33 [checks/insn_add_ch0] engine_0: ##   0:01:48  Checking assertions in step 82..
+SBY 18:00:33 [checks/insn_add_ch0] engine_0: ##   0:01:49  Checking assumptions in step 83..
+SBY 18:00:37 [checks/insn_add_ch0] engine_0: ##   0:01:52  Checking assertions in step 83..
+SBY 18:00:38 [checks/insn_add_ch0] engine_0: ##   0:01:53  Checking assumptions in step 84..
+SBY 18:00:42 [checks/insn_add_ch0] engine_0: ##   0:01:57  Checking assertions in step 84..
+SBY 18:00:42 [checks/insn_add_ch0] engine_0: ##   0:01:57  Checking assumptions in step 85..
+SBY 18:00:46 [checks/insn_add_ch0] engine_0: ##   0:02:01  Checking assertions in step 85..
+SBY 18:00:47 [checks/insn_add_ch0] engine_0: ##   0:02:02  Checking assumptions in step 86..
+SBY 18:00:50 [checks/insn_add_ch0] engine_0: ##   0:02:06  Checking assertions in step 86..
+SBY 18:00:51 [checks/insn_add_ch0] engine_0: ##   0:02:06  Checking assumptions in step 87..
+SBY 18:00:55 [checks/insn_add_ch0] engine_0: ##   0:02:10  Checking assertions in step 87..
+SBY 18:00:55 [checks/insn_add_ch0] engine_0: ##   0:02:11  Checking assumptions in step 88..
+SBY 18:00:59 [checks/insn_add_ch0] engine_0: ##   0:02:15  Checking assertions in step 88..
+SBY 18:01:00 [checks/insn_add_ch0] engine_0: ##   0:02:15  Checking assumptions in step 89..
+SBY 18:01:04 [checks/insn_add_ch0] engine_0: ##   0:02:20  Checking assertions in step 89..
+SBY 18:01:05 [checks/insn_add_ch0] engine_0: ##   0:02:20  Checking assumptions in step 90..
+SBY 18:01:09 [checks/insn_add_ch0] engine_0: ##   0:02:24  Checking assertions in step 90..
+SBY 18:01:09 [checks/insn_add_ch0] engine_0: ##   0:02:25  Checking assumptions in step 91..
+SBY 18:01:14 [checks/insn_add_ch0] engine_0: ##   0:02:29  Checking assertions in step 91..
+SBY 18:01:14 [checks/insn_add_ch0] engine_0: ##   0:02:30  Checking assumptions in step 92..
+SBY 18:01:19 [checks/insn_add_ch0] engine_0: ##   0:02:34  Checking assertions in step 92..
+SBY 18:01:19 [checks/insn_add_ch0] engine_0: ##   0:02:34  Checking assumptions in step 93..
+SBY 18:01:23 [checks/insn_add_ch0] engine_0: ##   0:02:39  Checking assertions in step 93..
+SBY 18:01:24 [checks/insn_add_ch0] engine_0: ##   0:02:39  Checking assumptions in step 94..
+SBY 18:01:28 [checks/insn_add_ch0] engine_0: ##   0:02:44  Checking assertions in step 94..
+SBY 18:01:29 [checks/insn_add_ch0] engine_0: ##   0:02:44  Checking assumptions in step 95..
+SBY 18:01:34 [checks/insn_add_ch0] engine_0: ##   0:02:49  Checking assertions in step 95..
+SBY 18:01:34 [checks/insn_add_ch0] engine_0: ##   0:02:50  Checking assumptions in step 96..
+SBY 18:01:40 [checks/insn_add_ch0] engine_0: ##   0:02:55  Checking assertions in step 96..
+SBY 18:01:40 [checks/insn_add_ch0] engine_0: ##   0:02:56  Checking assumptions in step 97..
+SBY 18:01:46 [checks/insn_add_ch0] engine_0: ##   0:03:01  Checking assertions in step 97..
+SBY 18:01:46 [checks/insn_add_ch0] engine_0: ##   0:03:02  Checking assumptions in step 98..
+SBY 18:01:52 [checks/insn_add_ch0] engine_0: ##   0:03:07  Checking assertions in step 98..
+SBY 18:01:52 [checks/insn_add_ch0] engine_0: ##   0:03:07  Checking assumptions in step 99..
+SBY 18:01:57 [checks/insn_add_ch0] engine_0: ##   0:03:12  Checking assertions in step 99..
+SBY 18:01:57 [checks/insn_add_ch0] engine_0: ##   0:03:13  Status: passed
+SBY 18:01:57 [checks/insn_add_ch0] engine_0: finished (returncode=0)
+SBY 18:01:57 [checks/insn_add_ch0] engine_0: Status returned by engine: pass
+SBY 18:01:57 [checks/insn_add_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:03:14 (194)
+SBY 18:01:57 [checks/insn_add_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:02:57 (177)
+SBY 18:01:57 [checks/insn_add_ch0] summary: engine_0 (smtbmc boolector) returned pass
+SBY 18:01:57 [checks/insn_add_ch0] DONE (PASS, rc=0)
 </system-out></testcase></testsuite></testsuites>

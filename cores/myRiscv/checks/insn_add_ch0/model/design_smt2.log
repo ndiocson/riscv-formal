@@ -33,33 +33,33 @@ Input filename: design.il
 
 === rvfi_testbench ===
 
-   Number of wires:                534
-   Number of wire bits:           4842
-   Number of public wires:         201
-   Number of public wire bits:    3305
+   Number of wires:                547
+   Number of wire bits:           4879
+   Number of public wires:         202
+   Number of public wire bits:    3307
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                393
+   Number of cells:                407
      $add                            7
      $and                            5
-     $anyseq                        88
+     $anyseq                        90
      $assert                        17
      $assume                         2
      $dff                            3
-     $eq                            48
+     $eq                            51
      $initstate                      1
-     $logic_and                     11
+     $logic_and                     12
      $logic_not                     14
-     $logic_or                       8
+     $logic_or                      12
      $lt                             3
      $mem_v2                         1
-     $mux                          136
+     $mux                          139
      $ne                             4
-     $not                            6
+     $not                            7
      $or                             2
-     $pmux                          17
-     $reduce_bool                    8
+     $pmux                          18
+     $reduce_bool                    7
      $reduce_or                      2
      $shl                            1
      $shr                            1
@@ -70,6 +70,6 @@ Input filename: design.il
 4. Executing SMT2 backend.
 Creating SMT-LIBv2 representation of module rvfi_testbench.
 
-End of script. Logfile hash: bba42bc560, CPU: user 0.05s system 0.01s, MEM: 12.96 MB peak
+End of script. Logfile hash: f5be10ce0a, CPU: user 0.05s system 0.01s, MEM: 12.98 MB peak
 Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 70% 2x write_smt2 (0 sec), 27% 2x read_ilang (0 sec), ...
+Time spent: 49% 2x write_smt2 (0 sec), 48% 2x read_ilang (0 sec), ...
