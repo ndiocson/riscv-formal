@@ -21,7 +21,7 @@ module myRiscv (
     logic [2:0] rd_data_sel;
     logic [1:0] wr_data_sel;
     logic [2:0] imm_sel;
-    logic [2:0] ld_ctrl;
+    logic [4:0] ld_ctrl;
     logic [3:0] alu_ctrl;
 
     logic [6:0] opcode;
@@ -58,6 +58,7 @@ module myRiscv (
 
     // Memory Access
     assign rvfi_mem_addr = addr;
+    assign rvfi_mem_rmask = rmask;
     assign rvfi_mem_wmask = wr_en;
     assign rvfi_mem_rdata = rd_data;
     assign rvfi_mem_wdata = wr_data;    
@@ -75,6 +76,16 @@ module myRiscv (
     logic [31:0] pc_next, pc_plus_4, target;                    // 32-bit internal signals for PC flip-flop
     logic [31:0] src_data_1, src_data_2;                        // 32-bit internal signals for register file
     logic [31:0] alu_in_1, alu_in_2;                            // 32-bit internal signals for ALU
+
+    // assign addr = result;
+    logic force_zero_lsb;
+    always_comb begin
+        case (force_zero_lsb)
+            1'b0:       addr = result;
+            1'b1:       addr = {result[31:2], 2'b0};
+            default:    addr = result;
+        endcase
+    end
 
     // Write-Data decorder for selecting wr_data to write to the data memory
     assign wr_data = src_data_2;
@@ -124,8 +135,8 @@ module myRiscv (
         case (pc_sel)
             2'b00:      pc_next = pc_plus_4;
             2'b01:      pc_next = target;
-            2'b10:      pc_next = addr;
-            2'b11:      pc_next = {addr[31:1], 1'b0};
+            2'b10:      pc_next = result;
+            2'b11:      pc_next = {result[31:1], 1'b0};
             default:    pc_next = 'X;
         endcase
     end
@@ -150,7 +161,7 @@ module myRiscv (
     // 4-to-1 MUX instance for selecting data source for destination register writes
     always_comb begin
         case (rd_data_sel)
-            3'b000:     dst_data = addr;
+            3'b000:     dst_data = result;
             3'b001:     dst_data = rd_data_ext;
             3'b010:     dst_data = pc_plus_4;
             3'b011:     dst_data = imm_ext;
@@ -199,6 +210,7 @@ module myRiscv (
     } alu_ctrls_t;
 
     logic carry;
+    logic [31:0] result;
 
     // 
     always_comb begin
@@ -206,75 +218,75 @@ module myRiscv (
         case (alu_ctrl)
             // Add
             ALU_ADD:    begin
-                            {carry, addr} = signed'(alu_in_1) + signed'(alu_in_2);
+                            {carry, result} = signed'(alu_in_1) + signed'(alu_in_2);
                             b_flag = 1'bX;
                         end
                         
             // Subtract
             ALU_SUB:    begin
-                            addr = signed'(alu_in_1) - signed'(alu_in_2);
-                            // addr = alu_in_1 - alu_in_2;
-                            b_flag = (addr == '0);
+                            result = signed'(alu_in_1) - signed'(alu_in_2);
+                            // result = alu_in_1 - alu_in_2;
+                            b_flag = (result == '0);
                         end
             
             // Shift left logical
             ALU_SLL:    begin
-                            addr = signed'(alu_in_1) << signed'(alu_in_2[4:0]);
-                            // addr = alu_in_1 << alu_in_2;
+                            result = signed'(alu_in_1) << signed'(alu_in_2[4:0]);
+                            // result = alu_in_1 << alu_in_2;
                             b_flag = 1'bX;
                         end
                         
             // Set less than
             ALU_SLT:    begin
-                            addr = (signed'(alu_in_1) < signed'(alu_in_2));
-                            // addr = alu_in_1 < alu_in_2;
-                            b_flag = addr[0];
+                            result = (signed'(alu_in_1) < signed'(alu_in_2));
+                            // result = alu_in_1 < alu_in_2;
+                            b_flag = result[0];
                         end
 
             // Set less than unsigned
             ALU_SLTU:   begin
-                            addr = (unsigned'(alu_in_1) < unsigned'(alu_in_2));
-                            b_flag = addr[0];
+                            result = (unsigned'(alu_in_1) < unsigned'(alu_in_2));
+                            b_flag = result[0];
                         end
             
             // Exclusive-OR
             ALU_XOR:    begin
-                            // addr = signed'(alu_in_1) ^ signed'(alu_in_2);
-                            addr = alu_in_1 ^ alu_in_2;
+                            // result = signed'(alu_in_1) ^ signed'(alu_in_2);
+                            result = alu_in_1 ^ alu_in_2;
                             b_flag = 1'bX;
                         end
             
             // Shift right logical
             ALU_SRL:    begin
-                            addr = signed'(alu_in_1) >> signed'(alu_in_2[4:0]);
-                            // addr = alu_in_1 >> alu_in_2;
+                            result = signed'(alu_in_1) >> signed'(alu_in_2[4:0]);
+                            // result = alu_in_1 >> alu_in_2;
                             b_flag = 1'bX;
                         end
             
             // Shift right arithmetic
             ALU_SRA:    begin
-                            addr = signed'(alu_in_1) >>> signed'(alu_in_2[4:0]);
-                            // addr = alu_in_1 >>> alu_in_2;
+                            result = signed'(alu_in_1) >>> signed'(alu_in_2[4:0]);
+                            // result = alu_in_1 >>> alu_in_2;
                             b_flag = 1'bX;
                         end
             
             // OR 
             ALU_OR:     begin
-                            // addr = signed'(alu_in_1) | signed'(alu_in_2);
-                            addr = alu_in_1 | alu_in_2;
+                            // result = signed'(alu_in_1) | signed'(alu_in_2);
+                            result = alu_in_1 | alu_in_2;
                             b_flag = 1'bX;
                         end
                         
             // AND 
             ALU_AND:    begin
-                            // addr = signed'(alu_in_1) & signed'(alu_in_2);
-                            addr = alu_in_1 & alu_in_2;
+                            // result = signed'(alu_in_1) & signed'(alu_in_2);
+                            result = alu_in_1 & alu_in_2;
                             b_flag = 1'bX;
                         end
                         
             // Unknwon alu_ctrl
             default:    begin
-                            addr = 'X;
+                            result = 'X;
                             b_flag = 1'bX;
                         end
         endcase
@@ -314,34 +326,60 @@ module myRiscv (
     // ------------------------- LoadExtend Unit -------------------------
 
     // Enumerate load instruction funct3's
-    typedef enum logic [2:0] {
-        LD_BYTE   = 3'b000,
-        LD_HALF   = 3'b001,
-        LD_WORD   = 3'b010,
-        LD_BYTE_U = 3'b100,
-        LD_HALF_U = 3'b101
+    typedef enum logic [4:0] {
+        LD_BYTE_0   = 5'b000_00,
+        LD_BYTE_1   = 5'b000_01,
+        LD_BYTE_2   = 5'b000_10,
+        LD_BYTE_3   = 5'b000_11,
+        LD_HALF_0   = 5'b001_00,
+        LD_HALF_1   = 5'b001_10,
+        LD_WORD     = 5'b010_00,
+        LD_BYTE_U_0 = 5'b100_00,
+        LD_BYTE_U_1 = 5'b100_01,
+        LD_BYTE_U_2 = 5'b100_10,
+        LD_BYTE_U_3 = 5'b100_11,
+        LD_HALF_U_0 = 5'b101_00,
+        LD_HALF_U_1 = 5'b101_10
     } ld_funct3s_t;
     
     // 
     always_comb begin
         case (ld_ctrl)
-            LD_BYTE:    rd_data_ext = {{24{rd_data[7]}}, rd_data[7:0]};
-            LD_HALF:    rd_data_ext = {{16{rd_data[7]}}, rd_data[15:0]};
-            LD_WORD:    rd_data_ext = rd_data;
-            LD_BYTE_U:  rd_data_ext = {24'b0, rd_data[7:0]};
-            LD_HALF_U:  rd_data_ext = {16'b0, rd_data[15:0]};
-            default:    rd_data_ext = 'X;
+            LD_BYTE_0:      rd_data_ext = {{24{rd_data[7]}}, rd_data[7:0]};
+            LD_BYTE_1:      rd_data_ext = {{24{rd_data[15]}}, rd_data[15:8]};
+            LD_BYTE_2:      rd_data_ext = {{24{rd_data[23]}}, rd_data[23:16]};
+            LD_BYTE_3:      rd_data_ext = {{24{rd_data[31]}}, rd_data[31:24]};
+            LD_HALF_0:      rd_data_ext = {{16{rd_data[15]}}, rd_data[15:0]};
+            LD_HALF_1:      rd_data_ext = {{16{rd_data[31]}}, rd_data[31:16]};
+            LD_WORD:        rd_data_ext = rd_data;
+            LD_BYTE_U_0:    rd_data_ext = {24'b0, rd_data[7:0]};
+            LD_BYTE_U_1:    rd_data_ext = {24'b0, rd_data[15:8]};
+            LD_BYTE_U_2:    rd_data_ext = {24'b0, rd_data[23:16]};
+            LD_BYTE_U_3:    rd_data_ext = {24'b0, rd_data[31:24]};
+            LD_HALF_U_0:    rd_data_ext = {16'b0, rd_data[15:0]};
+            LD_HALF_U_1:    rd_data_ext = {16'b0, rd_data[31:16]};
+            default:        rd_data_ext = 'X;
         endcase
     end
 
+    logic [3:0] rmask;
+
     always_comb begin
         case (ld_ctrl)
-            LD_BYTE:    rvfi_mem_rmask = 4'b0001;
-            LD_HALF:    rvfi_mem_rmask = 4'b0011;
-            LD_WORD:    rvfi_mem_rmask = 4'b1111;
-            LD_BYTE_U:  rvfi_mem_rmask = 4'b0001;
-            LD_BYTE_U:  rvfi_mem_rmask = 4'b0011;
-            default:    rvfi_mem_rmask = 4'b0000;
+            LD_BYTE_0:      rmask = 4'b0001;
+            LD_BYTE_1:      rmask = 4'b0010;
+            LD_BYTE_2:      rmask = 4'b0100;
+            LD_BYTE_3:      rmask = 4'b1000;
+            LD_HALF_0:      rmask = 4'b0011;
+            LD_HALF_1:      rmask = 4'b1100;
+            LD_WORD:        rmask = 4'b1111;
+            LD_BYTE_U_0:    rmask = 4'b0001;
+            LD_BYTE_U_1:    rmask = 4'b0010;
+            LD_BYTE_U_2:    rmask = 4'b0100;
+            LD_BYTE_U_3:    rmask = 4'b1000;
+            LD_HALF_U_0:    rmask = 4'b0011;
+            LD_HALF_U_1:    rmask = 4'b1100;
+            default:        rmask = 4'b0000;
         endcase
     end
 
@@ -377,6 +415,7 @@ module myRiscv (
         instr_valid = 1'b1;
         ctrl_instr_trap = 1'b0;
         rd_addr_sel = 1'b0;
+        force_zero_lsb = 1'b0;
 
         case (opcode)
             // Load instructions
@@ -390,24 +429,37 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
                             end
                             else begin
+                                force_zero_lsb = 1'b1;
                                 wr_en = 4'b0000;
-                                // rf_wr_en = 1'b1;
-                                rf_wr_en = (addr[1:0] != 2'b0) ? 1'b0 : 1'b1;
+                                rf_wr_en = 1'b1;
+                                if (funct3 == 3'b010)
+                                    rf_wr_en = (result[1:0] != 2'b0) ? 1'b0 : 1'b1;
+                                else if (funct3 == 3'b001 || funct3 == 3'b101)
+                                    rf_wr_en = (result[0] != 1'b0) ? 1'b0 : 1'b1;
+                                else 
+                                    rf_wr_en = 1'b1;
+                                // rf_wr_en = (result[1:0] != 2'b0) ? 1'b0 : 1'b1;
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b1;
                                 pc_sel = 2'b00;
                                 rd_data_sel = 3'b01;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'b000;
-                                ld_ctrl = funct3;
+                                ld_ctrl = {funct3, result[1:0]};
                                 alu_ctrl = 4'b0000;
-                                ctrl_instr_trap = (addr[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                                if (funct3 == 3'b010)
+                                    ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                                else if (funct3 == 3'b001 || funct3 == 3'b101)
+                                    ctrl_instr_trap = (result[0] != 1'b0) ? 1'b1 : 1'b0;
+                                else 
+                                    ctrl_instr_trap = 1'b0;
+                                // ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
                             end
                         end
             
@@ -422,7 +474,7 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
@@ -436,7 +488,7 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
@@ -450,7 +502,7 @@ module myRiscv (
                                 rd_data_sel = 3'b000;
                                 wr_data_sel = 2'bX;
                                 imm_sel = {2'b0, (~funct3[1] & funct3[0])};
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = {(funct3[2] & ~funct3[1] & funct3[0] & funct7[5]), funct3};
                             end
                         end
@@ -466,13 +518,13 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
                             end
                             else begin
-                                wr_en = (addr[1:0] != 2'b0) ? 1'b0 : {funct3[1], funct3[1], (funct3[1] | funct3[0]), 1'b1};
+                                wr_en = (result[1:0] != 2'b0) ? 1'b0 : {funct3[1], funct3[1], (funct3[1] | funct3[0]), 1'b1};
                                 rf_wr_en = 1'b0;
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b1;
@@ -480,9 +532,9 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = funct3[1:0];
                                 imm_sel = 3'b010;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'b0000;
-                                ctrl_instr_trap = (addr[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                                ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
                             end
                         end
             
@@ -497,7 +549,7 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
@@ -511,7 +563,7 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
@@ -525,7 +577,7 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
@@ -539,7 +591,7 @@ module myRiscv (
                                 rd_data_sel = 3'b000;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = {funct7[5], funct3};
                             end
                             
@@ -556,7 +608,7 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
@@ -571,7 +623,7 @@ module myRiscv (
                                 rd_data_sel = 3'b100;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'b011;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = {~funct3[2], 1'b0, funct3[2:1]};
                                 ctrl_instr_trap = |pc_next[1:0];
                             end
@@ -587,7 +639,7 @@ module myRiscv (
                             rd_data_sel = 3'b010;
                             wr_data_sel = 2'bX;
                             imm_sel = 3'b100;
-                            ld_ctrl = 3'bX;
+                            ld_ctrl = 5'bX;
                             alu_ctrl = 4'bX;
                             ctrl_instr_trap = |target[1:0];
                         end
@@ -603,23 +655,23 @@ module myRiscv (
                                 rd_data_sel = 3'bX;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'bX;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'bX;
                                 instr_valid = 1'b0;
                                 ctrl_instr_trap = 1'b1;
                             end
                             else begin
                                 wr_en = 4'b0000;
-                                rf_wr_en = ~addr[1];
+                                rf_wr_en = ~result[1];
                                 src_1_sel = 1'b0;
                                 src_2_sel = 1'b1;
-                                pc_sel = {2{~addr[1]}};
+                                pc_sel = {2{~result[1]}};
                                 rd_data_sel = 3'b010;
                                 wr_data_sel = 2'bX;
                                 imm_sel = 3'b000;
-                                ld_ctrl = 3'bX;
+                                ld_ctrl = 5'bX;
                                 alu_ctrl = 4'b0000;
-                                ctrl_instr_trap = addr[1];
+                                ctrl_instr_trap = result[1];
                             end
 
                         end
@@ -634,7 +686,7 @@ module myRiscv (
                             rd_data_sel = 3'b011;
                             wr_data_sel = 2'bX;
                             imm_sel = 3'b101;
-                            ld_ctrl = 3'bX;
+                            ld_ctrl = 5'bX;
                             alu_ctrl = 4'bX;
                         end
             
@@ -648,7 +700,7 @@ module myRiscv (
                             rd_data_sel = 3'b000;
                             wr_data_sel = 2'bX;
                             imm_sel = 3'b101;
-                            ld_ctrl = 3'bX;
+                            ld_ctrl = 5'bX;
                             alu_ctrl = 4'b0000;
                         end            
             
@@ -662,7 +714,7 @@ module myRiscv (
                             rd_data_sel = 3'bX;
                             wr_data_sel = 2'bX;
                             imm_sel = 3'bX;
-                            ld_ctrl = 3'bX;
+                            ld_ctrl = 5'bX;
                             alu_ctrl = 4'bX;
                             instr_valid = 1'b0;
                             ctrl_instr_trap = 1'b1;
