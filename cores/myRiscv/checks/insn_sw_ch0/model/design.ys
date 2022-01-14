@@ -1,0 +1,17 @@
+# running in checks/insn_sw_ch0/src/
+read_verilog -sv insn_sw_ch0.sv
+read_verilog -sv /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv
+read_verilog -sv /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv
+prep -flatten -nordff -top rvfi_testbench
+chformal -early
+
+memory_nordff
+async2sync
+chformal -assume -early
+chformal -live -fair -cover -remove
+opt_clean
+setundef -anyseq
+opt -keepdc -fast
+check
+hierarchy -simcheck
+write_ilang ../model/design.il
