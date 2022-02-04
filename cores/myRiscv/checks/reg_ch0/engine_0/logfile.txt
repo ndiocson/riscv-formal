@@ -1,0 +1,75 @@
+##   0:00:00  Solver: boolector
+##   0:00:00  Skipping step 0..
+##   0:00:00  Skipping step 1..
+##   0:00:00  Skipping step 2..
+##   0:00:00  Skipping step 3..
+##   0:00:00  Skipping step 4..
+##   0:00:00  Skipping step 5..
+##   0:00:00  Skipping step 6..
+##   0:00:00  Skipping step 7..
+##   0:00:01  Skipping step 8..
+##   0:00:01  Skipping step 9..
+##   0:00:01  Skipping step 10..
+##   0:00:01  Skipping step 11..
+##   0:00:01  Skipping step 12..
+##   0:00:01  Skipping step 13..
+##   0:00:01  Skipping step 14..
+##   0:00:01  Skipping step 15..
+##   0:00:01  Skipping step 16..
+##   0:00:02  Skipping step 17..
+##   0:00:02  Skipping step 18..
+##   0:00:02  Skipping step 19..
+##   0:00:02  Skipping step 20..
+##   0:00:02  Skipping step 21..
+##   0:00:02  Skipping step 22..
+##   0:00:02  Skipping step 23..
+##   0:00:02  Skipping step 24..
+##   0:00:02  Skipping step 25..
+##   0:00:03  Skipping step 26..
+##   0:00:03  Skipping step 27..
+##   0:00:03  Skipping step 28..
+##   0:00:03  Skipping step 29..
+##   0:00:03  Checking assumptions in step 30..
+##   0:00:04  Checking assertions in step 30..
+##   0:01:04  waiting for solver (1 minute)
+##   0:05:04  waiting for solver (5 minutes)
+##  17:11:17  waiting for solver (10 minutes)
+##  17:16:17  waiting for solver (15 minutes)
+##  17:31:17  waiting for solver (30 minutes)
+##  18:01:17  waiting for solver (1 hour)
+##  19:01:17  waiting for solver (2 hours)
+##  20:01:17  waiting for solver (3 hours)
+##  21:01:17  waiting for solver (4 hours)
+##  22:01:17  waiting for solver (5 hours)
+##  23:01:17  waiting for solver (6 hours)
+##  24:01:17  waiting for solver (7 hours)
+##  25:01:17  waiting for solver (8 hours)
+##  26:01:17  waiting for solver (9 hours)
+##  27:01:17  waiting for solver (10 hours)
+##  28:01:17  waiting for solver (11 hours)
+##  29:01:17  waiting for solver (12 hours)
+##  30:01:17  waiting for solver (13 hours)
+##  31:01:17  waiting for solver (14 hours)
+##  32:01:17  waiting for solver (15 hours)
+##  33:01:18  waiting for solver (16 hours)
+##  34:01:18  waiting for solver (17 hours)
+##  35:01:18  waiting for solver (18 hours)
+##  36:01:18  waiting for solver (19 hours)
+##  37:01:18  waiting for solver (20 hours)
+##  38:01:18  waiting for solver (21 hours)
+##  39:01:18  waiting for solver (22 hours)
+##  40:01:18  waiting for solver (23 hours)
+##  41:01:18  waiting for solver (24 hours)
+##  42:01:18  waiting for solver (25 hours)
+##  43:01:18  waiting for solver (26 hours)
+##  44:01:18  waiting for solver (27 hours)
+##  45:01:18  waiting for solver (28 hours)
+##  46:01:18  waiting for solver (29 hours)
+##  47:01:18  waiting for solver (30 hours)
+##  48:01:18  waiting for solver (31 hours)
+##  49:01:18  waiting for solver (32 hours)
+##  50:01:18  waiting for solver (33 hours)
+##  51:01:18  waiting for solver (34 hours)
+##  52:01:18  waiting for solver (35 hours)
+##  53:01:18  waiting for solver (36 hours)
+##  53:29:28  Status: passed

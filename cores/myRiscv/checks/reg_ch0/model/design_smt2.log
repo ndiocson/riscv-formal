@@ -1,0 +1,77 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+3. Printing statistics.
+
+=== rvfi_testbench ===
+
+   Number of wires:                460
+   Number of wire bits:           5053
+   Number of public wires:         201
+   Number of public wire bits:    3552
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                319
+     $add                            5
+     $and                           17
+     $anyconst                       2
+     $anyseq                        38
+     $assert                         2
+     $assume                         3
+     $dff                            5
+     $eq                            62
+     $initstate                      1
+     $logic_and                      5
+     $logic_not                     12
+     $logic_or                       1
+     $lt                             4
+     $mem_v2                         1
+     $mux                           56
+     $ne                             1
+     $not                           24
+     $or                             8
+     $pmux                          24
+     $reduce_and                    13
+     $reduce_bool                    1
+     $reduce_or                     27
+     $shl                            1
+     $shr                            1
+     $sshr                           1
+     $sub                            1
+     $xor                            3
+
+4. Executing SMT2 backend.
+Creating SMT-LIBv2 representation of module rvfi_testbench.
+
+End of script. Logfile hash: 2da4e8ad25, CPU: user 0.05s system 0.00s, MEM: 12.92 MB peak
+Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 64% 2x read_ilang (0 sec), 33% 2x write_smt2 (0 sec), ...

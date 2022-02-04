@@ -1,0 +1,772 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: reg_ch0.sv
+Parsing SystemVerilog input from `reg_ch0.sv' to AST representation.
+Generating RTLIL representation for module `\rvfi_channel'.
+Generating RTLIL representation for module `\rvfi_testbench'.
+Generating RTLIL representation for module `\rvfi_seq'.
+Generating RTLIL representation for module `\rvfi_assume_seq'.
+Generating RTLIL representation for module `\rvfi_reg_check'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv
+Parsing SystemVerilog input from `/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/wrapper.sv' to AST representation.
+Generating RTLIL representation for module `\rvfi_wrapper'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv
+Parsing SystemVerilog input from `/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv' to AST representation.
+Generating RTLIL representation for module `\DFF'.
+Generating RTLIL representation for module `\MUX2x1'.
+Generating RTLIL representation for module `\MUX4x1'.
+Generating RTLIL representation for module `\MUX5x1'.
+Generating RTLIL representation for module `\SignExtend'.
+Generating RTLIL representation for module `\LoadExtend'.
+Generating RTLIL representation for module `\StoreExtend'.
+Generating RTLIL representation for module `\RegisterFile'.
+Generating RTLIL representation for module `\ALU'.
+Generating RTLIL representation for module `\myRiscv'.
+Successfully finished Verilog frontend.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \rvfi_testbench
+Used module:     \rvfi_wrapper
+Used module:         \myRiscv
+Used module:             \StoreExtend
+Used module:             \LoadExtend
+Used module:             \SignExtend
+Used module:             \ALU
+Used module:             \RegisterFile
+Used module:             \MUX5x1
+Used module:             \MUX2x1
+Used module:             \MUX4x1
+Used module:             \DFF
+Used module:     \rvfi_reg_check
+Parameter \DATA_WIDTH = 32
+
+4.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\ALU'.
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000'.
+Parameter \DATA_WIDTH = 32
+
+4.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\MUX5x1'.
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000'.
+Parameter \DATA_WIDTH = 32
+
+4.1.4. Executing AST frontend in derive mode using pre-parsed AST for module `\MUX2x1'.
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000'.
+Parameter \DATA_WIDTH = 32
+Found cached RTLIL representation for module `$paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000'.
+Parameter \DATA_WIDTH = 32
+
+4.1.5. Executing AST frontend in derive mode using pre-parsed AST for module `\MUX4x1'.
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000'.
+Parameter \DATA_WIDTH = 32
+
+4.1.6. Executing AST frontend in derive mode using pre-parsed AST for module `\DFF'.
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000'.
+
+4.1.7. Analyzing design hierarchy..
+Top module:  \rvfi_testbench
+Used module:     \rvfi_wrapper
+Used module:         \myRiscv
+Used module:             \StoreExtend
+Used module:             \LoadExtend
+Used module:             \SignExtend
+Used module:             $paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             \RegisterFile
+Used module:             $paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:     \rvfi_reg_check
+
+4.1.8. Analyzing design hierarchy..
+Top module:  \rvfi_testbench
+Used module:     \rvfi_wrapper
+Used module:         \myRiscv
+Used module:             \StoreExtend
+Used module:             \LoadExtend
+Used module:             \SignExtend
+Used module:             $paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             \RegisterFile
+Used module:             $paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000
+Used module:     \rvfi_reg_check
+Removing unused module `\ALU'.
+Removing unused module `\MUX5x1'.
+Removing unused module `\MUX4x1'.
+Removing unused module `\MUX2x1'.
+Removing unused module `\DFF'.
+Removing unused module `\rvfi_assume_seq'.
+Removing unused module `\rvfi_seq'.
+Removing unused module `\rvfi_channel'.
+Removed 8 unused modules.
+Module rvfi_reg_check directly or indirectly contains formal properties -> setting "keep" attribute.
+Module rvfi_testbench directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/StoreExtend.sv:0$81 in module StoreExtend.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$80 in module LoadExtend.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$79 in module LoadExtend.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/SignExtend.sv:0$78 in module SignExtend.
+Removed 1 dead cases from process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX4x1.sv:0$257 in module $paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX4x1.sv:0$257 in module $paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Removed 1 dead cases from process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX2x1.sv:0$256 in module $paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX2x1.sv:0$256 in module $paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX5x1.sv:0$255 in module $paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:0$243 in module $paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.
+Marked 3 switch rules as full_case in process $proc$rvfi_reg_check.sv:25$35 in module rvfi_reg_check.
+Removed 1 dead cases from process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195 in module myRiscv.
+Marked 10 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195 in module myRiscv.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$132 in module myRiscv.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:115$129 in module myRiscv.
+Removed 1 dead cases from process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$128 in module myRiscv.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$128 in module myRiscv.
+Removed 1 dead cases from process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$125 in module myRiscv.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$125 in module myRiscv.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/DFF.sv:29$258 in module $paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.
+Marked 1 switch rules as full_case in process $proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84 in module RegisterFile.
+Removed a total of 5 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 46 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$69'.
+  Set init value: $formal$rvfi_reg_check.sv:43$32_EN = 1'0
+Found init rule in `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$67'.
+  Set init value: $formal$rvfi_reg_check.sv:41$31_EN = 1'0
+Found init rule in `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$65'.
+  Set init value: $formal$rvfi_reg_check.sv:38$30_EN = 1'0
+Found init rule in `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$63'.
+  Set init value: $formal$rvfi_reg_check.sv:36$29_EN = 1'0
+Found init rule in `\rvfi_reg_check.$proc$rvfi_reg_check.sv:22$62'.
+  Set init value: \register_written = 1'0
+Found init rule in `\rvfi_reg_check.$proc$rvfi_reg_check.sv:21$61'.
+  Set init value: \register_shadow = 0
+Found init rule in `\rvfi_testbench.$proc$rvfi_testbench.sv:32$14'.
+  Set init value: \cycle_reg = 8'00000000
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\StoreExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/StoreExtend.sv:0$81'.
+     1/4: $1\data_out[31:0] [31:24]
+     2/4: $1\data_out[31:0] [15:8]
+     3/4: $1\data_out[31:0] [23:16]
+     4/4: $1\data_out[31:0] [7:0]
+Creating decoders for process `\LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$80'.
+     1/1: $1\rmask[3:0]
+Creating decoders for process `\LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$79'.
+     1/1: $1\data_out[31:0]
+Creating decoders for process `\SignExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/SignExtend.sv:0$78'.
+     1/1: $1\imm_ext[31:0]
+Creating decoders for process `$paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX4x1.sv:0$257'.
+     1/1: $1\out[31:0]
+Creating decoders for process `$paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX2x1.sv:0$256'.
+     1/1: $1\out[31:0]
+Creating decoders for process `$paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX5x1.sv:0$255'.
+     1/1: $1\out[31:0]
+Creating decoders for process `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:0$243'.
+     1/2: $1\b_flag[0:0]
+     2/2: $1\result[31:0]
+Creating decoders for process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$69'.
+Creating decoders for process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$67'.
+Creating decoders for process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$65'.
+Creating decoders for process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:0$63'.
+Creating decoders for process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:22$62'.
+Creating decoders for process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:21$61'.
+Creating decoders for process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+     1/16: $3\register_written[0:0]
+     2/16: $3\register_shadow[31:0]
+     3/16: $2\channel_idx[31:0]
+     4/16: $2\register_written[0:0]
+     5/16: $2\register_shadow[31:0]
+     6/16: $1\register_written[0:0]
+     7/16: $1\register_shadow[31:0]
+     8/16: $1\channel_idx[31:0]
+     9/16: $0$formal$rvfi_reg_check.sv:36$29_EN[0:0]$37
+    10/16: $0$formal$rvfi_reg_check.sv:36$29_CHECK[0:0]$36
+    11/16: $0$formal$rvfi_reg_check.sv:38$30_EN[0:0]$39
+    12/16: $0$formal$rvfi_reg_check.sv:38$30_CHECK[0:0]$38
+    13/16: $0$formal$rvfi_reg_check.sv:41$31_EN[0:0]$41
+    14/16: $0$formal$rvfi_reg_check.sv:41$31_CHECK[0:0]$40
+    15/16: $0$formal$rvfi_reg_check.sv:43$32_EN[0:0]$43
+    16/16: $0$formal$rvfi_reg_check.sv:43$32_CHECK[0:0]$42
+Creating decoders for process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+     1/24: $5\ctrl_instr_trap[0:0]
+     2/24: $4\ctrl_instr_trap[0:0]
+     3/24: $4\wr_en[3:0]
+     4/24: $3\wr_en[3:0]
+     5/24: $2\wr_en[3:0]
+     6/24: $3\ctrl_instr_trap[0:0]
+     7/24: $2\ctrl_instr_trap[0:0]
+     8/24: $3\rf_wr_en[0:0]
+     9/24: $2\rf_wr_en[0:0]
+    10/24: $1\ctrl_instr_trap[0:0]
+    11/24: $1\alu_ctrl[3:0]
+    12/24: $1\ld_ctrl[4:0]
+    13/24: $1\imm_sel[2:0]
+    14/24: $1\wr_data_sel[1:0]
+    15/24: $1\rd_data_sel[2:0]
+    16/24: $1\pc_sel[1:0]
+    17/24: $1\addr_align[0:0]
+    18/24: $1\src_2_sel[0:0]
+    19/24: $1\src_1_sel[0:0]
+    20/24: $1\rf_wr_en[0:0]
+    21/24: $1\wr_en[3:0]
+    22/24: $1\instr_valid[0:0]
+    23/24: $1\dst_addr_sel[0:0]
+    24/24: $1\s_ctrl[4:0]
+Creating decoders for process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$132'.
+     1/1: $1\rmask[3:0]
+Creating decoders for process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:115$129'.
+     1/1: $0\instr_index[63:0]
+Creating decoders for process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$128'.
+     1/1: $1\rf_dst_addr[4:0]
+Creating decoders for process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$125'.
+     1/1: $1\addr[31:0]
+Creating decoders for process `$paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/DFF.sv:29$258'.
+     1/1: $0\out[31:0]
+Creating decoders for process `\rvfi_testbench.$proc$rvfi_testbench.sv:32$14'.
+Creating decoders for process `\rvfi_testbench.$proc$rvfi_testbench.sv:35$8'.
+Creating decoders for process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:0$101'.
+Creating decoders for process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+     1/6: $1$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$94
+     2/6: $1$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_DATA[31:0]$93
+     3/6: $1$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_ADDR[4:0]$92
+     4/6: $1$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$97
+     5/6: $1$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_DATA[31:0]$96
+     6/6: $1$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_ADDR[4:0]$95
+
+4.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\StoreExtend.\data_out' from process `\StoreExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/StoreExtend.sv:0$81'.
+No latch inferred for signal `\LoadExtend.\rmask' from process `\LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$80'.
+No latch inferred for signal `\LoadExtend.\data_out' from process `\LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$79'.
+No latch inferred for signal `\SignExtend.\imm_ext' from process `\SignExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/SignExtend.sv:0$78'.
+No latch inferred for signal `$paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.\out' from process `$paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX4x1.sv:0$257'.
+No latch inferred for signal `$paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.\out' from process `$paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX2x1.sv:0$256'.
+No latch inferred for signal `$paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.\out' from process `$paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX5x1.sv:0$255'.
+No latch inferred for signal `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.\b_flag' from process `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:0$243'.
+No latch inferred for signal `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.\result' from process `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:0$243'.
+No latch inferred for signal `\myRiscv.\wr_en' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\imm_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\ld_ctrl' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\s_ctrl' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\alu_ctrl' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\rf_wr_en' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\src_1_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\src_2_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\pc_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\rd_data_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\wr_data_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\addr_align' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\dst_addr_sel' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\instr_valid' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\ctrl_instr_trap' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+No latch inferred for signal `\myRiscv.\rmask' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$132'.
+No latch inferred for signal `\myRiscv.\rf_dst_addr' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$128'.
+No latch inferred for signal `\myRiscv.\addr' from process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$125'.
+No latch inferred for signal `\RegisterFile.\src_data_1' from process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:0$101'.
+No latch inferred for signal `\RegisterFile.\src_data_2' from process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:0$101'.
+
+4.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\rvfi_reg_check.\register_shadow' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$794' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.\register_written' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$795' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.\channel_idx' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$796' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:36$29_CHECK' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$797' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:36$29_EN' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$798' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:38$30_CHECK' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$799' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:38$30_EN' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$800' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:41$31_CHECK' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$801' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:41$31_EN' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$802' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:43$32_CHECK' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$803' with positive edge clock.
+Creating register for signal `\rvfi_reg_check.$formal$rvfi_reg_check.sv:43$32_EN' using process `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+  created $dff cell `$procdff$804' with positive edge clock.
+Creating register for signal `\myRiscv.\instr_index' using process `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:115$129'.
+  created $dff cell `$procdff$805' with positive edge clock.
+Creating register for signal `$paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.\out' using process `$paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/DFF.sv:29$258'.
+  created $dff cell `$procdff$806' with positive edge clock.
+Creating register for signal `\rvfi_testbench.\cycle_reg' using process `\rvfi_testbench.$proc$rvfi_testbench.sv:35$8'.
+  created $dff cell `$procdff$807' with positive edge clock.
+Creating register for signal `\RegisterFile.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_ADDR' using process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+  created $dff cell `$procdff$808' with positive edge clock.
+Creating register for signal `\RegisterFile.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_DATA' using process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+  created $dff cell `$procdff$809' with positive edge clock.
+Creating register for signal `\RegisterFile.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN' using process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+  created $dff cell `$procdff$810' with positive edge clock.
+Creating register for signal `\RegisterFile.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_ADDR' using process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+  created $dff cell `$procdff$811' with positive edge clock.
+Creating register for signal `\RegisterFile.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_DATA' using process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+  created $dff cell `$procdff$812' with positive edge clock.
+Creating register for signal `\RegisterFile.$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN' using process `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+  created $dff cell `$procdff$813' with positive edge clock.
+
+4.2.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\StoreExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/StoreExtend.sv:0$81'.
+Removing empty process `StoreExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/StoreExtend.sv:0$81'.
+Found and cleaned up 1 empty switch in `\LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$80'.
+Removing empty process `LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$80'.
+Found and cleaned up 1 empty switch in `\LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$79'.
+Removing empty process `LoadExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/LoadExtend.sv:0$79'.
+Found and cleaned up 1 empty switch in `\SignExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/SignExtend.sv:0$78'.
+Removing empty process `SignExtend.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/SignExtend.sv:0$78'.
+Found and cleaned up 1 empty switch in `$paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX4x1.sv:0$257'.
+Removing empty process `$paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX4x1.sv:0$257'.
+Found and cleaned up 1 empty switch in `$paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX2x1.sv:0$256'.
+Removing empty process `$paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX2x1.sv:0$256'.
+Found and cleaned up 1 empty switch in `$paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX5x1.sv:0$255'.
+Removing empty process `$paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/MUX5x1.sv:0$255'.
+Found and cleaned up 1 empty switch in `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:0$243'.
+Removing empty process `$paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:0$243'.
+Removing empty process `rvfi_reg_check.$proc$rvfi_reg_check.sv:0$69'.
+Removing empty process `rvfi_reg_check.$proc$rvfi_reg_check.sv:0$67'.
+Removing empty process `rvfi_reg_check.$proc$rvfi_reg_check.sv:0$65'.
+Removing empty process `rvfi_reg_check.$proc$rvfi_reg_check.sv:0$63'.
+Removing empty process `rvfi_reg_check.$proc$rvfi_reg_check.sv:22$62'.
+Removing empty process `rvfi_reg_check.$proc$rvfi_reg_check.sv:21$61'.
+Found and cleaned up 5 empty switches in `\rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+Removing empty process `rvfi_reg_check.$proc$rvfi_reg_check.sv:25$35'.
+Found and cleaned up 10 empty switches in `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+Removing empty process `myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$195'.
+Found and cleaned up 1 empty switch in `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$132'.
+Removing empty process `myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$132'.
+Found and cleaned up 1 empty switch in `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:115$129'.
+Removing empty process `myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:115$129'.
+Found and cleaned up 1 empty switch in `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$128'.
+Removing empty process `myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$128'.
+Found and cleaned up 1 empty switch in `\myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$125'.
+Removing empty process `myRiscv.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:0$125'.
+Found and cleaned up 1 empty switch in `$paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/DFF.sv:29$258'.
+Removing empty process `$paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/DFF.sv:29$258'.
+Removing empty process `rvfi_testbench.$proc$rvfi_testbench.sv:32$14'.
+Removing empty process `rvfi_testbench.$proc$rvfi_testbench.sv:35$8'.
+Removing empty process `RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:0$101'.
+Found and cleaned up 1 empty switch in `\RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+Removing empty process `RegisterFile.$proc$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:36$84'.
+Cleaned up 29 empty switches.
+
+4.2.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module StoreExtend.
+<suppressed ~4 debug messages>
+Optimizing module LoadExtend.
+<suppressed ~2 debug messages>
+Optimizing module SignExtend.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~2 debug messages>
+Optimizing module rvfi_wrapper.
+Optimizing module rvfi_reg_check.
+Optimizing module myRiscv.
+<suppressed ~17 debug messages>
+Optimizing module $paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~1 debug messages>
+Optimizing module rvfi_testbench.
+Optimizing module RegisterFile.
+<suppressed ~4 debug messages>
+
+4.3. Executing FLATTEN pass (flatten design).
+Deleting now unused module StoreExtend.
+Deleting now unused module LoadExtend.
+Deleting now unused module SignExtend.
+Deleting now unused module $paramod\MUX4x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\MUX2x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\MUX5x1\DATA_WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\ALU\DATA_WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module rvfi_wrapper.
+Deleting now unused module rvfi_reg_check.
+Deleting now unused module myRiscv.
+Deleting now unused module $paramod\DFF\DATA_WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module RegisterFile.
+<suppressed ~13 debug messages>
+
+4.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rvfi_testbench.
+
+4.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+Removed 37 unused cells and 268 unused wires.
+<suppressed ~44 debug messages>
+
+4.6. Executing CHECK pass (checking for obvious problems).
+Checking module rvfi_testbench...
+Found and reported 0 problems.
+
+4.7. Executing OPT pass (performing simple optimizations).
+
+4.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rvfi_testbench.
+
+4.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rvfi_testbench'.
+<suppressed ~390 debug messages>
+Removed a total of 130 cells.
+
+4.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rvfi_testbench..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$483.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$485.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$497.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$512.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$515.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$517.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$530.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$532.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$544.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$559.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$561.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$575.
+    dead port 1/2 on $mux $flatten\wrapper.\uut.$procmux$590.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$592.
+    dead port 2/2 on $mux $flatten\wrapper.\uut.$procmux$606.
+    dead port 1/2 on $mux $flatten\checker_inst.$procmux$375.
+    dead port 1/2 on $mux $flatten\checker_inst.$procmux$378.
+    dead port 1/2 on $mux $flatten\checker_inst.$procmux$384.
+    dead port 1/2 on $mux $flatten\checker_inst.$procmux$387.
+    dead port 1/2 on $mux $flatten\checker_inst.$procmux$399.
+    dead port 1/2 on $mux $flatten\checker_inst.$procmux$405.
+Removed 21 multiplexer ports.
+<suppressed ~51 debug messages>
+
+4.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rvfi_testbench.
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$609: { $flatten\wrapper.\uut.$procmux$562_CMP $flatten\wrapper.\uut.$procmux$486_CMP $flatten\wrapper.\uut.$procmux$614_CMP $flatten\wrapper.\uut.$procmux$613_CMP $flatten\wrapper.\uut.$procmux$612_CMP $auto$opt_reduce.cc:134:opt_mux$817 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$620: { $flatten\wrapper.\uut.$procmux$617_CMP $flatten\wrapper.\uut.$procmux$615_CMP $flatten\wrapper.\uut.$procmux$614_CMP $auto$opt_reduce.cc:134:opt_mux$819 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$640: { $flatten\wrapper.\uut.$procmux$617_CMP $flatten\wrapper.\uut.$procmux$486_CMP $flatten\wrapper.\uut.$procmux$614_CMP $flatten\wrapper.\uut.$procmux$613_CMP $auto$opt_reduce.cc:134:opt_mux$823 $auto$opt_reduce.cc:134:opt_mux$821 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$659: { $flatten\wrapper.\uut.$procmux$562_CMP $flatten\wrapper.\uut.$procmux$614_CMP $auto$opt_reduce.cc:134:opt_mux$827 $flatten\wrapper.\uut.$procmux$611_CMP $auto$opt_reduce.cc:134:opt_mux$825 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$682: $auto$opt_reduce.cc:134:opt_mux$829
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$686: { $auto$opt_reduce.cc:134:opt_mux$833 $auto$opt_reduce.cc:134:opt_mux$831 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$695: { $auto$opt_reduce.cc:134:opt_mux$835 $flatten\wrapper.\uut.$procmux$610_CMP }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$704: { $flatten\wrapper.\uut.$procmux$562_CMP $flatten\wrapper.\uut.$procmux$613_CMP $flatten\wrapper.\uut.$procmux$612_CMP $auto$opt_reduce.cc:134:opt_mux$837 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$737: $auto$opt_reduce.cc:134:opt_mux$839
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.$procmux$750: { $flatten\wrapper.\uut.$procmux$757_CMP $auto$opt_reduce.cc:134:opt_mux$851 $auto$opt_reduce.cc:134:opt_mux$849 $auto$opt_reduce.cc:134:opt_mux$847 $auto$opt_reduce.cc:134:opt_mux$845 $auto$opt_reduce.cc:134:opt_mux$843 $auto$opt_reduce.cc:134:opt_mux$841 }
+    Consolidated identical input bits for $mux cell $flatten\wrapper.\uut.\reg_file.$procmux$777:
+      Old ports: A=0, B=32'11111111111111111111111111111111, Y=$flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87
+      New ports: A=1'0, B=1'1, Y=$flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0]
+      New connections: $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [31:1] = { $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:38$82_EN[31:0]$87 [0] }
+    Consolidated identical input bits for $mux cell $flatten\wrapper.\uut.\reg_file.$procmux$786:
+      Old ports: A=32'11111111111111111111111111111111, B=0, Y=$flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90
+      New ports: A=1'1, B=1'0, Y=$flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0]
+      New connections: $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [31:1] = { $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] $flatten\wrapper.\uut.\reg_file.$0$memwr$\mem$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/RegisterFile.sv:40$83_EN[31:0]$90 [0] }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.\s_ext.$procmux$261: { $flatten\wrapper.\uut.\s_ext.$procmux$265_CMP $auto$opt_reduce.cc:134:opt_mux$853 $flatten\wrapper.\uut.\s_ext.$procmux$263_CMP $flatten\wrapper.\uut.\s_ext.$procmux$262_CMP }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.\s_ext.$procmux$270: { $flatten\wrapper.\uut.\s_ext.$procmux$267_CMP $auto$opt_reduce.cc:134:opt_mux$857 $auto$opt_reduce.cc:134:opt_mux$855 }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.\s_ext.$procmux$279: { $auto$opt_reduce.cc:134:opt_mux$861 $auto$opt_reduce.cc:134:opt_mux$859 $flatten\wrapper.\uut.\s_ext.$procmux$262_CMP }
+    New ctrl vector for $pmux cell $flatten\wrapper.\uut.\s_ext.$procmux$288: { $auto$opt_reduce.cc:134:opt_mux$865 $auto$opt_reduce.cc:134:opt_mux$863 }
+  Optimizing cells in module \rvfi_testbench.
+Performed a total of 16 changes.
+
+4.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rvfi_testbench'.
+<suppressed ~21 debug messages>
+Removed a total of 7 cells.
+
+4.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+Removed 0 unused cells and 158 unused wires.
+<suppressed ~1 debug messages>
+
+4.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rvfi_testbench.
+
+4.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rvfi_testbench..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~51 debug messages>
+
+4.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rvfi_testbench.
+Performed a total of 0 changes.
+
+4.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rvfi_testbench'.
+Removed a total of 0 cells.
+
+4.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+
+4.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rvfi_testbench.
+
+4.7.14. Finished OPT passes. (There is nothing left to do.)
+
+4.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 24 bits (of 32) from mux cell rvfi_testbench.$ternary$rvfi_testbench.sv:33$7 ($mux).
+Removed top 31 bits (of 32) from port B of cell rvfi_testbench.$add$rvfi_testbench.sv:36$10 ($add).
+Removed top 23 bits (of 32) from port Y of cell rvfi_testbench.$add$rvfi_testbench.sv:36$10 ($add).
+Removed top 24 bits (of 32) from mux cell rvfi_testbench.$ternary$rvfi_testbench.sv:36$11 ($mux).
+Removed top 28 bits (of 32) from port B of cell rvfi_testbench.$lt$rvfi_testbench.sv:41$12 ($lt).
+Removed top 3 bits (of 8) from port B of cell rvfi_testbench.$eq$rvfi_testbench.sv:53$13 ($eq).
+Removed top 29 bits (of 32) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:95$126 ($add).
+Removed top 63 bits (of 64) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$131 ($add).
+Removed top 1 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\s_ext.$procmux$262_CMP0 ($eq).
+Removed top 6 bits (of 7) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$144 ($not).
+Removed top 1 bits (of 7) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$148 ($not).
+Removed top 6 bits (of 7) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$151 ($and).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$151 ($and).
+Removed top 6 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$151 ($and).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:289$197 ($eq).
+Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$eq$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:291$200 ($eq).
+Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$486_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$509_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$562_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$610_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$611_CMP0 ($eq).
+Removed top 1 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$615_CMP0 ($eq).
+Removed top 2 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$617_CMP0 ($eq).
+Removed top 1 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$757_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$758_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$759_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$760_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$761_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$procmux$762_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\pc_next_mux.$procmux$337_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\rf_data_mux.$procmux$347_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\rf_data_mux.$procmux$346_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\rf_data_mux.$procmux$345_CMP0 ($eq).
+Removed top 3 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\alu.$procmux$368_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\alu.$procmux$365_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\alu.$procmux$364_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\alu.$procmux$362_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\alu.$procmux$361_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\alu.$procmux$357_CMP0 ($eq).
+Removed top 2 bits (of 4) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\alu.$procmux$356_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\sign_ext.$procmux$332_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\sign_ext.$procmux$331_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\sign_ext.$procmux$330_CMP0 ($eq).
+Removed top 4 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\s_ext.$procmux$267_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\s_ext.$procmux$266_CMP0 ($eq).
+Removed top 3 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\s_ext.$procmux$265_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\s_ext.$procmux$264_CMP0 ($eq).
+Removed top 2 bits (of 5) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.\s_ext.$procmux$263_CMP0 ($eq).
+Removed top 1 bits (of 9) from port Y of cell rvfi_testbench.$add$rvfi_testbench.sv:36$10 ($add).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$150 ($or).
+Removed top 6 bits (of 7) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$150 ($or).
+Removed top 6 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$150 ($or).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$147 ($or).
+Removed top 6 bits (of 7) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$147 ($or).
+Removed top 6 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$147 ($or).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$149 ($and).
+Removed top 6 bits (of 7) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$149 ($and).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$145 ($or).
+Removed top 6 bits (of 7) from port B of cell rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$145 ($or).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$146 ($not).
+Removed top 6 bits (of 7) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$146 ($not).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$148 ($not).
+Removed top 5 bits (of 6) from port A of cell rvfi_testbench.$flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$148 ($not).
+Removed top 6 bits (of 7) from port Y of cell rvfi_testbench.$flatten\wrapper.\uut.$not$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$144 ($not).
+Removed top 24 bits (of 32) from wire rvfi_testbench.$add$rvfi_testbench.sv:36$10_Y.
+Removed top 6 bits (of 7) from wire rvfi_testbench.$flatten\wrapper.\uut.$and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$149_Y.
+Removed top 6 bits (of 7) from wire rvfi_testbench.$flatten\wrapper.\uut.$or$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$150_Y.
+Removed top 6 bits (of 7) from wire rvfi_testbench.$flatten\wrapper.\uut.$reduce_and$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:264$142_Y.
+Removed top 31 bits (of 32) from wire rvfi_testbench.$flatten\wrapper.\uut.\alu.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:67$248_Y.
+Removed top 31 bits (of 32) from wire rvfi_testbench.$flatten\wrapper.\uut.\alu.$lt$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/src/ALU.sv:73$249_Y.
+Removed top 31 bits (of 32) from wire rvfi_testbench.$ne$rvfi_testbench.sv:36$9_Y.
+
+4.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+4.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.11. Executing OPT pass (performing simple optimizations).
+
+4.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rvfi_testbench.
+
+4.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rvfi_testbench'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+4.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+4.11.4. Finished fast OPT passes.
+
+4.12. Printing statistics.
+
+=== rvfi_testbench ===
+
+   Number of wires:                431
+   Number of wire bits:           4689
+   Number of public wires:         201
+   Number of public wire bits:    3552
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                290
+     $add                            5
+     $and                           17
+     $anyconst                       2
+     $anyseq                         2
+     $assert                         2
+     $assume                         3
+     $dff                           12
+     $eq                            62
+     $initstate                      1
+     $logic_and                      5
+     $logic_not                     12
+     $logic_or                       1
+     $lt                             4
+     $mem_v2                         1
+     $mux                           58
+     $ne                             1
+     $not                           23
+     $or                             8
+     $pmux                          24
+     $reduce_and                    12
+     $reduce_bool                    1
+     $reduce_or                     27
+     $shl                            1
+     $shr                            1
+     $sshr                           1
+     $sub                            1
+     $xor                            3
+
+4.13. Executing CHECK pass (checking for obvious problems).
+Checking module rvfi_testbench...
+Found and reported 0 problems.
+
+5. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+6. Executing ASYNC2SYNC pass.
+
+7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+Removed 7 unused cells and 7 unused wires.
+<suppressed ~8 debug messages>
+
+8. Executing SETUNDEF pass (replace undef values with defined constants).
+
+9. Executing OPT pass (performing simple optimizations).
+
+9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rvfi_testbench.
+
+9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rvfi_testbench'.
+Removed a total of 0 cells.
+
+9.3. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$807 ($dff) from module rvfi_testbench (D = $add$rvfi_testbench.sv:36$10_Y, Q = \cycle_reg, rval = 8'00000001).
+Adding SRST signal on $flatten\wrapper.\uut.\pc_dff.$procdff$806 ($dff) from module rvfi_testbench (D = \wrapper.uut.pc_dff.data, Q = \wrapper.uut.pc_dff.out, rval = 0).
+Adding SRST signal on $flatten\wrapper.\uut.$procdff$805 ($dff) from module rvfi_testbench (D = $flatten\wrapper.\uut.$add$/home/ndcsn/workspace/riscv-formal/cores/myRiscv/../../cores/myRiscv/myRiscv.sv:119$131_Y, Q = \wrapper.uut.instr_index, rval = 64'0000000000000000000000000000000000000000000000000000000000000000).
+Adding SRST signal on $flatten\checker_inst.$procdff$795 ($dff) from module rvfi_testbench (D = $flatten\checker_inst.$2\register_written[0:0], Q = \checker_inst.register_written, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$948 ($sdff) from module rvfi_testbench (D = 1'1, Q = \checker_inst.register_written).
+Adding SRST signal on $flatten\checker_inst.$procdff$794 ($dff) from module rvfi_testbench (D = $flatten\checker_inst.$2\register_shadow[31:0], Q = \checker_inst.register_shadow, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$954 ($sdff) from module rvfi_testbench (D = \checker_inst.rvfi_rd_wdata, Q = \checker_inst.register_shadow).
+
+9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+Removed 9 unused cells and 9 unused wires.
+<suppressed ~10 debug messages>
+
+9.5. Rerunning OPT passes. (Removed registers in this run.)
+
+9.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rvfi_testbench.
+
+9.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rvfi_testbench'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+9.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rvfi_testbench..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+9.10. Finished fast OPT passes.
+
+10. Executing CHECK pass (checking for obvious problems).
+Checking module rvfi_testbench...
+Found and reported 0 problems.
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+
+11.1. Analyzing design hierarchy..
+Top module:  \rvfi_testbench
+
+11.2. Analyzing design hierarchy..
+Top module:  \rvfi_testbench
+Removed 0 unused modules.
+Module rvfi_testbench directly or indirectly contains formal properties -> setting "keep" attribute.
+
+12. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 4b416a5946, CPU: user 0.63s system 0.00s, MEM: 22.76 MB peak
+Yosys 0.12+54 (git sha1 59a715034, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 25% 8x opt_clean (0 sec), 18% 3x check (0 sec), ...

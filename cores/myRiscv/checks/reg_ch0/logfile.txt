@@ -1,0 +1,94 @@
+SBY 19:37:35 [checks/reg_ch0] Removing directory '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/reg_ch0'.
+SBY 19:37:35 [checks/reg_ch0] Writing 'checks/reg_ch0/src/defines.sv'.
+SBY 19:37:35 [checks/reg_ch0] Writing 'checks/reg_ch0/src/reg_ch0.sv'.
+SBY 19:37:35 [checks/reg_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_macros.vh' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/reg_ch0/src/rvfi_macros.vh'.
+SBY 19:37:35 [checks/reg_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_channel.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/reg_ch0/src/rvfi_channel.sv'.
+SBY 19:37:35 [checks/reg_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_testbench.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/reg_ch0/src/rvfi_testbench.sv'.
+SBY 19:37:35 [checks/reg_ch0] Copy '/home/ndcsn/workspace/riscv-formal/checks/rvfi_reg_check.sv' to '/home/ndcsn/workspace/riscv-formal/cores/myRiscv/checks/reg_ch0/src/rvfi_reg_check.sv'.
+SBY 19:37:35 [checks/reg_ch0] engine_0: smtbmc boolector
+SBY 19:37:35 [checks/reg_ch0] base: starting process "cd checks/reg_ch0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 19:37:36 [checks/reg_ch0] base: finished (returncode=0)
+SBY 19:37:36 [checks/reg_ch0] smt2: starting process "cd checks/reg_ch0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 19:37:36 [checks/reg_ch0] smt2: finished (returncode=0)
+SBY 19:37:36 [checks/reg_ch0] engine_0: starting process "cd checks/reg_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 30:31  --append 0 --dump-vcd engine_0/trace.vcd --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 19:37:36 [checks/reg_ch0] engine_0: ##   0:00:00  Solver: boolector
+SBY 19:37:36 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 0..
+SBY 19:37:36 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 1..
+SBY 19:37:36 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 2..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 3..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 4..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 5..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 6..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:00  Skipping step 7..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 8..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 9..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 10..
+SBY 19:37:37 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 11..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 12..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 13..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 14..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 15..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:01  Skipping step 16..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 17..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 18..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 19..
+SBY 19:37:38 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 20..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 21..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 22..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 23..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 24..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:02  Skipping step 25..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:03  Skipping step 26..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:03  Skipping step 27..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:03  Skipping step 28..
+SBY 19:37:39 [checks/reg_ch0] engine_0: ##   0:00:03  Skipping step 29..
+SBY 19:37:40 [checks/reg_ch0] engine_0: ##   0:00:03  Checking assumptions in step 30..
+SBY 19:37:40 [checks/reg_ch0] engine_0: ##   0:00:04  Checking assertions in step 30..
+SBY 19:38:40 [checks/reg_ch0] engine_0: ##   0:01:04  waiting for solver (1 minute)
+SBY 19:42:40 [checks/reg_ch0] engine_0: ##   0:05:04  waiting for solver (5 minutes)
+SBY 12:48:54 [checks/reg_ch0] engine_0: ##  17:11:17  waiting for solver (10 minutes)
+SBY 12:53:54 [checks/reg_ch0] engine_0: ##  17:16:17  waiting for solver (15 minutes)
+SBY 13:08:54 [checks/reg_ch0] engine_0: ##  17:31:17  waiting for solver (30 minutes)
+SBY 13:38:54 [checks/reg_ch0] engine_0: ##  18:01:17  waiting for solver (1 hour)
+SBY 14:38:54 [checks/reg_ch0] engine_0: ##  19:01:17  waiting for solver (2 hours)
+SBY 15:38:54 [checks/reg_ch0] engine_0: ##  20:01:17  waiting for solver (3 hours)
+SBY 16:38:54 [checks/reg_ch0] engine_0: ##  21:01:17  waiting for solver (4 hours)
+SBY 17:38:54 [checks/reg_ch0] engine_0: ##  22:01:17  waiting for solver (5 hours)
+SBY 18:38:54 [checks/reg_ch0] engine_0: ##  23:01:17  waiting for solver (6 hours)
+SBY 19:38:54 [checks/reg_ch0] engine_0: ##  24:01:17  waiting for solver (7 hours)
+SBY 20:38:54 [checks/reg_ch0] engine_0: ##  25:01:17  waiting for solver (8 hours)
+SBY 21:38:54 [checks/reg_ch0] engine_0: ##  26:01:17  waiting for solver (9 hours)
+SBY 22:38:54 [checks/reg_ch0] engine_0: ##  27:01:17  waiting for solver (10 hours)
+SBY 23:38:54 [checks/reg_ch0] engine_0: ##  28:01:17  waiting for solver (11 hours)
+SBY  0:38:54 [checks/reg_ch0] engine_0: ##  29:01:17  waiting for solver (12 hours)
+SBY  1:38:54 [checks/reg_ch0] engine_0: ##  30:01:17  waiting for solver (13 hours)
+SBY  2:38:54 [checks/reg_ch0] engine_0: ##  31:01:17  waiting for solver (14 hours)
+SBY  3:38:54 [checks/reg_ch0] engine_0: ##  32:01:17  waiting for solver (15 hours)
+SBY  4:38:54 [checks/reg_ch0] engine_0: ##  33:01:18  waiting for solver (16 hours)
+SBY  5:38:54 [checks/reg_ch0] engine_0: ##  34:01:18  waiting for solver (17 hours)
+SBY  6:38:54 [checks/reg_ch0] engine_0: ##  35:01:18  waiting for solver (18 hours)
+SBY  7:38:54 [checks/reg_ch0] engine_0: ##  36:01:18  waiting for solver (19 hours)
+SBY  8:38:54 [checks/reg_ch0] engine_0: ##  37:01:18  waiting for solver (20 hours)
+SBY  9:38:54 [checks/reg_ch0] engine_0: ##  38:01:18  waiting for solver (21 hours)
+SBY 10:38:54 [checks/reg_ch0] engine_0: ##  39:01:18  waiting for solver (22 hours)
+SBY 11:38:54 [checks/reg_ch0] engine_0: ##  40:01:18  waiting for solver (23 hours)
+SBY 12:38:54 [checks/reg_ch0] engine_0: ##  41:01:18  waiting for solver (24 hours)
+SBY 13:38:54 [checks/reg_ch0] engine_0: ##  42:01:18  waiting for solver (25 hours)
+SBY 14:38:54 [checks/reg_ch0] engine_0: ##  43:01:18  waiting for solver (26 hours)
+SBY 15:38:54 [checks/reg_ch0] engine_0: ##  44:01:18  waiting for solver (27 hours)
+SBY 16:38:54 [checks/reg_ch0] engine_0: ##  45:01:18  waiting for solver (28 hours)
+SBY 17:38:54 [checks/reg_ch0] engine_0: ##  46:01:18  waiting for solver (29 hours)
+SBY 18:38:54 [checks/reg_ch0] engine_0: ##  47:01:18  waiting for solver (30 hours)
+SBY 19:38:54 [checks/reg_ch0] engine_0: ##  48:01:18  waiting for solver (31 hours)
+SBY 20:38:54 [checks/reg_ch0] engine_0: ##  49:01:18  waiting for solver (32 hours)
+SBY 21:38:54 [checks/reg_ch0] engine_0: ##  50:01:18  waiting for solver (33 hours)
+SBY 22:38:54 [checks/reg_ch0] engine_0: ##  51:01:18  waiting for solver (34 hours)
+SBY 23:38:54 [checks/reg_ch0] engine_0: ##  52:01:18  waiting for solver (35 hours)
+SBY  0:38:54 [checks/reg_ch0] engine_0: ##  53:01:18  waiting for solver (36 hours)
+SBY  1:07:05 [checks/reg_ch0] engine_0: ##  53:29:28  Status: passed
+SBY  1:07:05 [checks/reg_ch0] engine_0: finished (returncode=0)
+SBY  1:07:05 [checks/reg_ch0] engine_0: Status returned by engine: pass
+SBY  1:07:05 [checks/reg_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 53:29:29 (192569)
+SBY  1:07:05 [checks/reg_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 36:19:32 (130772)
+SBY  1:07:05 [checks/reg_ch0] summary: engine_0 (smtbmc boolector) returned pass
+SBY  1:07:05 [checks/reg_ch0] DONE (PASS, rc=0)
