@@ -31,8 +31,6 @@ module myRiscv (
     // -------------------------------------------------------- RVFI CONTROL --------------------------------------------------------
 
     // Instruction Metadata
-    // assign rvfi_valid = ~reset & instr_valid;
-    // assign rvfi_valid = ~reset & ~rvfi_trap;
     assign rvfi_valid = ~reset;
     assign rvfi_order = instr_index;
     assign rvfi_insn = instr;
@@ -51,24 +49,21 @@ module myRiscv (
     assign rvfi_rd_wdata = (rf_dst_addr == 32'b0) ? 32'b0 : rf_dst_data;
     
     // Program Counter
-    // assign rvfi_pc_rdata = pc_last;
     assign rvfi_pc_rdata = pc;
     assign rvfi_pc_wdata = pc_next;
-    // assign rvfi_pc_wdata = pc;
 
     // Memory Access
     assign rvfi_mem_addr = addr;
     assign rvfi_mem_rmask = rmask;
     assign rvfi_mem_wmask = wr_en;
     assign rvfi_mem_rdata = rd_data;
-    assign rvfi_mem_wdata = wr_data_ext;    
+    assign rvfi_mem_wdata = wr_data;
 
     // -------------------------------------------------------- RVFI CONTROL --------------------------------------------------------
 
 
     // -------------------------------------------------------- DATAPATH --------------------------------------------------------
-    
-    logic [31:0] pc_last;                                       // 
+
     logic [63:0] instr_index;                                   // 
     logic [4:0] rf_dst_addr, rf_src_addr_1, rf_src_addr_2;      // 
     logic [31:0] dst_data, rf_dst_data;                         // 32-bit intermediate and final nets connecting to register file
@@ -78,31 +73,25 @@ module myRiscv (
     logic [31:0] alu_in_1, alu_in_2;                            // 32-bit internal signals for ALU
 
     // assign addr = result;
-    logic force_zero_lsb;
+    logic addr_align;
     always_comb begin
-        case (force_zero_lsb)
+        case (addr_align)
             1'b0:       addr = result;
             1'b1:       addr = {result[31:2], 2'b0};
             default:    addr = result;
         endcase
     end
 
-    // Write-Data decorder for selecting wr_data to write to the data memory
-    assign wr_data = wr_data_ext;
-
     // Adder for updating the PC for non-branch instructions
-    assign pc_plus_4 = signed'(pc) + signed'(32'b0100);
+    assign pc_plus_4 = pc + 32'b0100;
     
     // Adder for updating the PC for B-, J-, or U-type instructions
-    logic target_carry;
-    // assign {target_carry, target} = signed'(pc) + signed'(imm_ext);
-    assign {target_carry, target} = pc + imm_ext;
+    assign target = pc + imm_ext;
 
-    // 
     // assign rf_dst_addr = instr[11:7];
-    logic rd_addr_sel;
+    logic dst_addr_sel;
     always_comb begin
-        case (rd_addr_sel)
+        case (dst_addr_sel)
             1'b0:       rf_dst_addr = instr[11:7];
             1'b1:       rf_dst_addr = 32'b0;
             default:    rf_dst_addr = 'X;
@@ -113,217 +102,70 @@ module myRiscv (
     assign rf_src_addr_1 = instr[19:15];
     assign rf_src_addr_2 = instr[24:20];
 
-    // Update PC at positive clock edge
+    // 
     always_ff @(posedge clk) begin
-        if (reset == 1'b1) begin
-            pc <= '0;
-            pc_last <= '0;
+        if (reset == 1'b1)
             instr_index <= '0;
-        end
-        else begin
-            pc <= pc_next;
-            pc_last <= pc;
-            // instr_index <= (instr_valid == 1'b1) ? instr_index + 64'b1 : instr_index;
-            instr_index <= (rvfi_valid == 1'b1) ? instr_index + 64'b1 : instr_index;
-            // instr_index <= (rvfi_trap == 1'b0) ? instr_index + 64'b1 : instr_index;
-            // instr_index <= instr_index + 64'b1;
-        end
+        else
+            instr_index <= instr_index + 64'b1;
     end
+
+    // Update PC at positive clock edge
+    DFF #(.DATA_WIDTH(32)) pc_dff (.clk(clk), .reset(reset), .data(pc_next), .out(pc));
 
     // 4-to-1 MUX instance for selecting pc_next source
-    always_comb begin
-        case (pc_sel)
-            2'b00:      pc_next = pc_plus_4;
-            2'b01:      pc_next = target;
-            2'b10:      pc_next = result;
-            2'b11:      pc_next = {result[31:1], 1'b0};
-            default:    pc_next = 'X;
-        endcase
-    end
+    MUX4x1 #(.DATA_WIDTH(32)) pc_next_mux (.sel(pc_sel), .in_1(pc_plus_4), .in_2(target), .in_3(result), .in_4({result[31:1], 1'b0}), .out(pc_next));
 
     // 2-to-1 MUX instances for selecting ALU input sources
-    always_comb begin
-        case (src_1_sel)
-            1'b0:      alu_in_1 = src_data_1;
-            1'b1:      alu_in_1 = pc;
-            default:   alu_in_1 = 'X;
-        endcase
-    end
+    MUX2x1 #(.DATA_WIDTH(32)) alu_in_mux_1 (.sel(src_1_sel), .in_1(src_data_1), .in_2(pc), .out(alu_in_1));
+    MUX2x1 #(.DATA_WIDTH(32)) alu_in_mux_2 (.sel(src_2_sel), .in_1(src_data_2), .in_2(imm_ext), .out(alu_in_2));
 
-    always_comb begin
-        case (src_2_sel)
-            1'b0:      alu_in_2 = src_data_2;
-            1'b1:      alu_in_2 = imm_ext;
-            default:   alu_in_2 = 'X;
-        endcase
-    end
-
-    // 4-to-1 MUX instance for selecting data source for destination register writes
-    always_comb begin
-        case (rd_data_sel)
-            3'b000:     dst_data = result;
-            3'b001:     dst_data = rd_data_ext;
-            3'b010:     dst_data = pc_plus_4;
-            3'b011:     dst_data = imm_ext;
-            3'b100:     dst_data = 32'b0;
-            default:    dst_data = 'X;
-        endcase
-    end
+    // 5-to-1 MUX instance for selecting data source for destination register writes
+    MUX5x1 #(.DATA_WIDTH(32)) rf_data_mux (.sel(rd_data_sel), .in_1(result), .in_2(rd_data_ext), .in_3(pc_plus_4), .in_4(imm_ext), .in_5(32'b0), .out(dst_data));
 
 
     // ------------------------- Register File -------------------------
-    
-    // 32, 32-bit registers
-    logic [31:0] mem [0:31];
 
-    // Data write
-    always_ff @(posedge clk) begin
-        if (rf_wr_en == 1'b1)
-            mem[rf_dst_addr] <= (rf_dst_addr == 32'b0) ? 32'b0 : rf_dst_data;
-        else
-            mem[rf_dst_addr] <= mem[rf_dst_addr];
-    end
-
-    // Data read
-    always_comb begin
-        src_data_1 = (rf_src_addr_1 == 32'b0) ? 32'b0 : mem[rf_src_addr_1];
-        src_data_2 = (rf_src_addr_2 == 32'b0) ? 32'b0 : mem[rf_src_addr_2];
-    end
+    RegisterFile reg_file (
+        .clk(clk),
+        .wr_en(rf_wr_en),
+        .dst_addr(rf_dst_addr),
+        .src_addr_1(rf_src_addr_1),
+        .src_addr_2(rf_src_addr_2),
+        .dst_data(rf_dst_data),
+        .src_data_1(src_data_1),
+        .src_data_2(src_data_2));
 
     // ------------------------- Register File -------------------------
 
 
     // ------------------------- ALU -------------------------
 
-    // Enumerate possible alu_ctrl codes
-    typedef enum logic [3:0] {
-        ALU_ADD  = 4'b0000,
-        ALU_SUB  = 4'b1000,
-        ALU_SLL  = 4'b0001,
-        ALU_SLT  = 4'b0010,
-        ALU_SLTU = 4'b0011,
-        ALU_XOR  = 4'b0100,
-        ALU_SRL  = 4'b0101,
-        ALU_SRA  = 4'b1101,
-        ALU_OR   = 4'b0110,
-        ALU_AND  = 4'b0111
-    } alu_ctrls_t;
-
-    logic carry;
     logic [31:0] result;
 
-    // 
-    always_comb begin
-        carry = 1'b0;
-        case (alu_ctrl)
-            // Add
-            ALU_ADD:    begin
-                            {carry, result} = signed'(alu_in_1) + signed'(alu_in_2);
-                            b_flag = 1'bX;
-                        end
-                        
-            // Subtract
-            ALU_SUB:    begin
-                            result = signed'(alu_in_1) - signed'(alu_in_2);
-                            // result = alu_in_1 - alu_in_2;
-                            b_flag = (result == '0);
-                        end
-            
-            // Shift left logical
-            ALU_SLL:    begin
-                            result = signed'(alu_in_1) << signed'(alu_in_2[4:0]);
-                            // result = alu_in_1 << alu_in_2;
-                            b_flag = 1'bX;
-                        end
-                        
-            // Set less than
-            ALU_SLT:    begin
-                            result = (signed'(alu_in_1) < signed'(alu_in_2));
-                            // result = alu_in_1 < alu_in_2;
-                            b_flag = result[0];
-                        end
-
-            // Set less than unsigned
-            ALU_SLTU:   begin
-                            result = (unsigned'(alu_in_1) < unsigned'(alu_in_2));
-                            b_flag = result[0];
-                        end
-            
-            // Exclusive-OR
-            ALU_XOR:    begin
-                            // result = signed'(alu_in_1) ^ signed'(alu_in_2);
-                            result = alu_in_1 ^ alu_in_2;
-                            b_flag = 1'bX;
-                        end
-            
-            // Shift right logical
-            ALU_SRL:    begin
-                            result = signed'(alu_in_1) >> signed'(alu_in_2[4:0]);
-                            // result = alu_in_1 >> alu_in_2;
-                            b_flag = 1'bX;
-                        end
-            
-            // Shift right arithmetic
-            ALU_SRA:    begin
-                            result = signed'(alu_in_1) >>> signed'(alu_in_2[4:0]);
-                            // result = alu_in_1 >>> alu_in_2;
-                            b_flag = 1'bX;
-                        end
-            
-            // OR 
-            ALU_OR:     begin
-                            // result = signed'(alu_in_1) | signed'(alu_in_2);
-                            result = alu_in_1 | alu_in_2;
-                            b_flag = 1'bX;
-                        end
-                        
-            // AND 
-            ALU_AND:    begin
-                            // result = signed'(alu_in_1) & signed'(alu_in_2);
-                            result = alu_in_1 & alu_in_2;
-                            b_flag = 1'bX;
-                        end
-                        
-            // Unknwon alu_ctrl
-            default:    begin
-                            result = 'X;
-                            b_flag = 1'bX;
-                        end
-        endcase
-    end
+    // ALU instance for instruction execution
+    ALU #(.DATA_WIDTH(32)) alu (
+        .alu_ctrl(alu_ctrl),
+        .in_1(alu_in_1),
+        .in_2(alu_in_2),
+        .b_flag(b_flag),
+        .result(result));
 
     // ------------------------- ALU -------------------------
 
 
     // ------------------------- SignExtend Unit -------------------------
 
-    // Enumerate instruction types
-    typedef enum logic [2:0] {
-        I_TYPE   = 3'b000,
-        I_TYPE_U = 3'b001,
-        S_TYPE   = 3'b010,
-        B_TYPE   = 3'b011,
-        J_TYPE   = 3'b100,
-        U_TYPE   = 3'b101
-    } instr_types_t;
-    
-    // 
-    always_comb begin
-        case (imm_sel)
-            I_TYPE:     imm_ext = {{20{instr[31]}}, instr[31:20]};
-            I_TYPE_U:   imm_ext = {27'b0, instr[24:20]};
-            S_TYPE:     imm_ext = {{20{instr[31]}}, instr[31:25], instr[11:7]};
-            B_TYPE:     imm_ext = {{20{instr[31]}}, instr[7], instr[30:25], instr[11:8], 1'b0};
-            J_TYPE:     imm_ext = {{12{instr[31]}}, instr[19:12], instr[20], instr[30:21], 1'b0};
-            U_TYPE:     imm_ext = {instr[31:12], 12'b0};
-            default:    imm_ext = 'X;
-        endcase
-    end
+    // Sign-extend unit for sign extending the immediate of the instruction
+    SignExtend sign_ext (.imm_sel(imm_sel), .instr(instr), .imm_ext(imm_ext));
 
     // ------------------------- SignExtend Unit -------------------------
 
 
     // ------------------------- LoadExtend Unit -------------------------
+
+    // Load-extend unit for sign-extending or zero-extending rd_data from the data memory
+    LoadExtend ld_ext (.ld_ctrl(ld_ctrl), .data_in(rd_data), .data_out(rd_data_ext));
 
     // Enumerate load instruction control
     typedef enum logic [4:0] {
@@ -341,29 +183,8 @@ module myRiscv (
         LD_HALF_U_0 = 5'b101_00,
         LD_HALF_U_1 = 5'b101_10
     } ld_ctrls_t;
-    
-    // 
-    always_comb begin
-        case (ld_ctrl)
-            LD_BYTE_0:      rd_data_ext = {{24{rd_data[7]}}, rd_data[7:0]};
-            LD_BYTE_1:      rd_data_ext = {{24{rd_data[15]}}, rd_data[15:8]};
-            LD_BYTE_2:      rd_data_ext = {{24{rd_data[23]}}, rd_data[23:16]};
-            LD_BYTE_3:      rd_data_ext = {{24{rd_data[31]}}, rd_data[31:24]};
-            LD_HALF_0:      rd_data_ext = {{16{rd_data[15]}}, rd_data[15:0]};
-            LD_HALF_1:      rd_data_ext = {{16{rd_data[31]}}, rd_data[31:16]};
-            LD_WORD:        rd_data_ext = rd_data;
-            LD_BYTE_U_0:    rd_data_ext = {24'b0, rd_data[7:0]};
-            LD_BYTE_U_1:    rd_data_ext = {24'b0, rd_data[15:8]};
-            LD_BYTE_U_2:    rd_data_ext = {24'b0, rd_data[23:16]};
-            LD_BYTE_U_3:    rd_data_ext = {24'b0, rd_data[31:24]};
-            LD_HALF_U_0:    rd_data_ext = {16'b0, rd_data[15:0]};
-            LD_HALF_U_1:    rd_data_ext = {16'b0, rd_data[31:16]};
-            default:        rd_data_ext = 'X;
-        endcase
-    end
 
     logic [3:0] rmask;
-
     always_comb begin
         case (ld_ctrl)
             LD_BYTE_0:      rmask = 4'b0001;
@@ -388,34 +209,10 @@ module myRiscv (
 
     // ------------------------- StoreExtend Unit -------------------------
 
-    // Enumerate store instruction control
-    typedef enum logic [4:0] {
-        S_BYTE_0   = 5'b000_00,
-        S_BYTE_1   = 5'b000_01,
-        S_BYTE_2   = 5'b000_10,
-        S_BYTE_3   = 5'b000_11,
-        S_HALF_0   = 5'b001_00,
-        S_HALF_1   = 5'b001_10,
-        S_WORD     = 5'b010_00
-    } s_ctrls_t;
-
     logic [4:0] s_ctrl;
-    logic [31:0] wr_data_ext;
 
-    // 
-    always_comb begin
-        wr_data_ext = 32'b0;
-        case (s_ctrl)
-            S_BYTE_0:       wr_data_ext[7:0] = src_data_2[7:0];
-            S_BYTE_1:       wr_data_ext[15:8] = src_data_2[7:0];
-            S_BYTE_2:       wr_data_ext[23:16] = src_data_2[7:0];
-            S_BYTE_3:       wr_data_ext[31:24] = src_data_2[7:0];
-            S_HALF_0:       wr_data_ext[15:0] = src_data_2[15:0];
-            S_HALF_1:       wr_data_ext[31:16] = src_data_2[15:0];
-            S_WORD:         wr_data_ext = src_data_2;
-            default:        wr_data_ext = 'X;
-        endcase
-    end
+    // Store-extend unit for rearranging src_data_2 before writing to the data memory
+    StoreExtend s_ext (.s_ctrl(s_ctrl), .data_in(src_data_2), .data_out(wr_data));
 
     // ------------------------- StoreExtend Unit -------------------------
 
@@ -444,252 +241,153 @@ module myRiscv (
     assign funct3 = instr[14:12];
     assign funct7 = instr[31:25];
 
+    logic load_check;
+    logic imm_check;
+    logic store_check;
+    logic arith_check;
+    logic branch_check;
+    logic jump_check;
+    logic jump_reg_check;
+    logic load_uimm_check;
+    logic add_uimm_check;
+
+    assign load_check = &{~opcode[6:2], opcode[1:0]} & ((~funct3[2] & ~funct3[0]) | funct3[1]);
+    assign imm_check = &{~opcode[6:5], opcode[4], ~opcode[3:2], opcode[1:0]} & ((funct3[1] | ~funct3[0]) | (~funct7) | (~{funct7[6], funct7[4:0]} & funct3[2]));
+    assign store_check = &{~opcode[6], opcode[5], ~opcode[4:2], opcode[1:0]} & ((~funct3[2] & ~funct3[1]) | (~funct3[2] & ~funct3[0]));
+    assign arith_check = &{~opcode[6], opcode[5:4], ~opcode[3:2], opcode[1:0]} & (&~{funct7[6], funct7[4:0]} & (~funct3[1] & ~(funct3[2] ^ funct3[0])) | ~funct7[5]);
+    assign branch_check = &{opcode[6:5], ~opcode[4:2], opcode[1:0]} & (funct3[2] | ~funct3[1]);
+    assign jump_check = &{opcode[6:5], ~opcode[4], opcode[3:0]};
+    assign jump_reg_check = &{opcode[6:5], ~opcode[4:3], opcode[2:0]} & (&~funct3);
+    assign load_uimm_check = &{~opcode[6], opcode[5:4], ~opcode[3], opcode[2:0]};
+    assign add_uimm_check = &{~opcode[6:5], opcode[4], ~opcode[3], opcode[2:0]};
+
+    logic [6:0] opcode_mask;
+    assign opcode_mask = {7{|{load_check, imm_check, store_check, arith_check, branch_check, jump_check, jump_reg_check, load_uimm_check, add_uimm_check}}};
+
     // Combinational logic for determining outputs based on instruction slices
     always_comb begin
         instr_valid = 1'b1;
         ctrl_instr_trap = 1'b0;
-        rd_addr_sel = 1'b0;
-        force_zero_lsb = 1'b0;
+        dst_addr_sel = 1'b0;
+        addr_align = 1'b0;
         s_ctrl = 5'b010_00;
 
-        case (opcode)
+        case (opcode & opcode_mask)
             // Load instructions
             LOAD:       begin
-                            if (funct3 == 3'b011 || funct3 == 3'b110 || funct3 == 3'b111) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else begin
-                                force_zero_lsb = 1'b1;
-                                wr_en = 4'b0000;
-                                // rf_wr_en = 1'b1;
-                                if (funct3 == 3'b010)
-                                    rf_wr_en = (result[1:0] != 2'b0) ? 1'b0 : 1'b1;
-                                else if (funct3 == 3'b001 || funct3 == 3'b101)
-                                    rf_wr_en = (result[0] != 1'b0) ? 1'b0 : 1'b1;
-                                else 
-                                    rf_wr_en = 1'b1;
-                                // rf_wr_en = (result[1:0] != 2'b0) ? 1'b0 : 1'b1;
-                                src_1_sel = 1'b0;
-                                src_2_sel = 1'b1;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'b01;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'b000;
-                                ld_ctrl = {funct3, result[1:0]};
-                                alu_ctrl = 4'b0000;
-                                if (funct3 == 3'b010)
-                                    ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
-                                else if (funct3 == 3'b001 || funct3 == 3'b101)
-                                    ctrl_instr_trap = (result[0] != 1'b0) ? 1'b1 : 1'b0;
-                                else 
-                                    ctrl_instr_trap = 1'b0;
-                                // ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
-                            end
+                            wr_en = 4'b0000;
+
+                            if (funct3 == 3'b010)
+                                rf_wr_en = (result[1:0] != 2'b0) ? 1'b0 : 1'b1;
+                            else if (funct3 == 3'b001 || funct3 == 3'b101)
+                                rf_wr_en = (result[0] != 1'b0) ? 1'b0 : 1'b1;
+                            else 
+                                rf_wr_en = 1'b1;
+
+                            src_1_sel = 1'b0;
+                            src_2_sel = 1'b1;
+                            addr_align = 1'b1;
+                            pc_sel = 2'b00;
+                            rd_data_sel = 3'b001;
+                            wr_data_sel = 2'bX;
+                            imm_sel = 3'b000;
+                            ld_ctrl = {funct3, result[1:0]};
+                            alu_ctrl = 4'b0000;
+
+                            if (funct3 == 3'b010)
+                                ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                            else if (funct3 == 3'b001 || funct3 == 3'b101)
+                                ctrl_instr_trap = (result[0] != 1'b0) ? 1'b1 : 1'b0;
+                            else 
+                                ctrl_instr_trap = 1'b0;
                         end
             
             // Immediate instructions
             IMM:        begin
-                            if (funct3 == 3'b001 && funct7 != 7'b0) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else if (funct3 == 3'b101 && (funct7 != 7'b0 && funct7 != 7'b0100000)) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b1;
-                                src_1_sel = 1'b0;
-                                src_2_sel = 1'b1;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'b000;
-                                wr_data_sel = 2'bX;
-                                imm_sel = {2'b0, (~funct3[1] & funct3[0])};
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = {(funct3[2] & ~funct3[1] & funct3[0] & funct7[5]), funct3};
-                            end
+                            wr_en = 4'b0000;
+                            rf_wr_en = 1'b1;
+                            src_1_sel = 1'b0;
+                            src_2_sel = 1'b1;
+                            pc_sel = 2'b00;
+                            rd_data_sel = 3'b000;
+                            wr_data_sel = 2'bX;
+                            imm_sel = {2'b0, (~funct3[1] & funct3[0])};
+                            ld_ctrl = 5'bX;
+                            alu_ctrl = {(funct3[2] & ~funct3[1] & funct3[0] & funct7[5]), funct3};
                         end
             
             // Store instructions
             STORE:      begin
-                            if (funct3 != 3'b000 && funct3 != 3'b001 && funct3 != 3'b010) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
+                            addr_align = 1'b1;
+
+                            if (funct3 == 3'b010)
+                                wr_en = (result[1:0] != 2'b0) ? 4'b0000 : 4'b1111;
+                            else if (funct3 == 3'b001)
+                                wr_en = (result[0] != 1'b0) ? 4'b0000 : ((result[1] == 1'b0) ? 4'b0011 : 4'b1100);
                             else begin
-                                force_zero_lsb = 1'b1;
-                                if (funct3 == 3'b010)
-                                    wr_en = (result[1:0] != 2'b0) ? 4'b0000 : 4'b1111;
-                                else if (funct3 == 3'b001)
-                                    wr_en = (result[0] != 1'b0) ? 4'b0000 : ((result[1] == 1'b0) ? 4'b0011 : 4'b1100);
-                                else begin
-                                    case (result[1:0])
-                                        2'b00:      wr_en = 4'b0001;
-                                        2'b01:      wr_en = 4'b0010;
-                                        2'b10:      wr_en = 4'b0100;
-                                        2'b11:      wr_en = 4'b1000;
-                                        default:    wr_en = 4'bX;
-                                    endcase
-                                end
-                                // wr_en = (result[1:0] != 2'b0) ? 4'b0000 : {funct3[1], funct3[1], (funct3[1] | funct3[0]), 1'b1};
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'b0;
-                                src_2_sel = 1'b1;
-                                pc_sel = 2'b00;
-                                rd_addr_sel = 1'b1;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = funct3[1:0];
-                                imm_sel = 3'b010;
-                                s_ctrl = {funct3, result[1:0]};
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'b0000;
-                                if (funct3 == 3'b010)
-                                    ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
-                                else if (funct3 == 3'b001)
-                                    ctrl_instr_trap = (result[0] != 1'b0) ? 1'b1 : 1'b0;
-                                else 
-                                    ctrl_instr_trap = 1'b0;
-                                // ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                                case (result[1:0])
+                                    2'b00:      wr_en = 4'b0001;
+                                    2'b01:      wr_en = 4'b0010;
+                                    2'b10:      wr_en = 4'b0100;
+                                    2'b11:      wr_en = 4'b1000;
+                                    default:    wr_en = 4'bX;
+                                endcase
                             end
+
+                            rf_wr_en = 1'b0;
+                            src_1_sel = 1'b0;
+                            src_2_sel = 1'b1;
+                            pc_sel = 2'b00;
+                            dst_addr_sel = 1'b1;
+                            rd_data_sel = 3'bX;
+                            wr_data_sel = funct3[1:0];
+                            imm_sel = 3'b010;
+                            s_ctrl = {funct3, result[1:0]};
+                            ld_ctrl = 5'bX;
+                            alu_ctrl = 4'b0000;
+
+                            if (funct3 == 3'b010)
+                                ctrl_instr_trap = (result[1:0] != 2'b0) ? 1'b1 : 1'b0;
+                            else if (funct3 == 3'b001)
+                                ctrl_instr_trap = (result[0] != 1'b0) ? 1'b1 : 1'b0;
+                            else 
+                                ctrl_instr_trap = 1'b0;
                         end
             
             //  Arithmetic instructions 
             ARITH:      begin
-                            if (funct3 == 3'b000 && (funct7 != 7'b0 && funct7 != 7'b0100000)) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else if (funct3 == 3'b101 && (funct7 != 7'b0 && funct7 != 7'b0100000)) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else if ((funct3 == 3'b001 || funct3 == 3'b010 || funct3 == 3'b011 || funct3 == 3'b100 || funct3 == 3'b110 || funct3 == 3'b111) && funct7 != 7'b0) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b1;
-                                src_1_sel = 1'b0;
-                                src_2_sel = 1'b0;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'b000;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = {funct7[5], funct3};
-                            end
-                            
+                            wr_en = 4'b0000;
+                            rf_wr_en = 1'b1;
+                            src_1_sel = 1'b0;
+                            src_2_sel = 1'b0;
+                            pc_sel = 2'b00;
+                            rd_data_sel = 3'b000;
+                            wr_data_sel = 2'bX;
+                            imm_sel = 3'bX;
+                            ld_ctrl = 5'bX;
+                            alu_ctrl = {funct7[5], funct3};
                         end            
             
             // Branch instructions
             BRANCH:     begin
-                            if (funct3 == 3'b010 || funct3 == 3'b011) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'b0;
-                                src_2_sel = 1'b0;
-                                pc_sel = {1'b0, (funct3[0] ^ b_flag)};
-                                rd_addr_sel = 1'b1;
-                                rd_data_sel = 3'b100;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'b011;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = {~funct3[2], 1'b0, funct3[2:1]};
-                                ctrl_instr_trap = |pc_next[1:0];
-                            end
+                            wr_en = 4'b0000;
+                            rf_wr_en = 1'b0;
+                            src_1_sel = 1'b0;
+                            src_2_sel = 1'b0;
+                            pc_sel = {1'b0, (funct3[0] ^ b_flag)};
+                            dst_addr_sel = 1'b1;
+                            rd_data_sel = 3'b100;
+                            wr_data_sel = 2'bX;
+                            imm_sel = 3'b011;
+                            ld_ctrl = 5'bX;
+                            alu_ctrl = {~funct3[2], 1'b0, funct3[2:1]};
+                            ctrl_instr_trap = |pc_next[1:0];
                         end
             
             // Jump and link
             JUMP:       begin
                             wr_en = 4'b0000;
-                            rf_wr_en = |target[1:0];
+                            rf_wr_en = &~target[1:0];
                             src_1_sel = 1'bX;
                             src_2_sel = 1'bX;
                             pc_sel = {1'b0, &~target[1:0]};
@@ -703,34 +401,17 @@ module myRiscv (
             
             // Jump and link register
             JUMP_REG:   begin
-                            if (funct3 != 3'b000) begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = 1'b0;
-                                src_1_sel = 1'bX;
-                                src_2_sel = 1'bX;
-                                pc_sel = 2'b00;
-                                rd_data_sel = 3'bX;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'bX;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'bX;
-                                instr_valid = 1'b0;
-                                ctrl_instr_trap = 1'b1;
-                            end
-                            else begin
-                                wr_en = 4'b0000;
-                                rf_wr_en = ~result[1];
-                                src_1_sel = 1'b0;
-                                src_2_sel = 1'b1;
-                                pc_sel = {2{~result[1]}};
-                                rd_data_sel = 3'b010;
-                                wr_data_sel = 2'bX;
-                                imm_sel = 3'b000;
-                                ld_ctrl = 5'bX;
-                                alu_ctrl = 4'b0000;
-                                ctrl_instr_trap = result[1];
-                            end
-
+                            wr_en = 4'b0000;
+                            rf_wr_en = ~result[1];
+                            src_1_sel = 1'b0;
+                            src_2_sel = 1'b1;
+                            pc_sel = {2{~result[1]}};
+                            rd_data_sel = 3'b010;
+                            wr_data_sel = 2'bX;
+                            imm_sel = 3'b000;
+                            ld_ctrl = 5'bX;
+                            alu_ctrl = 4'b0000;
+                            ctrl_instr_trap = result[1];
                         end
             
             // Load upper-immediate instructions

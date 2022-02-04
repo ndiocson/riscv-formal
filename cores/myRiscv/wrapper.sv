@@ -1,6 +1,25 @@
+`define FORMAL_VERIFICATION
+`include "src/CtrlToDataInterface.sv"
+`include "src/MemoryWriteInterface.sv"
+`include "src/MemoryReadInterface.sv"
+
+`include "src/DFF.sv"
+`include "src/MUX2x1.sv"
+`include "src/MUX4x1.sv"
+`include "src/MUX5x1.sv"
+`include "src/SignExtend.sv"
+`include "src/LoadExtend.sv"
+`include "src/StoreExtend.sv"
+`include "src/RegisterFile.sv"
+`include "src/ALU.sv"
+`include "src/Datapath.sv"
+`include "src/ControlUnit.sv"
+
+
 module rvfi_wrapper (
-	input         clock,
-	input         reset,
+	input clock,
+	input reset,
+
 	`RVFI_OUTPUTS
 );
 
@@ -12,37 +31,25 @@ module rvfi_wrapper (
 	(* keep *) wire [31:0] wr_data;
 	(* keep *) `rvformal_rand_reg   [31:0] rd_data;
 
+	// mem_write #(.DATA_WIDTH(32), .ADDR_WIDTH(5), .WR_EN_WIDTH(1)) wr_rf_if();
+	// mem_read #(.DATA_WIDTH(32), .ADDR_WIDTH(5)) rd_rf_if();
+
 	myRiscv uut (
 		.clk(clock),
 		.reset(reset),
+		// .mem_in_sel(1'b0),
+		// .mem_out_sel(1'b0),
 		.instr(instr),
 		.rd_data(rd_data),
 		.wr_en(wr_en),
 		.pc(pc),
 		.addr(addr),
 		.wr_data(wr_data),
-		`RVFI_CONN);
-		// .rvfi_valid     (rvfi_valid    ), 
-		// .rvfi_order     (rvfi_order    ),
-		// .rvfi_insn      (rvfi_insn     ),
-		// .rvfi_trap      (rvfi_trap     ),
-		// .rvfi_halt      (rvfi_halt     ),
-		// .rvfi_intr      (rvfi_intr     ),
-		// .rvfi_mode      (rvfi_mode     ),
-		// .rvfi_ixl       (rvfi_ixl      ),
-		// .rvfi_rs1_addr  (rvfi_rs1_addr ),
-		// .rvfi_rs2_addr  (rvfi_rs2_addr ),
-		// .rvfi_rs1_rdata (rvfi_rs1_rdata),
-		// .rvfi_rs2_rdata (rvfi_rs2_rdata),
-		// .rvfi_rd_addr   (rvfi_rd_addr  ),
-		// .rvfi_rd_wdata  (rvfi_rd_wdata ),
-		// .rvfi_pc_rdata  (rvfi_pc_rdata ),
-		// .rvfi_pc_wdata  (rvfi_pc_wdata ),
-		// .rvfi_mem_addr  (rvfi_mem_addr ),
-		// .rvfi_mem_rmask (rvfi_mem_rmask),
-		// .rvfi_mem_wmask (rvfi_mem_wmask),
-		// .rvfi_mem_rdata (rvfi_mem_rdata),
-		// .rvfi_mem_wdata (rvfi_mem_wdata));
+		// .wr_rf_if(wr_rf_if.mem_in),
+		// .rd_rf_if(rd_rf_if.mem_in),
+
+		`RVFI_CONN
+	);
 
 endmodule
 
